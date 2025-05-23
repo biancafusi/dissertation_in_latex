@@ -1,0 +1,21 @@
+\babel@toc {english}{}\relax 
+\babel@toc {portuguese}{}\relax 
+\babel@toc {portuguese}{}\relax 
+\babel@toc {portuguese}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces MPAS-A meshes and the ability to configure the meshes at different resolutions}}{11}{figure.3.1}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of cross-track and along-track errors. The definitions of Cross-Track Error (CTE) and Along-Track Error (ATE) are based on the distance between an observation (obs) and a forecast (fct) at the same valid time (T). This distance is computed as the great-circle distance.}}{16}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Workflow Overview}}{20}{figure.4.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of Storm Tracks Across All 15 Experiments}}{24}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Errors (distance) between the trajectories}}{25}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces All tracks with selected experiments from Table~\ref {tab:selected_experiments}}}{27}{figure.5.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsfinish 

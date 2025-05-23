@@ -1,0 +1,206 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Bagtasa 2022]{bagtasa2022assessment}
+\abntrefinfo{Bagtasa}{BAGTASA}{2022}
+{BAGTASA, G. Assessment of tropical cyclone rainfall from gsmap and gpm
+  products and their application to analog forecasting in the philippines.
+\textbf{Atmosphere}, MDPI, v.~13, n.~9, p.~1398, 2022.}
+
+
+\bibitem[Bopape et al. 2021]{bopape2021sensitivity}
+\abntrefinfo{Bopape et al.}{BOPAPE et al.}{2021}
+{BOPAPE, M.-J.~M.; CARDOSO, H.; PLANT, R.~S.; PHADULI, E.; CHIKOORE, H.;
+  NDARANA, T.; KHALAU, L.; RAKATE, E. Sensitivity of tropical cyclone idai
+  simulations to cumulus parametrization schemes.
+\textbf{Atmosphere}, MDPI, v.~12, n.~8, p.~932, 2021.}
+
+
+\bibitem[DeMaria et al. 2007]{demaria2007evaluation}
+\abntrefinfo{DeMaria et al.}{DEMARIA et al.}{2007}
+{DEMARIA, M.; KNAFF, J.; SAMPSON, C. Evaluation of long-term trends in tropical
+  cyclone intensity forecasts.
+\textbf{Meteorology and Atmospheric Physics}, Springer, v.~97, n.~1, p. 19--28,
+  2007.}
+
+
+\bibitem[Deshpande et al. 2010]{deshpande2010impact}
+\abntrefinfo{Deshpande et al.}{DESHPANDE et al.}{2010}
+{DESHPANDE, M.; PATTNAIK, S.; SALVEKAR, P. Impact of physical parameterization
+  schemes on numerical simulation of super cyclone gonu.
+\textbf{Natural Hazards}, Springer, v.~55, p. 211--231, 2010.}
+
+
+\bibitem[Ditchek et al. 2023]{ditchek2023improving}
+\abntrefinfo{Ditchek et al.}{DITCHEK et al.}{2023}
+{DITCHEK, S.~D.; SIPPEL, J.~A.; MARINESCU, P.~J.; JR, G.~J. A. Improving best
+  track verification of tropical cyclones: A new metric to identify forecast
+  consistency.
+\textbf{Weather and Forecasting}, v.~38, n.~6, p. 817--831, 2023.}
+
+
+\bibitem[Dulac et al. 2024]{dulac2024assessing}
+\abntrefinfo{Dulac et al.}{DULAC et al.}{2024}
+{DULAC, W.; CATTIAUX, J.; CHAUVIN, F.; BOURDIN, S.; FROMANG, S. Assessing the
+  representation of tropical cyclones in era5 with the cnrm tracker.
+\textbf{Climate Dynamics}, Springer, v.~62, n.~1, p. 223--238, 2024.}
+
+
+\bibitem[Freitas et al. 2024]{freitas2024parameterization}
+\abntrefinfo{Freitas et al.}{FREITAS et al.}{2024}
+{FREITAS, S.~R.; GRELL, G.~A.; CHOVERT, A.~D.; DIAS, M. A.~F. S.; NASCIMENTO,
+  E. de L. A parameterization for cloud organization and propagation by
+  evaporation-driven cold pool edges.
+\textbf{Journal of Advances in Modeling Earth Systems}, Wiley Online Library,
+  v.~16, n.~1, p. e2023MS003982, 2024.}
+
+
+\bibitem[Gao et al. 2023]{gao2023regulating}
+\abntrefinfo{Gao et al.}{GAO et al.}{2023}
+{GAO, K.; HARRIS, L.; BENDER, M.; CHEN, J.-H.; ZHOU, L.; KNUTSON, T. Regulating
+  fine-scale resolved convection in high-resolution models for better hurricane
+  track prediction.
+\textbf{Geophysical Research Letters}, Wiley Online Library, v.~50, n.~13, p.
+  e2023GL103329, 2023.}
+
+
+\bibitem[Heming 2017]{heming2017tropical}
+\abntrefinfo{Heming}{HEMING}{2017}
+{HEMING, J. Tropical cyclone tracking and verification techniques for met
+  office numerical weather prediction models.
+\textbf{Meteorological Applications}, Wiley Online Library, v.~24, n.~1,
+  p.~1--8, 2017.}
+
+
+\bibitem[Hersbach et al. 2020]{hersbach2020era5}
+\abntrefinfo{Hersbach et al.}{HERSBACH et al.}{2020}
+{HERSBACH, H.; BELL, B.; BERRISFORD, P.; HIRAHARA, S.; HOR{\'A}NYI, A.;
+  MU{\~N}OZ-SABATER, J.; NICOLAS, J.; PEUBEY, C.; RADU, R.; SCHEPERS, D. et al.
+  The era5 global reanalysis.
+\textbf{Quarterly journal of the royal meteorological society}, Wiley Online
+  Library, v.~146, n.~730, p. 1999--2049, 2020.}
+
+
+\bibitem[Huffman 2019]{huffman2019gpm}
+\abntrefinfo{Huffman}{HUFFMAN}{2019}
+{HUFFMAN, G. Gpm imerg final precipitation l3 half hourly 0.1 degree$\times$
+  0.1 degree v06.
+\textbf{(No Title)}, 2019.}
+
+
+\bibitem[Janowiak et al. 2017]{janowiak2017ncep}
+\abntrefinfo{Janowiak et al.}{JANOWIAK et al.}{2017}
+{JANOWIAK, J.; JOYCE, B.; XIE, P. \textbf{NCEP/CPC L3 half hourly 4 km global
+  (60S--60N) merged IR V1. Goddard Earth Sciences Data and Information Services
+  Center (GES DISC)}. 2017.}
+
+
+\bibitem[Knapp et al. 2010]{knapp2010international}
+\abntrefinfo{Knapp et al.}{KNAPP et al.}{2010}
+{KNAPP, K.~R.; KRUK, M.~C.; LEVINSON, D.~H.; DIAMOND, H.~J.; NEUMANN, C.~J. The
+  international best track archive for climate stewardship (ibtracs) unifying
+  tropical cyclone data.
+\textbf{Bulletin of the American Meteorological Society}, American
+  Meteorological Society, v.~91, n.~3, p. 363--376, 2010.}
+
+
+\bibitem[Landsea e Franklin 2013]{landsea2013atlantic}
+\abntrefinfo{Landsea e Franklin}{LANDSEA; FRANKLIN}{2013}
+{LANDSEA, C.~W.; FRANKLIN, J.~L. Atlantic hurricane database uncertainty and
+  presentation of a new database format.
+\textbf{Monthly Weather Review}, v.~141, n.~10, p. 3576--3592, 2013.}
+
+
+\bibitem[Marchok et al. 2007]{marchok2007validation}
+\abntrefinfo{Marchok et al.}{MARCHOK et al.}{2007}
+{MARCHOK, T.; ROGERS, R.; TULEYA, R. Validation schemes for tropical cyclone
+  quantitative precipitation forecasts: Evaluation of operational models for us
+  landfalling cases.
+\textbf{Weather and forecasting}, v.~22, n.~4, p. 726--746, 2007.}
+
+
+\bibitem[May et al. 2024]{may2024cnn}
+\abntrefinfo{May et al.}{MAY et al.}{2024}
+{MAY, J.; HARANDI, M.; TYO, J.~S.; HU, L.; RITCHIE-TYO, E.~A. A cnn system for
+  segmenting tropical cyclones neighborhoods in geostationary images. In:
+  IEEE. \textbf{IGARSS 2024-2024 IEEE International Geoscience and Remote
+  Sensing Symposium}. [S.l.], 2024. p. 8259--8262.}
+
+
+\bibitem[Mesinger 2008]{mesinger2008bias}
+\abntrefinfo{Mesinger}{MESINGER}{2008}
+{MESINGER, F. Bias adjusted precipitation threat scores.
+\textbf{Advances in Geosciences}, Copernicus Publications G{\"o}ttingen,
+  Germany, v.~16, p. 137--142, 2008.}
+
+
+\bibitem[Mishra et al. 2024]{mishra2024characteristics}
+\abntrefinfo{Mishra et al.}{MISHRA et al.}{2024}
+{MISHRA, A.~K.; JANGIR, B.; KHAIN, P.; STROBACH, E. Characteristics of the
+  mediterranean cyclone ianos in convection-permitting simulations: Unraveling
+  model sensitivity to microphysics and cumulus parameterization.
+\textbf{Journal of Geophysical Research: Atmospheres}, Wiley Online Library,
+  v.~129, n.~23, p. e2024JD041637, 2024.}
+
+
+\bibitem[Moon et al. 2021]{moon2021five}
+\abntrefinfo{Moon et al.}{MOON et al.}{2021}
+{MOON, J.; PARK, J.; CHA, D.-H.; MOON, Y. Five-day track forecast skills of wrf
+  model for the western north pacific tropical cyclones.
+\textbf{Weather and Forecasting}, v.~36, n.~4, p. 1491--1503, 2021.}
+
+
+\bibitem[Nyongesa et al. 2024]{nyongesa2024influence}
+\abntrefinfo{Nyongesa et al.}{NYONGESA et al.}{2024}
+{NYONGESA, A.~M.; SHI, D.; LI, S.; LI, Q. Influence of convective
+  parameterization on the simulation of tropical cyclones over the south west
+  indian ocean: A case study of tropical cyclone idai (2019).
+\textbf{Atmospheric Research}, Elsevier, v.~306, p. 107461, 2024.}
+
+
+\bibitem[Reddy et al. 2022]{reddy2022accurately}
+\abntrefinfo{Reddy et al.}{REDDY et al.}{2022}
+{REDDY, M.~V.; MITRA, A.~K.; MOMIN, I.; KRISHNA, U.~M. How accurately satellite
+  precipitation products capture the tropical cyclone rainfall?
+\textbf{Journal of the Indian Society of Remote Sensing}, Springer, v.~50,
+  n.~10, p. 1871--1884, 2022.}
+
+
+\bibitem[Shepherd e Walsh 2017]{shepherd2017sensitivity}
+\abntrefinfo{Shepherd e Walsh}{SHEPHERD; WALSH}{2017}
+{SHEPHERD, T.~J.; WALSH, K.~J. Sensitivity of hurricane track to cumulus
+  parameterization schemes in the wrf model for three intense tropical
+  cyclones: Impact of convective asymmetry.
+\textbf{Meteorology and Atmospheric Physics}, Springer, v.~129, p. 345--374,
+  2017.}
+
+
+\bibitem[Yang et al. 2024]{yang2024evaluation}
+\abntrefinfo{Yang et al.}{YANG et al.}{2024}
+{YANG, S.; SURRATT, M.; WHITCOMB, T.~R.; CAMACHO, C. Evaluation of imerg and
+  gsmap for tropical cyclone applications.
+\textbf{Geophysical Research Letters}, Wiley Online Library, v.~51, n.~4, p.
+  e2023GL106414, 2024.}
+
+
+\bibitem[Zarzycki et al. 2021]{zarzycki2021metrics}
+\abntrefinfo{Zarzycki et al.}{ZARZYCKI et al.}{2021}
+{ZARZYCKI, C.~M.; ULLRICH, P.~A.; REED, K.~A. Metrics for evaluating tropical
+  cyclones in climate data.
+\textbf{Journal of Applied Meteorology and Climatology}, v.~60, n.~5, p.
+  643--660, 2021.}
+
+
+\bibitem[Zhou e Matyas 2021]{zhou2021regionalization}
+\abntrefinfo{Zhou e Matyas}{ZHOU; MATYAS}{2021}
+{ZHOU, Y.; MATYAS, C.~J. Regionalization of precipitation associated with
+  tropical cyclones using spatial metrics and satellite precipitation.
+\textbf{GIScience \& Remote Sensing}, Taylor \& Francis, v.~58, n.~4, p.
+  542--561, 2021.}
+
+
+\end{thebibliography}
