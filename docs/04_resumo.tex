@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RESUMO %% obrigatório
+
+\begin{resumo}
+
+%% neste arquivo resumo.tex
+%% o texto do resumo e as palavras-chave têm que ser em Português para os documentos escritos em Português
+%% o texto do resumo e as palavras-chave têm que ser em Inglês para os documentos escritos em Inglês
+%% os nomes dos comandos \begin{resumo}, \end{resumo}, \palavraschave e \palavrachave não devem ser alterados
+
+%\hypertarget{estilo:resumo}{} %% uso para este Guia
+
+Structure:
+GCMs and the need of parameterization, including sub-grid phenomena
+
+Explain about the cold pools and the parameterization
+
+Explain the dissertation’s goal: explore this cold pool parameterization and select the best bulk of features to configure the CPTEC model
+
+How are we going to do it? 
+
+Since we are working with hurricanes propagating in the ocean, we test other parameterization to take into account - How does it work?
+
+Leave a paragraph to insert the results.
+
+
+Inside Global Circulation Models (GCMs), precipitation can be modeled through cloud microphysics or convection schemes. Despite advancements in computational capabilities, computational constraints still imply the need for parameterizations for processes not explicitly resolved at the model's grid-scale.%, especially in Earth System or climate models. 
+
+
+% I need to changes this
+It has been shown that to improve large-scale numerical representation it can be started by improving the sub-grid scale process representation. %For example, a significant way to generate the propagating convection on squall lines, essential for the Amazon rain patterns, is through cold pools, which is the subject matter of this proposal.
+
+
+
+Cold Pools correspond to a cold air mass descending within the downdraft. Recent studies show that cold pools are divided into two structures: the cold and dry centers and a moist ring on the edge. When it reaches the surface, it spreads out horizontally, and the high values of moist static energy on the rings combined with the gust front speed can lift the air thermodynamically and mechanically, respectively. 
+
+The spatial scale of this phenomenon is translated into sub-grid numerical representations inside the GCMs. It has been shown that cold pools can organize the formation of new convective cells, promoting their aggregation and leading to the development of mesoscale convective systems.  
+
+An investigation of the impact of the cold pool parameterization using simulations performed with the Model for Ocean-LaNd-Atmosphere PredictionN (MONAN) is proposed. %The experiments are composed by the 2024 Hurricane Beryl, from June 28 to July 13; and three periods in 2014 over the Amazon Rainforest, each lasting 10 days: the wet season (15–24 FEB), the dry season (01–10 SEP), and the transition from dry to wet (01–10 OCT). Alongside this, an investigation of the performance of the cold pool parameterization during sensitivity test inside the hurricane and over the Amazon diurnal cycle of precipitation aimed to be accomplished. Finally, to quantify the effect of cold pool parameterization on convective organization, the $L_{\text{org}}$ index will be employed. All the results were compared with GPM-IMERG precipitation data and ERA5 data.
+
+% Não fica claro a importância medição da organização convectiva induzida por cold pools.
+
+\palavraschave{%
+	\palavrachave{GCM}%
+        \palavrachave{Cold Pool}%
+	\palavrachave{MONAN}%
+	\palavrachave{Hurricanes}%
+	\palavrachave{Sea Spray}%
+}
+ 
+\end{resumo}
