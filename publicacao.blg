@@ -25,6 +25,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abntex2-options.bib
 Database file #2: ./bib/referencia.bib
+Repeated entry---line 1497 of file ./bib/referencia.bib
+ : @article{li2025generative
+ :                          ,
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -35,44 +39,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 39 entries,
+You've used 52 entries,
             6478 wiz_defined-function locations,
-            1416 strings with 17372 characters,
-and the built_in function-call counts, 35250 in all, are:
-= -- 2620
-> -- 1389
-< -- 115
-+ -- 606
-- -- 396
-* -- 2665
-:= -- 4412
-add.period$ -- 99
-call.type$ -- 40
-change.case$ -- 472
-chr.to.int$ -- 132
-cite$ -- 32
-duplicate$ -- 1887
-empty$ -- 2318
-format.name$ -- 2070
-if$ -- 8407
-int.to.chr$ -- 6
+            1478 strings with 20035 characters,
+and the built_in function-call counts, 46388 in all, are:
+= -- 3444
+> -- 1829
+< -- 134
++ -- 780
+- -- 526
+* -- 3493
+:= -- 5878
+add.period$ -- 148
+call.type$ -- 53
+change.case$ -- 625
+chr.to.int$ -- 159
+cite$ -- 45
+duplicate$ -- 2493
+empty$ -- 3085
+format.name$ -- 2736
+if$ -- 11028
+int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 699
-newline$ -- 198
-num.names$ -- 160
-pop$ -- 811
+missing$ -- 937
+newline$ -- 280
+num.names$ -- 225
+pop$ -- 1114
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 216
 quote$ -- 0
-skip$ -- 2062
+skip$ -- 2634
 stack$ -- 1
-substring$ -- 1543
-swap$ -- 1030
-text.length$ -- 83
+substring$ -- 1991
+swap$ -- 1300
+text.length$ -- 97
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 267
+while$ -- 358
 width$ -- 0
-write$ -- 561
+write$ -- 768
+(There was 1 error message)

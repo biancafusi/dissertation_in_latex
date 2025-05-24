@@ -8,53 +8,6 @@ Our methodology is designed based on three main characteristics of tropical cycl
 All code made for this dissertation is available on the
 \href{https://github.com/biancafusi/Dissertation}{GitHub - Dissertation Repository}, mainly written in Python.
 
-\begin{center}
-\captionof{table}{Key Research Questions for Track, Intensity, and Rainfall Assessment } \label{tab:questions}
- % Título centralizado acima
-\end{center}
-
-\begin{longtable}{p{2.5cm} p{10cm} p{1.5cm}}
-\textbf{Topic} & \textbf{Question} & \textbf{ID} \\
-\hline
-\endfirsthead
-
-\textbf{Topic} & \textbf{Question} & \textbf{ID} \\
-\hline
-\endhead
-
-\multicolumn{3}{r}{\textit{Table continued on next page}} \\
-\endfoot
-
-\hline
-\endlastfoot
-
-Trajectory & What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane's track? & T.1 \\
-& What is the error (in kilometers) associated with these tracks? & T.2 \\
-& Which configuration shows the best performance? & T.3 \\
-& After how many forecast hours do larger deviations begin to appear? & T.4 \\
-& Is there any observable trend in the tracks? & T.5 \\
-& How does the large-scale environment influence these deviations? & T.6 \\
-& What is the overall performance of MONAN? & T.7 \\
-\hline
-Intensity & What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane's intensity? & I.1 \\
-& How much bias is present in these results? & I.2 \\
-& How well does ERA5 perform in reproducing this intensity, and why? & I.3 \\
-& Is there any thermodynamic or mechanical explanation for these trends? & I.4 \\
-& What is the overall performance of MONAN? & I.5 \\
-\hline
-Rainfall & What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane’s rainfall pattern? & R.1 \\
-& In which regions is there a negative (or positive) bias in the rainfall field? & R.2 \\
-& What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane’s cloud morphology? & R.3 \\
-& How much light, moderate, and heavy rainfall is being produced by the simulations? & R.4 \\
-& What is the average rainfall produced by the simulations? & R.5 \\
-& What is the bias between the extreme rainfall produced by the simulations and the reference data? & R.6 \\
-& What is the overall performance of MONAN? & R.7 \\
-\end{longtable}
-
-\begin{center}
-Source: Made by the author (2025).
-\end{center}
-
 %In the following subsections, the approaches and metrics used to evaluate each of these characteristics will be explained in detail. Finally, a workflow diagram will be presented, summarizing the described methods and indicating at which stage each question will be addressed.
 %All code made for this dissertation is available on the git repository: \href{https://github.com/biancafusi/Dissertation}{GitHub - Dissertation Repository} mainly written in Python
 
@@ -93,7 +46,10 @@ The letters in this equation have the same meaning as in the previous equation. 
 
 In the context of our expected findings, negative (positive) values of cross-track errors indicate that the forecasted center of the hurricane is projected to be located to the west (east), while negative (positive) values of along-track errors suggest that the center is slower (faster) than its intended trajectory.
 
-Those errors can be clarified by examining the meteorological fields. Following the approach of \citeonline{gao2023regulating}, analyzing the 700 hPa geopotential height can reveal the large-scale features contributing to the bias in the trackings. For instance, in the authors' study, forecasts displaying significant eastward track bias for tropical cyclones often correspond with a noticeably weaker subtropical high over the North Atlantic. These fields can be computed easily using Python.
+%Those errors can be clarified by examining the meteorological fields. Following the approach of \citeonline{gao2023regulating}, analyzing the 700 hPa geopotential height can reveal the large-scale features contributing to the bias in the trackings. For instance, in the authors' study, forecasts displaying significant eastward track bias for tropical cyclones often correspond with a noticeably weaker subtropical high over the North Atlantic. These fields can be computed easily using Python.
+
+Such errors can be further investigated through the analysis of meteorological fields, as demonstrated by \citeonline{gao2023regulating}. For example, examining the 700 hPa geopotential height can help identify large-scale features that contribute to tracking biases. In their study, forecasts exhibiting a pronounced eastward track bias for tropical cyclones were often associated with a notably weaker subtropical high over the North Atlantic. Although this work does not include such an approach due to time constraints, it represents a different approach for future research and is highlighted here for reference.
+
 
 In conclusion, utilizing a straightforward statistical mean of the errors (specifically the MAE and RMSE) can provide valuable insights into the overall performance of the MONAN simulations. The mean is defined as follows:
 
@@ -112,7 +68,7 @@ To conduct these evaluations, we will analyze time series data that includes the
 
 In addition to a visual comparison, we will create a graph containing the MAE and RMSE to quantify the forecasts and rank them based on their effectiveness in illustrating intensity. Additionally, the mean of those errors can also be computed and compared with ERA5 to give us insights into the general MONAN performance. 
 
-To validate these results, we can examine meteorological fields such as the geopotential height between 850 hPa and 500 hPa, as well as the pressure and wind fields at 850 hPa, to gain insights into the forecast's impact on cyclone movement and intensity; all of the fields can easily be computed using Python. 
+%To validate these results, we can examine meteorological fields such as the geopotential height between 850 hPa and 500 hPa, as well as the pressure and wind fields at 850 hPa, to gain insights into the forecast's impact on cyclone movement and intensity; all of the fields can easily be computed using Python. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Rainfall}
@@ -160,10 +116,12 @@ PDF (Probability Density Function) & Describes the relative likelihood for a var
 \bottomrule
 \end{tabular}
 }
-\vspace{0.3cm}
-\centering
-Source: Made by the author (2025).
+
+\vspace{2mm}
+{\centering Source: Made by the author (2025).\par}
+
 \end{table}
+
 
 The ETS evaluates how well forecasted “yes” events correspond to observed “yes” events, while accounting for agreements due to random chance. According to \citeonline{marchok2007validation}, this implies that the ETS penalizes a model for overproducing rainfall above a given threshold, even if the rainfall pattern is realistic. For this metric, a hit is defined as an event that was forecasted to occur and did occur; a miss is an event that was not forecasted but occurred; and a false alarm is an event that was forecasted but did not occur.
 
@@ -180,11 +138,56 @@ The PDF, similar to a histogram, describes the probability of observing values w
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hurricane Beryl workflow}
 
-The workflow below summarizes and organizes the upcoming steps. After a quick initial analysis, the results will be visually represented as trapezoidal shapes, while discussions will be depicted with rectangular shapes. This distinction helps clarify the types of information being presented at each stage of the process. Following this, the boxes containing question IDs, as outlined in Table~\ref{tab:questions}, related to the three aspects under evaluation (trajectory, intensity, and rainfall) will be also displayed in the workflow.
+With the hurricane Beryl event, the goal is to investigate the cold pool parameterization alongside sensitivity tests, and with those sensitivity tests, select an optimal parameter configuration for the parameterization. 
+
+The table below outlines the questions designed to guide the examination of each characteristic in alignment with the dissertation's objectives. This approach will help refine the discussion and outputs available in the existing literature.
+
+\begin{table}[H]
+	\centering
+	\caption{Key Research Questions for Track, Intensity, and Rainfall Assessment}
+	\label{tab:research_questions}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{lp{11cm}l}
+			\toprule
+			\textbf{Topic} & \textbf{Question} & \textbf{ID} \\
+			\midrule
+			\multirow{6}{*}{Trajectory} 
+			& What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane's track? & T.1 \\
+			& What is the error (in kilometers) associated with these tracks? & T.2 \\
+			& Which configuration shows the best performance? & T.3 \\
+			& After how many forecast hours do larger deviations begin to appear? & T.4 \\
+			& Is there any observable trend in the tracks? & T.5 \\
+			& What is the overall performance of MONAN? & T.6 \\
+			\midrule
+			\multirow{4}{*}{Intensity} 
+			& What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane's intensity? & I.1 \\
+			& How much bias is present in these results? & I.2 \\
+			& How well does ERA5 perform in reproducing this intensity, and why? & I.3 \\
+			& What is the overall performance of MONAN? & I.4 \\
+			\midrule
+			\multirow{7}{*}{Rainfall} 
+			& What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane’s rainfall pattern? & R.1 \\
+			& In which regions is there a negative (or positive) bias in the rainfall field? & R.2 \\
+			& What is the overall performance of the parameterization and sensitivity tests in reproducing the hurricane’s cloud morphology? & R.3 \\
+			& How much light, moderate, and heavy rainfall is being produced by the simulations? & R.4 \\
+			& What is the average rainfall produced by the simulations? & R.5 \\
+			& What is the bias between the extreme rainfall produced by the simulations and the reference data? & R.6 \\
+			& What is the overall performance of MONAN? & R.7 \\
+			\bottomrule
+		\end{tabular}
+	}
+	\label{tab:questions}
+	
+	\vspace{2mm}
+	{\centering Source: Made by the author (2025).\par}
+	
+\end{table}
+
+The workflow below summarizes and organizes the upcoming steps. After a quick initial analysis, the results will be visually represented as trapezoidal shapes, while discussions will be depicted with rectangular shapes. This distinction helps clarify the types of information being presented at each stage of the process. Following this, the boxes containing question IDs, as outlined in Table\ref{tab:questions}, related to the three aspects under evaluation (trajectory, intensity, and rainfall) will be also displayed in the workflow.
 
 \begin{figure}[p]
     \centering
-    \caption{Workflow Overview}
+    \caption{Workflow Overview of Hurricane Berryl}
     \label{fig:workflow}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter4/BERYL_worflow_01.pdf}
 
     \vspace{0.5em}
@@ -196,3 +199,56 @@ The workflow below summarizes and organizes the upcoming steps. After a quick in
 The reader should note that an initial selection of the results will be conducted. As the diagram indicates, a trajectory map will be created, accompanied by distance errors. The selection criteria will focus on experiments that do not contribute significantly to the discussion, either because they are part of a set of similar experiments or due to excessively large errors that do not accurately represent the model state we aim to address.
 
 \section{Hurricane Helene workflow}
+
+Now we aim to test the best configuration alongside the cold pool effect and the highest resolution effect in another hurricane, Helene. Table \ref{tab:questions2} indicates the questions addressed for this investigation and futhermore, a similiar diagram as designed in the previous section were made here.
+
+\begin{table}[H]
+	\centering
+	\caption{Key Research Questions for Track, Intensity, and Rainfall Assessment}
+	\label{tab:research_questions_v2}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{lp{11cm}l}
+			\toprule
+			\textbf{Topic} & \textbf{Question} & \textbf{ID} \\
+			\midrule
+			\multirow{4}{*}{Trajectory} 
+			& What is the overall performance of the optimal configuration found, the parameterization, and the high-resolution effect in reproducing the hurricane's track? & T.1 \\
+			& What is the error (in kilometers) associated with these tracks? & T.2 \\
+			& After how many forecast hours do larger deviations begin to appear? & T.3 \\
+			& Is there any observable trend in the tracks? & T.4 \\
+			\midrule
+			\multirow{2}{*}{Intensity} 
+			& What is the overall performance of the optimal configuration found, the parameterization, and the high-resolution effect in reproducing the hurricane's intensity? & I.1 \\
+			& How much bias is present in these results? & I.2 \\
+			\midrule
+			\multirow{6}{*}{Rainfall} 
+			& What is the overall performance of the optimal configuration found, the parameterization, and the high-resolution effect in reproducing the hurricane’s rainfall pattern? & R.1 \\
+			& In which regions is there a negative (or positive) bias in the rainfall field? & R.2 \\
+			& What is the overall performance of the optimal configuration found, the parameterization, and the high-resolution effect in reproducing the hurricane’s cloud morphology? & R.3 \\
+			& How much light, moderate, and heavy rainfall is being produced by the simulations? & R.4 \\
+			& What is the average rainfall produced by the simulations? & R.5 \\
+			& What is the bias between the extreme rainfall produced by the simulations and the reference data? Do the forecasts capture the extreme event in North Carolina? & R.6 \\
+			\bottomrule
+		\end{tabular}
+	}
+	\label{tab:questions2}
+	
+	\vspace{2mm}
+	{\centering Source: Made by the author (2025).\par}
+	
+\end{table}
+
+\begin{figure}[p]
+	\centering
+	\caption{Workflow Overview of Hurricane Helene}
+	\label{fig:workflow}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter4/HELENE_workflow_02.pdf}
+	
+	\vspace{0.5em}
+	
+	\centering
+	Source: Made by the author (2025).
+\end{figure}
+
+
+
+

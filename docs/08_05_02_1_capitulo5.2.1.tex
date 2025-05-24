@@ -1,7 +1,7 @@
 \subsection{Trajectory}
 
 
-All trajectories are displayed in the Figure~\ref{fig:all_tracks_selected}. The trajectories of each group of the Table~\ref{tab:selected_experiments} can be found at Appendix ().
+All trajectories are displayed in the Figure~\ref{fig:all_tracks_selected}. The trajectories of each group of the Table~\ref{tab:selected_experiments} can be found at Appendix B.
 
 \begin{figure}[!ht]
     \centering
@@ -12,3 +12,92 @@ All trajectories are displayed in the Figure~\ref{fig:all_tracks_selected}. The 
     Source: Made by the author (2025). % Fonte abaixo da imagem
     \label{fig:all_tracks_selected} % Label para referenciar no texto
 \end{figure}
+
+This figure presents a map generated utilizing a tracking algorithm developed by the author. Firstly, the algorithm extracts each point corresponding to the minimum central pressure from the best track data between July 3rd and July 9th, 2024, sweeping a total integration period of 144 hours, with data plotted at 6-hour intervals. Furthermore, the minimum Mean Sea Level Pressure (MSLP) of the MONAN’s forecast and ERA5 reanalysis is extracted within a predefined spatial box surrounding the best track minimum central pressure. For instance, the initial bullet point depicted in dark green (representing NOAA’s best track at approximately 72.5° W) corresponds to the minimum central pressure obtained with the best track on July 3rd (00 UTC), 2024, while the final bullet point in dark green represents the data from July 9th (00 UTC), 2024 (close to 95° W).
+
+At first glance, the reader will notice the observed congruence between the ERA5 reanalysis data and the best track observations. This strong agreement may be attributable to the reanalysis nature (Dulac et al., 2023), which integrates observational datasets throughout the integration period, thereby leading to this expected behaviour.
+
+The CP-ON and CP-OFF experimental configurations exhibit comparable results for the majority of the integration period, with pronounced discrepancies evident near the Texas landfall and around the Yucatán Peninsula. A more detailed examination of these differences is warranted with other metrics. Concerning the cold pool lifetime, a 3-hour interval significantly deteriorates the accuracy of the forecasts. Furthermore, the downdraft maximum height coefficient of 0.50 appears to yield less precise results relative to the default values of 0.35 and 0.25. The trajectory forecasts utilizing a 60 km horizontal resolution demonstrate closer alignment with the reference data, outperforming the 15 km and 30 km horizontal resolutions, with the 60 km configuration exhibiting superior performance. Additionally, forecasts initialized with the GFS (CP-GFS) model appear to underperform in comparison to those initialized with ERA5.
+
+It is observed that when initialization occurs before July 3rd (00 UTC), 2024, a visible degradation in trajectory forecast accuracy ensues. Note that there is a tendency for earlier initialization to result in poorer forecasts, a fact that can be confirmed later on with the MAE and RMSE metrics. This underscores the necessity of incorporating a module within the model to assess ensembles of initial conditions, also in agreement with what is found in the literature \cite{donkin2023capability}.
+
+Finally, the configuration incorporating two parameters that have been changed simultaneously does not reveal significant deviations from the default setup. Overall, the forecasts exhibit a westward bias, a phenomenon that is also apparent in forecasts issued by the Hurricane Analysis and Forecast System (HAFS), as shown at Figure \ref{fig:berryl3rd}.
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Forecast made for Hurricane Beryl starting at July 3rd (00 UTC), 2024, available at the HAFS website} % Título acima da figura
+	\includegraphics[width=\textwidth]{docs/figuras/chapter5/HAFS_trajectory.png} 
+	\vspace{0.5em}
+	Source: \url{https://www.emc.ncep.noaa.gov/HAFS/HAFSEPS/index.php} . % Fonte abaixo da imagem
+	\label{fig:berryl3rd} % Label para referenciar no texto
+\end{figure}
+
+The next panel provides complementary information to the analysis, now in a more quantitative manner. It is important to mention that the time series display the errors after 12h of spin-up, and that value is maintained and the further analysis. In Figure (a), it is possible to better distinguish the differences among the experiments over time. In other words, it shows when each experiment presents lower errors throughout the integration period, along with an initial comparison among them. It is important to note that the vertical line E indicates the moment the hurricane makes landfall on the Yucatan Peninsula, while the vertical line F marks its entry into Texas. In Figure (b), this comparison becomes even clearer, especially because the bars are arranged vertically from the lowest to the highest error (from top to bottom).
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Track errors of the MONAN forecast and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great circle, and (b), the MAE and RMSE calculated from (a).} % Título acima da figura
+	\includegraphics[width=\textwidth]{docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png} 
+	\vspace{0.5em}
+	Source: Made by the author, (2025).  % Fonte abaixo da imagem
+	\label{fig:trackerrors} % Label para referenciar no texto
+\end{figure}
+
+As shown in the previous figure, ERA5 delivers the best track prediction performance. This could be attributed to the fact that ERA5 is a reanalysis product, meaning that observational data assimilation is injected into the model at each integration step. A fairer comparison would require conducting this analysis with another model similar to MONAN, which will be left for future work.
+
+Overall, forecasts tend to show errors below 100 km up to 42 hours of lead time, except for those initialized earlier (CP-29 and CP-02T12). After 60 hours of forecast (two and a half days), some experiments begin to exceed 200 km of error. However, cold pool influence on track prediction only reaches this threshold after 84 hours (three and a half days), and the CP-D025 experiment only reaches it after about 111 hours (four and a half days). Therefore, we observe that with cold pool parameterization, forecast skill is extended by up to two days compared to the configuration without this scheme, for this specific case study.
+
+In the literature, the best forecast limit reported is around 120 hours (five days) \cite{zhou2020prospects}, \cite{sippel2022impacts}. It is worth emphasizing that forecast errors beyond this threshold should be considered “chaotic,” given the nonlinear nature of the system.
+
+The computation of MAE and RMSE provides insights into the overall error behavior in track forecasts. While MAE offers a generalized view of the error, RMSE takes into account the squared deviations, assigning more weight to larger errors at each time step. In general, it is notable that simply enabling the cold pool parameterization (CP-ON) already improved the track forecast, reducing the MAE by approximately 22\% compared to CP-OFF. Furthermore, we observe that tuning the parameters, such as in CP-D025, CP-3H, and modifying the resolution to 60 km (CP-60km), further enhanced this performance.
+
+By observing the Figure \ref{fig:berryl3rd} and Figure \ref{fig:trackerrors}, one could notice the westward deviation in the forecast. The next panel showing the CTE and ATE can confirm this behaviour, at Figure \ref{fig:cte}.
+
+\begin{figure}[!ht]
+	\centering
+	\caption{CTE (a) and ATE (b).} % Título acima da figura
+	\includegraphics[width=\textwidth]{docs/figuras/chapter5/Cross_Track_Along_Track_Errors_FINAL.png} 
+	\vspace{0.5em}
+	Source: Made by the author, (2025).  % Fonte abaixo da imagem
+	\label{fig:cte} % Label para referenciar no texto
+\end{figure}
+
+Overall, most of the forecasts show a negative CTE, meaning there is a leftward (westward) deviation from the observed trajectory, confirming Figure \ref{fig:all_tracks_selected}, which displays all the tracks, and Figure \ref{fig:berryl3rd}. This trend is particularly clear in the CP-02T12 experiment. Since the first hour of the forecast, the CTE is negative, which aligns with the fact that the predicted trajectory is consistently to the left of the observed one.
+
+It is interesting to note that the CTE behavior differs significantly between the CP-ON and CP-OFF experiments. While CP-OFF maintains a positive CTE, CP-ON gradually shifts to a negative CTE as the integration period progresses. Notably, CP-ON begins to deviate leftward after around 72 hours of integration, after passing through the Yucatan Peninsula, whereas in other experiments, such as CP-OFF and CP-D025, this deviation occurs earlier.
+
+Interestingly, despite exhibiting large overall errors (Figure \ref{fig:trackerrors}), the CP-D050 experiment performs better than CP-ON in this metric, as it does not deviate as strongly. This highlights the importance of evaluating forecast performance from multiple perspectives and understanding the sources of these differences, which we will further investigate using meteorological fields.
+
+This westward bias was also noted in the forecasts from both the HAFS (Figure \ref{fig:berryl3rd}) and the UK Met Office  (Figure \ref{fig:metoff}) for Hurricane Beryl.
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Tracking available by the UK Met Office.} % Título acima da figura
+	\includegraphics[width=\textwidth]{docs/figuras/chapter5/MetOffice.png} 
+	\vspace{0.5em}
+	Source: \url{https://www.metoffice.gov.uk/research/weather/tropical-cyclones/verification/seasons/nhem2024.}  % Fonte abaixo da imagem
+	\label{fig:metoff} % Label para referenciar no texto
+\end{figure}
+
+The report \cite{metoffice2024} indicates that the track was forecasted with a notable degree of accuracy throughout the Caribbean region, furthermore, it was observed that there was a left-of-track bias in the forecasts as Beryl progressed into the Gulf of Mexico.
+
+In general, the ATE is positive across all experiments, indicating a consistent tendency for the MONAN model to move faster than observed. Note that ERA5 also displays this trend, though it is not as pronounced as in MONAN.
+
+When comparing CP-ON and CP-OFF, a growing ATE trend is evident in CP-OFF. As the integration period increases, CP-OFF moves increasingly ahead of the observed track, reaching 225 km ahead at 66 hours, whereas CP-ON is only about 150 km ahead at the same time.
+
+The CP-D025 experiment appears to be more in phase with the observations in this metric than CP-ON during most of the forecast period, despite having a greater leftward deviation compared to CP-ON. Despite larger errors in track positioning, the early-initialized forecasts manage to better match the best track in terms of propagation speed. In this case, the forecast initialized with GFS outperformed the forecast initialized with ERA5 during most of the integration period.
+
+A mean error performance of all MONAN forecasts were computed and shown at Figure \ref{fig:monera5}.
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Overall performance of MONAN trajectory forecasts compared with ERA5 reanalysis.} % Título acima da figura
+	\includegraphics[width=\textwidth]{docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_FINAL.png} 
+	\vspace{0.5em}
+	Source: Made by the author (2025).  % Fonte abaixo da imagem
+	\label{fig:monera5} % Label para referenciar no texto
+\end{figure}
+
+In general, the MONAN forecast is approximately 8 times greater than the ERA5 reanalysis. Again, we can infer that it is not a fair comparison between the MONAN forecast and the ERA5 reanalysis, but it is important to notice the error scale to give us insights about improving the MONAN forecast.
+
+

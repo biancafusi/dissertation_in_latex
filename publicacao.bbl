@@ -20,19 +20,27 @@
 \textbf{Atmosphere}, MDPI, v.~12, n.~8, p.~932, 2021.}
 
 
+\bibitem[Brackins e Kalyanapu 2020]{brackins2020evaluation}
+\abntrefinfo{Brackins e Kalyanapu}{BRACKINS; KALYANAPU}{2020}
+{BRACKINS, J.~T.; KALYANAPU, A.~J. Evaluation of parametric precipitation
+  models in reproducing tropical cyclone rainfall patterns.
+\textbf{Journal of Hydrology}, Elsevier, v.~580, p. 124255, 2020.}
+
+
+\bibitem[Center 2024]{fsu_helene2024}
+\abntrefinfo{Center}{CENTER}{2024}
+{CENTER, F. S. U.~C. \textbf{Hurricane Helene Summary Report}. 2024.
+Accessed: 2025-05-24.
+Dispon{\'\i}vel em:
+  <\url{https://climatecenter.fsu.edu/images/docs/Hurricane-Helene-Summary-Report.pdf}>.}
+
+
 \bibitem[DeMaria et al. 2007]{demaria2007evaluation}
 \abntrefinfo{DeMaria et al.}{DEMARIA et al.}{2007}
 {DEMARIA, M.; KNAFF, J.; SAMPSON, C. Evaluation of long-term trends in tropical
   cyclone intensity forecasts.
 \textbf{Meteorology and Atmospheric Physics}, Springer, v.~97, n.~1, p. 19--28,
   2007.}
-
-
-\bibitem[Deshpande et al. 2010]{deshpande2010impact}
-\abntrefinfo{Deshpande et al.}{DESHPANDE et al.}{2010}
-{DESHPANDE, M.; PATTNAIK, S.; SALVEKAR, P. Impact of physical parameterization
-  schemes on numerical simulation of super cyclone gonu.
-\textbf{Natural Hazards}, Springer, v.~55, p. 211--231, 2010.}
 
 
 \bibitem[Ditchek et al. 2023]{ditchek2023improving}
@@ -43,11 +51,36 @@
 \textbf{Weather and Forecasting}, v.~38, n.~6, p. 817--831, 2023.}
 
 
+\bibitem[Donkin e Abiodun 2023]{donkin2023capability}
+\abntrefinfo{Donkin e Abiodun}{DONKIN; ABIODUN}{2023}
+{DONKIN, P.~T.; ABIODUN, B.~J. Capability and sensitivity of mpas-a in
+  simulating tropical cyclones over the south-west indian ocean.
+\textbf{Modeling Earth Systems and Environment}, Springer, v.~9, n.~1, p.
+  527--542, 2023.}
+
+
 \bibitem[Dulac et al. 2024]{dulac2024assessing}
 \abntrefinfo{Dulac et al.}{DULAC et al.}{2024}
 {DULAC, W.; CATTIAUX, J.; CHAUVIN, F.; BOURDIN, S.; FROMANG, S. Assessing the
   representation of tropical cyclones in era5 with the cnrm tracker.
 \textbf{Climate Dynamics}, Springer, v.~62, n.~1, p. 223--238, 2024.}
+
+
+\bibitem[{Encyclopaedia Britannica, Inc.} 2025]{britannica_helene}
+\abntrefinfo{{Encyclopaedia Britannica, Inc.}}{{Encyclopaedia Britannica,
+  Inc.}}{2025}
+{{Encyclopaedia Britannica, Inc.} \textbf{Hurricane Helene}. 2025.
+\url{https://www.britannica.com/event/Hurricane-Helene}.
+Accessed: 2025-05-24.}
+
+
+\bibitem[Feng et al. 2015]{feng2015mechanisms}
+\abntrefinfo{Feng et al.}{FENG et al.}{2015}
+{FENG, Z.; HAGOS, S.; ROWE, A.~K.; BURLEYSON, C.~D.; MARTINI, M.~N.; SZOEKE,
+  S.~P. de. Mechanisms of convective cloud organization by cold pools over
+  tropical warm ocean during the amie/dynamo field campaign.
+\textbf{Journal of Advances in Modeling Earth Systems}, Wiley Online Library,
+  v.~7, n.~2, p. 357--381, 2015.}
 
 
 \bibitem[Freitas et al. 2024]{freitas2024parameterization}
@@ -83,6 +116,23 @@
   parameterization for weather and air quality modeling.
 \textbf{Atmospheric Chemistry and Physics}, Copernicus GmbH, v.~14, n.~10, p.
   5233--5250, 2014.}
+
+
+\bibitem[Gunasekera et al. 2024]{gunasekera2024global}
+\abntrefinfo{Gunasekera et al.}{GUNASEKERA et al.}{2024}
+{GUNASEKERA, R.; ESCUDERO, O.~A. I.; DANIELL, J.~E.; POMONIS, A.; STONE, H.;
+  TOYOS, G.~P.; BRAND, J.; HERNANDEZ, R.~A. R.; CUBAS, D.; WEIL, J.~R. Global
+  rapid post-disaster damage estimation (grade) report: Hurricane beryl
+  2024-saint vincent and the grenadines: Report as of july 26, 2024.
+< bound method Organization. get\_name\_with\_acronym of< Organization:
+  World~…, 2024.}
+
+
+\bibitem[Haerter et al. 2018]{haerter2018reconciling}
+\abntrefinfo{Haerter et al.}{HAERTER et al.}{2018}
+{HAERTER, J.~O.; B{\"O}ING, S.~J.; HENNEBERG, O.; NISSEN, S.~B. Reconciling
+  cold pool dynamics with convective self-organization.
+\textbf{arXiv preprint arXiv:1810.05518}, 2018.}
 
 
 \bibitem[Heming 2017]{heming2017tropical}
@@ -149,6 +199,21 @@
 \textbf{Monthly Weather Review}, v.~141, n.~10, p. 3576--3592, 2013.}
 
 
+\bibitem[Li et al. 2025]{li2025generative}
+\abntrefinfo{Li et al.}{LI et al.}{2025}
+{LI, Z.; TAN, Z.-M.; BAI, L. Generative deep learning reconstructs tropical
+  cyclone microwave data from geostationary infrared radiometers.
+\textbf{Authorea Preprints}, Authorea, 2025.}
+
+
+\bibitem[Luitel et al. 2018]{luitel2018verification}
+\abntrefinfo{Luitel et al.}{LUITEL et al.}{2018}
+{LUITEL, B.; VILLARINI, G.; VECCHI, G.~A. Verification of the skill of
+  numerical weather prediction models in forecasting rainfall from us
+  landfalling tropical cyclones.
+\textbf{Journal of hydrology}, Elsevier, v.~556, p. 1026--1037, 2018.}
+
+
 \bibitem[Marchok et al. 2007]{marchok2007validation}
 \abntrefinfo{Marchok et al.}{MARCHOK et al.}{2007}
 {MARCHOK, T.; ROGERS, R.; TULEYA, R. Validation schemes for tropical cyclone
@@ -172,13 +237,13 @@
   Germany, v.~16, p. 137--142, 2008.}
 
 
-\bibitem[Mishra et al. 2024]{mishra2024characteristics}
-\abntrefinfo{Mishra et al.}{MISHRA et al.}{2024}
-{MISHRA, A.~K.; JANGIR, B.; KHAIN, P.; STROBACH, E. Characteristics of the
-  mediterranean cyclone ianos in convection-permitting simulations: Unraveling
-  model sensitivity to microphysics and cumulus parameterization.
-\textbf{Journal of Geophysical Research: Atmospheres}, Wiley Online Library,
-  v.~129, n.~23, p. e2024JD041637, 2024.}
+\bibitem[{Met Office} 2024]{metoffice2024}
+\abntrefinfo{{Met Office}}{{Met Office}}{2024}
+{{Met Office}. \textbf{Observed and forecast tracks: northern hemisphere 2024}.
+  2024.
+Accessed: 2025-05-24.
+Dispon{\'\i}vel em:
+  <\url{https://www.metoffice.gov.uk/research/weather/tropical-cyclones/verification/seasons/nhem2024}>.}
 
 
 \bibitem[Mitchell 2005]{mitchell2005community}
@@ -203,6 +268,23 @@
   Meteorological Society of Japan, v.~87, n.~5, p. 895--912, 2009.}
 
 
+\bibitem[{National Hurricane Center} 2024]{nhc_helene2024}
+\abntrefinfo{{National Hurricane Center}}{{National Hurricane Center}}{2024a}
+{{National Hurricane Center}. \textbf{Hurricane Helene Advisory Number 9}.
+  2024.
+Accessed: 2025-05-24.
+Dispon{\'\i}vel em:
+  <\url{https://www.nhc.noaa.gov/archive/2024/helene/helene_advisory_09.pdf}>.}
+
+
+\bibitem[{National Hurricane Center} 2024]{nhc_helene20241}
+\abntrefinfo{{National Hurricane Center}}{{National Hurricane Center}}{2024b}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Tropical Cyclone Report: Hurricane
+  Helene (AL092024)}.
+[s.n.], 2024. Acesso em: 24 maio 2025. Dispon{\'\i}vel em:
+  <\url{https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf}>.}
+
+
 \bibitem[Nyongesa et al. 2024]{nyongesa2024influence}
 \abntrefinfo{Nyongesa et al.}{NYONGESA et al.}{2024}
 {NYONGESA, A.~M.; SHI, D.; LI, S.; LI, Q. Influence of convective
@@ -219,6 +301,14 @@
   n.~10, p. 1871--1884, 2022.}
 
 
+\bibitem[Sakaeda e Torri 2023]{sakaeda2023observed}
+\abntrefinfo{Sakaeda e Torri}{SAKAEDA; TORRI}{2023}
+{SAKAEDA, N.; TORRI, G. The observed effects of cold pools on convection
+  triggering and organization during dynamo/amie.
+\textbf{Journal of Geophysical Research: Atmospheres}, Wiley Online Library,
+  v.~128, n.~17, p. e2023JD038635, 2023.}
+
+
 \bibitem[Shepherd e Walsh 2017]{shepherd2017sensitivity}
 \abntrefinfo{Shepherd e Walsh}{SHEPHERD; WALSH}{2017}
 {SHEPHERD, T.~J.; WALSH, K.~J. Sensitivity of hurricane track to cumulus
@@ -226,6 +316,14 @@
   cyclones: Impact of convective asymmetry.
 \textbf{Meteorology and Atmospheric Physics}, Springer, v.~129, p. 345--374,
   2017.}
+
+
+\bibitem[Sippel et al. 2022]{sippel2022impacts}
+\abntrefinfo{Sippel et al.}{SIPPEL et al.}{2022}
+{SIPPEL, J.~A.; WU, X.; DITCHEK, S.~D.; TALLAPRAGADA, V.; KLEIST, D.~T. Impacts
+  of assimilating additional reconnaissance data on operational gfs tropical
+  cyclone forecasts.
+\textbf{Weather and Forecasting}, v.~37, n.~9, p. 1615--1639, 2022.}
 
 
 \bibitem[Skamarock et al. 2012]{skamarock2012multiscale}
@@ -236,6 +334,14 @@
 \textbf{Monthly Weather Review}, v.~140, n.~9, p. 3090--3105, 2012.}
 
 
+\bibitem[Vogel et al. 2021]{vogel2021climatology}
+\abntrefinfo{Vogel et al.}{VOGEL et al.}{2021}
+{VOGEL, R.; KONOW, H.; SCHULZ, H.; ZUIDEMA, P. A climatology of trade-wind
+  cumulus cold pools and their link to mesoscale cloud organization.
+\textbf{Atmospheric Chemistry and Physics}, Copernicus Publications
+  G{\"o}ttingen, Germany, v.~21, n.~21, p. 16609--16630, 2021.}
+
+
 \bibitem[Yang et al. 2024]{yang2024evaluation}
 \abntrefinfo{Yang et al.}{YANG et al.}{2024}
 {YANG, S.; SURRATT, M.; WHITCOMB, T.~R.; CAMACHO, C. Evaluation of imerg and
@@ -244,12 +350,12 @@
   e2023GL106414, 2024.}
 
 
-\bibitem[Zarzycki et al. 2021]{zarzycki2021metrics}
-\abntrefinfo{Zarzycki et al.}{ZARZYCKI et al.}{2021}
-{ZARZYCKI, C.~M.; ULLRICH, P.~A.; REED, K.~A. Metrics for evaluating tropical
-  cyclones in climate data.
-\textbf{Journal of Applied Meteorology and Climatology}, v.~60, n.~5, p.
-  643--660, 2021.}
+\bibitem[Zhou e Toth 2020]{zhou2020prospects}
+\abntrefinfo{Zhou e Toth}{ZHOU; TOTH}{2020}
+{ZHOU, F.; TOTH, Z. On the prospects for improved tropical cyclone track
+  forecasts.
+\textbf{Bulletin of the American Meteorological Society}, v.~101, n.~12, p.
+  E2058--E2077, 2020.}
 
 
 \bibitem[Zhou e Matyas 2021]{zhou2021regionalization}

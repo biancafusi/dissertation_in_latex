@@ -19,15 +19,37 @@
 \backcite {nakanishi2009development}{{10}{3.2}{table.3.3}}
 \backcite {iacono2008radiative}{{10}{3.2}{table.3.3}}
 \backcite {mitchell2005community}{{10}{3.2}{table.3.3}}
-\backcite {skamarock2012multiscale}{{12}{3.2}{figure.3.2}}
-\backcite {moon2021five}{{16}{4.1}{section.4.1}}
-\backcite {ditchek2023improving, nyongesa2024influence}{{16}{4.1}{section.4.1}}
-\backcite {ditchek2023improving, nyongesa2024influence}{{16}{4.1}{section.4.1}}
-\backcite {gao2023regulating}{{17}{4.1}{figure.4.1}}
-\backcite {demaria2007evaluation, landsea2013atlantic}{{18}{4.2}{section.4.2}}
-\backcite {demaria2007evaluation, landsea2013atlantic}{{18}{4.2}{section.4.2}}
-\backcite {shepherd2017sensitivity, heming2017tropical}{{18}{4.2}{section.4.2}}
-\backcite {shepherd2017sensitivity, heming2017tropical}{{18}{4.2}{section.4.2}}
-\backcite {marchok2007validation}{{19}{4.3}{section.4.3}}
-\backcite {mesinger2008bias}{{19}{4.3}{section.4.3}}
-\backcite {marchok2007validation}{{20}{4.3}{table.4.3}}
+\backcite {skamarock2012multiscale}{{11}{3.2}{figure.3.2}}
+\backcite {moon2021five}{{15}{4.1}{section.4.1}}
+\backcite {ditchek2023improving, nyongesa2024influence}{{15}{4.1}{section.4.1}}
+\backcite {ditchek2023improving, nyongesa2024influence}{{15}{4.1}{section.4.1}}
+\backcite {gao2023regulating}{{16}{4.1}{figure.4.1}}
+\backcite {demaria2007evaluation, landsea2013atlantic}{{17}{4.2}{section.4.2}}
+\backcite {demaria2007evaluation, landsea2013atlantic}{{17}{4.2}{section.4.2}}
+\backcite {shepherd2017sensitivity, heming2017tropical}{{17}{4.2}{section.4.2}}
+\backcite {shepherd2017sensitivity, heming2017tropical}{{17}{4.2}{section.4.2}}
+\backcite {marchok2007validation}{{18}{4.3}{section.4.3}}
+\backcite {mesinger2008bias}{{18}{4.3}{section.4.3}}
+\backcite {marchok2007validation}{{19}{4.3}{table.4.1}}
+\backcite {gunasekera2024global}{{25}{5.1}{figure.5.1}}
+\backcite {li2025generative}{{27}{5.1}{figure.5.2}}
+\backcite {li2025generative}{{28}{5.1}{figure.5.4}}
+\backcite {donkin2023capability}{{36}{5.2.1}{figure.5.8}}
+\backcite {zhou2020prospects}{{38}{5.2.1}{figure.5.10}}
+\backcite {sippel2022impacts}{{38}{5.2.1}{figure.5.10}}
+\backcite {metoffice2024}{{39}{5.2.1}{figure.5.12}}
+\backcite {dulac2024assessing}{{41}{5.2.2}{figure.5.14}}
+\backcite {marchok2007validation}{{44}{5.2.3.1}{subsubsection.5.2.3.1}}
+\backcite {brackins2020evaluation}{{44}{5.2.3.1}{subsubsection.5.2.3.1}}
+\backcite {luitel2018verification}{{44}{5.2.3.1}{subsubsection.5.2.3.1}}
+\backcite {li2025generative}{{44}{5.2.3.1}{subsubsection.5.2.3.1}}
+\backcite {sakaeda2023observed}{{49}{5.2.3.1}{figure.5.22}}
+\backcite {freitas2024parameterization}{{49}{5.2.3.1}{figure.5.22}}
+\backcite {haerter2018reconciling}{{49}{5.2.3.1}{figure.5.22}}
+\backcite {feng2015mechanisms}{{49}{5.2.3.1}{figure.5.22}}
+\backcite {vogel2021climatology}{{49}{5.2.3.1}{figure.5.22}}
+\backcite {nhc_helene2024}{{64}{6.1}{figure.6.1}}
+\backcite {fsu_helene2024}{{64}{6.1}{figure.6.1}}
+\backcite {britannica_helene}{{64}{6.1}{figure.6.3}}
+\backcite {nhc_helene20241}{{65}{6.2}{figure.6.2}}
+\backcite {nhc_helene20241}{{66}{6.1}{table.6.1}}
