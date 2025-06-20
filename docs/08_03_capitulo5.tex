@@ -12,7 +12,7 @@ Hurricane Beryl formed in the deep tropical Atlantic’s Main Development Region
 
 \begin{figure}[h!]
 	\centering
-	\caption{2024 Hurricane path according to best track analysis}
+	\caption{2024 Hurricane path according to best track analysis.}
 	\label{fig:hurricanepath}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter5/beryl_2024.png}
 	\centering
 	Source: Made by the author (2025).
@@ -24,7 +24,7 @@ The first landfall of Hurricane Beryl occurred on the island of Carriacou in Gre
 
 \begin{figure}[h!]
 	\centering
-	\caption{Hurricane Beryl view from the GEOCOLOR composite (left) and Band 13 (right) when passing through the first landfall}
+	\caption{Hurricane Beryl view from the GEOCOLOR composite (left) and Band 13 (right) when passing through the first landfall.}
 	
 	\begin{minipage}{.48\textwidth}
 		\centering
@@ -46,7 +46,7 @@ The storm began to weaken before making a second landfall on the Yucatán Penins
 
 \begin{figure}[h!]
 	\centering
-	\caption{500 mb Geopotential Height and MSLP at July 8th, 00:00 UTC}
+	\caption{500 mb geopotential height and MSLP on July 8th, 00 UTC}
 	\label{fig:mlsp}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter5/beryl02l.png}
 	\centering
 	Source: \url{https://storm.aoml.noaa.gov/viewer/?projectName=BASIN}.
@@ -56,7 +56,7 @@ At approximately 4 AM CDT on July 8th (09:00 UTC on July 8th), the hurricane mad
 
 \begin{figure}[h!]
 	\centering
-	\caption{HB view from NEXRAD (top) and GEOCOLOR composite (bottom) when reaching the Texas Coast.}
+	\caption{Hurricane Beryl view from NEXRAD (top) and GEOCOLOR composite (bottom) when reaching the Texas Coast.}
 	\label{fig:nexradgeocolor}
 	\includegraphics[width=0.8\textwidth]{docs/figuras/chapter5/20240708-0814Z-HGX.png}
 	\vspace{3mm}
@@ -74,7 +74,7 @@ Based on this overview of the storm, Figure 4 has been created to illustrate the
 
 \begin{figure}[h!]
 	\centering
-	\caption{Spatial Domain of Hurricane Beryl's Development and Trajectory.}
+	\caption{Spatial domain of Hurricane Beryl's development and trajectory.}
 	\label{fig:spatialdomainberyl}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter5/map_with_cat_path.png}
 	\centering
 	Source: Made by the author (2025).
@@ -92,7 +92,7 @@ By the workflow sequence, we will begin by addressing the selection process. Tab
 
 \begin{table}[H]
 	\centering
-	\caption{All performed experiments}
+	\caption{All performed experiments at Hurricane Beryl period.}
 	\label{tab:experiments_long}
 	\renewcommand{\arraystretch}{1.2}
 	\resizebox{\textwidth}{!}{
@@ -150,7 +150,7 @@ The “ID” column serves as a reference for the names of the experiments. It i
 
 \begin{table}[H]
 	\centering
-	\caption{Default values for the cold pool parameterization scheme}
+	\caption{Default values for the cold pool parameterization scheme.}
 	\label{tab:cp_def}
 	\renewcommand{\arraystretch}{1.2}
 	\resizebox{\textwidth}{!}{
@@ -174,9 +174,6 @@ The “ID” column serves as a reference for the names of the experiments. It i
 	{\centering Source: Made by the author (2025).\par}
 \end{table}
 
-
-
-
 We investigate the impact of cold pools by enabling (CP-ON) and disabling (CP-OFF) the parameterization, with CP-OFF serving as the control experiment in this case. In the subsequent rows, we conducted a sensitivity analysis on the parameters within the parameterization. Now our control experiment is the CP-ON configuration, with the Table \ref{tab:cp_def} parameters. For the “Initial Condition Day” experiment, we varied the initial integration times: June 29 (00 UTC), 2024; July 1 (00 UTC), 2024; and July 2 (12 UTC), 2024 - comparing them with the default time. These periods were selected because they correspond to key moments in the storm’s evolution: shortly after HB was classified as a tropical storm, one day before it reached Category 5, and the day it reached Category 5, respectively.
 
 The “Cold Pool Lifetime” was adjusted from the default to durations of 1 hour, 3 hours, and 6 hours. The height of the mass flux above the surface is described by a parabolic function, and the coefficient of this function can be manipulated to alter the maximum height, with lower (higher) values indicating proximity (distance) to the surface. The “Type of Initial Condition” was switched from ERA5 to GFS, both initialized on July 3 (00 UTC), 2024.
@@ -187,7 +184,7 @@ Keeping this in mind, Figure~\ref{fig:all_tracks_before} shows all the trajector
 
 \begin{figure}[!htb]
     \centering
-    \caption{Comparison of Storm Tracks Across All 15 Experiments} % Título acima da figura
+    \caption{Comparison of storm tracks across all 15 experiments, ERA5, and the best track dataset.} % Título acima da figura
     \includegraphics[width=\textwidth]{docs/figuras/chapter5/ALL_tracks_before_filter.png} % Substitua pelo caminho e extensão correta
     \vspace{0.5em}
     
@@ -199,7 +196,7 @@ As one can see in Figure~\ref{fig:all_tracks_before}, the numerous experiments c
 
 \begin{figure}[!htb]
     \centering
-    \caption{Errors (distance) between the trajectories} % Título acima da figura
+    \caption{Errors (distance) between the trajectories.} % Título acima da figura
     \includegraphics[width=\textwidth]{docs/figuras/chapter5/panel_2x2_error_comparison.png} % Substitua pelo caminho e extensão correta
     \vspace{0.5em}
     
@@ -217,7 +214,7 @@ To summarize the experiments we intend to keep, a new table has been created, si
 
 \begin{table}[H]
 	\centering
-	\caption{Selected experiments}
+	\caption{Selected experiments to be conducted during the Hurricane Beryl period.}
 	\label{tab:selected_experiments}
 	\renewcommand{\arraystretch}{1.2}
 	\resizebox{\textwidth}{!}{

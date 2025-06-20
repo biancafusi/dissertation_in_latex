@@ -23,12 +23,59 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 11417 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: ./bib/referencia.bib
-Repeated entry---line 1497 of file ./bib/referencia.bib
+Repeated entry---line 569 of file ./bib/referencia.bib
+ : @article{sawada2010impacts
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 609 of file ./bib/referencia.bib
+ : @article{cai2019effect
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 743 of file ./bib/referencia.bib
+ : @article{sawada2010impacts
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 809 of file ./bib/referencia.bib
+ : @article{cai2019effect
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 853 of file ./bib/referencia.bib
+ : @article{eastin2012surface
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 875 of file ./bib/referencia.bib
+ : @article{barnes1983mesoscale
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1301 of file ./bib/referencia.bib
+ : @article{arakawa2011toward
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1443 of file ./bib/referencia.bib
+ : @article{torri2015mechanisms
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1507 of file ./bib/referencia.bib
+ : @article{grell2002generalized
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2227 of file ./bib/referencia.bib
+ : @article{skamarock2012multiscale
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2415 of file ./bib/referencia.bib
  : @article{li2025generative
  :                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 2467 of file ./bib/referencia.bib
+ : @article{feng2015mechanisms
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "emanuel1994large"
+Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -39,45 +86,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 52 entries,
+You've used 91 entries,
             6478 wiz_defined-function locations,
-            1478 strings with 20035 characters,
-and the built_in function-call counts, 46388 in all, are:
-= -- 3444
-> -- 1829
-< -- 134
-+ -- 780
-- -- 526
-* -- 3493
-:= -- 5878
-add.period$ -- 148
-call.type$ -- 53
-change.case$ -- 625
-chr.to.int$ -- 159
-cite$ -- 45
-duplicate$ -- 2493
-empty$ -- 3085
-format.name$ -- 2736
-if$ -- 11028
-int.to.chr$ -- 7
+            1686 strings with 26715 characters,
+and the built_in function-call counts, 80876 in all, are:
+= -- 6102
+> -- 3016
+< -- 262
++ -- 1219
+- -- 880
+* -- 6014
+:= -- 10298
+add.period$ -- 273
+call.type$ -- 92
+change.case$ -- 1039
+chr.to.int$ -- 296
+cite$ -- 84
+duplicate$ -- 4519
+empty$ -- 5465
+format.name$ -- 4438
+if$ -- 19204
+int.to.chr$ -- 8
 int.to.str$ -- 3
-missing$ -- 937
-newline$ -- 280
-num.names$ -- 225
-pop$ -- 1114
+missing$ -- 1640
+newline$ -- 516
+num.names$ -- 420
+pop$ -- 1996
 preamble$ -- 1
-purify$ -- 216
+purify$ -- 371
 quote$ -- 0
-skip$ -- 2634
+skip$ -- 4383
 stack$ -- 1
-substring$ -- 1991
-swap$ -- 1300
-text.length$ -- 97
+substring$ -- 3724
+swap$ -- 2312
+text.length$ -- 192
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 358
+while$ -- 678
 width$ -- 0
-write$ -- 768
-(There was 1 error message)
+write$ -- 1430
+(There were 12 error messages)

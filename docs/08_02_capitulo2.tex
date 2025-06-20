@@ -1,27 +1,409 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{LITERATURE REVIEW}
-\label{ch:convection}
 
-% Theoretical Framework
-% Current State of Knowledge
-% Research Gaps
-% Key Concepts and Definitions
-
-
-%General aspects for understanding the Cold Pool (CP) phenomenon and its modeling aspects are presented in this chapter. Starting with the general convective structure, we provide a glimpse of atmospheric convection to characterize better the main features involved with CPs. The development of CPs and interaction features are explained next, focusing on Cloud Resolving Models (CRMs) and observational information. These features are crucial for understanding how CPs can trigger and organize new convection, subsequently upscaling them into Mesoscale Convective Systems (MCSs). Further on, a brief review of the Mass-Flux approach and the CP parameterization is outlined. Some aspects of the CP interacting with the selected study cases are described, to elucidate CP interacting with Hurricanes and their presence over the Amazon Basin. Finally, we conclude with the chosen convective organization metric.
+This chapter begins with an overview of the conceptual framework of an air parcel that evolves into a convective cloud, highlighting the mechanical and thermodynamic processes involved in this transformation (Section 2.1). One of the outcomes of convection is the formation of cold pools, which are discussed in detail in Section 2.2. Since this dissertation is intrinsically linked to atmospheric modeling, in particular the modeling of convective processes, a description of the cold pool parameterization is provided in Section 2.3, along with a brief explanation of the Grell-Freitas parameterization coupling, addressed in Section 2.4. Given that one of the objectives of this study is to assess the impact of this parameterization in hurricane case studies, Section 2.5 provides an overview of the main characteristics of the hurricanes analyzed, as well as key aspects of cold pools within. Finally, Section 2.6 summarizes the main points discussed in this chapter, which serve as a foundation for the analyses presented in the following chapters.
 
 \section{Overview of convective cloud dynamics}
 
+In convective cloud dynamics, various complex analyses can be employed, yet some may potentially reveal theoretical gaps. To address this situation, \citeonline{muller2020response} offer a simplified view of the stages in the convective cloud life cycle, which can be condensed in the following paragraphs. It is essential to understand that in convective clouds, convection is the prevailing process shaping the cloud's state. We refer to a convective cloud as a type of cloud that exhibits vertical development, such as cumulonimbus clouds.
+
+Convection is the transport of sensible and latent heat from hotter and more humid areas to cooler and drier areas, being one of the three primary methods of heat transfer, alongside radiation and conduction. The focus, when meteorologists refer to convection, is on the fluid movement and transport associated with buoyancy.
+
+Buoyancy is defined as a force created by a temperature (or virtual temperature) difference. For example, inside a pan containing boiling water, the water next to the bottom is hotter than the upper water layers. Heated water below starts to rise, popping up on the top (boiling). The buoyant force causes the warmer water below to rise and float upward because of the temperature differences. When rising, the water carries the energy accumulated at the bottom, leading it to the upper layers, which means it is occurring convection inside the pan. One can state that buoyancy defines convection because it must contain a temperature gradient that will lead the heat to low-energy areas.
+
+The example of boiling water in a pan is a simplified representation of the atmosphere. In the atmosphere, an air parcel rises due to sunlight heating the Earth's surface. The surface will be hotter than the atmosphere above, leading to a temperature gradient, and then, the air near the surface will start to rise (float), transporting that energy. When this happens, one can say that the floating air has positive buoyancy. 
+
+Summarizing, buoyancy is the property that induces the transport mechanism responsible for carrying heat, moisture, and momentum from the surface to the atmosphere and is one of the main agents for cloud formation.
+
+The upward movement also carries near-surface water vapor and many other tracers in the form of gases and particulates. The vertical air current formed is called an updraft and is an important mechanism that maintains the clouds. Then, adiabatic expansion (expansion ideally without energy loss) causes the rising moist air to cool as the pressure drops at higher altitudes. At a certain height, temperature and pressure continuously decrease, allowing the water vapor to condense (become saturated), depending on temperature. That level in the atmosphere is called the Lifting Condensation Level (LCL). Those tiny suspended condensates form a visible cloud. 
+
+When a moistened air parcel holds sufficient buoyancy to exceed the negatively buoyant barrier imposed by its environment, it proceeds to ascend until it reaches a state of free buoyancy, known as the Level of Free Convection (LFC). The buoyant barrier is defined as the Convective Inhibition Energy (CIN), which is the energy that is required to be given to the air parcel for its initial movement from the surface to the LCL. So, if the CIN is high, the air parcel will not reach the LCL and thus cannot form a cloud. 
+
+Above the LFC, the air parcel continues to rise because it no longer has the CIN to obstruct the rise. If the air parcel is rising, then it has positive buoyancy. A practical measure of the total possible buoyant energy in an environment is the convective available potential energy (CAPE). The bigger the CAPE values, means bigger the buoyancy is, leading the air parcel to higher vertical levels. Notably, deep convection can occur when an air parcel contains large values of CAPE and either values of CIN are small or the presence of some synoptic systems, which may act as a trigger to release the energy, or both.
+
+Now, the air parcel is free to rise until the inside density matches the environmental density, and the cloudy air is no longer buoyant - this stage is also described as the mature stage of cloud formation. The two leftmost images in Figure \ref{fig:cloudstages} illustrate this process.
+
+\begin{figure}[htbp]
+	\centering
+	\caption{Cloud stages of formation.} % Título acima
+	\includegraphics[width=1\textwidth]{docs/figuras/chapter2/cloud_evolution_muller.pdf} 
+	\label{fig:cloudstages}
+	\vspace{0.5em}
+	
+	\centering
+	Source: \cite{muller2020response}.
+\end{figure}
+
+When a deep convective cloud reaches zero buoyancy in the higher troposphere, it means that the environmental density is equal to the cloud density. Therefore, the equilibrated densities form a barrier-like structure at upper levels of the troposphere, then making the upper-level air spread horizontally, forming what's known as an anvil (see anvil shape at the rightmost image on Figure\ref{fig:cloudstages}). Inside the cloud, microphysical processes take part and describe how the condensed droplets and ice crystals grow. Eventually, when they are large enough, they start to precipitate and fall toward the ground.
+
+The precipitation may partially evaporate \citeonline{mallinson2019investigation}, changing the local thermodynamics, specifically, the amount of latent heat decreases. As some air evaporates, it creates a cold air mass (due to the lack of latent heat), known as a \textbf{cold pool} (CP; see the rightmost image on Figure \ref{fig:cloudstages}), that descends in a downward movement and spreads horizontally at the surface. These downward motions, known as downdrafts, counteract the original updraft motion that started the convective cloud storm, thereby ending the cloud life cycle. Although both play significant roles in cloud dynamics, it has to be recognized that, in consequence of the larger particle size, the evaporation of water in a downdraft can virtually never be complete or as efficient as its condensation in an updraft \cite{kessler1982thunderstorm}.
+
+To understand cold pools, which are the subject matter of this dissertation, some physical quantities are relevant in such a process and were described in this section. Downdrafts and buoyancy are crucial to understanding cold pools' dynamics. When the downdraft reaches the surface, the air mass spreads horizontally at a certain high speed; this phenomenon is called the gust front and can play a significant role in forming new clouds. One could define CP as a negatively buoyant air mass, due to its vertical motion from the upper atmosphere to the surface. Being part of the general deep convection structure, the next section will discuss how those quantities interact to form and organize new convection.
+
 \section{Cold pools}
+
+In the previous section, we outlined the location and formation process of a cold pool. As discussed, this phenomenon relies on key elements such as evaporation and significant downdrafts within convective clouds, which can lead to the development of new convective cells through gust front lifting or due to the thermodynamic properties.
+
+The lifting mechanisms described in the previous sentence have been a longstanding issue. Initially, when cold pool studies started, as so-called density currents, the prevailing belief was that the triggering mechanism for initiating new convection involved the linear momentum (mechanical energy) at the edge of the cold pool \cite{weisman2004theory}, \cite{emanuel1994atmospheric}. It was believed that this process mechanically elevated the air above the boundary layer until it reached the LFC, thus triggering a new cycle of convection. However, according to Tompkins 2001, in scenarios of deep convection over oceans with low vertical wind shear, the mechanism through which convectively induced cold pools initiate new deep convective cells differs significantly from the previously assumed dynamical lifting role. Instead, initiation is attributed to thermodynamic lifting due to anomalies in heat and moisture, leading to a reduction in CIN at the periphery of the cold pool.
+
+In \cite{tompkins2001organization}, the formation of cold pools is detailed, outlining three distinct phases of its development as analyzed through a Cloud-Resolving Model (CRM) over tropical oceans. These phases are characterized by conditions of limited large-scale wind shear (low wind shear) and a homogeneous underlying sea surface temperature. In the initial phase, a deep convective tower emerges, causing the sub-cloud layer \footnote{} beneath the convection to cool and become moistened by precipitation evaporation. This process generates water vapor in the air, which already contains high equivalent potential temperature ($\theta _e$) values. The cooling effect creates a negative buoyancy, resulting from the latent heat consumption during the phase transformation from rain to water vapor, occurring even before the convective downdraft reaches the boundary layer. The temperature ($\theta _e$) is held constant, assuming an adiabatic saturated process. Figure \ref{fig:stagescoldpool} shows this initial stage, where water vapor perturbations peak while temperature perturbations remain low.
+
+\begin{figure}[htbp]
+	\centering
+	\caption{Stages of cold pool development in a low wind shear environment.} % Título acima
+	\includegraphics[width=1\textwidth]{docs/figuras/chapter2/cold_pool_evolution_tompkins.png} 
+	\label{fig:stagescoldpool}
+	\vspace{0.5em}
+	
+	\centering
+	Source: \cite{tompkins2001organization}.
+\end{figure}
+
+The second stage begins during the mature phase of a convective cell, when the downdraft (tendency to destroy cloud) propels the negative buoyancy air to the edges of the CP and injects cold and dry air into the center, providing two sources of negative buoyancy to the boundary layer, as shown in Figure \ref{fig:stagescoldpool}-(B). Simultaneously, the moist band (water vapor) is transported with a negative buoyancy along the periphery of the recently formed CP, establishing low water vapor in the middle and, conversely, high perturbations around. An intriguing characteristic of the CP structure is the distinct thermal and moisture conditions within its confines; the inner region is drier and colder than the edges, a consequence of the rain evaporation and downdraft's injection into the boundary layer.
+
+In the dissipation phase of convective cells, cirrus cloud-type persists, as indicated in Figure \ref{fig:stagescoldpool}-(C). In its final stage on the ground, the CP comes into contact with surface winds, increasing them, and the differences in surface-boundary layer \footnote{"A layer of air of order tens of meters thick adjacent to the ground where mechanical (shear) generation of turbulence exceeds buoyant generation or consumption". Source:https://glossary.ametsoc.org/wiki/Surface\_boundary\_layer, acessed on 06/19/2025} conditions begin to raise both temperature and moisture content, due to the enhancement of surface fluxes promoted by the increasing surface winds. However, entrainment \footnote{"In meteorology, the mixing of environmental air into a preexisting organized air current so that the environmental air becomes part of the current". Source: https://glossary.ametsoc.org/wiki/Entrainment, acessed on 06/19/2025} from the upper boundary layer - upper arrows on Figure \ref{fig:stagescoldpool} - comes drier and hotter than the downdraft injection, making the moisture content delayed while tending to elevate the temperature at the center of CP. In other words, temperature recovers more quickly than moisture does inside the CP. Alongside this entrainment, sensible and latent heat begin to recover the surface temperature and moisture at the CP's edges. At the edge, CIN is then reduced as the temperature increases and the moist air tends to lift until it reaches the LCL. Simultaneously, while most of the cold pool regions exhibit considerable CIN, it diminishes to nearly zero as one moves towards the edges. This reduction occurs precisely in the areas where the largest CAPE values are observed. Therefore, the highest CAPE values within the domain are notably linked to the outer extents of the cold pools. Eventually, with low values of CIN, high values of CAPE, and moist air, it will trigger new convection, making the cold pools former's convective clouds.
+
+Alongside \citeonline{tompkins2001organization}, studies by \citeonline{feng2015mechanisms} highlight a colder and drier center, exhibiting significantly lower MSE than the edge. This distinct feature, consistently observed across CRM studies \cite{langhans2015origin, torri2015mechanisms, fuglestvedt2020cold}, involves a separation of CP properties into the core and the edge. This distinction plays a significant role in understanding trigger mechanisms. The debate on whether the origin of anomalous moisture or MSE is by rain evaporation, surface fluxes, or preexisting moisture anomalies from previous cold pools remains unresolved.
+
+For example, in a more recent study by \citeonline{langhans2015origin}, Large Eddy Simulation (LES) techniques were utilized to model the ascent of individual cumulus clouds within a tropical oceanic atmosphere, and the vapor sources were studied using passive and active tracers of water vapor mass. This investigation aimed to seek a physical explanation of the origin of the moisture at the rings of elevated specific humidity observed at the leading edges of CPs. The primary objective was to elucidate the factors contributing to specific humidity perturbations within cold pools. Figure \ref{fig:decomposition} illustrates the decomposition of this perturbation.
+
+\begin{figure}[htbp]
+	\centering
+	\caption{Decomposition of the specific humidity perturbation.} % Título acima
+	\includegraphics[width=1\textwidth]{docs/figuras/chapter2/rings_surface_romps.jpg} 
+	\label{fig:decomposition}
+	\vspace{0.5em}
+	
+	\centering
+	Source: \cite{langhans2015origin}.
+\end{figure}
+
+According to the authors, surface latent heat fluxes are the primary cause for ring-shaped water vapor anomalies inside the leading edge of a cold pool, while the evaporation of the rain below the cloud base is secondary in their simulations, complementing the study conducted by \citeonline{tompkins2001organization}.
+
+As stated by \citeonline{tompkins2001organization}, \citeonline{feng2015mechanisms} and \citeonline{torri2015mechanisms} argue that lifting is not solely caused by mechanical aspects as previously thought \cite{emanuel1994large}; convection can also be thermodynamically triggered by the accumulation of moisture around the edges of cold pools (the moisture rings).
+
+In their study, \citeonline{torri2015mechanisms} proposes a method based on Lagrangian tracking to disentangle the signatures of both forcings (mechanically and thermodynamically) and quantify their significance in a given environment. This study considers simulations of radiative-convective equilibrium over the ocean. The results were assorted by considering the accelerations of the particles from the time they acquired positive vertical velocity in the subcloud layer until they reached their LFC. Thus, it indicates that parcels can reach the LFC through a combination of both forces, with each dominating at different stages of the ascent. The authors concluded that mechanical forcing plays a crucial role in lifting parcels from the surface, which occurs for younger cold pools ($< 4$h), while thermodynamic forcing reduces the inhibition encountered by parcels at the convective inhibition layer, which occurs for fully developed cold pools.
+
+Besides triggering convection, CPs are responsible for organizing it. Simulations conducted by \citeonline{feng2015mechanisms} in warm tropical oceans demonstrated that when colliding CPs, the convection formed exhibited longer lifetimes, larger spatial extents, and increased intensity compared to that generated by isolated CPs. According to the authors, the organization induced by intersecting cold pols relies on two factors: the enhanced secondary updraft velocities resulting from stronger outflows (stronger gust-fronts) and due to the moister local environment being created by the CP complex. 
+
+Secondary updraft velocities are defined in this study as the upward movement on the CP edge that lifts the air, forming new convective clouds. On the other hand, the proximity of large clouds along the boundaries of intersecting cold pools, due to collision, creates a moister local environment, reducing dry entrainment and increasing the likelihood of cloud development into deep convection. This process, referred to as Moist Air Entrainment, is currently a topic of research. Figure \ref{fig:feng-organization} illustrates the authors' perspective.
+
+\begin{figure}[htbp]
+	\centering
+	\caption{How do cold pools organize convection?.} % Título acima
+	\includegraphics[width=1\textwidth]{docs/figuras/chapter2/feng_organization.jpg} 
+	\label{fig:feng-organization}
+	\vspace{0.5em}
+	
+	\centering
+	Source: \cite{feng2015mechanisms}.
+\end{figure}
+
+The authors also highlight the role of isolated cold pools in organizing convection (Figure \ref{fig:feng-organization}-a). In brief, as precipitation-driven downdrafts occur, moist environmental air is injected into the boundary layer outward upon contacting the surface, creating what are known as gust fronts. Subsequently, cold pools elevate this relatively moist environmental air from the surface, leading to the formation of new convective clouds along the boundaries of the cold pool. As these convective clouds develop, their growth is constrained by the entrainment of dry air from the upper boundary layer, particularly when they are small in size and the spacing between them is large.
+
+Up to this point, we have discussed the composition of a cold pool, particularly in low wind shear environments (oceanic). We have explored the mechanisms associated with cold pools that are responsible for initiating new convection and their role in organizing this phenomenon. In the next section, we will begin the discussion regarding the cold pool parameterization based on previous ideas for this kind of parameterization, followed by the parameterization by \citeonline{freitas2024parameterization}, the subject matter of this work.
 
 \section{The mass-flux approach}
 
+Over the past few years, several schemes have been developed to represent the effect of cold pools within global circulation models and convection-permitting models.
+
+\cite{grandpeix2010density} introduce the concepts of available lifting energy (ALE) and available lifting power (ALP) to address the influence of wakes (addressed by the authors as the lifting effects created by circular cold pools) in triggering and sustaining new convective cells. The parameterization was coupled into a global circulation model (GCM). The continuation of this research (colocar aqui a ref da parte 2) examines two case studies within a single-column framework: one over the Sahel in West Africa and the other over the West Pacific Ocean during the TOGA COARE period. The study also investigates the sensitivity of basic parameters within this parameterization. Additionally, a review of the earlier literature on cold pool parameterization can be provided by checking the references within this paper.
+
+Del Genio (2015) investigates the impacts of entrainment, rain evaporation, downdrafts, and cold pools with the Goddard Institute for Space Studies (GISS) Model E2 GCM. In this study, the authors modified the baseline parameterization configurations of the GCM to explore these various atmospheric phenomena. Notably, in the context of cold pools, they developed an experimental parameterization to represent weakly entraining convection in a manner that is more physically grounded compared to traditional stronger-entrainment models. 
+
+The approach conceptualizes cold pools from the perspective of the boundary layer: a less-entraining plume does not form until a time step after the entry of downdraft air into the boundary layer. This downdraft air must possess a virtual potential temperature that is cooler than the ambient air, along with a mass that constitutes at least 5\% of the boundary layer mass. Upon these conditions being met, a cold pool is defined, with its depth evolution governed by the additional downdraft mass introduced in subsequent time steps and the horizontal spread rate of the cold pool. Once the downdrafts cease, a given plume remains viable if the environmental air that is lifted to the altitude of the cold pool's upper boundary becomes buoyant, persisting until the thermodynamic properties of the cold pool converge with those of the surrounding boundary layer. Concerning the Madden-Julian Oscillation (MJO), the authors identified that the prior parameterization was generating a less-entraining plume with insufficient frequency, prompting enhancements to the downdraft and cold pool specifications to better understand their influence on MJO dynamics.
+
+The results indicate that the initial cold pool simulation closely resembles the output of the stronger-entrainment model; however, it exhibits several improvements, including more pronounced and realistic rainfall anomalies during the final week of the hindcast and a marginally slower propagation speed. On the other hand, simulations utilizing increased downdraft rates and enhanced cold pool dynamics yielded a degradation in MJO performance, characterized by a tendency towards faster propagation, diminished rainfall anomalies in the concluding week of the hindcast, and less suppressed conditions in the initial week centered over the central to eastern Indian Ocean.
+
+More recently, \citeonline{hirt2021cold} designed a cold pool parameterization scheme, named the cold pool perturbation (CPP), in a convection-permitting model, that focuses on increasing the vertical velocity at the simulated gust fronts driven by cold pools. The idea behind CPP is briefly described as follows. A target vertical velocity scale for fully resolved gust fronts was derived using dimensional analysis and similarity theory, based on buoyancy gradients at cold pool boundaries. This scale provides a physically based estimate of the vertical velocity that should be present at gust fronts. The CPP scheme applies perturbations to the vertical velocity tendency in the gust front region, relaxing the model vertical velocity towards the target on a specified time scale. To confine perturbations to appropriate locations, the scheme uses local criteria based on strong virtual potential temperature gradients, vertical velocity thresholds, orographic filtering, and horizontal smoothing to identify cold pool gust fronts where the perturbations should be applied. Sensitivity tests were also performed to calibrate the parameters within the parameterization.
+
+The results demonstrate that the CPP scheme modestly strengthens cold pool gust fronts by increasing vertical velocities at about 1 km height compared to the reference simulation. This enhancement leads to more frequent, larger, and more intense cold pools. The CPP scheme notably increases precipitation amounts, especially during the afternoon and evening when cold pools are more prevalent. Precipitation cells become stronger, larger, and more organized, often forming line structures or clusters, with these effects amplified at higher perturbation amplitudes. An additional effect of the CPP scheme is the strengthening of sea breeze fronts, which are similar to density currents and can also trigger convection. This leads to earlier and more intense convection near coastal areas, better matching radar observations. Although the CPP scheme has improved most measures for the quality of the forecast convection, the improvements are modest, and the differences to the observed properties of convection remain large according to the authors.
+
+This parameterization is constrained to models that explicitly address cold pools and deep convection (with dx < 10 km). In conclusion, the authors propose alternative sources of convective initiation that, like cold pools, are not fully captured in models. Addressing these sources could potentially yield improved results, particularly when the parameterizations are coupled together.
+
+\citeonline{rooney2022c} created a scheme that represents the lifecycle and effects of convective cold pools (named C-POOL). This approach is grounded in similarity modelling of gravity currents, which provides approximations for the propagation and evolution of cold pools.
+
+Firstly, there is an identification of cold pools, characterized by primary properties such as depth scale and reduced gravity scale, which relate to the temperature deficit of the cold pool relative to the environment. The scheme is forced by the downdraught (downdraft) mass flux per unit area at cloud base, obtained from the convection scheme in the Met Office Unified Model (UM). This downdraught forcing provides the initial input to generate cold pools at the grid scale. The scheme prognoses cold pool properties such as buoyancy and depth, and models their interaction and decay over time. An ensemble average radius is used to approximate the front position of cold pools, enabling the model to function without tracking individual cold pool fronts explicitly. 
+
+The scheme allows for cold pools to propagate, interact, and merge within the model domain, which is demonstrated through idealized tests showing the evolution of cold pool properties and their collisions. The prognostic variables from the cold pool scheme feed back into the convection parameterization in the UM. These feedbacks affect convective diagnosis, initiation from the boundary layer, parcel ascent buoyancy, and entrainment rates, thereby influencing the convective lifecycle and improving the representation of tropical rainfall, especially the diurnal cycle. The scheme includes various parameters and coefficients, which have been tuned to physically reasonable values through model development and testing. Also, the scheme has been tested in global climate model configurations, showing improvements in the timing of the diurnal peak of tropical precipitation.
+
+With this brief overview of cold pool parameterizations, we will now discuss the cold pool parameterization employed in this study.
+
+\citeonline{freitas2024parameterization}, in the context of coarse-resolution atmospheric models, designed a parameterization that simplifies the cold pool phenomenon while focusing on the essential characteristics of gust front properties that trigger and organize new convection. The authors concentrated on the gust front and the associated moist rings, without explicitly considering the sub-grid regions populated by cold pools. They also noted the need for a prognostic equation for the moisture static energy (MSE) anomalies, which would help initiate stronger new convection. Additionally, they suggested that the gust front propagation should be treated diagnostically.
+
+To better understand the environment surrounding cold pools, initial Cloud Resolving Model (CRM) simulations were conducted. Specifically, these simulations utilized the BRAMS regional atmospheric modeling system (Freitas 2017) over an extensive portion of the Amazon Basin. A definition of the cold pool enclosure was established and divided into two thermodynamically distinct parts: an inner dry and cold region surrounded by moist rings. A filter was then created to highlight this notable feature, discriminating areas prone to forge (positive MSE anomalies) and inhibit (negative MSE anomalies) convection. The filter follows essentially two criteria: (i) if the near-surface vertical velocity is >0.1 $ms^{-1}$ and the subsequent 30 min accumulated precipitation is >4 mm => may indicate a region of positive MSE deviation or the region of the moist rings and just the outer region of the cold pools; (ii) if the vertical velocity is < - 0.1 $ms^{-1}$ and the previous 30 min precipitation is > 4 mm, then it may indicate a region of negative MSE deviation or the cold pool inner region \cite{freitas2024parameterization}. After the filter application in the dataset, figure \ref{fig:moistrings} was produced within the whole domain and temporal range (48 hr).
+
+\begin{figure}[htbp]
+	\centering
+	\caption{PDFs of the inner core and moist rings that compose the cold pool.} % Título acima
+	\includegraphics[width=0.7\textwidth]{docs/figuras/chapter2/MSE_PDF_freitas2024.png} 
+	\label{fig:moistrings}
+	\vspace{0.5em}
+	
+	\centering
+	Source: \cite{freitas2024parameterization}.
+\end{figure}
+
+By analyzing this result, one can deduce that there is a positive MSE anomaly linked to the outer regions of the cold pools, which drive new convection, while a negative anomaly corresponds to the inner parts of the cold pool, where it primarily originates from the downdraft. 
+
+These observations prompted the authors to create a new parameter that encapsulates these MSE anomaly characteristics: a new three-dimensional positive-definite scalar field referred to as buoyancy excess, defined as the difference between the MSE from the downdraft $(H_d)$ and the environmental one $\tilde H$:
+
+\begin{equation}
+	\beta_x = -(H_d-\tilde H)
+\end{equation}
+
+It is assumed that the negative value of the MSE deficit $(beta_x)$ in the inner part of the cold pool approximates the MSE excess in the moist rings.
+
+Following the narrative by \citeonline{freitas2024parameterization}, the next step is to provide formulations for the gust front velocity, including the MSE anomalies information, translated with the $\beta_x$ parameter. According to the authors, the gust front horizontal speed is then given by:
+
+\begin{equation}
+	V_{gf}=\kappa \left( \int_{0}^{D} \frac{1}{1+\gamma } \frac{\beta _x}{c_p \widetilde{T}}\, gdz\right)^{1/2}
+	\label{eq:equation1}
+\end{equation}
+
+where $\kappa$ is the internal Froude number, $\widetilde{T}$ is the environmental air temperature, $g$ is the gravity acceleration, $c_p$ the specific heat of dry air, $z$ the height and $\gamma$ is defined on \citeonline{arakawa1974interaction} \footnote{For this dissertation, the equation available in \citeonline{arakawa1974interaction} is given by: 
+	$\gamma \equiv \frac{L}{c_p} \left( \frac{\partial \bar{q}^*}{\partial \bar{T}} \right)_{\bar{p}}
+	$.}
+
+Further, the vertical velocity at the cold pool edge is defined as:
+
+\begin{equation}
+	W_{gf}=\kappa \left( \int_{0}^{D} \frac{1}{1+\gamma } \frac{\beta _x}{c_p \widetilde{T}}sin^2 \alpha \, gdz\right)^{1/2}
+\end{equation}
+
+Here, the $\alpha$ represents the slope angle of the cold pool head, and the $D$ parameter is the depth of the cold pool.
+
+In the \citeonline{freitas2024parameterization} formulation, the CP propagates only in the horizontal direction, following the terrain. To do this is defined first the mean cloud layer horizontal velocity, considering the atmospheric pressure $p$ and the $(u,v)_{env}$ the horizontal environment wind:
+
+\begin{equation}
+	(u,v)_{mel}=\frac{1}{p_2 - p_1} \int_{p_1}^{p_2} (u,v)_{env} \, dp
+\end{equation}
+
+Finally, the two-dimensional propagation velocity of the gust front is given by:
+
+\begin{equation}
+	(u,v)_{prop} = (u,v)_{mel}+\frac{V_{gf}}{|(u,v)_{mel}|} (u,v)_{mel} - 0.6(u,v)_{env}
+\end{equation}
+
+Hence, it is possible to create a prognostic equation that governs the time evolution of the MSE anomalies on the CP edges, in other words, an equation for $\beta _x$:
+
+\begin{equation}
+	\frac{\partial \beta _x}{\partial t} = -(u,v)_{prop} \cdot \nabla \beta _x + \text{dif}(\beta _x) + \delta _d \beta _x - \frac{\beta _x}{\tau _{cp}}
+\end{equation}
+
+On the right side of the equation above, the first term represents two-dimensional advection, while the second term denotes diffusion. The third term corresponds to a source primarily resulting from the downdraft detrainment mass flux $(delta_d)$, and the final term represents a sink associated with processes other than mixing with the environment, which is calculated based on the lifetime of the cold pool. Figure \ref{fig:cpgustfront} ilustrates the quantaties discussed above.
+
+\begin{figure}[htbp]
+	\centering
+	\caption{A cold pool gust front and its associated parameters.} % Título acima
+	\includegraphics[width=1\textwidth]{docs/figuras/chapter2/cold_pool_equations_scheme.pdf} 
+	\label{fig:cpgustfront}
+	\vspace{0.5em}
+	
+	\centering
+	Source: Conceptualized by the author based on \cite{droegemeier1987numerical}; illustrated by Arthur Schelbauer Neto (2025).
+\end{figure}
+
+Note that the entire process takes place within a grid cell (dx).
+
 \section{The cold pool parameterization}
 
-\section{Hurricanes - a model forecast view}
+The previous parameterization was designed to be coupled within a model, not necessarily with a convection parameterization. However, for this study, we again followed the approach made by Freitas 2024 and coupled it with the Grell-Freitas convection parameterization \cite{grell2014scale, freitas2018assessing}.
+
+A parameterization for convection essentially has a closure and a trigger function \cite{emanuel1994atmospheric}. Therefore, the authors opted for a single closure for convection, originally proposed by Bechtold et al. (2014), which combines the stability removal formulation with the non-equilibrium diurnal cycle. The closure, which determines the updraft mass flux at the cloud base, can be stated as:
+
+\begin{equation}
+	\text{mass flux} \propto \frac{A}{Gamma}
+\end{equation}
+
+In this context, let A represent the cloud work function and $\Gamma$ denote the convective adjustment timescale. A comprehensive examination of this methodology, in conjunction with the Grell-Freitas scheme, is presented in the work of \citeonline{freitas2020gf}. The formulation of the cloud work function, incorporating the effects of the cold pool, is now articulated as follows:
+
+\begin{equation}
+    A = \int_{p_1}^{p_2} \frac{1}{{c_p}\tilde T} \cdot \frac{Z_u}{1 + \gamma} (H_u - \tilde H*)gdz
+\end{equation}
+
+As first defined by \citeonline{arakawa1974interaction} and introduced by \citeonline{grell2002generalized} at \citeonline{grell2014scale}, the cloud work function is an integral measure of the buoyancy force. The integral is computed from the height of the cloud base $(z\_b)$ to cloud top $(z\_t)$, and the buoyancy force here is represented by the difference between updraft and environment-saturated MSE ($H_u$ and $\tilde H*$, respectively). The gravity acceleration g, $c_p$ the specific heat of dry air, $Z_u$ is the normalized updraft mass flux, $\tilde T$ is the environment air temperature, and gamma is the same as equation \ref{eq:equation1}. 
+
+The presence of the cold pools, or more specifically, the presence of the moist ring at the leading edge of the cold pools, is inside the updraft MSE:
+
+\begin{equation}
+	{H_u}(z_b) = \tilde H(z_b) + \beta_x
+\end{equation}
+
+So now, this remaining MSE at the gust front serves as an additional buoyancy source, besides the unsaturated environment MSE.
+
+In addition to the energy available to cause air parcels to rise, the moisture at the cloud base must be defined to provide the necessary conditions for the intensification of mass flux, following this approach. This is done through the following equation:
+
+\begin{equation}
+	{q_u}(z_b) = \tilde q(z_b) + \frac{\beta_x}{L_v}
+\end{equation}
+
+Putting into words, the above equation gives us the water vapor mixing ratio $q_u(z_b)$ in the updraft at the cloud base. Note that the entire MSE available at the gust front is now expressed in the form of water vapor (see last term in the equation) and then summed with the environmental water vapor.
+
+The second effect in the parameterization, regarding this closure approach, is the modification made at the convective adjustment time scale:
+
+\begin{equation}
+	\Gamma = \int_{z_b}^{z_t} \frac{dz}{w_u(z)}
+\end{equation}
+
+Where $w_u$ is the sub-grid scale updraft vertical velocity. Therefore, it is directly impacted by the vertical velocity at the gust front leading edge, serving also as a boundary condition for the sub-grid scale updraft velocity:
+
+\begin{equation}
+	{w_u(z_b)} = W_{gf}
+\end{equation}
+
+In a nutshell, in this closure, when in tandem with the moist rings generated by the cold pools (i.e., the MSE provided and the vertical velocity at the cold pool leading edge), it can provide a stronger cloud work function and a short convective adjustment time scale, producing at the end a intense updraft mass flux at the cloud base.
+
+Finally, a new trigger function was proposed by \citeonline{freitas2024parameterization} to be incorporated into the configuration of the Grell-Freitas convection parameterization. The idea is to represent the property of gust fronts to generate new convection based on the vertical velocity at the edges of these gust fronts. Thus, in energetic terms, the kinetic energy of the air parcels associated with this phenomenon is quantified as follows:
+
+\begin{equation}
+	{E_k} = \frac{1}{2}{W^2}_{gf}
+\end{equation}
+
+And then, the convection in a model column is triggered when:
+
+\begin{equation}
+	{E_k} = |min(A_{cin},0)|
+\end{equation}
+
+Where \( A_{cin} \) is the cloud work function as previously defined, but now indicates the energy required for air parcels to surpass a potential convective inhibition layer that caps the Planetary Boundary Layer. This is defined as an integral from the source level of the air parcels to the cloud base.
+
+To summarize and illustrate the aspects covered in this section, while providing a sense of continuity between the equations, the Figure \ref{fig:illustrationcoupling} was created.
+
+\begin{figure}[htbp]
+	\centering
+	\caption{An illustration about the coupling behaviour between the cold pool parameterization and the convection parameterization described.} % Título acima
+	\includegraphics[width=1\textwidth]{docs/figuras/chapter2/coupling_equations_scheme.pdf} 
+	\label{fig:illustrationcoupling}
+	\vspace{0.5em}
+	
+	\centering
+	Source: Conceptualized by the author; illustrated by Arthur Schelbauer Neto (2025).
+\end{figure}
+
+In brief, this parameterization conveys the energy that enables convection (both mechanically and thermodynamically) along its edges. This energy is used to overcome the convective inhibition barrier (CIN), allowing the formation of a new convective cell at a later time, represented in the figure as timestep t+1. The energy from the cold pools is considered necessary to trigger new convection if the condition $E_K > A_CIN$ is satisfied. To meet the imposed closure, the convective adjustment timescale $(\Gamma)$ is defined as a function of the vertical velocity of the parcel at the gust front edge (\ref{fig:illustrationcoupling} on the left), and the cloud work function is established based on the parameters generated within the cloud $(H_u)$. Additionally, moisture will be higher depending on the amount of available MSE anomaly (\ref{fig:illustrationcoupling} on the right).
+
+\section{Hurricanes}
+
+For the reader to understand why hurricanes are used as a case study for this work, it is essential to clarify key aspects of these storms. Initially (Section 2.5.1), we introduce tropical cyclones by presenting fundamental concepts, such as their classification, including the definition of the term "hurricane," and the processes involved in their formation. Additionally, we define key terms that are crucial for understanding the role of cold pools in these storms, particularly in terms of their structure. Finally, connecting with the broader theme of this dissertation, Section 2.5.2 reviews the existing literature that explores the relationship between tropical cyclones and cold pools.
+
+\subsection{Tropical cyclone basics, concepts, and structure}
+
+Tropical cyclones are intense, organized systems characterized by closed low-pressure centers that form over tropical or subtropical oceanic waters \cite{houze2010clouds, perez2021performance, feng2022modeling}. These systems are referred to as hurricanes in the North Atlantic, typhoons in the North Pacific, and cyclones in the South Pacific and Indian Ocean basins. Despite regional naming differences, they all represent the same atmospheric phenomenon \cite{houze2010clouds, wmo_classification_tropical_cyclones_2023} .
+
+Their classification throughout the life cycle is primarily based on sustained wind intensity. A system is classified as a tropical depression when the maximum sustained wind speed is less than 63 km/h (< 17 m/s). It becomes a tropical storm once this value exceeds 63 km/h (18–32 m/s). When wind speeds surpass 116 km/h (> 33 m/s), the system is classified as a tropical cyclone (Houze, 2010; WMO, 2025). After reaching this threshold, the Saffir-Simpson Hurricane Wind Scale is commonly used to further categorize the cyclone’s intensity. Table XX presents the classification, including potential damage descriptions associated with each category. Note the addressed name “hurricanes” because it refers to a tropical cyclone happening in the North Atlantic Ocean Basin.
+
+\begin{table}[H]
+	\centering
+	\caption{Saffir-Simpson Hurricane Wind Scale: Categories and Associated Damage}
+	\label{tab:hurricane_categories}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{c>{\centering\arraybackslash}p{4.5cm}>{\centering\arraybackslash}p{11cm}}
+			\textbf{Category} & \textbf{Sustained Winds} & \textbf{Types of Damage Due to Hurricane Winds} \\
+			
+			1 & 
+			mph: 74–95 \newline
+			kt: 64–82 \newline
+			km/h: 119–153 & 
+			\textcolor{red}{Very dangerous winds will produce some damage:} Well-constructed frame homes could have damage to roof, shingles, vinyl siding, and gutters. Large branches of trees will snap and shallowly rooted trees may be toppled. Extensive damage to power lines and poles likely will result in power outages that could last a few to several days. \\
+			
+			2 & 
+			mph: 96–110 \newline
+			kt: 83–95 \newline
+			km/h: 154–177 & 
+			\textcolor{red}{Extremely dangerous winds will cause extensive damage:} Well-constructed frame homes could sustain major roof and siding damage. Many shallowly rooted trees will be snapped or uprooted and block numerous roads. Near total power loss is expected with outages that could last from several days to weeks. \\
+			
+			3 (major) & 
+			mph: 111–129 \newline
+			kt: 96–112 \newline
+			km/h: 178–208 & 
+			\textcolor{red}{Devastating damage will occur:} Well-built framed homes may incur major damage or removal of roof decking and gable ends. Many trees will be snapped or uprooted, blocking numerous roads. Electricity and water will be unavailable for several days to weeks after the storm passes. \\
+			
+			4 (major) & 
+			mph: 130–156 \newline
+			kt: 113–136 \newline
+			km/h: 209–251 & 
+			\textcolor{red}{Catastrophic damage will occur:} Well-built framed homes can sustain severe damage with loss of most of the roof structure and/or some exterior walls. Most trees will be snapped or uprooted and power poles downed. Fallen trees and power poles will isolate residential areas. Power outages will last weeks to possibly months. Most of the area will be uninhabitable for weeks or months. \\
+			
+			5 (major) & 
+			mph: 157 or higher \newline
+			kt: 137 or higher \newline
+			km/h: 252 or higher & 
+			\textcolor{red}{Catastrophic damage will occur:} A high percentage of framed homes will be destroyed, with total roof failure and wall collapse. Fallen trees and power poles will isolate residential areas. Power outages will last for weeks to possibly months. Most of the area will be uninhabitable for weeks to months. \\
+		\end{tabular}
+	}
+	\vspace{2mm}
+	\label{tab:saffirsimpson}
+	{\centering Source: Adapted from the National Hurricane Center (NOAA, 2025).\par}
+\end{table}
+
+The formation of a tropical cyclone requires a delicate combination of environmental factors. According to NOAA (2025), the main conditions associated with tropical cyclogenesis include sea surface temperatures of at least 27°C, extending to a depth of approximately 46 meters; an atmosphere that cools sufficiently with height, creating instability for moist convection; the presence of moist air in the mid-troposphere (around 4,900 meters); a minimum distance of about 480 km from the equator, ensuring sufficient Coriolis force; a pre-existing near-surface disturbance, such as an easterly wave; low vertical wind shear (less than 37 km/h) between the surface and upper troposphere.
+
+These conditions collectively create an environment conducive to the organization and intensification of deep convection, necessary for a cyclone to develop. However, even when all these factors are present, not all disturbances evolve into tropical cyclones, indicating that the genesis process still involves complex and not fully understood dynamics \cite{perez2021performance}.
+
+Once developed, tropical cyclones exhibit a relatively symmetric and coherent structure when observed in mature stages. As succinctly articulated by \citeonline{houze2010clouds} and comprehensively examined by \citeonline{lin2022tropical}, the system typically consists of a warm core low-pressure center at the surface; a clearly defined eye, characterized by subsidence and clear skies; an intense eyewall, where the strongest winds and deepest convection occur; spiral rainbands, extending outward from the center, containing a mix of convective and stratiform precipitation. Figure \ref{fig:hurricanestruct} illustrates the canonical structure of a mature tropical cyclone.
+
+\begin{figure}[htbp]
+	\centering
+	\caption{Illustration of a hurricane structure.} % Título acima
+	\includegraphics[width=1\textwidth]{docs/figuras/chapter2/tropical_cyclones_structure.pdf} 
+	\label{fig:hurricanestruct}
+	\vspace{0.5em}
+	
+	\centering
+	Source: \url{https://www.britannica.com/science/tropical-cyclone}
+\end{figure}
+
+Vertically, tropical cyclones extend through most of the troposphere and exhibit strong upward motion in the eyewall, counterbalanced by subsiding air in the eye. Inflow at low levels converges toward the center and rises in the eyewall, while outflow diverges near the tropopause \cite{lin2022tropical}.
+
+Outside the core region, spiral rainbands play an essential role in transporting heat, moisture, and momentum throughout the cyclone. These bands are organized into inner and outer rainbands based on their radial distance from the storm center \cite{lin2022tropical, barnes1983mesoscale, frank1977structure}.
+
+Rainbands are composed of both convective cells and stratiform regions, often aligned in alternating patterns. Convective updrafts dominate in active cells, whereas downdrafts, especially those driven by evaporative cooling, occur within decaying convection and stratiform areas. These downdrafts can generate the cold pools. According to \citeonline{sawada2010impacts, sawada2010impacts2}, the cold pools can modify the local environment and influence the triggering of new convection within the rainbands. This behavior creates a dynamic feedback loop between downdraft-induced cold pools and the organization of convection, which plays a significant role in the structure and evolution of the tropical cyclone. As will be discussed in the following section, these interactions are fundamental to understanding propagation and intensification mechanisms within the cyclone and represent an active area of research.
+
+\subsection{The role of cold pools in tropical cyclones}
+
+Although cold pools (CPs) have been widely studied in the context of both midlatitude and tropical convective systems, their influence within tropical cyclones (TCs), particularly mature hurricanes in the North Atlantic basin, remains underexplored. As highlighted in the literature review presented by \citeonline{sawada2010impacts2}, relatively few observational studies have documented cold pool behavior inside TCs, due to difficulties in capturing a three-dimensional structure of cold pools. Among the observational efforts to study this phenomena, \citeonline{eastin2012surface} offered a detailed analysis of common kinematic and themodynamic cold pool structures in the outer rainbands of Tropical Storm Hanna (2008), suggesting "that cold pool formation, structure, and evolution depend on several multiscale processes, which can be difficult to simultaneously observe", alongside cold pool effects within the rainband organization and longevity.
+
+Given that background, idealized simulations are needed to investigate such a process. While these studies lack the complexity of real-case scenarios, they provide valuable insights into the possible mechanisms by which cold pools interact with tropical convection and vortex dynamics.
+
+For instance, \citeonline{sawada2010impacts2} conducted idealized numerical simulations to explore the formation and evolution of rainbands in tropical cyclones, emphasizing the role of cold pool dynamics. Their results indicate that the rainband characteristics observed in their simulations are more strongly governed by cold pool processes than by mechanisms proposed in earlier studies. Specifically, the development of rainbands is initiated through upstream convective cell generation (a parcel that was ascending vertically due to vertical wind at the cold pool leading edge), triggered by interactions between cold pools and low-level inflow regions with high equivalent potential temperature. This mechanism leads to the formation of spiral-shaped rainbands that propagate radially outward, aligned with the azimuthally averaged streamlines extending from the surface up to the top of the planetary boundary layer. These behaviors closely resemble observed radar echo patterns, according to the authors. Furthermore, the authors argue that cold pool dynamics may have implications not only for storm structure but also for improving forecasts of tropical cyclone tracks and intensity.
+
+In a similar context, \citeonline{cai2019effect} investigated cold pools located just outside the eyewall of tropical cyclones and their role in the formation of inner rainbands. Using idealized simulations, the study revealed that these eyewall cold pools differ markedly from those typically observed in outer rainbands. They are generated by the evaporation of precipitation falling from the eyewall into a surrounding dry air layer, resulting in arc-shaped cold pools that are often larger and more persistent than those in the outer core. These cold pools rotate cyclonically around the storm center, with varying shapes and intensities, and propagate more slowly than the background low-level flow. Importantly, the authors propose a new thermodynamic and dynamic mechanism for inner rainband formation: as the cold pool interacts with the low-level inflow, it decelerates the flow, enhances convergence, and induces upward motion at its leading edge, ultimately triggering new convection and the development of inner rainbands. Moreover, the study identifies a relationship between the intensity of the eyewall cold pool and the overall intensity of the tropical cyclone, indicating that “when the TC has moderate strength, the eyewall cold pool is well deﬁned and strong; it then weakens as the TC intensiﬁes”.
+
+Conversely, in the idealized simulations conducted by \citeonline{grant2018coldpools}, which examined cold pool dynamics within tropical oceanic convective systems, the authors found that weakening cold pools led to more intense convection. This result was explained through the use of passive tracers, which revealed that strong cold pools introduce negatively buoyant air into developing updrafts, thereby reducing their strength through entrainment. When cold pools are weaker, this negative buoyancy effect is diminished, allowing updrafts to intensify. Interestingly, despite the increased convective strength, the simulations showed that the propagation speed and mesoscale organization of the systems were largely insensitive to the strength of the cold pools. Instead, the study identified gravity waves as the primary modulators of system propagation and mesoscale structure. According to the authors, these findings suggest that while cold pools can influence convective intensity, other processes, such as gravity wave dynamics, may play a more dominant role in shaping the organization and movement of tropical convective systems.
+
+Moving beyond idealized experiments, \citeonline{chen2014fengshen} used the WRF model in combination with radar observations to investigate the effects of cold pools under more realistic conditions during Typhoon Fengshen (2008). The study identified a strong cold pool associated with a large stratiform precipitation region, which played a crucial role in maintaining ongoing convective development. According to the authors, this process occurs when warm and moist air with high equivalent potential temperature converges with the leading edge of the cold pool. This interaction generates low-level convergence and upward motion, favoring the continuous formation of new convective cells. As a result, the presence and persistence of the cold pool contribute to prolonging the lifetime of the outer mesoscale convective system, making it longer-lasting than the typically shorter-lived distant rainbands of the tropical cyclone.
+
+These findings collectively suggest a significant, though under-researched, role of cold pools in the evolution of tropical cyclone structure and intensity. However, most existing studies either depend on idealized environments or focus on isolated case studies, underscoring the necessity for further investigation within more generalized or climatological contexts. To fill this gap, the current study explores the impact of cold pools on two North Atlantic hurricanes using high-resolution simulations from a global climate model (GCM). By examining the characteristics of cold pools and their interactions with convective structures in a controlled yet realistic framework, this research seeks to enhance our understanding of the mesoscale processes that govern tropical cyclone behavior.
 
 \section{Key points recall}
+
+This section summarizes the fundamental concepts and mechanisms underlying buoyancy-driven convection and the role of cold pools (CPs) in convective processes, particularly within tropical systems.
+
+We began by defining buoyancy as the driving force for convection, arising from temperature (or virtual temperature) gradients. Buoyancy is the force behind the vertical transport of heat, moisture, and momentum, making it essential for understanding cloud formation. A key metric used to quantify the convective potential of an environment is the Convective Available Potential Energy (CAPE). Deep convection typically arises when CAPE is high and convective inhibition (CIN) is low, or when external triggers are present to release the buoyant energy.
+
+Cold pools form when precipitation partially evaporates, cooling the sub-cloud air and creating a negatively buoyant air mass. Initially studied as density currents, cold pools were thought to trigger new convection mechanically via gust front lifting. However, \citeonline{tompkins2001organization} challenged this view by showing that in low-shear oceanic environments, thermodynamic forcing, particularly moisture anomalies at the edges of CPs, plays a dominant role in convection initiation by reducing CIN.
+
+\citeonline{tompkins2001organization} further described cold pool evolution in three stages: (i) formation, via evaporation-induced cooling beneath the convective towers; (ii) maturity, characterized by strong downdrafts injecting dry air into the core and moist bands along the CP edges; and (iii) decay, during which surface fluxes and entrainment begin to restore temperature and moisture, especially at the periphery, where CIN is lowered and CAPE is maximized, leading to ideal conditions for new convective cells.
+
+This then led to the conceptual division between the core and the edge of cold pools, with distinct thermodynamic properties. While the origin of moisture anomalies in the rings remains debated, whether from evaporation, surface fluxes, or remnants of previous CPs, it is agreed that both mechanical and thermodynamic forcings contribute to convection, depending on the CP's age and structure \cite{torri2015mechanisms, feng2015mechanisms}.
+
+Several parameterization efforts have attempted to represent CP dynamics in atmospheric models. Studies by \citeonline{grandpeix2010density}, \citeonline{delgenio2015cumulus}, and others incorporated both mechanical and thermodynamic effects of cold pools and the gust front propagation. These schemes require careful calibration and have improved the representation of key phenomena like the diurnal cycle of precipitation.
+
+In particular, \citeonline{freitas2024parameterization} developed a novel parameterization aimed at capturing essential cold pool characteristics, notably the gust front and its associated moist rings. This scheme is the subject matter of this work. The scheme diagnoses cold pools using a new quantity called buoyancy excess, computes horizontal and vertical winds at the cold pool edge, and models the gust front propagation using a prognostic equation that incorporates mean cloud layer winds and environmental damping. Buoyancy excess itself evolves through advection, diffusion, downdraft forcing, and a sink term defined by a cold pool lifetime parameter. The last parameter will be tuned within our experiments. This scheme was coupled with the Grell-Freitas convection scheme, modifying the cloud work function, cloud base moisture mixing ratio, convective adjustment time scale, and adding a new trigger based on kinetic energy commanded by cold pools.
+
+Finally, section 2.5 examined the role of cold pools within tropical cyclones (TCs). While cold pools have been extensively studied in midlatitude and tropical convection, their behavior within TCs remains relatively unexplored due to observational challenges. However, several idealized modeling studies (e.g  \citeonline{sawada2010impacts, cai2019effect}) and some real-case analyses \citeonline{chen2008influence} have revealed that cold pools influence both outer and inner rainband dynamics.
+
+Key findings include (i) cold pools can trigger new convection in rainbands via convergence and uplift at the gust front; (ii) eyewall cold pools, formed by rain evaporation into dry surrounding air, may rotate cyclonically and influence the structure and intensity of the TC; (iii) the strength and lifetime of cold pools appear linked to TC intensity and rainband organization; and (iv) in some cases, weaker cold pools were associated with stronger convection due to reduced negative buoyancy in developing updrafts \cite{grant2018coldpools}.
+
+However, much of the existing research is still confined to idealized frameworks or isolated instances. To address this limitation, the current study explores cold pool behavior in two North Atlantic hurricanes, utilizing high-resolution global climate model simulations to enhance our understanding of how cold pools influence convective processes in actual tropical cyclone environments.
+
+
+
+
+
+
 
 
 

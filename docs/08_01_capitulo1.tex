@@ -2,22 +2,33 @@
 
 \chapter{INTRODUCTION}
 
-% Background and Context
-% Reserach Problem
-% Significance of Study
+Global Circulation Models (GCMs) play a fundamental role in climate and weather forecasting, as they are capable of simulating the complex physical interactions between atmospheric, oceanic, and terrestrial systems. However, due to their global coverage, running these models at high spatial resolution requires substantial computational power. As a result, only a limited number of research centers worldwide are capable of producing these high-resolution simulations. Even in such cases, many key atmospheric processes occur at spatial and temporal scales smaller than the model grid resolution and thus cannot be explicitly resolved. These are referred to as subgrid-scale processes, and their representation relies on parameterization schemes \cite{stensrud2007parameterization}, \cite{arakawa2011toward}, \cite{arakawa1974interaction}, \cite{arakawa2004cumulus}.
+
+Parameterizations are mathematical frameworks designed to approximate the effects of unresolved processes within the model grid. Among them, convection schemes are essential, as they aim to represent the net effect of convective clouds and associated phenomena such as updrafts, downdrafts, detrainment, and cold pools. In particular, downdrafts, the descending currents of cold, dense air, are commonly included as part of convective parameterizations \cite{grell2014scale}. Both downdrafts and the precipitation evaporation give rise to cold pools, which are the focus of this dissertation.
+
+Cold pools contain relatively cool and dry air that descends from convective downdrafts and spreads horizontally upon reaching the surface. As they propagate, they modify the surrounding environment both thermodynamically and dynamically. Specifically, cold pools displace the warmer, moister air in the boundary layer and create low-level convergence at their leading edge, thereby enhancing the likelihood of new convective cell formation \cite{tompkins2001organization}, \cite{torri2015mechanisms}, \cite{feng2015mechanisms}, \cite{freitas2024parameterization}. This mechanism contributes not only to the maintenance and propagation of mesoscale convective systems, such as squall lines, but also to the organization of deep convection in tropical environments \cite{feng2015mechanisms}, \cite{freitas2024parameterization}.
+
+The present work focuses on the evaluation of a cold pool parameterization coupled within the Grell-Freitas convection scheme. One of the key components of this scheme is the buoyancy excess coefficient, which is used to diagnose the presence of cold pools in the model. This coefficient relates moist static energy anomalies inside the downdraft and the environment. When conditions indicate the existence of a cold pool, the parameterization simulates the associated gust front by modifying the horizontal wind and potentially triggering new convective events depending on the available vertical kinetic energy \cite{freitas2024parameterization}.
+
+Given their role in initiating and organizing convection, cold pools may also influence the development and internal structure of tropical cyclones. These extreme weather systems are responsible for substantial socioeconomic impacts, particularly due to heavy rainfall, storm surges, and destructive winds. During the 2024 hurricane season in the United States, the financial repercussions of hurricane-related damages were estimated to be approximately \$24 billion. This substantial economic impact underscores the significant vulnerabilities associated with extreme weather events and their implications for both regional and national economies. Therefore, improving the simulation of such systems is a high priority in both weather and climate prediction efforts \cite{noaa_hurricane_costs_2024}, \cite{noaa_2025_active_year}.
+
+Tropical cyclones are defined as organized, rotating low-pressure systems that form over warm ocean waters. They are called hurricanes in the North Atlantic, typhoons in the North Pacific, and cyclones in the South Pacific and Indian Ocean. Although much attention has been devoted to the role of large-scale environmental factors in cyclone formation and intensification, recent studies have highlighted the importance of mesoscale processes, including cold pools, in modulating rainband formation and the evolution of convective structures within these storms \cite{sawada2010impacts}, \cite{cai2019effect}, \cite{grant2018cold}, \cite{chen2008influence}.
+
+To explore how cold pool parameterizations influence tropical cyclone simulations, this dissertation adopts the Model for Ocean-LaNd-Atmosphere PredictionN (MONAN) system, which is currently under development by the Brazilian National Institute for Space Research (INPE). MONAN belongs to a new generation of atmospheric models based on the Model for Prediction Across Scales (MPAS) dynamic core, which uses an unstructured mesh. This mesh configuration enables seamless simulations across nested or variable-resolution domains, reducing numerical artifacts commonly associated with boundary conditions in traditional regional models \cite{skamarock2012multiscale}.
+
+The primary objective of this study is to evaluate the cold pool parameterization in MONAN during the simulation of tropical cyclones, with a focus on its impact on trajectory, intensity, and rainfall fields. Moreover, we aim to assess whether adjustments to key parameters, such as the cold pool lifetime, can lead to improvements in the model’s ability to forecast tropical cyclone intensity and structure. Through this effort, the dissertation seeks to contribute to the ongoing development of convection parameterizations and enhance the skill of high-impact weather forecasting in tropical regions.
 
 \section{General objective}
 
 To explore a cold pool parameterization coupled with the Grell-Freitas convection parameterization within the Model for Ocean-laNd-Atmosphere predictioN (MONAN).
 
-
 \section{Specific objectives}
 
 \begin{enumerate}
-    \item Assess the impact of the cold pool parameterization scheme on hurricane forecasted trajectory, intensity and rainfall;
-    \item Perform sensitivity experiments within a hurricane case study, investigating the influence of initial conditions, cold pool duration, the displacement of the maximum mass flux height, type of initial condition and resolution;
-    \item Identify the optimal parameter configuration for the cold pool parameterization to be used in MONAN;
-    \item Evaluate the performance of this optimal configuration in other hurricane case study.
+    \item Assess the impact of the cold pool parameterization scheme on the forecasted trajectory, intensity, and rainfall of hurricanes.
+    \item Perform sensitivity experiments within a hurricane case study (namely, Hurricane Beryl - 2024), investigating the influence of initial conditions, cold pool duration, the displacement of the maximum mass flux height, and resolution effects.
+    \item Identify the optimal parameter configuration for the cold pool parameterization to be used in MONAN.
+    \item Evaluate the performance of this optimal configuration in Hurricane Helene (2024), alongside resolution effects..
 \end{enumerate}
 
 \section{Scientific questions}
@@ -30,12 +41,7 @@ This work builds upon the findings and open issues identified in \citeonline{fre
     \item How robust is the optimal GF-CP configuration when applied to a different hurricane event?
     \item Can improvements in cold pool representation lead to better rainfall predictions in tropical cyclones?
 \end{itemize}
-%% Think maybe in other two scientifics questions
 
 \section{Thesis organization}
 
-% This thesis is structured into seven chapters. Chapter 1 introduces the research, presenting its background, general and specific objectives, guiding scientific questions, and the overall structure of the work. Chapter 2 provides a review of the relevant literature, including the theoretical foundations of convective cloud dynamics, the mass-flux parameterization, cold pools, and the modeling of hurricanes. Chapter 3 describes the observational datasets and outlines the MONAN model configuration used throughout the study. Chapter 4 details the methodology, focusing on the diagnostic metrics and the workflow adopted to evaluate the cold pool parameterization scheme and its impact on hurricane forecasts. Chapter 5 presents a detailed case study of Hurricane Beryl, including a series of sensitivity experiments that lead to the identification of an optimal parameter configuration for the cold pool scheme. Chapter 6 applies this optimal setup to a second case, Hurricane Helene, in order to assess the robustness and generalization of the proposed configuration. Finally, Chapter 7 summarizes the main findings, addresses the initial scientific questions, discusses the scientific contributions and limitations of the work, and outlines recommendations for future research.
-
-
-
-
+This dissertation is organized as follows: Chapter 2 presents a literature review on the subject of this work, beginning with the concept of convective clouds and the associated cold pool phenomenon, followed by the parameterization of this phenomenon, and concluding with an overview of hurricane basic concepts and the role of cold pools within. The data used and the model that performed the forecasts are described in Chapter 3. Chapter 4 outlines the methodology employed, which is primarily based on analyzing hurricane forecasts through three categories: track, intensity, and rainfall. This chapter concludes with a workflow diagram that is applied to each of the case studies. Chapters 5 and 6 present the results and analyses of the two case studies. Finally, Chapter 7 contains the conclusions and potential projects that may be pursued following this dissertation.

@@ -10,7 +10,7 @@ Figure \ref{fig:threatscore} illustrates the ETS for various rainfall thresholds
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Equitable Threat Score for all experiments, ERA5 dataset and GSMaP dataset.} % Título acima da figura
+	\caption{Equitable Threat Score (ETS) for all experiments, ERA5 and GSMaP datasets.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/ets_all_experiments_logx_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -29,7 +29,7 @@ The Pearson correlation coefficient is shown next, in Figure XXX. This coefficie
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Spatially averaged Pearson correlation coefficient over the entire domain} % Título acima da figura
+	\caption{Spatially averaged Pearson correlation coefficient over the entire domain.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/pearson_correlation_bar_chart_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -44,7 +44,7 @@ To better infer the locations with the best/worst correlations, as well as to ga
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Spatial distribution of daily Pearson correlation values to assess temporal evolution of forecast performance} % Título acima da figura
+	\caption{Spatial distribution of daily Pearson correlation values of daily accumultad rainfall.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_correlation_selected_experiments_days_nomeado.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -65,7 +65,7 @@ Selected snapshots corresponding to these dates were chosen to confirm the previ
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Selected snapshots of rainfall fields from IMERG and GSMaP (30 km resolution) for key time steps} % Título acima da figura
+	\caption{Selected snapshots of the rainfall fields.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_instantaneous_rainfall_selected_with_stats_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -82,7 +82,7 @@ The bias computed against GPM-IMERG is presented in Figure \ref{fig:biasgpm}. Ho
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Bias relative to GPM-IMERG for tropical cyclone rainfall forecasts} % Título acima da figura
+	\caption{Same as Figure \ref{fig:snapshot}, but showing the bias relative to GPM-IMERG.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_bias_rainfall_selected_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -95,7 +95,7 @@ As previously discussed (Figures XXX and XXX), changing the horizontal resolutio
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Spatial bias relative to GPM-IMERG, highlighting displacement effects in tropical cyclone forecasts} % Título acima da figura
+	\caption{Same as Figure \ref{fig:snapshot}, but showing the difference made by the resolution.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_resolution_rainfall_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -110,7 +110,7 @@ Finally, to specifically assess the morphological structure of the clouds, as we
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Cloud-top brightness temperature snapshots for assessing cloud morphology and vertical structures} % Título acima da figura
+	\caption{Same as Figure \ref{fig:snapshot}, but showing the cloud-top temperature; the reference assumed is the dataset from GPM-MERGIR.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_ctt_selected_experiments_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -123,7 +123,7 @@ Spatially, cloud coverage in the CP-3H configuration is greater than in the othe
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Effect of horizontal resolution on cloud-top brightness temperature fields} % Título acima da figura
+	\caption{Same as Figure \ref{fig:snapmorph}, but showing the difference made by the resolution.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_ctt_native_resolution_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -138,7 +138,7 @@ For this subsection, two types of metrics were employed: Probability Density Fun
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Probability density (left) and cumulative distribution functions (right) of hourly rainfall for each experiment and reference dataset} % Título acima da figura
+	\caption{Probability density (left) and cumulative distribution functions (right) of hourly rainfall during the Hurricane Beryl period.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_pdf_cdf_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -165,9 +165,10 @@ The following panels represent the CDFs computed for data frequencies above 85\%
 
 \begin{figure}[!ht]
 	\centering
-	\caption{CDFs above the 85th percentile of hourly rainfall, with 95\% threshold comparison across datasets} % Título acima da figura
+	\caption{Same as Figure \ref{fig:probdensity}, but showing CDFs above the 85th percentile.} % Título acima da figura
 	\includegraphics[width=0.7\textwidth]{docs/figuras/chapter5/85_percentile_CDF_FINAL.png} 
 	\vspace{0.5em}
+	
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:probdensity2} % Label para referenciar no texto
 \end{figure}
@@ -180,9 +181,10 @@ Furthermore, Figure \ref{fig:probdensity3} presents a set of CDFs panels compute
 
 \begin{figure}[!ht]
 	\centering
-	\caption{CDFs of hourly rainfall at selected time steps within the hurricane domain} % Título acima da figura
+	\caption{Same subset of days as in Figure \ref{fig:probdensity}, but showing the CDFs above the 85th percentile.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/SNAPSHOTS_percentile_CDF_FINAL.png} 
 	\vspace{0.5em}
+	
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:probdensity3} % Label para referenciar no texto
 \end{figure}
