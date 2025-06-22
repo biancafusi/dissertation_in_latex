@@ -21,38 +21,38 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Workflow overview of Hurricane Berryl.}}{52}{figure.4.2}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Workflow overview of Hurricane Helene.}}{55}{figure.4.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 2024 Hurricane path according to best track analysis.}}{58}{figure.5.1}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best track trajectory of Hurricane Beryl (June/July 2024).}}{58}{figure.5.1}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Hurricane Beryl view from the GEOCOLOR composite (left) and Band 13 (right) when passing through the first landfall.}}{58}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces 500 mb geopotential height and MSLP on July 8th, 00 UTC}}{59}{figure.5.3}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 500 mb geopotential height and MSLP on July 8th, 00 UTC.}}{59}{figure.5.3}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Hurricane Beryl view from NEXRAD (top) and GEOCOLOR composite (bottom) when reaching the Texas Coast.}}{60}{figure.5.4}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Spatial domain of Hurricane Beryl's development and trajectory.}}{61}{figure.5.5}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison of storm tracks across all 15 experiments, ERA5, and the best track dataset.}}{64}{figure.5.6}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Errors (distance) between the trajectories.}}{65}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Hurricane Beryl track forecasts, ERA5, and best track dataset.}}{68}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces A forecast made for Hurricane Beryl starting on July 3rd (00 UTC), 2024, available at the HAFS website}}{70}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Track errors of the MONAN forecast and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a).}}{71}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces CTE (a) and ATE (b).}}{72}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Tracking available by the UK Met Office.}}{73}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Overall performance of MONAN trajectory forecasts compared with ERA5 reanalysis.}}{74}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Comparison of forecasted and observed central pressure and wind speeds for Hurricane Beryl. Here, a 12-hour model spin-up was also withdrawn, starting the time series on July 3rd, 12 UTC, both CP-15km and CP-60km are at their native resolution.}}{75}{figure.5.14}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Hurricane Beryl track forecasts, ERA5, and best track dataset.}}{67}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces A forecast made for Hurricane Beryl starting on July 3rd (00 UTC), 2024, available at the HAFS website}}{69}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Track errors of the MONAN forecast and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a).}}{70}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces CTE (a) and ATE (b).}}{71}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Tracking available by the UK Met Office for Hurricane Beryl.}}{72}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Overall performance of MONAN trajectory forecasts compared with ERA5 reanalysis.}}{73}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Comparison of forecasted and observed central pressure and wind speeds for Hurricane Beryl. Here, a 12-hour model spin-up was also withdrawn, starting the time series on July 3rd, 12 UTC, both CP-15km and CP-60km are at their native resolution.}}{74}{figure.5.14}%
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Central pressure and maximum wind speed errors.}}{76}{figure.5.15}%
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Central pressure and maximum wind speed errors by MONAN compared to ERA5.}}{77}{figure.5.16}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Equitable Threat Score (ETS) for all experiments, ERA5 and GSMaP datasets.}}{79}{figure.5.17}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Spatially averaged Pearson correlation coefficient over the entire domain.}}{80}{figure.5.18}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Spatial distribution of daily Pearson correlation values of daily accumultad rainfall.}}{81}{figure.5.19}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Selected snapshots of the rainfall fields.}}{89}{figure.5.20}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the bias relative to GPM-IMERG.}}{90}{figure.5.21}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the difference made by the resolution.}}{91}{figure.5.22}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the cloud-top temperature; the reference assumed is the dataset from GPM-MERGIR.}}{92}{figure.5.23}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Same as Figure \ref {fig:snapmorph}, but showing the difference made by the resolution.}}{93}{figure.5.24}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Probability density (left) and cumulative distribution functions (right) of hourly rainfall during the Hurricane Beryl period.}}{94}{figure.5.25}%
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Same as Figure \ref {fig:probdensity}, but showing CDFs above the 85th percentile.}}{95}{figure.5.26}%
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Same subset of days as in Figure \ref {fig:probdensity}, but showing the CDFs above the 85th percentile.}}{96}{figure.5.27}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Equitable Threat Score (ETS) for all experiments, ERA5 and GSMaP datasets.}}{78}{figure.5.17}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Spatially averaged Pearson correlation coefficient over the entire domain.}}{79}{figure.5.18}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Spatial distribution of daily Pearson correlation values of daily accumultad rainfall.}}{80}{figure.5.19}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Selected snapshots of the rainfall fields.}}{91}{figure.5.20}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the bias relative to GPM-IMERG.}}{92}{figure.5.21}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the difference made by the resolution.}}{93}{figure.5.22}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the cloud-top temperature; the reference assumed is the dataset from GPM-MERGIR.}}{94}{figure.5.23}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Same as Figure \ref {fig:snapmorph}, but showing the difference made by the resolution.}}{95}{figure.5.24}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Probability density (left) and cumulative distribution functions (right) of hourly rainfall during the Hurricane Beryl period.}}{96}{figure.5.25}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Same as Figure \ref {fig:probdensity}, but showing CDFs above the 85th percentile.}}{97}{figure.5.26}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Same subset of days as in Figure \ref {fig:probdensity}, but showing the CDFs above the 85th percentile.}}{98}{figure.5.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Best track trajectory of Hurricane Helene (September 2024)}}{97}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Synoptic-scale interaction between Hurricane Helene and a stationary frontal boundary over the southeastern U.S}}{99}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Satellite images of Hurricane Helene with trailing convection over North Carolina.}}{99}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Criar um titulo aqui}}{101}{figure.6.4}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Best track trajectory of Hurricane Helene (September 2024).}}{99}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Synoptic-scale interaction between Hurricane Helene and a stationary frontal boundary over the southeastern U.S.}}{101}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Satellite images of Hurricane Helene (channel 13 of GOES-East) with trailing convection over North Carolina.}}{101}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Criar um titulo aqui}}{103}{figure.6.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

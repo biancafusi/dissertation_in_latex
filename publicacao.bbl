@@ -323,15 +323,6 @@ Dispon{\'\i}vel em: <\url{https://doi.org/10.1002/qj.665}>.}
 \textbf{(No Title)}, 2019.}
 
 
-\bibitem[Iacono et al. 2008]{iacono2008radiative}
-\abntrefinfo{Iacono et al.}{IACONO et al.}{2008}
-{IACONO, M.~J.; DELAMERE, J.~S.; MLAWER, E.~J.; SHEPHARD, M.~W.; CLOUGH, S.~A.;
-  COLLINS, W.~D. Radiative forcing by long-lived greenhouse gases: Calculations
-  with the aer radiative transfer models.
-\textbf{Journal of Geophysical Research: Atmospheres}, Wiley Online Library,
-  v.~113, n.~D13, 2008.}
-
-
 \bibitem[Janowiak et al. 2017]{janowiak2017ncep}
 \abntrefinfo{Janowiak et al.}{JANOWIAK et al.}{2017}
 {JANOWIAK, J.; JOYCE, B.; XIE, P. \textbf{NCEP/CPC L3 half hourly 4 km global
@@ -388,6 +379,14 @@ Dispon{\'\i}vel em: <\url{https://doi.org/10.1002/qj.665}>.}
 {LIN, J.; QIAN, T.; KLOTZBACH, P. Tropical cyclones.
 \textbf{Atmosphere-Ocean}, Taylor \& Francis, v.~60, n.~3-4, p. 360--398,
   2022.}
+
+
+\bibitem[Lonfat et al. 2004]{lonfat2004precipitation}
+\abntrefinfo{Lonfat et al.}{LONFAT et al.}{2004}
+{LONFAT, M.; JR, F.~D. M.; CHEN, S.~S. Precipitation distribution in tropical
+  cyclones using the tropical rainfall measuring mission (trmm) microwave
+  imager: A global perspective.
+\textbf{Monthly Weather Review}, v.~132, n.~7, p. 1645--1660, 2004.}
 
 
 \bibitem[Luitel et al. 2018]{luitel2018verification}
@@ -568,6 +567,14 @@ Acesso em 19 de junho de 2025.}
 \textbf{Journal of the atmospheric sciences}, v.~67, n.~1, p. 84--96, 2010.}
 
 
+\bibitem[Schlemmer e Hohenegger 2014]{schlemmer2014formation}
+\abntrefinfo{Schlemmer e Hohenegger}{SCHLEMMER; HOHENEGGER}{2014}
+{SCHLEMMER, L.; HOHENEGGER, C. The formation of wider and deeper clouds as a
+  result of cold-pool dynamics.
+\textbf{Journal of the Atmospheric Sciences}, v.~71, n.~8, p. 2842--2858,
+  2014.}
+
+
 \bibitem[Shepherd e Walsh 2017]{shepherd2017sensitivity}
 \abntrefinfo{Shepherd e Walsh}{SHEPHERD; WALSH}{2017}
 {SHEPHERD, T.~J.; WALSH, K.~J. Sensitivity of hurricane track to cumulus
@@ -638,6 +645,14 @@ Acesso em 19 de junho de 2025.}
   cyclones}. set. 2023.
 \url{https://wmo.int/content/classification-of-tropical-cyclones}.
 Acesso em 19 de junho de 2025.}
+
+
+\bibitem[Yamaguchi et al. 2012]{yamaguchi2012tropical}
+\abntrefinfo{Yamaguchi et al.}{YAMAGUCHI et al.}{2012}
+{YAMAGUCHI, M.; NAKAZAWA, T.; AONASHI, K. Tropical cyclone track forecasts
+  using jma model with ecmwf and jma initial conditions.
+\textbf{Geophysical research letters}, Wiley Online Library, v.~39, n.~9,
+  2012.}
 
 
 \bibitem[Yang et al. 2024]{yang2024evaluation}

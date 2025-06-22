@@ -23,59 +23,60 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11417 items from 5000.
+Reallocated field_info (elt_size=4) to 11624 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: ./bib/referencia.bib
-Repeated entry---line 569 of file ./bib/referencia.bib
+Repeated entry---line 607 of file ./bib/referencia.bib
  : @article{sawada2010impacts
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 609 of file ./bib/referencia.bib
+Repeated entry---line 647 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 743 of file ./bib/referencia.bib
+Repeated entry---line 781 of file ./bib/referencia.bib
  : @article{sawada2010impacts
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 809 of file ./bib/referencia.bib
+Repeated entry---line 847 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 853 of file ./bib/referencia.bib
+Repeated entry---line 891 of file ./bib/referencia.bib
  : @article{eastin2012surface
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 875 of file ./bib/referencia.bib
+Repeated entry---line 913 of file ./bib/referencia.bib
  : @article{barnes1983mesoscale
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1301 of file ./bib/referencia.bib
+Repeated entry---line 1339 of file ./bib/referencia.bib
  : @article{arakawa2011toward
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1443 of file ./bib/referencia.bib
+Repeated entry---line 1481 of file ./bib/referencia.bib
  : @article{torri2015mechanisms
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1507 of file ./bib/referencia.bib
+Repeated entry---line 1545 of file ./bib/referencia.bib
  : @article{grell2002generalized
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2227 of file ./bib/referencia.bib
+Repeated entry---line 2265 of file ./bib/referencia.bib
  : @article{skamarock2012multiscale
  :                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2415 of file ./bib/referencia.bib
+Repeated entry---line 2471 of file ./bib/referencia.bib
  : @article{li2025generative
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2467 of file ./bib/referencia.bib
+Repeated entry---line 2523 of file ./bib/referencia.bib
  : @article{feng2015mechanisms
  :                            ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "emanuel1994large"
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "lonfat2004tropical"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -86,45 +87,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 91 entries,
+You've used 93 entries,
             6478 wiz_defined-function locations,
-            1686 strings with 26715 characters,
-and the built_in function-call counts, 80876 in all, are:
-= -- 6102
-> -- 3016
-< -- 262
-+ -- 1219
-- -- 880
-* -- 6014
-:= -- 10298
-add.period$ -- 273
-call.type$ -- 92
-change.case$ -- 1039
-chr.to.int$ -- 296
-cite$ -- 84
-duplicate$ -- 4519
-empty$ -- 5465
-format.name$ -- 4438
-if$ -- 19204
+            1697 strings with 27055 characters,
+and the built_in function-call counts, 82726 in all, are:
+= -- 6252
+> -- 3077
+< -- 270
++ -- 1240
+- -- 898
+* -- 6149
+:= -- 10531
+add.period$ -- 279
+call.type$ -- 94
+change.case$ -- 1060
+chr.to.int$ -- 304
+cite$ -- 86
+duplicate$ -- 4625
+empty$ -- 5591
+format.name$ -- 4518
+if$ -- 19646
 int.to.chr$ -- 8
 int.to.str$ -- 3
-missing$ -- 1640
-newline$ -- 516
-num.names$ -- 420
-pop$ -- 1996
+missing$ -- 1674
+newline$ -- 528
+num.names$ -- 430
+pop$ -- 2044
 preamble$ -- 1
-purify$ -- 371
+purify$ -- 380
 quote$ -- 0
-skip$ -- 4383
+skip$ -- 4472
 stack$ -- 1
-substring$ -- 3724
-swap$ -- 2312
-text.length$ -- 192
+substring$ -- 3841
+swap$ -- 2366
+text.length$ -- 198
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 678
+while$ -- 696
 width$ -- 0
-write$ -- 1430
+write$ -- 1464
 (There were 12 error messages)

@@ -1,23 +1,23 @@
 \subsection{Rainfall}
 
-In this subsection, we will analyze the rainfall through three perspectives: the rainfall pattern and spatial distribution; the mean and distribution of rain volume; and the extreme values.
+In this subsection, we will analyze the rainfall through three perspectives: the rainfall pattern and spatial distribution; the mean and distribution of rain volume; and the extreme values. 
 
 \subsubsection{Pattern and spatial rainfall distribution}
 
-Following the workflow proposed in the Metrics section, we can quantify the spatial distribution of rainfall using the ETS and Pearson correlation coefficient. This analysis focuses on a specific area (106-51°W, 10-41°N) over a six-day forecast period, from July 3rd to July 9th (00 UTC). Upon reviewing the literature \cite{marchok2007validation}, \cite{brackins2020evaluation}, \cite{luitel2018verification}, we found that these metrics are influenced by the forecasted track and are typically calculated over a defined region, usually a 500-600 km radius around the best track trajectory, rather than the broader area we are examining. In their 2007 study, Marchok et al. discuss this in detail and suggest potential improvements to compute those metrics, also regarding resolution dependencies. We opted to calculate the accumulated area to reduce the track error effect, though it is important to note that this approach may also capture local rainfall accumulations. In our study area, identifying the hurricane is relatively straightforward; for example, reports indicate that Beryl produced 13.2 inches (approximately 335 mm) of accumulated rainfall over Jamaica \cite{li2025generative}, so because of this, the broader area should not be this much of a problem, but meant to be a simple view of the spatial rainfall distribution. For future work, we propose adapting the previous approach to more accurately represent both the ETS and Pearson correlation coefficients.
+Following the workflow proposed in Section \ref{section4.3}, we can quantify the spatial distribution of rainfall using the ETS and Pearson correlation coefficient. This analysis focuses on a specific area (106-51°W, 10-41°N) over a six-day forecast period, from July 3rd to July 9th (00 UTC). Upon reviewing the literature \cite{marchok2007validation, brackins2020evaluation, luitel2018verification}, we found that these metrics are influenced by the forecasted track and are typically calculated over a defined region, usually a 500-600 km radius around the best track trajectory, rather than the broader area we are examining. In their 2007 study, Marchok et al. discuss this in detail and suggest potential improvements to compute those metrics, also regarding resolution dependencies. We opted to calculate the accumulated area to reduce the track error effect, though it is important to note that this approach may also capture local rainfall accumulations. In our study area, identifying the hurricane is relatively straightforward; for example, reports indicate that Beryl produced 13.2 inches (approximately 335 mm) of accumulated rainfall over Jamaica \cite{li2025generative}, so because of this, the broader area should not be this much of a problem, but meant to be a simple view of the spatial rainfall distribution. For future work, we propose adapting the previous approach to more accurately represent both the ETS and Pearson correlation coefficients.
 
-Figure \ref{fig:threatscore} illustrates the ETS for various rainfall thresholds (in mm). These thresholds were determined using a log distribution, similar to the method presented by Marchok et al. in 2007. The maximum threshold was established with consideration of the maximum distribution observed in the datasets \footnote{The Python function used was: \texttt{numpy.logspace(numpy.log10(0.01), numpy.log10(350), num=12)}}. For instance, the maximum accumulated rainfall measured was 252.5 mm, 252.0 mm, 453.7 mm, 485.4 mm, 359.6 mm for GPM-IMERG, ERA5, GSMaP, CP-ON, CP-OFF, respectively.
+Figure \label{fig:threatscore} illustrates the ETS for various rainfall thresholds (in mm). These thresholds were determined using a log distribution, similar to the method presented by Marchok et al. in 2007. The maximum threshold was established with consideration of the maximum distribution observed in the datasets \footnote{The Python function used was: \texttt{numpy.logspace(numpy.log10(0.01), numpy.log10(350), num=12)}}. For instance, the maximum accumulated rainfall measured was 252.5 mm, 252.0 mm, 453.7 mm, 485.4 mm, and 359.6 mm for GPM-IMERG, ERA5, GSMaP, CP-ON, and CP-OFF, respectively.
 
 \begin{figure}[!ht]
 	\centering
 	\caption{Equitable Threat Score (ETS) for all experiments, ERA5 and GSMaP datasets.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/ets_all_experiments_logx_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:threatscore} % Label para referenciar no texto
 \end{figure}
 
-The GSMaP exhibits the best score due to its nature as a satellite-based system. It is important to highlight that for this and other analyses, both GSMaP, ERA5, and GPM-IMERG data were downscaled to the model's resolution of 30 km. In the case of GSMaP, the resolution was reduced from 4 km to 30 km. The further analysis will explicitly mention this whenever the data is not downscaled.
+The GSMaP exhibits the best score due to its nature as a satellite-based system. It is important to highlight that for this and other analyses, both CP-15km, CP-60km, GSMaP, ERA5, and GPM-IMERG data were rescaled to the model's resolution of 30 km. In the case of GSMaP, the resolution was reduced from 4 km to 30 km. The further analysis will explicitly mention this whenever the data is not downscaled.
 
 ERA5 shows better agreement in the moderate to extreme rainfall range (between 3 and 135 mm), but it is important to note that the maximum rainfall is relatively low compared to GPM-IMERG. Thus, ERA5 does not score well regarding rainfall data produced by this event.
 
@@ -25,18 +25,20 @@ In general, the forecasts from MONAN display similar behavior, with some outlier
 
 At more extreme thresholds (above 135 mm), the scores for all data types drop significantly, indicating the need for further investigation into this topic.
 
-The Pearson correlation coefficient is shown next, in Figure XXX. This coefficient was calculated across the entirety of the spatial domain, indicating that it provides a correlation value representative of the entire scene.
+The Pearson correlation coefficient is shown next, in Figure \ref{fig:pearson}. This coefficient was calculated across the entirety of the spatial domain, indicating that it provides a correlation value representative of the entire scene. 
 
 \begin{figure}[!ht]
 	\centering
 	\caption{Spatially averaged Pearson correlation coefficient over the entire domain.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/pearson_correlation_bar_chart_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:pearson} % Label para referenciar no texto
 \end{figure}
 
 Once again, the data from GSMaP and ERA5 stand out with the strongest correlations with GPM-IMERG. Interestingly, this highlights the effects that changes in resolution can have, as seen more clearly in the panel of Figure \ref{fig:dpearson}.
+
+Once again, the data from GSMaP and ERA5 stand out with the strongest correlations with GPM-IMERG. Interestingly, this highlights the effects that changes in resolution can have, as seen more clearly in the panels of Figure \ref{fig:biasgpm2}.
 
 Regarding the forecasts from MONAN, the average correlation is around moderate, excluding outliers such as GFS, CP-29, and CP-02T12. Note that for the last two forecasts, the bias from the trajectory itself strongly influences the calculation of this metric, as CP-29 and CP-02T12 also had the largest tracking errors (Figure \ref{fig:trackerrors}).
 
@@ -51,23 +53,23 @@ To better infer the locations with the best/worst correlations, as well as to ga
 	\label{fig:dpearson} % Label para referenciar no texto
 \end{figure}
 
-In this figure, the selected days represent: (a) the starting point of forecasts, immediately following the weakening of Hurricane Beryl, but corresponding to the highest observed rainfall (over Jamaica); (b) its passage over the Yucatán Peninsula, during which the hurricane weakens from Category 1 to a tropical storm; and (c) landfall in Texas on the North American continent. It is important to note that each column represents the accumulated rainfall for 24 hours; thus, panel (a) corresponds to rainfall accumulated over July 3rd, and so on.
+In this figure, the selected days represent: (a) the starting point of forecasts, immediately following the weakening of Hurricane Beryl, but corresponding to the highest observed rainfall (over Jamaica); (b) its passage over the Yucatán Peninsula, during which the hurricane weakens from Category 1 to a tropical storm; and (c) landfall in the State of Texas on the USA continental region. It is important to note that each column represents the accumulated rainfall for 24 hours; thus, panel (a) corresponds to rainfall accumulated over July 3rd, and so on.
 
 The top row presents correlation values derived from ERA5 reanalysis, which exhibited strong correlations, while the bottom row shows the correlation from the CP-29 forecast, which had the weakest agreement. To evaluate the effect of cold pool parameterization, CP-ON and CP-OFF are aligned for comparison. Additionally, CP-D050 was selected as an example of moderate correlation to identify where the internal parameterization settings are influencing correlation variability. Other experiments referenced in the study are presented in the appendix.
 
 Regarding the temporal evolution of correlation, a general degradation in forecast performance over time is observed, with the reanalysis data maintaining higher consistency, as expected. Notably, CP-29 shows a significantly sharper decline in correlation over time compared to CP-ON, for instance. 
 
-For instance, CP-29 reveals a pronounced track error upon landfall in Texas (100–90°W, 25–35°N), as evidenced by a near-zero correlation in that region. In the same region, CP-D050 and CP-OFF present negative correlations when compared with CP-ON.
+In addition, CP-29 reveals a pronounced track error upon landfall in the State of Texas (100–90°W, 25–35°N), as evidenced by a near-zero correlation in that region. In the same region, CP-D050 and CP-OFF present negative correlations when compared with CP-ON.
 
 CP-D050 fails to represent rainfall over the Yucatán Peninsula, whereas CP-ON appears to generate more cohesive rainfall patterns than CP-OFF (20–25°N, 90–80°W). Both CP-D050, CP-ON, and CP-OFF also show localized overestimation of rainfall east of Cuba, a region that does show rainfall in the ERA5 dataset.
 
-Selected snapshots corresponding to these dates were chosen to confirm the previously discussed relationships. A panel displaying these time steps alongside IMERG and GSMaP (both downscaled to 30 km resolution) is presented in Figure \ref{fig:snapshot}.
+Selected snapshots corresponding to these dates were chosen to confirm the previously discussed relationships. A panel displaying these time steps alongside GPM-IMERG and GSMaP (both downscaled to 30 km resolution) is presented in Figure \ref{fig:snapshot}.
 
 \begin{figure}[!ht]
 	\centering
 	\caption{Selected snapshots of the rainfall fields.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_instantaneous_rainfall_selected_with_stats_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:snapshot} % Label para referenciar no texto
 \end{figure}
@@ -84,40 +86,40 @@ The bias computed against GPM-IMERG is presented in Figure \ref{fig:biasgpm}. Ho
 	\centering
 	\caption{Same as Figure \ref{fig:snapshot}, but showing the bias relative to GPM-IMERG.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_bias_rainfall_selected_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:biasgpm} % Label para referenciar no texto
 \end{figure}
 
-Using the same example as before, in column (c), a positive bias can be observed in the hurricane region, clearly indicating that the hurricane position produced by CP-ON is farther north compared to GPM-IMERG. Moreover, this figure reinforces the results shown previously with the cross- and along-track errors (Figure \ref{fig:trackerrors}).
+Using the same example as before, in column (c), a positive bias can be observed in the hurricane region, clearly indicating that the hurricane position produced by CP-ON is farther north compared to GPM-IMERG. Moreover, this figure reinforces the results shown previously with the cross- and along-track errors (Figure \ref{fig:monera5}).
 
-As previously discussed (Figures XXX and XXX), changing the horizontal resolution results in forecasts with good correlation. To further investigate this, Figure \ref{fig:biasgpm2} presents forecasts at 15 km, 30 km, and 60 km horizontal resolution, using the same spatial and temporal domains as in Figure \ref{fig:snapshot}.
+As previously discussed (Figures \ref{fig:trackerrors} and \ref{fig:errors}), changing the horizontal resolution results in forecasts with good correlation. To further investigate this, Figure \ref{fig:snapshot} presents forecasts at 15 km, 30 km, and 60 km horizontal resolution, using the same spatial and temporal domains as in Figure \ref{fig:snapshot}.
 
 \begin{figure}[!ht]
 	\centering
 	\caption{Same as Figure \ref{fig:snapshot}, but showing the difference made by the resolution.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_resolution_rainfall_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:biasgpm2} % Label para referenciar no texto
 \end{figure}
 
 The 30 km forecast (CP-30km) performs notably well compared to ERA5 (with 25 km resolution) and GSMaP (4 km resolution), due to its ability to reproduce the spatial characteristics of rainfall seen in GPM-IMERG, especially the arc-shaped rainband observed in panel (a).
 
-A clear gain in spatial detail and rainfall morphology is observed in the 15 km forecast. In particular, the clustering of rainfall and the reproduction of the hurricane's spiral bands stand out, further highlighting the effects of cold pools, features that have also been documented in the literature \cite{sakaeda2023observed}, \cite{freitas2024parameterization}, \cite{haerter2018reconciling}, \cite{feng2015mechanisms}, \cite{vogel2021climatology}. Interestingly, this rainfall clustering effect is also observed in the CP-60km experiment. Despite the loss of detail due to its coarser resolution, it still manages to capture the spiral structure (panel b) and localize regions of intense rainfall (panels a and c). A more detailed investigation (and confirmation) of the role of cold pool parametrization in cloud organization will be left for future work.
+A clear gain in spatial detail and rainfall morphology is observed in the 15 km forecast. In particular, the clustering of rainfall and the reproduction of the hurricane's spiral bands stand out, further highlighting the effects of cold pools, features that have also been documented in the literature \cite{sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}. Interestingly, this rainfall clustering effect is also observed in the CP-60km experiment. Despite the loss of detail due to its coarser resolution, it still manages to capture the spiral structure (panel b) and localize regions of intense rainfall (panels a and c). A more detailed investigation (and confirmation) of the role of cold pool parametrization in cloud organization will be left for future work.
 
-Finally, to specifically assess the morphological structure of the clouds, as well as the depth of the cloud tops being formed, the panels in Figure \ref{fig:snapmorph} were created. To isolate the influence of horizontal resolution, Figure \ref{fig:snapmorph2}  was also developed. Once again, these panels were constructed using the same spatial and temporal domains as Figures \ref{fig:snapshot} and \ref{fig:biasgpm2}, but now with cloud-top temperature (i.e., brightness temperature) as the primary variable.
+Finally, to specifically assess the morphological structure of the clouds, as well as the depth of the cloud tops being formed, the panels in Figure \ref{fig:snapmorph} were created. To isolate the influence of horizontal resolution, Figure \ref{fig:snapmorph2} was also developed. Once again, these panels were constructed using the same spatial and temporal domains as Figures \ref{fig:snapshot} and \ref{fig:biasgpm2}, but now with cloud-top temperature (i.e., brightness temperature) as the primary variable.
 
 \begin{figure}[!ht]
 	\centering
 	\caption{Same as Figure \ref{fig:snapshot}, but showing the cloud-top temperature; the reference assumed is the dataset from GPM-MERGIR.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_ctt_selected_experiments_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:snapmorph} % Label para referenciar no texto
 \end{figure}
 
-Naturally, the cold pool effect leads to deeper convection, which explains the rainfall values observed in Figures XXX and XXX. It is noteworthy that the cloud-top temperatures in the simulations are very close to those observed, particularly when the cold pool parametrization is active, such as in the CP-ON configuration. The CP-D050 forecast, which has a mass flux profile positioned farther from the surface, produces slightly deeper clouds. This is consistent with its higher cloud base, which results in taller cloud structures overall.
+Naturally, the cold pool effect leads to deeper convection, which explains the rainfall values observed in Figures \ref{fig:snapshot} and \ref{fig:biasgpm2}. It is noteworthy that the cloud-top temperatures in the simulations are very close to those observed, particularly when the cold pool parametrization is active, such as in the CP-ON configuration. The CP-D050 forecast, which has a mass flux profile positioned farther from the surface, produces slightly deeper clouds. This is consistent with its higher cloud base, which results in taller cloud structures overall.
 
 Spatially, cloud coverage in the CP-3H configuration is greater than in the others, due to the duration of the cold pool effect and its ability to continuously generate new cloud populations. In general, the forecasts manage to represent morphological characteristics, such as cloud size and extent, comparable to observations.
 
@@ -125,7 +127,7 @@ Spatially, cloud coverage in the CP-3H configuration is greater than in the othe
 	\centering
 	\caption{Same as Figure \ref{fig:snapmorph}, but showing the difference made by the resolution.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_ctt_native_resolution_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:snapmorph2} % Label para referenciar no texto
 \end{figure}
@@ -134,40 +136,40 @@ Now, when comparing different resolutions, it becomes clear that the spatial def
 
 \subsubsection{Rainfall mean and overall distribution}
 
-For this subsection, two types of metrics were employed: Probability Density Functions (PDFs) and Cumulative Distribution Functions (CDFs). As previously mentioned (Section 4), empirical functions are computed, meaning that they are derived directly from the natural distribution of the data. To calculate these functions, a Python script was developed. First, hourly rainfall data over the entire duration of the event (6 days) were gathered. These data were then sorted into thresholds using a logarithmic scale, generating histograms for each experiment, as well as for the GPM-IMERG, ERA5, and GSMaP datasets. Both the forecast and the dataset were at the same horizontal resolution of 30 km. Subsequently, the PDFs and CDFs were computed from these histograms. Note that these distributions are normalized according to the total number of data points. Figure XXX displays the computed PDFs in the first column (A, C, E), and the corresponding CDFs in the second column (B, D, F).
+For this subsection, two types of metrics were employed: Probability Density Functions (PDFs) and Cumulative Distribution Functions (CDFs). As previously mentioned (Section 4), empirical functions are computed, meaning that they are derived directly from the natural distribution of the data. To calculate these functions, a Python script was developed. First, hourly rainfall data over the entire duration of the event (6 days) were gathered, but not accumulated. These data were then sorted into thresholds using a logarithmic scale, generating histograms for each experiment, as well as for the GPM-IMERG, ERA5, and GSMaP datasets. Both the forecast and the dataset were at the same horizontal resolution of 30 km, but CP-15km and CP-60km are at their native horizontal resolution. Subsequently, the PDFs and CDFs were computed from these histograms. Note that these distributions are normalized according to the total number of data points. Figure \ref{fig:probdensity} displays the computed PDFs in the first column (A, C, E), and the corresponding CDFs in the second column (B, D, F).
 
 \begin{figure}[!ht]
 	\centering
 	\caption{Probability density (left) and cumulative distribution functions (right) of hourly rainfall during the Hurricane Beryl period.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_pdf_cdf_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:probdensity} % Label para referenciar no texto
 \end{figure}
 
-In Figure \ref{fig:probdensity} A, ERA5 exhibits a trend similar to GPM-IMERG at lower thresholds but overestimates rainfall in the moderate range (above 1 mm/h), returning to a closer match at higher thresholds, around 20 mm/h. In contrast, GSMaP generally overestimates rainfall at both low and moderate thresholds (up to 20 mm/h), and this overestimation becomes more pronounced at heavy rainfall, exceeding even the MONAN forecasts.
+In Figure \ref{fig:probdensity} (A), ERA5 exhibits a trend similar to GPM-IMERG at lower thresholds but underestimates rainfall in the moderate range (above 1 mm/h), returning to a closer match at higher thresholds, around 30 mm/h. In contrast, GSMaP generally underestimates rainfall at both low and moderate thresholds (between 1mm/h and 30 mm/h), and then overestimates, becoming more pronounced at heavy rainfall, exceeding even the MONAN forecasts.
 
-Regarding CP-ON and CP-OFF, both configurations tend to overestimate rainfall at lower thresholds (below 3 mm/h) and at higher extremes (above 10 mm/h), while moderate rainfall shows less bias. At the extremes, both simulations behave similarly; however, CP-ON better matches moderate rainfall values, whereas CP-OFF aligns more closely with the observation at light rainfall values.
+Regarding CP-ON and CP-OFF, both configurations tend to overestimate rainfall at lower thresholds (below 3 mm/h) and higher extremes (above 10 mm/h), while moderate rainfall shows less bias. At the extremes, both simulations behave similarly; however, CP-ON better matches moderate rainfall values, whereas CP-OFF aligns more closely with the observation at light rainfall values.
 
-This analysis is further supported by Figure \ref{fig:probdensity} B. The horizontal line represents a 50\% frequency (i.e., the median of the distribution). This figure suggests that CP-ON produces a higher average rainfall compared to the other simulations, with CP-OFF showing the closest alignment with GPM-IMERG, and ERA5 producing the lowest values. This behavior is consistent with the cloud morphology analysis, which indicated that CP-ON tends to generate deeper clouds and, consequently, more precipitation. Additionally, for a higher percentage of the sample, near 90\%, CP-ON most closely follows the GPM-IMERG curve, reinforcing its better performance in simulating moderate to heavy rainfall.
+This analysis is further supported by Figure \ref{fig:probdensity} (B). The horizontal line represents a 50\% frequency (i.e., the mean of the distribution). This figure suggests that CP-ON produces a higher average rainfall compared to the other simulations, with CP-OFF showing the closest alignment with GPM-IMERG, and ERA5 producing the lowest values. This behavior is consistent with the cloud morphology analysis, which indicated that CP-ON tends to generate deeper clouds and, consequently, more precipitation. Additionally, for a higher percentage of the sample, nearly 90\%, CP-ON most closely follows the GPM-IMERG curve, reinforcing its better performance in simulating moderate to heavy rainfall.
 
-Looking at the other sensitivity experiments involving the cold pool parametrization, a similar trend is observed (Figure\ref{fig:probdensity}, C and E). Overall, the parametrization improves the distribution of moderate rainfall, particularly when it is active.
+Looking at the other sensitivity experiments involving the cold pool parametrization, a similar trend is observed (Figure \ref{fig:probdensity}, panels (C) and (E)). Overall, the parametrization improves the distribution of moderate rainfall.
 
-The most significant differences appear in Figure\ref{fig:probdensity} D and F. In Figure Figure\ref{fig:probdensity} D, an improvement in rainfall distribution is evident with increased horizontal resolution (CP-15km), which more closely reproduces the observed GPM-IMERG distribution across all thresholds. It also presents the most accurate average rainfall among all MONAN experiments. On the other hand, panel F demonstrates that certain parameter changes within the cold pool parametrization can degrade the representation of mean rainfall distribution. For example, CP-3H and CP-D025 curves deviate most significantly from the GPM-IMERG mean.
+The most significant differences appear in panels D and F. In panel D, an improvement in rainfall distribution is evident with increased horizontal resolution (CP-15km), which more closely reproduces the observed GPM-IMERG distribution across all thresholds. It also presents the most accurate average rainfall among all MONAN experiments. On the other hand, panel F demonstrates that certain parameter changes within the cold pool parametrization can degrade the representation of mean rainfall distribution. For example, CP-3H and CP-D025 curves deviate most significantly from the GPM-IMERG mean.
 
 These results suggest that further sensitivity testing, preferably using ensemble approaches, could help better calibrate the forecasted rainfall distributions. Future studies should also include additional hurricane cases to define an optimal cold pool parametrization applicable to various ocean basins.
 
-Finally, one should note that for heavy rainfall thresholds, the curves become indistinguishable, so for the next section we will show a closer look into these thresholds.
+Finally, one should note that for heavy rainfall thresholds, the curves become indistinguishable, so for the next section, we will take a closer look into these thresholds.
 
 \subsubsection{Rainfall extremes}
 
-The following panels represent the CDFs computed for data frequencies above 85\% of each sample (forecasts and datasets), where panels B, D, and F are derived from Figure \ref{fig:probdensity}. In these plots, the vertical purple line indicates the threshold value on the x-axis corresponding to a frequency of 95\%. For GPM-IMERG, this point corresponds to a threshold of 5.5 mm/h, meaning that 95\% of GPM-IMERG data values are equal to or below 5.5 mm/h. On the right side of each graph, the corresponding frequency values for each dataset at this 5.5 mm/h threshold are provided. For example, 98.8\% of ERA5 data exhibit rainfall rates equal to or below 5.5 mm/h; thus, only 1.2\% of ERA5 data exceed this threshold (compared to 5\% from the GPM-IMERG observation).
+The following panels represent the CDFs computed for data frequencies above 85\% of each sample (forecasts and datasets), where panels (B), (D), and (F) are derived from Figure \ref{fig:probdensity}. In these plots, the vertical purple line indicates the threshold value on the x-axis corresponding to a frequency of 95\% for the GPM-IMERG dataset. This point corresponds to a threshold of 5.5 mm/h, meaning that 95\% of GPM-IMERG data values are equal to or below 5.5 mm/h. On the right side of each graph, the corresponding frequency values for each dataset at this 5.5 mm/h threshold are provided. For example, 98.8\% of ERA5 data exhibit rainfall rates equal to or below 5.5 mm/h; thus, only 1.2\% of ERA5 data exceed this threshold (compared to 5\% from the GPM-IMERG observation).
 
 \begin{figure}[!ht]
 	\centering
 	\caption{Same as Figure \ref{fig:probdensity}, but showing CDFs above the 85th percentile.} % Título acima da figura
 	\includegraphics[width=0.7\textwidth]{docs/figuras/chapter5/85_percentile_CDF_FINAL.png} 
-	\vspace{0.5em}
+	\vspace{2mm}
 	
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:probdensity2} % Label para referenciar no texto
@@ -175,9 +177,9 @@ The following panels represent the CDFs computed for data frequencies above 85\%
 
 Following this logic, the proportion of heavy rainfall produced by each sample becomes clear. CP-ON exhibits the highest heavy rainfall proportion, with approximately 5.2\%, whereas CP-OFF shows only 3.3\%. Additionally, it is worth noting that the percentage of extreme rainfall observed by GSMaP is relatively small, at just 3\%.
 
-Among the sensitivity experiments, the percentage is similar across configurations, with CP-1HD050 yielding 94.2\% of values below 5.5 mm/h (Figure \ref{fig:probdensity2} D), followed by CP-1H and CP-D025 with 94.1\% (Figure \ref{fig:probdensity2} F).
+Among the sensitivity experiments, the percentage is similar across configurations, with CP-1HD050 yielding 94.2\% of values below 5.5 mm/h (Figure \ref{fig:probdensity2} (D)), followed by CP-1H and CP-D025 with 94.1\% (Figure \ref{fig:probdensity2} (F)).
 
-Furthermore, Figure \ref{fig:probdensity3} presents a set of CDFs panels computed using the same spatial and temporal domain as in Figure \ref{fig:probdensity}. That is, each CDF is calculated for the area (latitude and longitude) corresponding to Figure \ref{fig:probdensity} and at specific time steps, displayed in panels A (July 4th 00 UTC), B (July 5th 16 UTC), and C (July 7th 10 UTC). The purpose is to examine how the rainfall distribution behaves when focusing more closely on the hurricane's vicinity.
+Furthermore, Figure \ref{fig:probdensity3} presents a set of CDFs panels computed using the same spatial and temporal domain as in Figure \ref{fig:snapshot}. That is, each CDF is calculated for the area (latitude and longitude) corresponding to Figure \ref{fig:probdensity2} and at specific time steps, displayed in panels (A) (July 4th 00 UTC), (B) (July 5th 16 UTC), and (C) (July 7th 10 UTC). The purpose is to examine how the rainfall distribution behaves when focusing more closely on the hurricane's vicinity.
 
 \begin{figure}[!ht]
 	\centering
@@ -189,11 +191,11 @@ Furthermore, Figure \ref{fig:probdensity3} presents a set of CDFs panels compute
 	\label{fig:probdensity3} % Label para referenciar no texto
 \end{figure}
 
-In the first column (A), corresponding to the moment Beryl reaches its maximum precipitation according to official reports, rainfall is overestimated by the experiments employing the cold pool parameterization, with CP-15km being the closest to the reference. CP-OFF overestimates light rainfall thresholds and significantly overestimates the heavy rainfall range.
+In the first column (A), corresponding to the moment Hurricane Beryl reaches its maximum precipitation according to official reports, rainfall is overestimated by the experiments employing the cold pool parameterization, with CP-15km being the closest to the reference. CP-OFF underestimates light rainfall thresholds and significantly overestimates the heavy rainfall range.
 
-After Beryl passes over the Yucatán Peninsula (panel B), most forecasts and datasets tend to overestimate rainfall overall, but they converge better around the heavier rainfall thresholds.
+After Hurricane Beryl passes over the Yucatán Peninsula (panel B), most forecasts and datasets tend to underestimate rainfall overall, but they converge better around the heavier rainfall thresholds.
 
-Upon landfall in Texas (panel C), when Beryl re-intensifies to a Category 1 hurricane, there is again a trend of overestimated rainfall. However, this trend is not mirrored by all datasets, and some experiments, such as CP-15km, CP-OFF, and CP-1HD050, show closer agreement at moderate rainfall thresholds.
+Upon landfall in the State of Texas (panel C), when Hurricane Beryl re-intensifies to a Category 1 hurricane, there is again a trend of overestimated rainfall. However, this trend is not mirrored by all datasets, and some experiments, such as CP-15km, CP-OFF, and CP-1HD050, show closer agreement at moderate rainfall thresholds.
 
 \subsubsection{MONAN performance at forecasting rainfall}
 
@@ -203,12 +205,43 @@ In terms of the Equitable Threat Score (ETS), MONAN shows similar performance to
 
 The Pearson correlation coefficient in the accumulated scene for MONAN averaged 0.45, which is generally considered a moderate correlation, in contrast with ERA5's value of 0.69, which indicates a strong correlation. It is important to highlight that MONAN's correlation deteriorates substantially with increasing forecast lead time. This suggests that if MONAN were initialized more frequently (e.g., with updated initial conditions every day), its correlation values might approach those of ERA5. Despite this degradation, the spatial distribution of extreme rainfall areas is broadly consistent between MONAN and ERA5.
 
-Notably, MONAN can reproduce the convective structures observed by satellite, even with its 30 km horizontal resolution, something that ERA5 fails to capture in certain cases, such as the spiral-shaped rainbands (see case Figure X.X.X).
+Notably, MONAN can reproduce the convective structures observed by satellite, even with its 30 km horizontal resolution, something that ERA5 fails to capture in certain cases, such as the spiral-shaped rainbands (see the cases Figure \ref{fig:biasgpm2}).
 
-When analyzing the rainfall distribution and mean values, it was observed that MONAN tends to underestimate rainfall at both lower and higher thresholds, while ERA5 tends to overestimate rainfall at moderate and extreme thresholds. Besides, the mean rainfall in MONAN is slightly overestimated, but on the other hand, in ERA5, it is consistently overestimated.
+When analyzing the rainfall distribution and mean values, it was observed that MONAN tends to overestimate rainfall at both lower and higher thresholds, while ERA5 tends to underestimate rainfall at moderate to extreme thresholds. Besides, the mean rainfall in MONAN is slightly overestimated, but on the other hand, in ERA5, it is consistently underestimated.
 
-Finally, in terms of extreme rainfall prediction, MONAN forecasts are closer to the GPM-IMERG reference data, particularly when the convective parameterization is enabled. ERA5, however, tends to significantly overestimate rainfall extremes: for example, 2\% of the sample with extreme rainfall, compared to 5\% observed in GPM-IMERG.
+Finally, in terms of extreme rainfall prediction, MONAN forecasts are closer to the GPM-IMERG reference data, particularly when the convective parameterization is enabled. ERA5, however, tends to significantly overestimate rainfall extremes: for example, 2% of the sample with extreme rainfall, compared to 5% observed in GPM-IMERG.
 
 \subsection{Discussion of key outcomes}
 
-a fazer, dale bianca
+Overall, the experiments that included cold pool parameterization showed good agreement with the best track dataset for this event. It was observed that tuning the cold pool parameterization parameters could either improve or worsen the simulated trajectory. The parameterization was also sensitive to spatial resolution, which led to improvements in some cases and deteriorations in others. We believe that further studies focusing on the influence of resolution are necessary, especially considering that the tracking algorithm itself might introduce bias in the resolution-based experiments.
+
+When comparing MONAN to ERA5, we note that MONAN presents a significantly larger trajectory error. This can be attributed to the fact that ERA5 is a reanalysis product, which benefits from continuous data assimilation and correction during the forecast integration, unlike MONAN's free forecasts
+
+Tracking error increases as the forecast progresses. Without cold pool parameterization, errors exceed 200 km after just 60 hours of forecast. With parameterization, this 200 km threshold is only reached after 78 hours and is significantly surpassed only after 108 hours. The best results were obtained in the calibrated experiment CP-D025, which had the lowest average trajectory error among all tested configurations. In this experiment, mean trajectory errors ranged from 100 km to 240 km, with larger errors observed in forecasts initialized earlier. In the study by \citeonline{yamaguchi2012tropical}, the authors achieved a reduction of approximately 10\% in tropical cyclone track errors by modifying initial conditions. In some cases, the improvements were statistically significant. According to the authors, the initial state of tropical cyclones is strongly influenced by the representation of the synoptic-scale environment, which is in turn governed by the steering flow.
+
+The onset of significant forecast divergence appears to be strongly tied to the experiment configuration. As shown in the left panel of Figure \ref{fig:trackerrors}, after landfall on the Yucatán Peninsula, trajectory errors tend to increase. Specific time markers indicate when forecasts cross the 200 km threshold: around 60 h for some experiments, between 78 - 84 h for others, and only after 108 h in the CP-D025 case.
+
+The analysis of the CTE and ATE metrics (Figure \ref{fig:cte}) further confirms prevailing trajectory tendencies. There is a clear westward bias relative to the best track, along with a consistent tendency toward early forecast arrival. These tendencies intensify over time. Importantly, such biases may be intrinsic to the event’s dynamics, as similar westward and premature tendencies were also reported in operational models such as HAFS and the UK Met Office system.
+
+Studies such as \citeonline{grandpeix2010density, feng2015mechanisms, torri2015mechanisms} suggest that cold pools modify the surrounding environment, making it more favorable for convective development and increasing the capacity for convective organization. Based on this, we hypothesize that cold pools may impact hurricane trajectories by directly influencing the convective structures that, in turn, determine the cyclone’s path through regions favorable to convection.
+
+Regarding intensity forecasts, model predictions followed the trend of the best track data but generally underestimated intensity, and this underestimation occurred earlier in the forecast. Specifically, for central pressure, when the hurricane reached the Yucatán Peninsula, a bias of approximately +20 hPa was observed, with forecasts simulating higher pressures than recorded. As the hurricane approached the Texas coast, the model showed premature intensification by around 20 hours. This suggests that MONAN has a systematic bias in the pressure intensity, especially during intensification phases, likely inherited from ERA5’s initial conditions. A similar conclusion was drawn by \citeonline{donkin2023capability}, who showed that initial condition errors substantially affect intensity forecasts, particularly in the MPAS-A model.
+
+Wind field forecasts exhibited similar patterns. Up to around 60 hours, cold pool parameterization helped maintain relatively small biases. Beyond that point, only certain configurations with parameterization could reproduce the observed intensification trend. In this aspect, MONAN outperformed ERA5, which exhibited significant wind intensity errors. \citeonline{dulac2024assessing} also reported such deficiencies in ERA5, noting that similar biases are found in other reanalysis datasets.
+
+Generally, pressure bias ranged between 15 - 20 hPa, and wind speed bias between 30 - 50 km/h. \citeonline{demaria2007evaluation}, in their evaluation of long-term forecast skill over the North Atlantic basin, indicated that errors of this magnitude are typical, although this is not always explicitly stated. Similarly, \citeonline{bopape2021sensitivity} evaluated the representation of tropical cyclone Idai by different convective parameterizations (including Grell-Freitas) and found similar error magnitudes to our results.
+
+Rainfall spatial patterns were evaluated using the Equitable Threat Score (ETS) and spatial Pearson correlation. In general, forecasts showed moderate correlation with GPM-IMERG precipitation data. ETS values suggest MONAN performed comparably to ERA5. Similar studies show comparable magnitudes and tendencies for these metrics during tropical cyclone landfall (e.g., \citeonline{marchok2007validation, brackins2020evaluation}). However, spatial correlations of daily accumulated rainfall degraded over time; a trend less evident in ERA5 due to its continual assimilation. Some configurations yielded higher correlations, while others, particularly those with earlier initializations, showed weaker performance. During landfall on the Texas coast, negative correlations were observed, especially in parameterized runs, suggesting that parameterization can influence spatial accuracy.
+
+As discussed by \citeonline{marchok2007validation}, both ETS and spatial correlation are strongly dependent on track accuracy; larger track errors tend to worsen rainfall distribution statistics. This was confirmed in our snapshot analyses, which revealed systematic spatial rainfall biases. For example, during the passage over the Yucatán Peninsula (Figure \ref{fig:biasgpm} b), all experiments overestimated rainfall, followed by a “blue biased cloud bubble”, suggesting that forecasts were ahead of observations in time.
+
+Snapshot analyses also revealed a significant benefit of the cold pool parameterization: improved structural organization of the cyclone, including clearer spiral rainbands. This effect becomes more evident with increasing resolution and has been previously reported (e.g., \cite{sawada2010impacts, freitas2024parameterization}). Even at moderate resolution, cold pool effects contributed to better convective organization, visible in cloud-top temperatures and clearer representation of features such as the eye. Furthermore, cold pool parameterization promoted deeper convective clouds. \citeonline{schlemmer2014formation} also found that cold pools modify the surrounding environment in ways that lead to the development of deeper clouds due to larger cloud volumes that are less affected by entrainment.
+
+Regarding rainfall distribution, MONAN forecasts displayed a specific bias: an overestimation at low (< 3 mm/h) and high (> 10 mm/h) thresholds and underestimation at moderate intensities. However, simulations with cold pool effects showed improved agreement at moderate thresholds compared with GPM-IMERG. We hypothesize that better convective organization, promoted by cold pools, contributes to more accurate rainfall distribution. Overall, simulations with cold pool parameterization tended to overestimate mean precipitation, while turning it off improved the match to observed means. Adjustments to resolution, mass flux height, and cold pool lifetime improved agreement with observations.
+
+In the literature, rainfall distributions associated with hurricanes are often evaluated within 300 - 600 km of the best track \cite{lonfat2004precipitation, marchok2007validation, brackins2020evaluation}). Future work could focus exclusively on these radii, following such references, to compare results more directly with regional climatology such as that provided by \citeonline{lonfat2004tropical}.
+
+Precipitation extremes (rainfall thresholds typically associated with hurricanes) were also evaluated using cumulative distribution functions (CDFs). Experiments with cold pool effects better reproduced the GPM-IMERG distributions, while other simulations generally overestimated extremes.
+
+Finally, one of the objectives of the sensitivity analysis conducted for this event was to establish an optimal parameter configuration for the cold pool scheme. For Hurricane Beryl, the experiments CP-1H and CP-D050 stood out across the evaluated categories, particularly in rainfall performance. These settings were combined into the CP-1HD050 experiment, which achieved good performance across all categories: medium trajectory accuracy, good intensity representation, and improved rainfall simulation, especially for extremes. Performance was qualitatively evaluated through visual comparison of error plots and snapshots for selected days. While a more robust approach (e.g., ensemble simulations with statistical analysis) would be ideal, for this study, the performance across all metrics was deemed sufficient to validate the optimal configuration.
+

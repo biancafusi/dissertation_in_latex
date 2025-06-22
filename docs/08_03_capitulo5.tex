@@ -1,24 +1,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{CASE STUDY: HURRICANE BERYL}
+\chapter{CASE STUDY: Hurricane Beryl}
 \label{ch:beryl}
 
 This chapter explores the results of implementing cold pool parameterization in the latest Brazilian numerical weather and climate prediction model, MONAN. It emphasizes the model's performance in predicting hurricane trajectory, intensity, and rainfall, using Hurricane Beryl as a case study, which occurred between June and July 2024 in the North Atlantic Basin. Following a brief introduction to the event, the chapter presents the results of the forecast and offers a direct comparison between ERA5 and MONAN. Finally, a discussion section will address the questions outlined previously in Table \ref{tab:questions}.
-% VISTO
 
-\section{Event description - hurricane Beryl}
+\section{Event description - Hurricane Beryl}
 
-Hurricane Beryl formed in the deep tropical Atlantic’s Main Development Region on June 28th, forming a tropical depression near 1200 UTC 28 June about 1200 nautical miles \footnote{In North American meteorology, it is common to use: pressure in millibars (mb), where 1 mb = 1 hPa; distance in nautical miles (nm), where 1 nm = 1.852 km; wind speed in knots (kt), where 1 kt = 1.852 km/h; and precipitation in inches (in), where 1 inch = 25.4 mm} east of Barbados, with a center at 1007 mb and wind speed of 30 kts. According to reports from the National Oceanic and Atmospheric Administration (NOAA), the storm rapidly intensified into a major hurricane, moving eastward and ultimately reaching Category 5 on the Saffir-Simpson Hurricane Wind Scale, making it the earliest Category 5 hurricane on record in the Atlantic Basin. Figure \ref{fig:hurricanepath} display all the trajectory computed with the best track dataset.
+Hurricane Beryl formed in the deep tropical Atlantic’s Main Development Region on June 28th, forming a tropical depression near 1200 UTC 28 June about 1200 nautical miles east of Barbados, with a center at 1007 mb and wind speed of 30 kts. According to reports from the National Oceanic and Atmospheric Administration (NOAA), the storm rapidly intensified into a major hurricane, moving eastward and ultimately reaching Category 5 on the Saffir-Simpson Hurricane Wind Scale, making it the earliest Category 5 hurricane on record in the Atlantic Basin. Figure \ref{fig:hurricanepath} displays all the trajectory computed with the best track dataset.
 
 \begin{figure}[h!]
 	\centering
-	\caption{2024 Hurricane path according to best track analysis.}
+	\caption{Best track trajectory of Hurricane Beryl (June/July 2024).}
 	\label{fig:hurricanepath}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter5/beryl_2024.png}
 	\centering
+	\vspace{2mm}
 	Source: Made by the author (2025).
 \end{figure}
 
-It is important to note that the figure presented in the upper-right quadrant indicates critical meteorological parameters, including the peak wind speed recorded at 145 knots, the minimum mean sea level pressure of 934 hPa, and the Accumulated Cyclone Energy (ACE), which is quantified at 34.5. These values are derived directly from the best track dataset.
+It is important to note that the figure presented indicates, in the upper-right quadrant, critical meteorological parameters, including the peak wind speed recorded at 145 knots, the minimum mean sea level pressure of 934 hPa, and the Accumulated Cyclone Energy (ACE), which is quantified at 34.5. These values are derived directly from the best track dataset.
 
 The first landfall of Hurricane Beryl occurred on the island of Carriacou in Grenada as a high-end Category 4 storm on July 1st, subsequently intensifying to a Category 5 in the Eastern Caribbean Sea. From a disaster perspective, the total damages in the Grenada Region are significant, with estimates of approximately US\$ 218.0 million, which accounts for about 16.5 percent of the GDP for 2023 \cite{gunasekera2024global}. Satellite images illustrating the hurricane's transition from Category 4 to Category 5, passing through the first landfall, are presented in Figure \ref{fig:HurricaneBerylBand13}.
 
@@ -37,40 +37,47 @@ The first landfall of Hurricane Beryl occurred on the island of Carriacou in Gre
 		\includegraphics[width=\linewidth]{docs/figuras/chapter5/20241831710_GOES16-ABI-FL-13-AL022024-2000x2000.jpg}
 		\label{fig:HurricaneBerylBand13}
 	\end{minipage}
+	\vspace{2mm}
 Source: \url{https://www.star.nesdis.noaa.gov/star/index.php.}
 \end{figure}
 
 At the passage through the Caribbean region, the rainfall was more intense in Jamaica, with widespread totals between 8 to 12 inches, and a peak of 13.62 inches observed at Knockpatrick in Manchester Parish, representing the highest storm-total rainfall reported.
 
-The storm began to weaken before making a second landfall on the Yucatán Peninsula as a high-end Category 2 hurricane early on July 5th. Following its passage through the Peninsula, the hurricane continued to weaken while moving northwest, influenced by a large mid to upper-level trough of low pressure over the Central U.S., which eroded the robust ridge of high pressure over the Gulf of Mexico \cite{li2025generative}. The combination of increasing wind shear and dry air entrainment maintained a nearly steady state until dawn on July 7th. Later that morning, Hurricane Beryl progressed toward the Central Texas coast (northwest) as the mid to upper-level trough deepened to the north. An influx of moisture and decreased wind shear allowed the storm to become better organized, resulting in it being classified as a Category 1 hurricane by 11 PM CDT on July 7th (04:00 UTC on July 8th). A glimpse of this large scale environment is shown at Figure \ref{fig:mlsp}.
+The storm began to weaken before making a second landfall on the Yucatán Peninsula as a high-end Category 2 hurricane early on July 5th. Following its passage through the Peninsula, the hurricane continued to weaken while moving northwest, influenced by a large mid to upper-level trough of low pressure over the Central U.S., which eroded the robust ridge\footnote{Trough can be translated to Portuguese in this context as "cavado"; similarly, ridge here can be translated as "crista". For more information, one could check this link: \url{https://www.pbs.org/weta/roughscience/series2/challenges/weather/page8.html\#:~:text=What\%20are\%20ridges\%20and\%20troughs,a\%20region\%20of\%20low\%20pressure}} of high pressure over the Gulf of Mexico \cite{li2025generative}. The combination of increasing wind shear and dry air entrainment maintained a nearly steady state until dawn on July 7th. Later that morning, Hurricane Beryl progressed toward the Central Texas coast (northwest) as the mid to upper-level trough deepened to the north. An influx of moisture and decreased wind shear allowed the storm to become better organized, resulting in it being classified as a Category 1 hurricane by 11 PM CDT on July 7th (04:00 UTC on July 8th). A glimpse of this large scale environment is shown at Figure \ref{fig:mlsp}.
 
 \begin{figure}[h!]
 	\centering
-	\caption{500 mb geopotential height and MSLP on July 8th, 00 UTC}
+	\caption{500 mb geopotential height and MSLP on July 8th, 00 UTC.}
 	\label{fig:mlsp}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter5/beryl02l.png}
+	\vspace{2mm}
 	\centering
 	Source: \url{https://storm.aoml.noaa.gov/viewer/?projectName=BASIN}.
 \end{figure}
 
-At approximately 4 AM CDT on July 8th (09:00 UTC on July 8th), the hurricane made landfall near Matagorda along the Texas coast. Its maximum sustained winds were about 129 km/h (80 mph), and its minimum central pressure was 979 hPa. Figure 3 shows satellite and radar imagery capturing Hurricane Beryl's approach to the Texas coast.
+At approximately 4 AM CDT on July 8th (09:00 UTC on July 8th), the hurricane made landfall near Matagorda along the Texas coast. Its maximum sustained winds were about 129 km/h (80 mph), and its minimum central pressure was 979 hPa. Figure \ref{fig:nexradgeocolor} shows satellite and radar imagery capturing Hurricane Beryl's approach to the Texas coast.
 
 \begin{figure}[h!]
 	\centering
 	\caption{Hurricane Beryl view from NEXRAD (top) and GEOCOLOR composite (bottom) when reaching the Texas Coast.}
 	\label{fig:nexradgeocolor}
+	
 	\includegraphics[width=0.8\textwidth]{docs/figuras/chapter5/20240708-0814Z-HGX.png}
 	\vspace{3mm}
-	\includegraphics[width=0.6\textwidth]{docs/figuras/chapter5/20241901240_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x2000.jpg}
 	
-	\centering
-	Source: \url{https://www.star.nesdis.noaa.gov/star/index.php.}.
+	\includegraphics[width=0.6\textwidth]{docs/figuras/chapter5/20241901240_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x2000.jpg}
+	\vspace{2mm}
+	
+	\begin{center}
+		{\small Source: \url{https://www.star.nesdis.noaa.gov/star/index.php}}
+	\end{center}
 \end{figure}
 
-Finally, the storm began to shift north-northeast, becoming a tropical storm by 10 AM CDT (15:00 UTC on July 8th). As it moved through the continental region, it weakened and transitioned to a tropical depression by 10 PM CDT (03:00 UTC on July 9th), just northwest of Shreveport, Louisiana.
+
+Finally, the storm began to shift north-northeast, becoming a tropical storm by 10 AM CDT (15:00 UTC on July 8th). As it moved through the continental region, it weakened and transitioned to a tropical depression by 10 PM CDT (03:00 UTC on July 9th), just northwest of Shreveport, Louisiana. 
 
 Over the United States, the most intense rainfall occurred in the Houston metropolitan area in southeastern Texas, where widespread totals ranged from 8 to 12 inches, with local maxima of 14.99 inches in Thompsons and 14.88 inches at a HCFCD station in western Houston \cite{li2025generative}.
 
-Based on this overview of the storm, Figure 4 has been created to illustrate the study area of interest, highlighting the significant landfalls made during its progression.
+Based on this overview of the storm, Figure \ref{fig:spatialdomainberyl} has been created to illustrate the study area of interest, highlighting the significant landfalls made during its progression.
 
 \begin{figure}[h!]
 	\centering
@@ -80,19 +87,19 @@ Based on this overview of the storm, Figure 4 has been created to illustrate the
 	Source: Made by the author (2025).
 \end{figure}
 
-The observational period for this study encompasses a six-day interval from 00 UTC on July 3 to 00 UTC on July 9, 2024, as illustrated by the gray bullet points in Figure \ref{fig:spatialdomainberyl}. Notably, this analysis will focus on a post-Category 5 storm. Whereas the system was active from June 28 to July 9, our analysis concentrates primarily on this specific timeframe. A sensitivity analysis regarding an earlier forecast of the observation period will be conducted and discussed in subsequent sections. This study encompasses significant geographical features, including the passage through Jamaica, which recorded the highest levels of rainfall in the Caribbean, the Yucatan landfall as denoted by the square E in Figure \ref{fig:spatialdomainberyl}, and the subsequent landfall in Texas, indicated by the square F in Figure \ref{fig:spatialdomainberyl}.
-
+The observational period for this study encompasses a six-day interval from 00 UTC on July 3 to 00 UTC on July 9, 2024, as illustrated by the gray bullet points in Figure \ref{fig:spatialdomainberyl}. Notably, this analysis will focus on a post-Category 5 storm. Whereas the system was active from June 28 to July 9, our analysis concentrates primarily on this specific timeframe. A sensitivity analysis regarding an earlier forecast of the observation period will be conducted and discussed in subsequent sections. This study encompasses significant geographical features, including the passage through Jamaica, which recorded the highest levels of rainfall in the Caribbean, the Yucatan landfall as denoted by the square E in Figure \ref{fig:spatialdomainberyl}, and the subsequent landfall in the State of Texas, indicated by the square F.
 % ======================================================================================= %
 
 \section{Results and analysis of hurricane Beryl}
 
 In this section, we will present the results in alignment with the established workflow and engage in a discussion regarding the questions outlined in Table \ref{tab:questions}. The subsequent subsections will detail the trajectory, intensity, and rainfall analyses. To conclude, we will provide a summary discussion highlighting the key outcomes of the model and evaluating the overall performance of MONAN in comparison with ERA5 reanalysis.
 
-By the workflow sequence, we will begin by addressing the selection process. Table~\ref{tab:experiments_long} illustrates all the experiments that were conducted.
+By the workflow sequence, we will begin by addressing the forecast selection process. Table \ref{tab:experiments_long} illustrates all the experiments that were conducted.
+
 
 \begin{table}[H]
 	\centering
-	\caption{All performed experiments at Hurricane Beryl period.}
+	\caption{All performed experiments during the Hurricane Beryl period.}
 	\label{tab:experiments_long}
 	\renewcommand{\arraystretch}{1.2}
 	\resizebox{\textwidth}{!}{
@@ -111,7 +118,7 @@ By the workflow sequence, we will begin by addressing the selection process. Tab
 			\midrule
 			
 			Initial Condition Day 
-			& Compares the effect of two initial conditions, June 29, July 2nd (noon), and July 3rd. Tested with 1st July 
+			& Compares the effect of two initial conditions, June 29, July 1st and 2nd (noon), and July 3rd 
 			& \makecell[l]{CP-29\\CP-01\\CP-02T12\\CP-03} \\
 			\midrule
 			
@@ -158,15 +165,15 @@ The “ID” column serves as a reference for the names of the experiments. It i
 				>{\centering\arraybackslash}m{5.5cm} 
 				>{\centering\arraybackslash}m{9cm}
 			}
-			\toprule
+			\hline
 			\textbf{Parameter} & \textbf{Default value} \\
-			\midrule
+			\hline
 			Initial Condition Day & July 3rd, 2024 \\
 			Cold Pool Lifetime & 2 h \\
 			Maximum Downdraft Height & 0.35 \\
 			Resolution Experiment & 30 km horizontal grid \\
 			Type of initial condition & Coming from ERA5 \\
-			\bottomrule
+			\hline
 		\end{tabular}
 	}
 	
@@ -174,43 +181,39 @@ The “ID” column serves as a reference for the names of the experiments. It i
 	{\centering Source: Made by the author (2025).\par}
 \end{table}
 
-We investigate the impact of cold pools by enabling (CP-ON) and disabling (CP-OFF) the parameterization, with CP-OFF serving as the control experiment in this case. In the subsequent rows, we conducted a sensitivity analysis on the parameters within the parameterization. Now our control experiment is the CP-ON configuration, with the Table \ref{tab:cp_def} parameters. For the “Initial Condition Day” experiment, we varied the initial integration times: June 29 (00 UTC), 2024; July 1 (00 UTC), 2024; and July 2 (12 UTC), 2024 - comparing them with the default time. These periods were selected because they correspond to key moments in the storm’s evolution: shortly after HB was classified as a tropical storm, one day before it reached Category 5, and the day it reached Category 5, respectively.
+We investigate the impact of cold pools by enabling (CP-ON) and disabling (CP-OFF) the parameterization, with CP-OFF serving as the control experiment in this case. In the subsequent rows, we conducted a sensitivity analysis on the parameters within the parameterization. Now our control experiment is the CP-ON configuration, with the Table \ref{tab:cp_def} parameters. For the “Initial Condition Day” experiment, we varied the initial integration times: June 29 (00 UTC), 2024; July 1 (00 UTC), 2024; and July 2 (12 UTC), 2024 - comparing them with the default time. These periods were selected because they correspond to key moments in the storm’s evolution: shortly after Hurricane Beryl was classified as a tropical storm, one day before it reached Category 5, and the day it reached Category 5, respectively.
 
 The “Cold Pool Lifetime” was adjusted from the default to durations of 1 hour, 3 hours, and 6 hours. The height of the mass flux above the surface is described by a parabolic function, and the coefficient of this function can be manipulated to alter the maximum height, with lower (higher) values indicating proximity (distance) to the surface. The “Type of Initial Condition” was switched from ERA5 to GFS, both initialized on July 3 (00 UTC), 2024.
 
 During the computation of the initial 13 experiments, we observed that setting the cold pool lifetime to 1 hour and adjusting the maximum downdraft height coefficient to 0.5 resulted in lower errors in the initial results. Consequently, we conducted the “Best Configuration Test” with these parameter adjustments and repeated this configuration at 15 km, bringing the total number of experiments to 15. The reference data here is the best track dataset, and hereafter this dataset will be referenced as “NOAA”. 
 
-Keeping this in mind, Figure~\ref{fig:all_tracks_before} shows all the trajectories for the 15 experiments, plus ERA5 and the reference best-track dataset.
+Keeping this in mind, Figure \ref{fig:all_tracks_before} shows all the trajectories for the 15 experiments, plus ERA5 and the reference best-track dataset.
 
 \begin{figure}[!htb]
     \centering
     \caption{Comparison of storm tracks across all 15 experiments, ERA5, and the best track dataset.} % Título acima da figura
     \includegraphics[width=\textwidth]{docs/figuras/chapter5/ALL_tracks_before_filter.png} % Substitua pelo caminho e extensão correta
-    \vspace{0.5em}
+    \vspace{2mm}
     
     Source: Made by the author (2025). % Fonte abaixo da imagem
     \label{fig:all_tracks_before} % Label para referenciar no texto
 \end{figure}
 
-As one can see in Figure~\ref{fig:all_tracks_before}, the numerous experiments clutter the scene and make visual comparison difficult. But one could notice the deviation of CP-6H and CP-01, which could be candidates to be withdrawn. To better visualize the difference between the trajectories, the distance between each trajectory and the reference data (NOAA’s best track) was computed and shown in Figure~\ref{fig:panel_errors_before}.
+As one can see in Figure \ref{fig:all_tracks_before}, the numerous experiments clutter the scene and make visual comparison difficult. But one could notice the deviation of CP-6H and CP-01, which could be candidates to be withdrawn. To better visualize the difference between the trajectories, the distance between each trajectory and the reference data (NOAA’s best track) was computed and shown in Figure \ref{fig:panel_errors_before}.
 
 \begin{figure}[!htb]
     \centering
     \caption{Errors (distance) between the trajectories.} % Título acima da figura
     \includegraphics[width=\textwidth]{docs/figuras/chapter5/panel_2x2_error_comparison.png} % Substitua pelo caminho e extensão correta
-    \vspace{0.5em}
+    \vspace{2mm}
     
     Source: Made by the author (2025). % Fonte abaixo da imagem
     \label{fig:panel_errors_before} % Label para referenciar no texto
 \end{figure}
 
-\pagebreak
+It can be confirmed that CP-01 deviates significantly from the expected trajectory. Additionally, CP-6H offers limited discussion, as it is quite similar to the other experiments within its group. In Figure \ref{fig:panel_errors_before} (d), CP-1HD05015km does not show a significant improvement and will consequently be withdrawn. We will retain CP-1HD050 to seek the effects related to this configuration in the context of other aspects of tropical cyclones.
 
-It can be confirmed that CP-01 deviates significantly from the expected trajectory. Additionally, CP-6H offer limited discussion, as it is quite similar to the other experiments within their group. In Figure~\ref{fig:panel_errors_before} (d), CP-1HD05015km does not show a significant improvement and will consequently be withdrawn. We will retain CP-1HD050 to seek the effects related to this configuration in the context of other aspects of tropical cyclones.
-
-To summarize the experiments we intend to keep, a new table has been created, similar to Table~\ref{tab:experiments_long}.
-
-\pagebreak
+To summarize the experiments we intend to keep, a new table has been created (Table \ref{tab:selected_experiments}), similar to Table~\ref{tab:experiments_long}.
 
 \begin{table}[H]
 	\centering
@@ -233,7 +236,7 @@ To summarize the experiments we intend to keep, a new table has been created, si
 			\midrule
 			
 			Initial Condition 
-			& Compares the effect of two initial conditions, June 29, July 2nd (noon), and July 3rd. Tested with 1st July 
+			& Compares the effect of two initial conditions, June 29, July 2nd (noon), and July 3rd 
 			& \makecell[l]{CP-29\\CP-02T12\\CP-03 (Control)} \\
 			\midrule
 			
@@ -268,8 +271,7 @@ To summarize the experiments we intend to keep, a new table has been created, si
 	{\centering Source: Made by the author (2025).\par}
 \end{table}
 
-
-In the following subsection we will continue the results now keeping in mind the experiments listed at Table~\ref{tab:selected_experiments}.
+In the following subsection, we will continue the results, now keeping in mind the experiments listed in Table \ref{tab:selected_experiments}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
