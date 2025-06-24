@@ -10,12 +10,12 @@
 \backcite {feng2015mechanisms}{{1}{1}{chapter.1}}
 \backcite {freitas2024parameterization}{{1}{1}{chapter.1}}
 \backcite {freitas2024parameterization}{{2}{1}{chapter.1}}
-\backcite {noaa_hurricane_costs_2024}{{2}{1}{chapter.1}}
-\backcite {noaa_2025_active_year}{{2}{1}{chapter.1}}
-\backcite {sawada2010impacts}{{2}{1}{chapter.1}}
-\backcite {cai2019effect}{{2}{1}{chapter.1}}
-\backcite {grant2018cold}{{2}{1}{chapter.1}}
-\backcite {chen2008influence}{{2}{1}{chapter.1}}
+\backcite {noaa_hurricane_costs_2024, noaa_2025_active_year}{{2}{1}{chapter.1}}
+\backcite {noaa_hurricane_costs_2024, noaa_2025_active_year}{{2}{1}{chapter.1}}
+\backcite {chen2008influence, sawada2010impacts, grant2018cold, cai2019effect}{{2}{1}{chapter.1}}
+\backcite {chen2008influence, sawada2010impacts, grant2018cold, cai2019effect}{{2}{1}{chapter.1}}
+\backcite {chen2008influence, sawada2010impacts, grant2018cold, cai2019effect}{{2}{1}{chapter.1}}
+\backcite {chen2008influence, sawada2010impacts, grant2018cold, cai2019effect}{{2}{1}{chapter.1}}
 \backcite {skamarock2012multiscale}{{2}{1}{chapter.1}}
 \backcite {freitas2024parameterization}{{3}{1.3}{section.1.3}}
 \backcite {muller2020response}{{5}{2.1}{section.2.1}}
