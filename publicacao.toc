@@ -40,24 +40,24 @@
 \contentsline {subsection}{\numberline {5.2.1}Trajectory}{66}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Intensity}{73}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Rainfall}{76}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Pattern and spatial rainfall distribution}{76}{subsubsection.5.2.3.1}%
-\contentsline {subsubsection}{\numberline {5.2.3.2}Rainfall mean and overall distribution}{83}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Pattern and spatial rainfall distribution}{77}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}Rainfall mean and overall distribution}{84}{subsubsection.5.2.3.2}%
 \contentsline {subsubsection}{\numberline {5.2.3.3}Rainfall extremes}{85}{subsubsection.5.2.3.3}%
 \contentsline {subsubsection}{\numberline {5.2.3.4}MONAN performance at forecasting rainfall}{86}{subsubsection.5.2.3.4}%
 \contentsline {subsection}{\numberline {5.2.4}Discussion of key outcomes}{87}{subsection.5.2.4}%
-\contentsline {chapter}{\numberline {6}CASE STUDY: HURRICANE HELENE – TESTING THE IMPROVED PARAMETRIZATION}{99}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Event description - Helene}{99}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Results and analysis of hurricane Helene}{104}{section.6.2}%
+\contentsline {chapter}{\numberline {6}PART TWO: HURRICANE HELENE – TESTING THE IMPROVED PARAMETRIZATION}{99}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Event description - Hurricane Helene}{99}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Results and analysis of Hurricane Helene}{103}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Trajectory}{104}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Intensity}{104}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Rainfall}{104}{subsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.3.1}Pattern and spatial rainfall distribution}{104}{subsubsection.6.2.3.1}%
-\contentsline {subsubsection}{\numberline {6.2.3.2}Rainfall mean and overall distribution}{104}{subsubsection.6.2.3.2}%
-\contentsline {subsubsection}{\numberline {6.2.3.3}MONAN performance at forecasting rainfall}{104}{subsubsection.6.2.3.3}%
-\contentsline {section}{\numberline {6.3}Discussion of key outcomes}{104}{section.6.3}%
-\contentsline {chapter}{\numberline {7}CONCLUSIONS AND FUTURE WORK}{105}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Future Work}{105}{section.7.1}%
-\contentsline {chapter}{\numberline {A}APPENDIX - THE MASS FLUX DEDUCTION}{107}{chapter.8}%
-\contentsline {chapter}{\numberline {A}APPENDIX B - THE TRACKING ALGORITHM}{109}{chapter.9}%
-\contentsline {chapter}{REFERENCES}{111}{chapter.10}%
+\contentsline {subsection}{\numberline {6.2.2}Intensity}{109}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Rainfall}{112}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}Pattern and spatial rainfall distribution}{113}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}Rainfall mean and overall distribution}{120}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.3.3}MONAN performance at forecasting rainfall}{124}{subsubsection.6.2.3.3}%
+\contentsline {section}{\numberline {6.3}Discussion of key outcomes}{126}{section.6.3}%
+\contentsline {chapter}{\numberline {7}CONCLUSIONS AND FUTURE WORK}{131}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Future Work}{131}{section.7.1}%
+\contentsline {chapter}{\numberline {A}APPENDIX - THE MASS FLUX DEDUCTION}{133}{chapter.8}%
+\contentsline {chapter}{\numberline {A}APPENDIX B - THE TRACKING ALGORITHM}{135}{chapter.9}%
+\contentsline {chapter}{REFERENCES}{137}{chapter.10}%
 \contentsfinish 

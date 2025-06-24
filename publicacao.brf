@@ -146,7 +146,7 @@
 \backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{82}{5.2.3.1}{figure.5.22}}
 \backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{82}{5.2.3.1}{figure.5.22}}
 \backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{82}{5.2.3.1}{figure.5.22}}
-\backcite {yamaguchi2012tropical}{{87}{5.2.4}{subsection.5.2.4}}
+\backcite {yamaguchi2012tropical}{{88}{5.2.4}{subsection.5.2.4}}
 \backcite {grandpeix2010density, feng2015mechanisms, torri2015mechanisms}{{88}{5.2.4}{subsection.5.2.4}}
 \backcite {grandpeix2010density, feng2015mechanisms, torri2015mechanisms}{{88}{5.2.4}{subsection.5.2.4}}
 \backcite {grandpeix2010density, feng2015mechanisms, torri2015mechanisms}{{88}{5.2.4}{subsection.5.2.4}}
@@ -159,13 +159,20 @@
 \backcite {marchok2007validation}{{89}{5.2.4}{subsection.5.2.4}}
 \backcite {sawada2010impacts, freitas2024parameterization}{{89}{5.2.4}{subsection.5.2.4}}
 \backcite {sawada2010impacts, freitas2024parameterization}{{89}{5.2.4}{subsection.5.2.4}}
-\backcite {schlemmer2014formation}{{89}{5.2.4}{subsection.5.2.4}}
+\backcite {schlemmer2014formation}{{90}{5.2.4}{subsection.5.2.4}}
 \backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{90}{5.2.4}{subsection.5.2.4}}
 \backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{90}{5.2.4}{subsection.5.2.4}}
 \backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{90}{5.2.4}{subsection.5.2.4}}
-\backcite {lonfat2004tropical}{{90}{5.2.4}{subsection.5.2.4}}
+\backcite {lonfat2004precipitation}{{90}{5.2.4}{subsection.5.2.4}}
 \backcite {nhc_helene2024}{{100}{6.1}{figure.6.1}}
 \backcite {fsu_helene2024}{{100}{6.1}{figure.6.1}}
 \backcite {britannica_helene}{{100}{6.1}{figure.6.3}}
 \backcite {nhc_helene20241}{{101}{6.2}{figure.6.2}}
 \backcite {nhc_helene20241}{{102}{6.1}{table.6.1}}
+\backcite {britannica_helene}{{102}{6.1}{figure.6.3}}
+\backcite {metoffice_nhem2024}{{107}{6.2.1}{figure.6.7}}
+\backcite {marchok2007validation}{{126}{6.2.3.3}{figure.6.22}}
+\backcite {brackins2020evaluation}{{126}{6.2.3.3}{figure.6.22}}
+\backcite {yamaguchi2012tropical}{{127}{6.3}{section.6.3}}
+\backcite {marchok2007validation}{{130}{6.3}{section.6.3}}
+\backcite {brackins2020evaluation}{{130}{6.3}{section.6.3}}

@@ -1,4 +1,5 @@
 \subsection{Trajectory}
+\label{subsection521}
 
 
 All trajectories are displayed in the Figure~\ref{fig:all_tracks_selected}. The trajectories of each group of the Table~\ref{tab:selected_experiments} can be found at Appendix B.
@@ -21,7 +22,7 @@ The CP-ON and CP-OFF configurations exhibit comparable results for the majority 
 
 It is observed that when initialization occurs before July 3rd (00 UTC), 2024, a visible degradation in trajectory forecast accuracy ensues. Note that there is a tendency for earlier initialization to result in poorer forecasts, a fact that can be confirmed later on with the MAE and RMSE metrics. This underscores the necessity of incorporating a module within the model to assess ensembles of initial conditions, also in agreement with what is found in the literature \cite{donkin2023capability}.
 
-Finally, the configuration incorporating two parameters that have been changed simultaneously does not reveal significant deviations from the default setup. Overall, the forecasts exhibit a westward bias, a phenomenon that is also apparent in forecasts issued by the Hurricane Analysis and Forecast System (HAFS), as shown at Figure \ref{fig:berryl3rd}.
+Finally, the configuration incorporating two parameters that have been changed simultaneously does not reveal significant deviations from the default setup. Overall, the forecasts exhibit a westward bias, a phenomenon that is also apparent in forecasts issued by the Hurricane Analysis and Forecast System (HAFS), as shown in Figure \ref{fig:berryl3rd}.
 
 \begin{figure}[!ht]
 	\centering
@@ -36,7 +37,7 @@ The next figure provides complementary information to the analysis, now in a mor
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Track errors of the MONAN forecast and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a).} % Título acima da figura
+	\caption{Track errors of the MONAN forecast for Hurricane Beryl and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a).} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png} 
 	\vspace{2mm}
 	Source: Made by the author, (2025).  % Fonte abaixo da imagem
@@ -55,7 +56,7 @@ By observing Figure \ref{fig:all_tracks_selected} and Figure \ref{fig:trackerror
 
 \begin{figure}[!ht]
 	\centering
-	\caption{CTE (a) and ATE (b).} % Título acima da figura
+	\caption{CTE (a) and ATE (b) computing during the Hurricane Beryl period.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/Cross_Track_Along_Track_Errors_FINAL.png} 
 	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -91,7 +92,7 @@ The mean error performance of all MONAN forecasts was computed and shown in Figu
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Overall performance of MONAN trajectory forecasts compared with ERA5 reanalysis.} % Título acima da figura
+	\caption{Overall performance of MONAN trajectory forecasts for Hurricane Beryl compared with ERA5 reanalysis.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_FINAL.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem

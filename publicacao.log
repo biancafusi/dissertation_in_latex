@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.22)  21 JUN 2025 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.22)  23 JUN 2025 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -779,7 +779,10 @@ LaTeX Warning: Label `fig:threatscore' multiply defined.
 
 ) (./docs/08_04_capitulo6.aux
 
-LaTeX Warning: Label `fig:synoptic' multiply defined.
+LaTeX Warning: Label `fig:selectedsnap2' multiply defined.
+
+
+LaTeX Warning: Label `fig:selectedsnap2' multiply defined.
 
 ) (./docs/08_04_capitulo7.aux) (./docs/09_01_appendixA.aux))
 \openout1 = `publicacao.aux'.
@@ -999,7 +1002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--64
  []
 
 Package hyperref Info: Reference (link) `table.0.2' on input line 64.
-Package hyperref Info: Reference (link) `page.118' on input line 64.
+Package hyperref Info: Reference (link) `page.144' on input line 64.
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--64
 
@@ -1022,7 +1025,7 @@ l.64 \maketitle
                  %% não alterar, gera páginas obrigatórias (folha de rost...
 [2
 Package `hyperref' Info: End of reference (link) `table.0.2', line 64.
-Package `hyperref' Info: End of reference (link) `page.118', line 64.
+Package `hyperref' Info: End of reference (link) `page.144', line 64.
 Package `hyperref' Info: End of reference <VerboseLinkInfo>.
 Package `hyperref' Info: End of reference <VerboseLinkInfo>.
 Package `hyperref' Info: End of reference <VerboseLinkInfo>.
@@ -1190,14 +1193,12 @@ Package hyperref Info: Reference (link) `figure.5.25' on input line 50.
 Package hyperref Info: Reference (link) `figure.6.1' on input line 52.
 Package hyperref Info: Reference (link) `figure.6.2' on input line 53.
 Package hyperref Info: Reference (link) `figure.6.3' on input line 54.
-Package hyperref Info: Reference (link) `figure.6.4' on input line 55.
-)
-\tf@lof=\write6
-\openout6 = `publicacao.lof'.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.xii' on input line 73.
+Package hyperref Info: Anchor `page.xii' on input line 55.
 [12
 Package `hyperref' Info: End of reference (link) `figure.5.10', line 33.
 Package `hyperref' Info: End of reference (link) `figure.5.11', line 34.
@@ -1225,8 +1226,62 @@ Package `hyperref' Info: End of reference (link) `figure.5.25', line 50.
 Package `hyperref' Info: End of reference (link) `figure.5.27', line 50.
 Package `hyperref' Info: End of reference (link) `figure.6.1', line 52.
 Package `hyperref' Info: End of reference (link) `figure.6.2', line 53.
+]
+Package hyperref Info: Reference (link) `figure.6.4' on input line 55.
+Package hyperref Info: Reference (link) `figure.6.5' on input line 56.
+Package hyperref Info: Reference (link) `figure.6.6' on input line 57.
+Package hyperref Info: Reference (link) `figure.6.7' on input line 58.
+Package hyperref Info: Reference (link) `figure.6.8' on input line 59.
+Package hyperref Info: Reference (link) `figure.6.9' on input line 60.
+Package hyperref Info: Reference (link) `figure.6.10' on input line 61.
+Package hyperref Info: Reference (link) `figure.6.11' on input line 62.
+Package hyperref Info: Reference (link) `figure.6.12' on input line 63.
+Package hyperref Info: Reference (link) `figure.6.13' on input line 64.
+Package hyperref Info: Reference (link) `figure.6.14' on input line 65.
+Package hyperref Info: Reference (link) `figure.6.15' on input line 66.
+Package hyperref Info: Reference (link) `figure.6.16' on input line 67.
+Package hyperref Info: Reference (link) `figure.6.17' on input line 68.
+Package hyperref Info: Reference (link) `figure.6.18' on input line 69.
+Package hyperref Info: Reference (link) `figure.6.19' on input line 70.
+Package hyperref Info: Reference (link) `figure.6.20' on input line 71.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.xiii' on input line 72.
+[13
 Package `hyperref' Info: End of reference (link) `figure.6.3', line 54.
 Package `hyperref' Info: End of reference (link) `figure.6.4', line 55.
+Package `hyperref' Info: End of reference (link) `figure.6.5', line 56.
+Package `hyperref' Info: End of reference (link) `figure.6.6', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.7', line 58.
+Package `hyperref' Info: End of reference (link) `figure.6.8', line 59.
+Package `hyperref' Info: End of reference (link) `figure.6.9', line 60.
+Package `hyperref' Info: End of reference (link) `figure.6.10', line 61.
+Package `hyperref' Info: End of reference (link) `figure.6.11', line 62.
+Package `hyperref' Info: End of reference (link) `figure.6.12', line 63.
+Package `hyperref' Info: End of reference (link) `figure.6.13', line 64.
+Package `hyperref' Info: End of reference (link) `figure.6.14', line 65.
+Package `hyperref' Info: End of reference (link) `figure.6.15', line 66.
+Package `hyperref' Info: End of reference (link) `figure.6.16', line 67.
+Package `hyperref' Info: End of reference (link) `figure.6.17', line 68.
+Package `hyperref' Info: End of reference (link) `figure.6.18', line 69.
+Package `hyperref' Info: End of reference (link) `figure.6.19', line 70.
+]
+Package hyperref Info: Reference (link) `figure.6.21' on input line 72.
+Package hyperref Info: Reference (link) `figure.6.22' on input line 73.
+)
+\tf@lof=\write6
+\openout6 = `publicacao.lof'.
+
+
+
+Package hyperref Info: Anchor `page.xiv' on input line 73.
+[14
+Package `hyperref' Info: End of reference (link) `figure.6.20', line 71.
+Package `hyperref' Info: End of reference (link) `figure.6.21', line 72.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 73.
 ]
 Package hyperref Info: Anchor `section.0.2' on input line 74.
 Package hyperref Info: Anchor `listtablename.0' on input line 74.
@@ -1242,14 +1297,15 @@ Package hyperref Info: Reference (link) `table.5.1' on input line 18.
 Package hyperref Info: Reference (link) `table.5.2' on input line 19.
 Package hyperref Info: Reference (link) `table.5.3' on input line 20.
 Package hyperref Info: Reference (link) `table.6.1' on input line 22.
+Package hyperref Info: Reference (link) `table.6.2' on input line 23.
 )
 \tf@lot=\write7
 \openout7 = `publicacao.lot'.
 
 
 
-Package hyperref Info: Anchor `page.xiii' on input line 74.
-[13
+Package hyperref Info: Anchor `page.xv' on input line 74.
+[15
 
 
 
@@ -1265,10 +1321,11 @@ Package `hyperref' Info: End of reference (link) `table.5.1', line 18.
 Package `hyperref' Info: End of reference (link) `table.5.2', line 19.
 Package `hyperref' Info: End of reference (link) `table.5.3', line 20.
 Package `hyperref' Info: End of reference (link) `table.6.1', line 22.
+Package `hyperref' Info: End of reference (link) `table.6.2', line 23.
 ]
 
-Package hyperref Info: Anchor `page.xiv' on input line 74.
-[14
+Package hyperref Info: Anchor `page.xvi' on input line 74.
+[16
 
 
 ]
@@ -1280,15 +1337,15 @@ Package hyperref Info: Anchor `nomeabreviaturasesiglas.0' on input line 4.
 Package hyperref Info: Anchor `table.0.1' on input line 25.
 
 
-Package hyperref Info: Anchor `page.xv' on input line 25.
-[15
+Package hyperref Info: Anchor `page.xvii' on input line 25.
+[17
 
 
 
 ]
 
-Package hyperref Info: Anchor `page.xvi' on input line 25.
-[16
+Package hyperref Info: Anchor `page.xviii' on input line 25.
+[18
 
 
 ])
@@ -1301,8 +1358,8 @@ Package hyperref Info: Anchor `estilo:simbolos' on input line 9.
 Package hyperref Info: Anchor `table.0.2' on input line 25.
 
 
-Package hyperref Info: Anchor `page.xvii' on input line 25.
-[17
+Package hyperref Info: Anchor `page.xix' on input line 25.
+[19
 
 
 
@@ -1310,8 +1367,8 @@ Package hyperref Info: Anchor `page.xvii' on input line 25.
 
 ]
 
-Package hyperref Info: Anchor `page.xviii' on input line 25.
-[18
+Package hyperref Info: Anchor `page.xx' on input line 25.
+[20
 
 
 ])
@@ -1350,8 +1407,8 @@ Package hyperref Info: Reference (link) `section.4.4' on input line 35.
 Package hyperref Info: Reference (link) `section.4.5' on input line 36.
 
 
-Package hyperref Info: Anchor `page.xix' on input line 37.
-[19
+Package hyperref Info: Anchor `page.xxi' on input line 37.
+[21
 
 
 
@@ -1426,8 +1483,8 @@ Package hyperref Info: Reference (link) `chapter.10' on input line 62.
 
 
 
-Package hyperref Info: Anchor `page.xx' on input line 80.
-[20
+Package hyperref Info: Anchor `page.xxii' on input line 80.
+[22
 Package `hyperref' Info: End of reference (link) `section.4.5', line 36.
 Package `hyperref' Info: End of reference (link) `chapter.5', line 37.
 Package `hyperref' Info: End of reference (link) `section.5.1', line 38.
@@ -1778,7 +1835,7 @@ ame }{\ignorespaces Cloud stages of formation.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.1' on input line 29.
-<docs/figuras/chapter2/cloud_evolution_muller.pdf, id=701, 963.6pt x 542.025pt>
+<docs/figuras/chapter2/cloud_evolution_muller.pdf, id=774, 963.6pt x 542.025pt>
 
 File: docs/figuras/chapter2/cloud_evolution_muller.pdf Graphic file (type pdf)
 <use docs/figuras/chapter2/cloud_evolution_muller.pdf>
@@ -1880,7 +1937,7 @@ ment.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.2' on input line 54.
-<docs/figuras/chapter2/cold_pool_evolution_tompkins.png, id=737, 1250.6725pt x 
+<docs/figuras/chapter2/cold_pool_evolution_tompkins.png, id=811, 1250.6725pt x 
 769.87625pt>
 File: docs/figuras/chapter2/cold_pool_evolution_tompkins.png Graphic file (type
  png)
@@ -2011,7 +2068,7 @@ ame }{\ignorespaces Decomposition of the specific humidity perturbation.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.3' on input line 73.
-<docs/figuras/chapter2/rings_surface_romps.jpg, id=777, 989.88pt x 581.81pt>
+<docs/figuras/chapter2/rings_surface_romps.jpg, id=849, 989.88pt x 581.81pt>
 File: docs/figuras/chapter2/rings_surface_romps.jpg Graphic file (type jpg)
 <use docs/figuras/chapter2/rings_surface_romps.jpg>
 Package pdftex.def Info: docs/figuras/chapter2/rings_surface_romps.jpg  used on
@@ -2100,7 +2157,7 @@ ame }{\ignorespaces How do cold pools organize convection?.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.4' on input line 94.
-<docs/figuras/chapter2/feng_organization.jpg, id=797, 949.0pt x 395.66pt>
+<docs/figuras/chapter2/feng_organization.jpg, id=869, 949.0pt x 395.66pt>
 File: docs/figuras/chapter2/feng_organization.jpg Graphic file (type jpg)
 <use docs/figuras/chapter2/feng_organization.jpg>
 Package pdftex.def Info: docs/figuras/chapter2/feng_organization.jpg  used on i
@@ -2231,7 +2288,7 @@ d pool.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.5' on input line 139.
-<docs/figuras/chapter2/MSE_PDF_freitas2024.png, id=839, 628.3475pt x 589.20125p
+<docs/figuras/chapter2/MSE_PDF_freitas2024.png, id=912, 628.3475pt x 589.20125p
 t>
 File: docs/figuras/chapter2/MSE_PDF_freitas2024.png Graphic file (type png)
 <use docs/figuras/chapter2/MSE_PDF_freitas2024.png>
@@ -2341,7 +2398,7 @@ ame }{\ignorespaces A cold pool gust front and its associated parameters.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.6' on input line 199.
-<docs/figuras/chapter2/cold_pool_equations_scheme.pdf, id=874, 722.7pt x 406.51
+<docs/figuras/chapter2/cold_pool_equations_scheme.pdf, id=947, 722.7pt x 406.51
 875pt>
 File: docs/figuras/chapter2/cold_pool_equations_scheme.pdf Graphic file (type p
 df)
@@ -2507,8 +2564,8 @@ ld pool parameterization and the convection parameterization described.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.7' on input line 276.
 Package hyperref Info: Anchor `figure.2.7' on input line 276.
-<docs/figuras/chapter2/coupling_equations_scheme.pdf, id=939, 722.7pt x 406.518
-75pt>
+<docs/figuras/chapter2/coupling_equations_scheme.pdf, id=1011, 722.7pt x 406.51
+875pt>
 File: docs/figuras/chapter2/coupling_equations_scheme.pdf Graphic file (type pd
 f)
 <use docs/figuras/chapter2/coupling_equations_scheme.pdf>
@@ -2661,7 +2718,7 @@ ame }{\ignorespaces Illustration of a hurricane structure.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.2.8' on input line 349.
-<docs/figuras/chapter2/tropical_cyclones_structure.pdf, id=1002, 845.07718pt x 
+<docs/figuras/chapter2/tropical_cyclones_structure.pdf, id=1076, 845.07718pt x 
 597.19106pt>
 File: docs/figuras/chapter2/tropical_cyclones_structure.pdf Graphic file (type 
 pdf)
@@ -3376,7 +3433,7 @@ fferent resolutions.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.3.1' on input line 176.
 Package hyperref Info: Anchor `figure.3.1' on input line 176.
-<docs/figuras/chapter3/ncl_plots_a.png, id=1226, 682.55pt x 611.28375pt>
+<docs/figuras/chapter3/ncl_plots_a.png, id=1299, 682.55pt x 611.28375pt>
 File: docs/figuras/chapter3/ncl_plots_a.png Graphic file (type png)
 <use docs/figuras/chapter3/ncl_plots_a.png>
 Package pdftex.def Info: docs/figuras/chapter3/ncl_plots_a.png  used on input l
@@ -3390,7 +3447,7 @@ ame }{\ignorespaces 30km horizontal resolution at native mesh in MONAN.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.3.2' on input line 187.
-<docs/figuras/chapter3/rain_plot_native_grid.png, id=1229, 289.08pt x 260.4129p
+<docs/figuras/chapter3/rain_plot_native_grid.png, id=1302, 289.08pt x 260.4129p
 t>
 File: docs/figuras/chapter3/rain_plot_native_grid.png Graphic file (type png)
 <use docs/figuras/chapter3/rain_plot_native_grid.png>
@@ -3600,7 +3657,7 @@ time (T). This distance is computed as the great-circle distance.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.4.1' on input line 38.
 Package hyperref Info: Anchor `figure.4.1' on input line 38.
-<docs/figuras/chapter4/cte_ate.pdf, id=1298, 290.0436pt x 237.7683pt>
+<docs/figuras/chapter4/cte_ate.pdf, id=1370, 290.0436pt x 237.7683pt>
 File: docs/figuras/chapter4/cte_ate.pdf Graphic file (type pdf)
 <use docs/figuras/chapter4/cte_ate.pdf>
 Package pdftex.def Info: docs/figuras/chapter4/cte_ate.pdf  used on input line 
@@ -3780,7 +3837,7 @@ ame }{\ignorespaces Workflow overview of Hurricane Berryl.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.4.2' on input line 191.
-<docs/figuras/chapter4/BERYL_worflow_01.pdf, id=1365, 614.295pt x 794.97pt>
+<docs/figuras/chapter4/BERYL_worflow_01.pdf, id=1438, 614.295pt x 794.97pt>
 File: docs/figuras/chapter4/BERYL_worflow_01.pdf Graphic file (type pdf)
 <use docs/figuras/chapter4/BERYL_worflow_01.pdf>
 Package pdftex.def Info: docs/figuras/chapter4/BERYL_worflow_01.pdf  used on in
@@ -3806,8 +3863,8 @@ Package hyperref Info: bookmark on input line 202:
 (hyperref)             reference {section.4.5}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-Package hyperref Info: Reference (link) `table.4.3' on input line 204.
-Package hyperref Info: bookmark on input line 208:
+Package hyperref Info: Reference (link) `table.4.3' on input line 205.
+Package hyperref Info: bookmark on input line 209:
 (hyperref)             thecounter {4.3}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Key research questions for track, intensity, and rainfall a
@@ -3815,30 +3872,30 @@ ssessment for Hurricane Helene.}}
 (hyperref)             reference {table.4.3}
 (hyperref)             toclevel {0}
 (hyperref)             type {lot}.
-Package hyperref Info: Anchor `table.4.3' on input line 208.
-Package hyperref Info: Anchor `table.4.3' on input line 208.
+Package hyperref Info: Anchor `table.4.3' on input line 209.
+Package hyperref Info: Anchor `table.4.3' on input line 209.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.53' on input line 241.
+Package hyperref Info: Anchor `page.53' on input line 242.
 [53
-Package `hyperref' Info: End of reference (link) `table.4.3', line 204.
+Package `hyperref' Info: End of reference (link) `table.4.3', line 205.
 ]
-Package hyperref Info: bookmark on input line 244:
+Package hyperref Info: bookmark on input line 245:
 (hyperref)             thecounter {4.3}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Workflow overview of Hurricane Helene.}}
 (hyperref)             reference {figure.4.3}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.4.3' on input line 244.
-<docs/figuras/chapter4/HELENE_workflow_02.pdf, id=1388, 614.295pt x 794.97pt>
+Package hyperref Info: Anchor `figure.4.3' on input line 245.
+<docs/figuras/chapter4/HELENE_workflow_02.pdf, id=1460, 614.295pt x 794.97pt>
 File: docs/figuras/chapter4/HELENE_workflow_02.pdf Graphic file (type pdf)
 <use docs/figuras/chapter4/HELENE_workflow_02.pdf>
 Package pdftex.def Info: docs/figuras/chapter4/HELENE_workflow_02.pdf  used on 
-input line 245.
+input line 246.
 (pdftex.def)             Requested size: 426.79787pt x 552.32666pt.
 )
 
@@ -3889,7 +3946,7 @@ ame }{\ignorespaces Best track trajectory of Hurricane Beryl (June/July 2024).}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.1' on input line 14.
-<docs/figuras/chapter5/beryl_2024.png, id=1411, 1011.78pt x 650.43pt>
+<docs/figuras/chapter5/beryl_2024.png, id=1484, 1011.78pt x 650.43pt>
 File: docs/figuras/chapter5/beryl_2024.png Graphic file (type png)
 <use docs/figuras/chapter5/beryl_2024.png>
 Package pdftex.def Info: docs/figuras/chapter5/beryl_2024.png  used on input li
@@ -3915,7 +3972,7 @@ ame }{\ignorespaces Hurricane Beryl view from the GEOCOLOR composite (left) and
 Package hyperref Info: Anchor `figure.5.2' on input line 27.
 Package hyperref Info: Anchor `figure.5.2' on input line 27.
 <docs/figuras/chapter5/20241831150_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x2000.jp
-g, id=1415, 2007.5pt x 2007.5pt>
+g, id=1488, 2007.5pt x 2007.5pt>
 File: docs/figuras/chapter5/20241831150_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x20
 00.jpg Graphic file (type jpg)
 <use docs/figuras/chapter5/20241831150_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x200
@@ -3924,7 +3981,7 @@ Package pdftex.def Info: docs/figuras/chapter5/20241831150_GOES16-ABI-FL-GEOCOL
 OR-AL022024-2000x2000.jpg  used on input line 31.
 (pdftex.def)             Requested size: 204.85802pt x 204.8358pt.
 <docs/figuras/chapter5/20241831710_GOES16-ABI-FL-13-AL022024-2000x2000.jpg, id=
-1416, 2007.5pt x 2007.5pt>
+1489, 2007.5pt x 2007.5pt>
 File: docs/figuras/chapter5/20241831710_GOES16-ABI-FL-13-AL022024-2000x2000.jpg
  Graphic file (type jpg)
 <use docs/figuras/chapter5/20241831710_GOES16-ABI-FL-13-AL022024-2000x2000.jpg>
@@ -3992,7 +4049,7 @@ ame }{\ignorespaces 500 mb geopotential height and MSLP on July 8th, 00 UTC.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.3' on input line 50.
-<docs/figuras/chapter5/beryl02l.png, id=1435, 1204.5pt x 785.93625pt>
+<docs/figuras/chapter5/beryl02l.png, id=1508, 1204.5pt x 785.93625pt>
 File: docs/figuras/chapter5/beryl02l.png Graphic file (type png)
 <use docs/figuras/chapter5/beryl02l.png>
 Package pdftex.def Info: docs/figuras/chapter5/beryl02l.png  used on input line
@@ -4025,14 +4082,14 @@ te (bottom) when reaching the Texas Coast.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.4' on input line 61.
 Package hyperref Info: Anchor `figure.5.4' on input line 61.
-<docs/figuras/chapter5/20240708-0814Z-HGX.png, id=1447, 1284.8pt x 722.7pt>
+<docs/figuras/chapter5/20240708-0814Z-HGX.png, id=1520, 1284.8pt x 722.7pt>
 File: docs/figuras/chapter5/20240708-0814Z-HGX.png Graphic file (type png)
 <use docs/figuras/chapter5/20240708-0814Z-HGX.png>
 Package pdftex.def Info: docs/figuras/chapter5/20240708-0814Z-HGX.png  used on 
 input line 64.
 (pdftex.def)             Requested size: 341.43437pt x 192.05493pt.
 <docs/figuras/chapter5/20241901240_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x2000.jp
-g, id=1448, 2007.5pt x 2007.5pt>
+g, id=1521, 2007.5pt x 2007.5pt>
 File: docs/figuras/chapter5/20241901240_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x20
 00.jpg Graphic file (type jpg)
 <use docs/figuras/chapter5/20241901240_GOES16-ABI-FL-GEOCOLOR-AL022024-2000x200
@@ -4068,7 +4125,7 @@ ory.}}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.5' on input line 84.
-<docs/figuras/chapter5/map_with_cat_path.png, id=1458, 571.4148pt x 343.0416pt>
+<docs/figuras/chapter5/map_with_cat_path.png, id=1531, 571.4148pt x 343.0416pt>
 
 File: docs/figuras/chapter5/map_with_cat_path.png Graphic file (type png)
 <use docs/figuras/chapter5/map_with_cat_path.png>
@@ -4145,13 +4202,13 @@ Package hyperref Info: bookmark on input line 194:
 (hyperref)             thecounter {5.6}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Comparison of storm tracks across all 15 experiments, ERA5,
- and the best track dataset.}}
+ and the best track dataset during Hurricane Beryl period.}}
 (hyperref)             reference {figure.5.6}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.6' on input line 194.
 Package hyperref Info: Anchor `figure.5.6' on input line 194.
-<docs/figuras/chapter5/ALL_tracks_before_filter.png, id=1479, 657.4161pt x 571.
+<docs/figuras/chapter5/ALL_tracks_before_filter.png, id=1552, 657.4161pt x 571.
 4148pt>
 File: docs/figuras/chapter5/ALL_tracks_before_filter.png Graphic file (type png
 )
@@ -4174,12 +4231,13 @@ Package `hyperref' Info: End of reference (link) `figure.5.6', line 202.
 Package hyperref Info: bookmark on input line 206:
 (hyperref)             thecounter {5.7}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Errors (distance) between the trajectories.}}
+ame }{\ignorespaces Errors (distance) between the forecasted Beryl trajectories
+.}}
 (hyperref)             reference {figure.5.7}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.7' on input line 206.
-<docs/figuras/chapter5/panel_2x2_error_comparison.png, id=1488, 1004.553pt x 71
+<docs/figuras/chapter5/panel_2x2_error_comparison.png, id=1560, 1004.553pt x 71
 5.2321pt>
 File: docs/figuras/chapter5/panel_2x2_error_comparison.png Graphic file (type p
 ng)
@@ -4222,9 +4280,9 @@ Package hyperref Info: bookmark on input line 1:
 (hyperref)             reference {subsection.5.2.1}
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
-Package hyperref Info: Reference (link) `figure.5.8' on input line 4.
-Package hyperref Info: Reference (link) `table.5.3' on input line 4.
-Package hyperref Info: bookmark on input line 8:
+Package hyperref Info: Reference (link) `figure.5.8' on input line 5.
+Package hyperref Info: Reference (link) `table.5.3' on input line 5.
+Package hyperref Info: bookmark on input line 9:
 (hyperref)             thecounter {5.8}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Hurricane Beryl track forecasts, ERA5, and best track datas
@@ -4232,49 +4290,49 @@ et.}}
 (hyperref)             reference {figure.5.8}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.5.8' on input line 8.
-<docs/figuras/chapter5/ALL_tracks_filter.png, id=1500, 657.4161pt x 571.4148pt>
+Package hyperref Info: Anchor `figure.5.8' on input line 9.
+<docs/figuras/chapter5/ALL_tracks_filter.png, id=1572, 657.4161pt x 571.4148pt>
 
 File: docs/figuras/chapter5/ALL_tracks_filter.png Graphic file (type png)
 <use docs/figuras/chapter5/ALL_tracks_filter.png>
 Package pdftex.def Info: docs/figuras/chapter5/ALL_tracks_filter.png  used on i
-nput line 9.
+nput line 10.
 (pdftex.def)             Requested size: 426.79135pt x 370.96182pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.66' on input line 17.
+Package hyperref Info: Anchor `page.66' on input line 18.
 [66
 Package `hyperref' Info: End of reference (link) `table.5.3', line 274.
-Package `hyperref' Info: End of reference (link) `figure.5.8', line 4.
-Package `hyperref' Info: End of reference (link) `table.5.3', line 4.
+Package `hyperref' Info: End of reference (link) `figure.5.8', line 5.
+Package `hyperref' Info: End of reference (link) `table.5.3', line 5.
 ]
 Package hyperref Info: Reference (cite) `cite.dulac2024assessing' on input line
- 18.
+ 19.
 Package hyperref Info: Reference (cite) `cite.dulac2024assessing' on input line
- 18.
-Package backref Info: Back cite `dulac2024assessing' on input line 18.
+ 19.
+Package backref Info: Back cite `dulac2024assessing' on input line 19.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.67' on input line 21.
+Package hyperref Info: Anchor `page.67' on input line 22.
 [67
 Package `hyperref' Info: End of reference (cite) `cite.dulac2024assessing', lin
-e 18.
+e 19.
 Package `hyperref' Info: End of reference (cite) `cite.dulac2024assessing', lin
-e 18.
+e 19.
  <./docs/figuras/chapter5/ALL_tracks_filter.png>]
 Package hyperref Info: Reference (cite) `cite.donkin2023capability' on input li
-ne 22.
+ne 23.
 Package hyperref Info: Reference (cite) `cite.donkin2023capability' on input li
-ne 22.
-Package backref Info: Back cite `donkin2023capability' on input line 22.
-Package hyperref Info: Reference (link) `figure.5.9' on input line 24.
-Package hyperref Info: bookmark on input line 28:
+ne 23.
+Package backref Info: Back cite `donkin2023capability' on input line 23.
+Package hyperref Info: Reference (link) `figure.5.9' on input line 25.
+Package hyperref Info: bookmark on input line 29:
 (hyperref)             thecounter {5.9}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces A forecast made for Hurricane Beryl starting on July 3rd (0
@@ -4282,118 +4340,119 @@ ame }{\ignorespaces A forecast made for Hurricane Beryl starting on July 3rd (0
 (hyperref)             reference {figure.5.9}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.5.9' on input line 28.
-Package hyperref Info: Anchor `figure.5.9' on input line 28.
-<docs/figuras/chapter5/HAFS_trajectory.png, id=1515, 962.59625pt x 678.535pt>
+Package hyperref Info: Anchor `figure.5.9' on input line 29.
+Package hyperref Info: Anchor `figure.5.9' on input line 29.
+<docs/figuras/chapter5/HAFS_trajectory.png, id=1588, 962.59625pt x 678.535pt>
 File: docs/figuras/chapter5/HAFS_trajectory.png Graphic file (type png)
 <use docs/figuras/chapter5/HAFS_trajectory.png>
 Package pdftex.def Info: docs/figuras/chapter5/HAFS_trajectory.png  used on inp
-ut line 29.
+ut line 30.
 (pdftex.def)             Requested size: 426.79135pt x 300.84447pt.
-Package hyperref Info: Reference (link) `figure.5.10' on input line 35.
-Package hyperref Info: Reference (link) `figure.5.10' on input line 35.
-Package hyperref Info: bookmark on input line 39:
+Package hyperref Info: Reference (link) `figure.5.10' on input line 36.
+Package hyperref Info: Reference (link) `figure.5.10' on input line 36.
+Package hyperref Info: bookmark on input line 40:
 (hyperref)             thecounter {5.10}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Track errors of the MONAN forecast and ERA5 reanalysis with
- the best track as reference. 12 hours of model spin-up are withdrawn from the 
-analysis. (a) is displayed the distance error computed as the great-circle, and
- (b), the MAE and RMSE calculated from (a).}}
+ame }{\ignorespaces Track errors of the MONAN forecast for Hurricane Beryl and 
+ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are
+ withdrawn from the analysis. (a) is displayed the distance error computed as t
+he great-circle, and (b), the MAE and RMSE calculated from (a).}}
 (hyperref)             reference {figure.5.10}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.5.10' on input line 39.
-Package hyperref Info: Anchor `figure.5.10' on input line 39.
-<docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png, id=1519, 1583.6766pt x 
+Package hyperref Info: Anchor `figure.5.10' on input line 40.
+Package hyperref Info: Anchor `figure.5.10' on input line 40.
+<docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png, id=1592, 1583.6766pt x 
 718.8456pt>
 File: docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png Graphic file (type 
 png)
 <use docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png>
 Package pdftex.def Info: docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png 
- used on input line 40.
+ used on input line 41.
 (pdftex.def)             Requested size: 426.79135pt x 193.71797pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.68' on input line 48.
+Package hyperref Info: Anchor `page.68' on input line 49.
 [68
 Package `hyperref' Info: End of reference (cite) `cite.donkin2023capability', l
-ine 22.
+ine 23.
 Package `hyperref' Info: End of reference (cite) `cite.donkin2023capability', l
-ine 22.
-Package `hyperref' Info: End of reference (link) `figure.5.9', line 24.
-Package `hyperref' Info: End of reference (link) `figure.5.10', line 35.
-Package `hyperref' Info: End of reference (link) `figure.5.10', line 35.
+ine 23.
+Package `hyperref' Info: End of reference (link) `figure.5.9', line 25.
+Package `hyperref' Info: End of reference (link) `figure.5.10', line 36.
+Package `hyperref' Info: End of reference (link) `figure.5.10', line 36.
 ]
 Package hyperref Info: Reference (cite) `cite.zhou2020prospects' on input line 
-50.
+51.
 Package hyperref Info: Reference (cite) `cite.zhou2020prospects' on input line 
-50.
+51.
 Package backref Info: Back cite `zhou2020prospects, sippel2022impacts' on input
- line 50.
+ line 51.
 Package hyperref Info: Reference (cite) `cite.sippel2022impacts' on input line 
-50.
+51.
 Package hyperref Info: Reference (cite) `cite.sippel2022impacts' on input line 
-50.
+51.
 Package backref Info: Back cite `zhou2020prospects, sippel2022impacts' on input
- line 50.
+ line 51.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.69' on input line 52.
+Package hyperref Info: Anchor `page.69' on input line 53.
 [69
-Package `hyperref' Info: End of reference (link) `figure.5.9', line 24.
+Package `hyperref' Info: End of reference (link) `figure.5.9', line 25.
 Package `hyperref' Info: End of reference (cite) `cite.zhou2020prospects', line
- 50.
+ 51.
 Package `hyperref' Info: End of reference (cite) `cite.zhou2020prospects', line
- 50.
+ 51.
 Package `hyperref' Info: End of reference (cite) `cite.sippel2022impacts', line
- 50.
+ 51.
 Package `hyperref' Info: End of reference (cite) `cite.sippel2022impacts', line
- 50.
+ 51.
  <./docs/figuras/chapter5/HAFS_trajectory.png>]
-Package hyperref Info: Reference (link) `figure.5.8' on input line 54.
-Package hyperref Info: Reference (link) `figure.5.10' on input line 54.
-Package hyperref Info: Reference (link) `figure.5.11' on input line 54.
-Package hyperref Info: bookmark on input line 58:
+Package hyperref Info: Reference (link) `figure.5.8' on input line 55.
+Package hyperref Info: Reference (link) `figure.5.10' on input line 55.
+Package hyperref Info: Reference (link) `figure.5.11' on input line 55.
+Package hyperref Info: bookmark on input line 59:
 (hyperref)             thecounter {5.11}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces CTE (a) and ATE (b).}}
+ame }{\ignorespaces CTE (a) and ATE (b) computing during the Hurricane Beryl pe
+riod.}}
 (hyperref)             reference {figure.5.11}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.5.11' on input line 58.
-<docs/figuras/chapter5/Cross_Track_Along_Track_Errors_FINAL.png, id=1540, 1150.
+Package hyperref Info: Anchor `figure.5.11' on input line 59.
+<docs/figuras/chapter5/Cross_Track_Along_Track_Errors_FINAL.png, id=1612, 1150.
 2975pt x 719.3274pt>
 File: docs/figuras/chapter5/Cross_Track_Along_Track_Errors_FINAL.png Graphic fi
 le (type png)
 <use docs/figuras/chapter5/Cross_Track_Along_Track_Errors_FINAL.png>
 Package pdftex.def Info: docs/figuras/chapter5/Cross_Track_Along_Track_Errors_F
-INAL.png  used on input line 59.
+INAL.png  used on input line 60.
 (pdftex.def)             Requested size: 426.79135pt x 266.88235pt.
-Package hyperref Info: Reference (link) `figure.5.8' on input line 65.
-Package hyperref Info: Reference (link) `figure.5.10' on input line 65.
+Package hyperref Info: Reference (link) `figure.5.8' on input line 66.
+Package hyperref Info: Reference (link) `figure.5.10' on input line 66.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.70' on input line 68.
+Package hyperref Info: Anchor `page.70' on input line 69.
 [70
-Package `hyperref' Info: End of reference (link) `figure.5.8', line 54.
-Package `hyperref' Info: End of reference (link) `figure.5.10', line 54.
-Package `hyperref' Info: End of reference (link) `figure.5.11', line 54.
-Package `hyperref' Info: End of reference (link) `figure.5.8', line 65.
-Package `hyperref' Info: End of reference (link) `figure.5.10', line 65.
+Package `hyperref' Info: End of reference (link) `figure.5.8', line 55.
+Package `hyperref' Info: End of reference (link) `figure.5.10', line 55.
+Package `hyperref' Info: End of reference (link) `figure.5.11', line 55.
+Package `hyperref' Info: End of reference (link) `figure.5.8', line 66.
+Package `hyperref' Info: End of reference (link) `figure.5.10', line 66.
  <./docs/figuras/chapter5/panel_errors_mae_rmse_FINAL.png>]
-Package hyperref Info: Reference (link) `figure.5.10' on input line 69.
-Package hyperref Info: Reference (link) `figure.5.8' on input line 71.
-Package hyperref Info: Reference (link) `figure.5.12' on input line 71.
-Package hyperref Info: bookmark on input line 75:
+Package hyperref Info: Reference (link) `figure.5.10' on input line 70.
+Package hyperref Info: Reference (link) `figure.5.8' on input line 72.
+Package hyperref Info: Reference (link) `figure.5.12' on input line 72.
+Package hyperref Info: bookmark on input line 76:
 (hyperref)             thecounter {5.12}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Tracking available by the UK Met Office for Hurricane Beryl
@@ -4401,57 +4460,57 @@ ame }{\ignorespaces Tracking available by the UK Met Office for Hurricane Beryl
 (hyperref)             reference {figure.5.12}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.5.12' on input line 75.
-<docs/figuras/chapter5/MetOffice.png, id=1551, 1032.85875pt x 771.88374pt>
+Package hyperref Info: Anchor `figure.5.12' on input line 76.
+<docs/figuras/chapter5/MetOffice.png, id=1624, 1032.85875pt x 771.88374pt>
 File: docs/figuras/chapter5/MetOffice.png Graphic file (type png)
 <use docs/figuras/chapter5/MetOffice.png>
 Package pdftex.def Info: docs/figuras/chapter5/MetOffice.png  used on input lin
-e 76.
+e 77.
 (pdftex.def)             Requested size: 426.79135pt x 318.94775pt.
-Package hyperref Info: Reference (cite) `cite.metoffice2024' on input line 82.
-Package hyperref Info: Reference (cite) `cite.metoffice2024' on input line 82.
-Package backref Info: Back cite `metoffice2024' on input line 82.
+Package hyperref Info: Reference (cite) `cite.metoffice2024' on input line 83.
+Package hyperref Info: Reference (cite) `cite.metoffice2024' on input line 83.
+Package backref Info: Back cite `metoffice2024' on input line 83.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.71' on input line 83.
+Package hyperref Info: Anchor `page.71' on input line 84.
 [71
-Package `hyperref' Info: End of reference (link) `figure.5.10', line 69.
-Package `hyperref' Info: End of reference (link) `figure.5.8', line 71.
-Package `hyperref' Info: End of reference (link) `figure.5.12', line 71.
-Package `hyperref' Info: End of reference (cite) `cite.metoffice2024', line 82.
+Package `hyperref' Info: End of reference (link) `figure.5.10', line 70.
+Package `hyperref' Info: End of reference (link) `figure.5.8', line 72.
+Package `hyperref' Info: End of reference (link) `figure.5.12', line 72.
+Package `hyperref' Info: End of reference (cite) `cite.metoffice2024', line 83.
 
-Package `hyperref' Info: End of reference (cite) `cite.metoffice2024', line 82.
+Package `hyperref' Info: End of reference (cite) `cite.metoffice2024', line 83.
 
  <./docs/figuras/chapter5/Cross_Track_Along_Track_Errors_FINAL.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.72' on input line 89.
+Package hyperref Info: Anchor `page.72' on input line 90.
 [72
-Package `hyperref' Info: End of reference (link) `figure.5.12', line 71.
+Package `hyperref' Info: End of reference (link) `figure.5.12', line 72.
  <./docs/figuras/chapter5/MetOffice.png>]
-Package hyperref Info: Reference (link) `figure.5.13' on input line 90.
-Package hyperref Info: bookmark on input line 94:
+Package hyperref Info: Reference (link) `figure.5.13' on input line 91.
+Package hyperref Info: bookmark on input line 95:
 (hyperref)             thecounter {5.13}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Overall performance of MONAN trajectory forecasts compared 
-with ERA5 reanalysis.}}
+ame }{\ignorespaces Overall performance of MONAN trajectory forecasts for Hurri
+cane Beryl compared with ERA5 reanalysis.}}
 (hyperref)             reference {figure.5.13}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.5.13' on input line 94.
-Package hyperref Info: Anchor `figure.5.13' on input line 94.
-<docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_FINAL.png, id=1568, 867.2
+Package hyperref Info: Anchor `figure.5.13' on input line 95.
+Package hyperref Info: Anchor `figure.5.13' on input line 95.
+<docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_FINAL.png, id=1641, 867.2
 4pt x 433.62pt>
 File: docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_FINAL.png Graphic fi
 le (type png)
 <use docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_FINAL.png>
 Package pdftex.def Info: docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_F
-INAL.png  used on input line 95.
+INAL.png  used on input line 96.
 (pdftex.def)             Requested size: 426.79135pt x 213.39536pt.
 )
 (./docs/08_05_02_1_capitulo5.2.2.tex
@@ -4477,7 +4536,7 @@ at their native resolution.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.14' on input line 7.
 Package hyperref Info: Anchor `figure.5.14' on input line 7.
-<docs/figuras/chapter5/intensity_time_series_panel_FINAL.png, id=1571, 1011.78p
+<docs/figuras/chapter5/intensity_time_series_panel_FINAL.png, id=1644, 1011.78p
 t x 722.7pt>
 File: docs/figuras/chapter5/intensity_time_series_panel_FINAL.png Graphic file 
 (type png)
@@ -4497,7 +4556,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package hyperref Info: Anchor `page.73' on input line 15.
 [73
-Package `hyperref' Info: End of reference (link) `figure.5.13', line 90.
+Package `hyperref' Info: End of reference (link) `figure.5.13', line 91.
 Package `hyperref' Info: End of reference (link) `figure.5.14', line 3.
 Package `hyperref' Info: End of reference (link) `figure.5.14', line 3.
  <./docs/figuras/chapter5/barplot_monan_vs_era5_mae_rmse_FINAL.png>]
@@ -4521,12 +4580,14 @@ Package hyperref Info: Reference (link) `figure.5.15' on input line 26.
 Package hyperref Info: bookmark on input line 30:
 (hyperref)             thecounter {5.15}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Central pressure and maximum wind speed errors.}}
+ame }{\ignorespaces Central pressure and maximum wind speed errors during the H
+urricane Beryl period.}}
 (hyperref)             reference {figure.5.15}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.15' on input line 30.
-<docs/figuras/chapter5/panel_mae_rmse_mslp_wspd_FINAL.png, id=1588, 1582.2312pt
+Package hyperref Info: Anchor `figure.5.15' on input line 30.
+<docs/figuras/chapter5/panel_mae_rmse_mslp_wspd_FINAL.png, id=1662, 1582.2312pt
  x 719.3274pt>
 File: docs/figuras/chapter5/panel_mae_rmse_mslp_wspd_FINAL.png Graphic file (ty
 pe png)
@@ -4554,14 +4615,14 @@ Package hyperref Info: bookmark on input line 45:
 (hyperref)             thecounter {5.16}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Central pressure and maximum wind speed errors by MONAN com
-pared to ERA5.}}
+pared to ERA5 during the Hurricane Beryl period.}}
 (hyperref)             reference {figure.5.16}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.16' on input line 45.
 Package hyperref Info: Anchor `figure.5.16' on input line 45.
-<docs/figuras/chapter5/barplot_mean_error_monan_era5_intensity_FINAL.png, id=15
-97, 859.7721pt x 424.9476pt>
+<docs/figuras/chapter5/barplot_mean_error_monan_era5_intensity_FINAL.png, id=16
+70, 859.7721pt x 424.9476pt>
 File: docs/figuras/chapter5/barplot_mean_error_monan_era5_intensity_FINAL.png G
 raphic file (type png)
 <use docs/figuras/chapter5/barplot_mean_error_monan_era5_intensity_FINAL.png>
@@ -4618,7 +4679,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package hyperref Info: Anchor `page.76' on input line 8.
 [76
 Package `hyperref' Info: End of reference (link) `figure.5.16', line 41.
-Package `hyperref' Info: End of reference (link) `section.4.3', line 7.
  <./docs/figuras/chapter5/panel_mae_rmse_mslp_wspd_FINAL.png>]
 Package hyperref Info: Reference (link) `Hfootnote.22' on input line 9.
 Package hyperref Info: Anchor `Hfootnote.22' on input line 9.
@@ -4634,6 +4694,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package hyperref Info: Anchor `page.77' on input line 10.
 [77
+Package `hyperref' Info: End of reference (link) `section.4.3', line 7.
 Package `hyperref' Info: End of reference (cite) `cite.marchok2007validation', 
 line 7.
 Package `hyperref' Info: End of reference (cite) `cite.marchok2007validation', 
@@ -4655,13 +4716,14 @@ Package hyperref Info: bookmark on input line 13:
 (hyperref)             thecounter {5.17}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Equitable Threat Score (ETS) for all experiments, ERA5 and 
-GSMaP datasets.}}
+GSMaP datasets, computed with the accumulated rainfall during Hurricane Beryl�
+�s period.}}
 (hyperref)             reference {figure.5.17}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.17' on input line 13.
 Package hyperref Info: Anchor `figure.5.17' on input line 13.
-<docs/figuras/chapter5/ets_all_experiments_logx_FINAL.png, id=1621, 867.24pt x 
+<docs/figuras/chapter5/ets_all_experiments_logx_FINAL.png, id=1693, 867.24pt x 
 433.62pt>
 File: docs/figuras/chapter5/ets_all_experiments_logx_FINAL.png Graphic file (ty
 pe png)
@@ -4669,9 +4731,6 @@ pe png)
 Package pdftex.def Info: docs/figuras/chapter5/ets_all_experiments_logx_FINAL.p
 ng  used on input line 14.
 (pdftex.def)             Requested size: 426.79135pt x 213.39536pt.
-
-Overfull \vbox (5.82576pt too high) has occurred while \output is active []
-
 
 
 Package hyperref Info: Anchor `page.78' on input line 25.
@@ -4683,12 +4742,14 @@ Package hyperref Info: bookmark on input line 32:
 (hyperref)             thecounter {5.18}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Spatially averaged Pearson correlation coefficient over the
- entire domain.}}
+ entire domain, computed with the accumulated rainfall during Hurricane Beryl�
+�s period.}}
 (hyperref)             reference {figure.5.18}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.18' on input line 32.
-<docs/figuras/chapter5/pearson_correlation_bar_chart_FINAL.png, id=1630, 722.7p
+Package hyperref Info: Anchor `figure.5.18' on input line 32.
+<docs/figuras/chapter5/pearson_correlation_bar_chart_FINAL.png, id=1702, 722.7p
 t x 578.16pt>
 File: docs/figuras/chapter5/pearson_correlation_bar_chart_FINAL.png Graphic fil
 e (type png)
@@ -4697,31 +4758,30 @@ Package pdftex.def Info: docs/figuras/chapter5/pearson_correlation_bar_chart_FI
 NAL.png  used on input line 33.
 (pdftex.def)             Requested size: 426.79135pt x 341.43785pt.
 Package hyperref Info: Reference (link) `figure.5.19' on input line 39.
-Package hyperref Info: Reference (link) `figure.5.22' on input line 41.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.79' on input line 42.
+Package hyperref Info: Anchor `page.79' on input line 40.
 [79
 Package `hyperref' Info: End of reference (link) `figure.5.18', line 28.
-Package `hyperref' Info: End of reference (link) `figure.5.19', line 39.
  <./docs/figuras/chapter5/pearson_correlation_bar_chart_FINAL.png>]
+Package hyperref Info: Reference (link) `figure.5.22' on input line 41.
 Package hyperref Info: Reference (link) `figure.5.10' on input line 43.
 Package hyperref Info: Reference (link) `figure.5.19' on input line 45.
 Package hyperref Info: bookmark on input line 49:
 (hyperref)             thecounter {5.19}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Spatial distribution of daily Pearson correlation values of
- daily accumultad rainfall.}}
+ame }{\ignorespaces Hurricane Beryl’s spatial distribution of Pearson correla
+tion values, computed with daily accumulated rainfall.}}
 (hyperref)             reference {figure.5.19}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.19' on input line 49.
 Package hyperref Info: Anchor `figure.5.19' on input line 49.
 <docs/figuras/chapter5/painel_correlation_selected_experiments_days_nomeado.png
-, id=1640, 1200.6456pt x 987.4491pt>
+, id=1713, 1200.6456pt x 987.4491pt>
 File: docs/figuras/chapter5/painel_correlation_selected_experiments_days_nomead
 o.png Graphic file (type png)
 <use docs/figuras/chapter5/painel_correlation_selected_experiments_days_nomeado
@@ -4734,24 +4794,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.80' on input line 57.
+Package hyperref Info: Anchor `page.80' on input line 63.
 [80
+Package `hyperref' Info: End of reference (link) `figure.5.19', line 39.
 Package `hyperref' Info: End of reference (link) `figure.5.22', line 41.
 Package `hyperref' Info: End of reference (link) `figure.5.10', line 43.
 Package `hyperref' Info: End of reference (link) `figure.5.19', line 45.
- <./docs/figuras/chapter5/painel_correlation_selected_experiments_days_nomeado.
-png>]
+]
 Package hyperref Info: Reference (link) `figure.5.20' on input line 66.
 Package hyperref Info: bookmark on input line 70:
 (hyperref)             thecounter {5.20}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Selected snapshots of the rainfall fields.}}
+ame }{\ignorespaces Selected snapshots of the rainfall fields in some of Hurric
+ane Beryl’s key moments.}}
 (hyperref)             reference {figure.5.20}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.20' on input line 70.
+Package hyperref Info: Anchor `figure.5.20' on input line 70.
 <docs/figuras/chapter5/painel_instantaneous_rainfall_selected_with_stats_FINAL.
-png, id=1647, 705.5961pt x 1157.0427pt>
+png, id=1719, 705.5961pt x 1157.0427pt>
 File: docs/figuras/chapter5/painel_instantaneous_rainfall_selected_with_stats_F
 INAL.png Graphic file (type png)
 <use docs/figuras/chapter5/painel_instantaneous_rainfall_selected_with_stats_FI
@@ -4761,17 +4823,18 @@ lected_with_stats_FINAL.png  used on input line 71.
 (pdftex.def)             Requested size: 426.79135pt x 699.84528pt.
 
 
-LaTeX Warning: Float too large for page by 69.37779pt on input line 75.
+LaTeX Warning: Float too large for page by 82.82545pt on input line 75.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.81' on input line 79.
+Package hyperref Info: Anchor `page.81' on input line 78.
 [81
 Package `hyperref' Info: End of reference (link) `figure.5.20', line 66.
-]
+ <./docs/figuras/chapter5/painel_correlation_selected_experiments_days_nomeado.
+png>]
 Package hyperref Info: Reference (link) `figure.5.21' on input line 83.
 Package hyperref Info: bookmark on input line 87:
 (hyperref)             thecounter {5.21}
@@ -4783,7 +4846,7 @@ lative to GPM-IMERG.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.21' on input line 87.
 Package hyperref Info: Reference (link) `figure.5.20' on input line 87.
-<docs/figuras/chapter5/painel_bias_rainfall_selected_FINAL.png, id=1655, 708.48
+<docs/figuras/chapter5/painel_bias_rainfall_selected_FINAL.png, id=1727, 708.48
 69pt x 1037.7972pt>
 File: docs/figuras/chapter5/painel_bias_rainfall_selected_FINAL.png Graphic fil
 e (type png)
@@ -4806,7 +4869,7 @@ nce made by the resolution.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.22' on input line 100.
 Package hyperref Info: Reference (link) `figure.5.20' on input line 100.
-<docs/figuras/chapter5/painel_resolution_rainfall_FINAL.png, id=1662, 705.5961p
+<docs/figuras/chapter5/painel_resolution_rainfall_FINAL.png, id=1734, 705.5961p
 t x 1157.0427pt>
 File: docs/figuras/chapter5/painel_resolution_rainfall_FINAL.png Graphic file (
 type png)
@@ -4858,7 +4921,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.82' on input line 111.
+Package hyperref Info: Anchor `page.82' on input line 110.
 [82
 Package `hyperref' Info: End of reference (link) `figure.5.21', line 83.
 Package `hyperref' Info: End of reference (link) `figure.5.14', line 94.
@@ -4903,7 +4966,7 @@ Package hyperref Info: Anchor `figure.5.23' on input line 115.
 Package hyperref Info: Reference (link) `figure.5.20' on input line 115.
 Package hyperref Info: Anchor `figure.5.23' on input line 115.
 Package hyperref Info: Reference (link) `figure.5.20' on input line 115.
-<docs/figuras/chapter5/painel_ctt_selected_experiments_FINAL.png, id=1687, 565.
+<docs/figuras/chapter5/painel_ctt_selected_experiments_FINAL.png, id=1760, 565.
 1514pt x 598.8774pt>
 File: docs/figuras/chapter5/painel_ctt_selected_experiments_FINAL.png Graphic f
 ile (type png)
@@ -4923,7 +4986,7 @@ ence made by the resolution.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.24' on input line 128.
 Package hyperref Info: Reference (link) `figure.5.23' on input line 128.
-<docs/figuras/chapter5/painel_ctt_native_resolution_FINAL.png, id=1691, 586.350
+<docs/figuras/chapter5/painel_ctt_native_resolution_FINAL.png, id=1764, 586.350
 6pt x 598.8774pt>
 File: docs/figuras/chapter5/painel_ctt_native_resolution_FINAL.png Graphic file
  (type png)
@@ -4965,7 +5028,7 @@ tions (right) of hourly rainfall during the Hurricane Beryl period.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.25' on input line 143.
 Package hyperref Info: Anchor `figure.5.25' on input line 143.
-<docs/figuras/chapter5/painel_pdf_cdf_FINAL.png, id=1697, 1011.78pt x 1300.86pt
+<docs/figuras/chapter5/painel_pdf_cdf_FINAL.png, id=1770, 1011.78pt x 1300.86pt
 >
 File: docs/figuras/chapter5/painel_pdf_cdf_FINAL.png Graphic file (type png)
 <use docs/figuras/chapter5/painel_pdf_cdf_FINAL.png>
@@ -4980,12 +5043,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.84' on input line 159.
+Package hyperref Info: Anchor `page.84' on input line 157.
 [84
 Package `hyperref' Info: End of reference (link) `figure.5.25', line 139.
 Package `hyperref' Info: End of reference (link) `figure.5.25', line 150.
 Package `hyperref' Info: End of reference (link) `figure.5.25', line 154.
-Package `hyperref' Info: End of reference (link) `figure.5.25', line 156.
 ]
 Package hyperref Info: Anchor `subsubsection.5.2.3.3' on input line 164.
 Package hyperref Info: bookmark on input line 164:
@@ -5006,7 +5068,7 @@ ve the 85th percentile.}}
 (hyperref)             type {lof}.
 Package hyperref Info: Anchor `figure.5.26' on input line 170.
 Package hyperref Info: Reference (link) `figure.5.25' on input line 170.
-<docs/figuras/chapter5/85_percentile_CDF_FINAL.png, id=1707, 505.89pt x 1011.78
+<docs/figuras/chapter5/85_percentile_CDF_FINAL.png, id=1780, 505.89pt x 1011.78
 pt>
 File: docs/figuras/chapter5/85_percentile_CDF_FINAL.png Graphic file (type png)
 
@@ -5016,21 +5078,19 @@ d on input line 171.
 (pdftex.def)             Requested size: 298.75264pt x 597.51625pt.
 Package hyperref Info: Reference (link) `figure.5.26' on input line 180.
 Package hyperref Info: Reference (link) `figure.5.26' on input line 180.
-Package hyperref Info: Reference (link) `figure.5.27' on input line 182.
-Package hyperref Info: Reference (link) `figure.5.20' on input line 182.
-Package hyperref Info: Reference (link) `figure.5.26' on input line 182.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.85' on input line 183.
+Package hyperref Info: Anchor `page.85' on input line 181.
 [85
+Package `hyperref' Info: End of reference (link) `figure.5.25', line 156.
 Package `hyperref' Info: End of reference (link) `figure.5.25', line 166.
-Package `hyperref' Info: End of reference (link) `figure.5.26', line 180.
-Package `hyperref' Info: End of reference (link) `figure.5.26', line 180.
-Package `hyperref' Info: End of reference (link) `figure.5.27', line 182.
 ]
+Package hyperref Info: Reference (link) `figure.5.27' on input line 182.
+Package hyperref Info: Reference (link) `figure.5.20' on input line 182.
+Package hyperref Info: Reference (link) `figure.5.26' on input line 182.
 Package hyperref Info: bookmark on input line 186:
 (hyperref)             thecounter {5.27}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
@@ -5043,7 +5103,7 @@ Package hyperref Info: Anchor `figure.5.27' on input line 186.
 Package hyperref Info: Reference (link) `figure.5.25' on input line 186.
 Package hyperref Info: Anchor `figure.5.27' on input line 186.
 Package hyperref Info: Reference (link) `figure.5.25' on input line 186.
-<docs/figuras/chapter5/SNAPSHOTS_percentile_CDF_FINAL.png, id=1719, 1300.86pt x
+<docs/figuras/chapter5/SNAPSHOTS_percentile_CDF_FINAL.png, id=1793, 1300.86pt x
  1011.78pt>
 File: docs/figuras/chapter5/SNAPSHOTS_percentile_CDF_FINAL.png Graphic file (ty
 pe png)
@@ -5060,17 +5120,20 @@ fall}
 (hyperref)             reference {subsubsection.5.2.3.4}
 (hyperref)             toclevel {3}
 (hyperref)             type {toc}.
-Package hyperref Info: Reference (link) `figure.5.22' on input line 208.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.86' on input line 209.
+Package hyperref Info: Anchor `page.86' on input line 207.
 [86
+Package `hyperref' Info: End of reference (link) `figure.5.26', line 180.
+Package `hyperref' Info: End of reference (link) `figure.5.26', line 180.
+Package `hyperref' Info: End of reference (link) `figure.5.27', line 182.
 Package `hyperref' Info: End of reference (link) `figure.5.20', line 182.
 Package `hyperref' Info: End of reference (link) `figure.5.26', line 182.
 ]
+Package hyperref Info: Reference (link) `figure.5.22' on input line 208.
 Package hyperref Info: Anchor `subsection.5.2.4' on input line 214.
 Package hyperref Info: bookmark on input line 214:
 (hyperref)             thecounter {5.2.4}
@@ -5092,10 +5155,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package hyperref Info: Anchor `page.87' on input line 221.
 [87
 Package `hyperref' Info: End of reference (link) `figure.5.22', line 208.
-Package `hyperref' Info: End of reference (cite) `cite.yamaguchi2012tropical', 
-line 220.
-Package `hyperref' Info: End of reference (cite) `cite.yamaguchi2012tropical', 
-line 220.
 ]
 Package hyperref Info: Reference (link) `figure.5.10' on input line 222.
 Package hyperref Info: Reference (link) `figure.5.11' on input line 224.
@@ -5134,6 +5193,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package hyperref Info: Anchor `page.88' on input line 231.
 [88
+Package `hyperref' Info: End of reference (cite) `cite.yamaguchi2012tropical', 
+line 220.
+Package `hyperref' Info: End of reference (cite) `cite.yamaguchi2012tropical', 
+line 220.
 Package `hyperref' Info: End of reference (link) `figure.5.10', line 222.
 Package `hyperref' Info: End of reference (link) `figure.5.11', line 224.
 Package `hyperref' Info: End of reference (cite) `cite.grandpeix2010density', l
@@ -5203,7 +5266,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.89' on input line 240.
+Package hyperref Info: Anchor `page.89' on input line 239.
 [89
 Package `hyperref' Info: End of reference (cite) `cite.dulac2024assessing', lin
 e 230.
@@ -5238,10 +5301,6 @@ Package `hyperref' Info: End of reference (cite) `cite.freitas2024parameterizat
 ion', line 238.
 Package `hyperref' Info: End of reference (cite) `cite.freitas2024parameterizat
 ion', line 238.
-Package `hyperref' Info: End of reference (cite) `cite.schlemmer2014formation',
- line 238.
-Package `hyperref' Info: End of reference (cite) `cite.schlemmer2014formation',
- line 238.
 ]
 Package hyperref Info: Reference (cite) `cite.lonfat2004precipitation' on input
  line 242.
@@ -5261,16 +5320,19 @@ Package hyperref Info: Reference (cite) `cite.brackins2020evaluation' on input
 line 242.
 Package backref Info: Back cite `lonfat2004precipitation, marchok2007validation
 , brackins2020evaluation' on input line 242.
-
-
-LaTeX Warning: Citation `lonfat2004tropical' on page 90 undefined on input line
- 242.
-
-Package backref Info: Back cite `lonfat2004tropical' on input line 242.
+Package hyperref Info: Reference (cite) `cite.lonfat2004precipitation' on input
+ line 242.
+Package hyperref Info: Reference (cite) `cite.lonfat2004precipitation' on input
+ line 242.
+Package backref Info: Back cite `lonfat2004precipitation' on input line 242.
 ))
 
 Package hyperref Info: Anchor `page.90' on input line 88.
 [90
+Package `hyperref' Info: End of reference (cite) `cite.schlemmer2014formation',
+ line 238.
+Package `hyperref' Info: End of reference (cite) `cite.schlemmer2014formation',
+ line 238.
 Package `hyperref' Info: End of reference (cite) `cite.lonfat2004precipitation'
 , line 242.
 Package `hyperref' Info: End of reference (cite) `cite.lonfat2004precipitation'
@@ -5283,6 +5345,10 @@ Package `hyperref' Info: End of reference (cite) `cite.brackins2020evaluation',
  line 242.
 Package `hyperref' Info: End of reference (cite) `cite.brackins2020evaluation',
  line 242.
+Package `hyperref' Info: End of reference (cite) `cite.lonfat2004precipitation'
+, line 242.
+Package `hyperref' Info: End of reference (cite) `cite.lonfat2004precipitation'
+, line 242.
 ]
 
 Package hyperref Info: Anchor `page.91' on input line 88.
@@ -5330,22 +5396,22 @@ Package hyperref Info: Anchor `chapter.6' on input line 1.
 Chapter 6.
 Package hyperref Info: bookmark on input line 1:
 (hyperref)             thecounter {6}
-(hyperref)             text {\protect \numberline {\thechapter }CASE STUDY: HUR
-RICANE HELENE – TESTING THE IMPROVED PARAMETRIZATION}
+(hyperref)             text {\protect \numberline {\thechapter }PART TWO: HURRI
+CANE HELENE – TESTING THE IMPROVED PARAMETRIZATION}
 (hyperref)             reference {chapter.6}
 (hyperref)             toclevel {0}
 (hyperref)             type {toc}.
-Package hyperref Info: Reference (link) `chapter.4' on input line 3.
-Package hyperref Info: Anchor `section.6.1' on input line 5.
-Package hyperref Info: bookmark on input line 5:
+Package hyperref Info: Reference (link) `section.4.5' on input line 4.
+Package hyperref Info: Anchor `section.6.1' on input line 6.
+Package hyperref Info: bookmark on input line 6:
 (hyperref)             thecounter {6.1}
 (hyperref)             text {\ifnum 1>\c@secnumdepth \else \protect \numberline
- {\csname thesection\endcsname }\fi Event description - Helene}
+ {\csname thesection\endcsname }\fi Event description - Hurricane Helene}
 (hyperref)             reference {section.6.1}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-Package hyperref Info: Reference (link) `figure.6.1' on input line 7.
-Package hyperref Info: bookmark on input line 11:
+Package hyperref Info: Reference (link) `figure.6.1' on input line 9.
+Package hyperref Info: bookmark on input line 13:
 (hyperref)             thecounter {6.1}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Best track trajectory of Hurricane Helene (September 2024).
@@ -5353,40 +5419,40 @@ ame }{\ignorespaces Best track trajectory of Hurricane Helene (September 2024).
 (hyperref)             reference {figure.6.1}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.6.1' on input line 11.
-<docs/figuras/chapter6/Helene_2024.png, id=1828, 1011.78pt x 650.43pt>
+Package hyperref Info: Anchor `figure.6.1' on input line 13.
+<docs/figuras/chapter6/Helene_2024.png, id=1904, 1011.78pt x 650.43pt>
 File: docs/figuras/chapter6/Helene_2024.png Graphic file (type png)
 <use docs/figuras/chapter6/Helene_2024.png>
 Package pdftex.def Info: docs/figuras/chapter6/Helene_2024.png  used on input l
-ine 12.
+ine 14.
 (pdftex.def)             Requested size: 426.79135pt x 266.95845pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.99' on input line 19.
+Package hyperref Info: Anchor `page.99' on input line 21.
 [99
 
 
 
 
 
-Package `hyperref' Info: End of reference (link) `chapter.4', line 3.
-Package `hyperref' Info: End of reference (link) `figure.6.1', line 7.
+Package `hyperref' Info: End of reference (link) `section.4.5', line 4.
+Package `hyperref' Info: End of reference (link) `figure.6.1', line 9.
  <./docs/figuras/chapter6/Helene_2024.png>]
-Package hyperref Info: Reference (cite) `cite.nhc_helene2024' on input line 20.
+Package hyperref Info: Reference (cite) `cite.nhc_helene2024' on input line 22.
 
-Package hyperref Info: Reference (cite) `cite.nhc_helene2024' on input line 20.
+Package hyperref Info: Reference (cite) `cite.nhc_helene2024' on input line 22.
 
-Package backref Info: Back cite `nhc_helene2024' on input line 20.
-Package hyperref Info: Reference (cite) `cite.fsu_helene2024' on input line 22.
+Package backref Info: Back cite `nhc_helene2024' on input line 22.
+Package hyperref Info: Reference (cite) `cite.fsu_helene2024' on input line 25.
 
-Package hyperref Info: Reference (cite) `cite.fsu_helene2024' on input line 22.
+Package hyperref Info: Reference (cite) `cite.fsu_helene2024' on input line 25.
 
-Package backref Info: Back cite `fsu_helene2024' on input line 22.
-Package hyperref Info: Reference (link) `figure.6.4' on input line 24.
-Package hyperref Info: bookmark on input line 28:
+Package backref Info: Back cite `fsu_helene2024' on input line 25.
+Package hyperref Info: Reference (link) `figure.6.2' on input line 27.
+Package hyperref Info: bookmark on input line 31:
 (hyperref)             thecounter {6.2}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Synoptic-scale interaction between Hurricane Helene and a s
@@ -5394,22 +5460,22 @@ tationary frontal boundary over the southeastern U.S.}}
 (hyperref)             reference {figure.6.2}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.6.2' on input line 28.
-Package hyperref Info: Anchor `figure.6.2' on input line 28.
-<docs/figuras/chapter6/large_scale_helene.png, id=1842, 1566.85374pt x 949.5475
+Package hyperref Info: Anchor `figure.6.2' on input line 31.
+Package hyperref Info: Anchor `figure.6.2' on input line 31.
+<docs/figuras/chapter6/large_scale_helene.png, id=1917, 1566.85374pt x 949.5475
 pt>
 File: docs/figuras/chapter6/large_scale_helene.png Graphic file (type png)
 <use docs/figuras/chapter6/large_scale_helene.png>
 Package pdftex.def Info: docs/figuras/chapter6/large_scale_helene.png  used on 
-input line 29.
+input line 32.
 (pdftex.def)             Requested size: 426.79135pt x 258.64153pt.
-Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 31
+Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 34
 .
-Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 31
+Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 34
 .
-Package backref Info: Back cite `nhc_helene20241' on input line 31.
-Package hyperref Info: Reference (link) `figure.6.3' on input line 35.
-Package hyperref Info: bookmark on input line 39:
+Package backref Info: Back cite `nhc_helene20241' on input line 34.
+Package hyperref Info: Reference (link) `figure.6.3' on input line 38.
+Package hyperref Info: bookmark on input line 42:
 (hyperref)             thecounter {6.3}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
 ame }{\ignorespaces Satellite images of Hurricane Helene (channel 13 of GOES-Ea
@@ -5417,139 +5483,448 @@ st) with trailing convection over North Carolina.}}
 (hyperref)             reference {figure.6.3}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.6.3' on input line 39.
-Package hyperref Info: Anchor `figure.6.3' on input line 39.
+Package hyperref Info: Anchor `figure.6.3' on input line 42.
+Package hyperref Info: Anchor `figure.6.3' on input line 42.
 <docs/figuras/chapter6/20242711220_GOES16-ABI-FL-13-AL092024-2000x2000.jpg, id=
-1846, 2007.5pt x 2007.5pt>
+1921, 2007.5pt x 2007.5pt>
 File: docs/figuras/chapter6/20242711220_GOES16-ABI-FL-13-AL092024-2000x2000.jpg
  Graphic file (type jpg)
 <use docs/figuras/chapter6/20242711220_GOES16-ABI-FL-13-AL092024-2000x2000.jpg>
 
 Package pdftex.def Info: docs/figuras/chapter6/20242711220_GOES16-ABI-FL-13-AL0
-92024-2000x2000.jpg  used on input line 42.
+92024-2000x2000.jpg  used on input line 45.
 (pdftex.def)             Requested size: 192.0548pt x 192.03165pt.
 <docs/figuras/chapter6/20242711440_GOES16-ABI-FL-13-AL092024-2000x2000.jpg, id=
-1847, 2007.5pt x 2007.5pt>
+1922, 2007.5pt x 2007.5pt>
 File: docs/figuras/chapter6/20242711440_GOES16-ABI-FL-13-AL092024-2000x2000.jpg
  Graphic file (type jpg)
 <use docs/figuras/chapter6/20242711440_GOES16-ABI-FL-13-AL092024-2000x2000.jpg>
 
 Package pdftex.def Info: docs/figuras/chapter6/20242711440_GOES16-ABI-FL-13-AL0
-92024-2000x2000.jpg  used on input line 46.
+92024-2000x2000.jpg  used on input line 49.
 (pdftex.def)             Requested size: 192.0548pt x 192.03165pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package hyperref Info: Reference (cite) `cite.britannica_helene' on input line 
-57.
+60.
 Package hyperref Info: Reference (cite) `cite.britannica_helene' on input line 
-57.
-Package backref Info: Back cite `britannica_helene' on input line 57.
-Package hyperref Info: Reference (link) `table.6.1' on input line 57.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 59.
-
-Package hyperref Info: bookmark on input line 61:
-(hyperref)             thecounter {6.1}
-(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Highest Rainfall Totals by State}}
-(hyperref)             reference {table.6.1}
-(hyperref)             toclevel {0}
-(hyperref)             type {lot}.
-Package hyperref Info: Anchor `table.6.1' on input line 61.
-Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 85
-.
-Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 85
-.
-Package backref Info: Back cite `nhc_helene20241' on input line 85.
+60.
+Package backref Info: Back cite `britannica_helene' on input line 60.
+Package hyperref Info: Reference (link) `table.6.1' on input line 60.
+Package hyperref Info: Reference (cite) `cite.britannica_helene' on input line 
+62.
+Package hyperref Info: Reference (cite) `cite.britannica_helene' on input line 
+62.
+Package backref Info: Back cite `britannica_helene' on input line 62.
+Package hyperref Info: Reference (link) `table.6.1' on input line 62.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.100' on input line 89.
+Package hyperref Info: Anchor `page.100' on input line 63.
 [100
-Package `hyperref' Info: End of reference (cite) `cite.nhc_helene2024', line 20
+Package `hyperref' Info: End of reference (cite) `cite.nhc_helene2024', line 22
 .
-Package `hyperref' Info: End of reference (cite) `cite.nhc_helene2024', line 20
+Package `hyperref' Info: End of reference (cite) `cite.nhc_helene2024', line 22
 .
-Package `hyperref' Info: End of reference (cite) `cite.fsu_helene2024', line 22
+Package `hyperref' Info: End of reference (cite) `cite.fsu_helene2024', line 25
 .
-Package `hyperref' Info: End of reference (cite) `cite.fsu_helene2024', line 22
+Package `hyperref' Info: End of reference (cite) `cite.fsu_helene2024', line 25
 .
-Package `hyperref' Info: End of reference (link) `figure.6.4', line 24.
-Package `hyperref' Info: End of reference (link) `figure.6.3', line 35.
+Package `hyperref' Info: End of reference (link) `figure.6.2', line 27.
+Package `hyperref' Info: End of reference (link) `figure.6.3', line 38.
 Package `hyperref' Info: End of reference (cite) `cite.britannica_helene', line
- 57.
+ 60.
 Package `hyperref' Info: End of reference (cite) `cite.britannica_helene', line
- 57.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+ 60.
+Package `hyperref' Info: End of reference (link) `table.6.1', line 60.
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.101' on input line 89.
+Package hyperref Info: Anchor `page.101' on input line 63.
 [101
 Package `hyperref' Info: End of reference (cite) `cite.nhc_helene20241', line 3
-1.
+4.
 Package `hyperref' Info: End of reference (cite) `cite.nhc_helene20241', line 3
-1.
+4.
+Package `hyperref' Info: End of reference (link) `figure.6.3', line 38.
  <./docs/figuras/chapter6/large_scale_helene.png> <./docs/figuras/chapter6/2024
 2711220_GOES16-ABI-FL-13-AL092024-2000x2000.jpg> <./docs/figuras/chapter6/20242
 711440_GOES16-ABI-FL-13-AL092024-2000x2000.jpg>]
-Package hyperref Info: bookmark on input line 96:
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 64.
+
+Package hyperref Info: bookmark on input line 66:
+(hyperref)             thecounter {6.1}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Highest Rainfall Totals by State recorded from 1200 UTC 25 
+September to 1200 UTC 28 September.}}
+(hyperref)             reference {table.6.1}
+(hyperref)             toclevel {0}
+(hyperref)             type {lot}.
+Package hyperref Info: Anchor `table.6.1' on input line 66.
+Package hyperref Info: Anchor `table.6.1' on input line 66.
+Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 90
+.
+Package hyperref Info: Reference (cite) `cite.nhc_helene20241' on input line 90
+.
+Package backref Info: Back cite `nhc_helene20241' on input line 90.
+Package hyperref Info: Reference (link) `Hfootnote.23' on input line 93.
+Package hyperref Info: Anchor `Hfootnote.23' on input line 94.
+
+Overfull \vbox (0.94757pt too high) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.102' on input line 100.
+[102
+Package `hyperref' Info: End of reference (cite) `cite.nhc_helene20241', line 9
+0.
+Package `hyperref' Info: End of reference (cite) `cite.nhc_helene20241', line 9
+0.
+Package `hyperref' Info: End of reference (cite) `cite.britannica_helene', line
+ 62.
+Package `hyperref' Info: End of reference (cite) `cite.britannica_helene', line
+ 62.
+Package `hyperref' Info: End of reference (link) `table.6.1', line 62.
+Package `hyperref' Info: End of reference (link) `Hfootnote.23', line 93.
+Package `hyperref' Info: End of reference (link) `Hfootnote.23', line 93.
+]
+Package hyperref Info: Reference (link) `figure.6.4' on input line 100.
+Package hyperref Info: bookmark on input line 104:
 (hyperref)             thecounter {6.4}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
-ame }{\ignorespaces Criar um titulo aqui}}
+ame }{\ignorespaces Spatial domain of Hurricane Helene's development and trajec
+tory according to the best track dataset.}}
 (hyperref)             reference {figure.6.4}
 (hyperref)             toclevel {0}
 (hyperref)             type {lof}.
-Package hyperref Info: Anchor `figure.6.4' on input line 96.
-<docs/figuras/chapter6/HELENE_map_with_cat_path.png, id=1868, 405.9165pt x 420.
+Package hyperref Info: Anchor `figure.6.4' on input line 104.
+Package hyperref Info: Anchor `figure.6.4' on input line 104.
+<docs/figuras/chapter6/HELENE_map_with_cat_path.png, id=1961, 391.7034pt x 420.
 6114pt>
 File: docs/figuras/chapter6/HELENE_map_with_cat_path.png Graphic file (type png
 )
 <use docs/figuras/chapter6/HELENE_map_with_cat_path.png>
 Package pdftex.def Info: docs/figuras/chapter6/HELENE_map_with_cat_path.png  us
-ed on input line 97.
-(pdftex.def)             Requested size: 426.79135pt x 442.25189pt.
-Package hyperref Info: Anchor `section.6.2' on input line 105.
-Package hyperref Info: bookmark on input line 105:
+ed on input line 105.
+(pdftex.def)             Requested size: 426.79135pt x 458.30331pt.
+Package hyperref Info: Anchor `section.6.2' on input line 111.
+Package hyperref Info: bookmark on input line 111:
 (hyperref)             thecounter {6.2}
 (hyperref)             text {\ifnum 1>\c@secnumdepth \else \protect \numberline
- {\csname thesection\endcsname }\fi Results and analysis of hurricane Helene}
+ {\csname thesection\endcsname }\fi Results and analysis of Hurricane Helene}
 (hyperref)             reference {section.6.2}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsection.6.2.1' on input line 107.
-Package hyperref Info: bookmark on input line 107:
+Package hyperref Info: Reference (link) `table.4.3' on input line 113.
+Package hyperref Info: Reference (link) `table.6.2' on input line 113.
+Package hyperref Info: Reference (link) `table.5.3' on input line 113.
+Package hyperref Info: bookmark on input line 117:
+(hyperref)             thecounter {6.2}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Experiments to be conducted during the Hurricane Helene per
+iod.}}
+(hyperref)             reference {table.6.2}
+(hyperref)             toclevel {0}
+(hyperref)             type {lot}.
+Package hyperref Info: Anchor `table.6.2' on input line 117.
+
+Overfull \hbox (14.12659pt too wide) in paragraph at lines 135--135
+ [] 
+ []
+
+Package hyperref Info: Reference (link) `table.5.2' on input line 141.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.103' on input line 142.
+[103
+Package `hyperref' Info: End of reference (link) `figure.6.4', line 100.
+Package `hyperref' Info: End of reference (link) `table.4.3', line 113.
+Package `hyperref' Info: End of reference (link) `table.6.2', line 113.
+Package `hyperref' Info: End of reference (link) `table.5.3', line 113.
+]
+Package hyperref Info: Anchor `subsection.6.2.1' on input line 143.
+Package hyperref Info: bookmark on input line 143:
 (hyperref)             thecounter {6.2.1}
 (hyperref)             text {\ifnum 2>\c@secnumdepth \else \protect \numberline
  {\csname thesubsection\endcsname }\fi Trajectory}
 (hyperref)             reference {subsection.6.2.1}
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsection.6.2.2' on input line 109.
-Package hyperref Info: bookmark on input line 109:
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.104' on input line 146.
+[104
+Package `hyperref' Info: End of reference (link) `table.5.2', line 141.
+ <./docs/figuras/chapter6/HELENE_map_with_cat_path.png>]
+Package hyperref Info: Reference (link) `figure.5.8' on input line 147.
+Package hyperref Info: Reference (link) `figure.6.5' on input line 147.
+Package hyperref Info: bookmark on input line 151:
+(hyperref)             thecounter {6.5}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Trajectories from MONAN experiments and ERA5 compared to th
+e best track dataset. The period shown here is from September 25 at 00 UTC to S
+eptember 28 at 00 UTC.}}
+(hyperref)             reference {figure.6.5}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.5' on input line 151.
+Package hyperref Info: Anchor `figure.6.5' on input line 151.
+<docs/figuras/chapter6/Helene_Tracks_FINAL.png, id=1978, 340.8735pt x 403.9893p
+t>
+File: docs/figuras/chapter6/Helene_Tracks_FINAL.png Graphic file (type png)
+<use docs/figuras/chapter6/Helene_Tracks_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/Helene_Tracks_FINAL.png  used on
+ input line 152.
+(pdftex.def)             Requested size: 272.69916pt x 323.19188pt.
+Package hyperref Info: Reference (link) `figure.6.6' on input line 159.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.105' on input line 160.
+[105
+Package `hyperref' Info: End of reference (link) `figure.5.8', line 147.
+Package `hyperref' Info: End of reference (link) `figure.6.5', line 147.
+ <./docs/figuras/chapter6/Helene_Tracks_FINAL.png>]
+Package hyperref Info: bookmark on input line 163:
+(hyperref)             thecounter {6.6}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces A forecast was made for Hurricane Helene starting on Septem
+ber 24th (12 UTC), 2024, using different operational hurricane forecaster model
+s.}}
+(hyperref)             reference {figure.6.6}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.6' on input line 163.
+Package hyperref Info: Anchor `figure.6.6' on input line 163.
+<docs/figuras/chapter6/HAFS_helene.png, id=1985, 913.4125pt x 659.46375pt>
+File: docs/figuras/chapter6/HAFS_helene.png Graphic file (type png)
+<use docs/figuras/chapter6/HAFS_helene.png>
+Package pdftex.def Info: docs/figuras/chapter6/HAFS_helene.png  used on input l
+ine 164.
+(pdftex.def)             Requested size: 401.90274pt x 290.16493pt.
+Package hyperref Info: Reference (link) `figure.6.7' on input line 171.
+Package hyperref Info: bookmark on input line 176:
+(hyperref)             thecounter {6.7}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Hurricane Helene’s track errors of the MONAN forecast and
+ ERA5 reanalysis with the best track as reference. 12 hours of model spin-up ar
+e withdrawn from the analysis. (a) is displayed the distance error computed as 
+the great-circle, and (b), the MAE and RMSE calculated from (a). }}
+(hyperref)             reference {figure.6.7}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.7' on input line 176.
+Package hyperref Info: Anchor `figure.6.7' on input line 176.
+<docs/figuras/chapter6/PANEL_DPE_mae_rmse_FINAL.png, id=1988, 1581.5085pt x 712
+.3413pt>
+File: docs/figuras/chapter6/PANEL_DPE_mae_rmse_FINAL.png Graphic file (type png
+)
+<use docs/figuras/chapter6/PANEL_DPE_mae_rmse_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/PANEL_DPE_mae_rmse_FINAL.png  us
+ed on input line 177.
+(pdftex.def)             Requested size: 442.81937pt x 199.4542pt.
+
+Overfull \hbox (16.02802pt too wide) in paragraph at lines 177--179
+ [][] 
+ []
+
+Package hyperref Info: Reference (link) `subsection.5.2.1' on input line 184.
+Package hyperref Info: Reference (cite) `cite.metoffice_nhem2024' on input line
+ 186.
+Package hyperref Info: Reference (cite) `cite.metoffice_nhem2024' on input line
+ 186.
+Package backref Info: Back cite `metoffice_nhem2024' on input line 186.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.106' on input line 187.
+[106
+Package `hyperref' Info: End of reference (link) `figure.6.6', line 159.
+Package `hyperref' Info: End of reference (link) `figure.6.6', line 159.
+Package `hyperref' Info: End of reference (link) `figure.6.7', line 171.
+Package `hyperref' Info: End of reference (link) `subsection.5.2.1', line 184.
+ <./docs/figuras/chapter6/HAFS_helene.png>]
+Package hyperref Info: bookmark on input line 191:
+(hyperref)             thecounter {6.8}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Tracking available by the UK Met Office of Hurricane Helene
+. }}
+(hyperref)             reference {figure.6.8}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.8' on input line 191.
+<docs/figuras/chapter6/helene_MetOffice.pdf, id=1998, 845.07718pt x 597.19106pt
+>
+File: docs/figuras/chapter6/helene_MetOffice.pdf Graphic file (type pdf)
+<use docs/figuras/chapter6/helene_MetOffice.pdf>
+Package pdftex.def Info: docs/figuras/chapter6/helene_MetOffice.pdf  used on in
+put line 192.
+(pdftex.def)             Requested size: 456.33488pt x 291.74986pt.
+
+Overfull \hbox (29.54353pt too wide) in paragraph at lines 192--194
+ [][] 
+ []
+
+Package hyperref Info: Reference (link) `figure.6.7' on input line 199.
+Package hyperref Info: Reference (link) `figure.6.7' on input line 201.
+Package hyperref Info: Reference (link) `figure.5.10' on input line 201.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.107' on input line 202.
+[107
+Package `hyperref' Info: End of reference (cite) `cite.metoffice_nhem2024', lin
+e 186.
+Package `hyperref' Info: End of reference (cite) `cite.metoffice_nhem2024', lin
+e 186.
+Package `hyperref' Info: End of reference (link) `figure.6.7', line 199.
+Package `hyperref' Info: End of reference (link) `figure.6.7', line 201.
+Package `hyperref' Info: End of reference (link) `figure.5.10', line 201.
+ <./docs/figuras/chapter6/PANEL_DPE_mae_rmse_FINAL.png>]
+Package hyperref Info: Reference (link) `figure.6.5' on input line 203.
+Package hyperref Info: Reference (link) `figure.6.9' on input line 203.
+Package hyperref Info: bookmark on input line 208:
+(hyperref)             thecounter {6.9}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces CTE (a) and ATE (b) computing during the Hurricane Helene p
+eriod. }}
+(hyperref)             reference {figure.6.9}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.9' on input line 208.
+<docs/figuras/chapter6/Cross_Track_Along_Track_Errors_FINAL.png, id=2012, 1147.
+6476pt x 712.1004pt>
+File: docs/figuras/chapter6/Cross_Track_Along_Track_Errors_FINAL.png Graphic fi
+le (type png)
+<use docs/figuras/chapter6/Cross_Track_Along_Track_Errors_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/Cross_Track_Along_Track_Errors_F
+INAL.png  used on input line 209.
+(pdftex.def)             Requested size: 344.29694pt x 213.63176pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.108' on input line 219.
+[108
+Package `hyperref' Info: End of reference (link) `subsection.5.2.1', line 184.
+Package `hyperref' Info: End of reference (link) `figure.6.5', line 203.
+Package `hyperref' Info: End of reference (link) `figure.6.9', line 203.
+ <./docs/figuras/chapter6/helene_MetOffice.pdf>]
+Package hyperref Info: Anchor `subsection.6.2.2' on input line 222.
+Package hyperref Info: bookmark on input line 222:
 (hyperref)             thecounter {6.2.2}
 (hyperref)             text {\ifnum 2>\c@secnumdepth \else \protect \numberline
  {\csname thesubsection\endcsname }\fi Intensity}
 (hyperref)             reference {subsection.6.2.2}
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsection.6.2.3' on input line 111.
-Package hyperref Info: bookmark on input line 111:
+Package hyperref Info: Reference (link) `figure.6.5' on input line 224.
+Package hyperref Info: Reference (link) `figure.6.10' on input line 224.
+Package hyperref Info: bookmark on input line 229:
+(hyperref)             thecounter {6.10}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Comparison of forecasted and observed central pressure and 
+wind speeds for Hurricane Helene. Here, a 12-hour model spin-up was also withdr
+awn, starting the time series on September 25, 00 UTC. CP-15km is at its native
+ resolution. }}
+(hyperref)             reference {figure.6.10}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.10' on input line 229.
+Package hyperref Info: Anchor `figure.6.10' on input line 229.
+<docs/figuras/chapter6/intensity_time_series_panel_FINAL.png, id=2030, 1011.78p
+t x 722.7pt>
+File: docs/figuras/chapter6/intensity_time_series_panel_FINAL.png Graphic file 
+(type png)
+<use docs/figuras/chapter6/intensity_time_series_panel_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/intensity_time_series_panel_FINA
+L.png  used on input line 230.
+(pdftex.def)             Requested size: 354.1283pt x 252.94878pt.
+Package hyperref Info: Reference (link) `figure.6.5' on input line 237.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.109' on input line 238.
+[109
+Package `hyperref' Info: End of reference (link) `figure.6.5', line 224.
+Package `hyperref' Info: End of reference (link) `figure.6.10', line 224.
+ <./docs/figuras/chapter6/Cross_Track_Along_Track_Errors_FINAL.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.110' on input line 240.
+[110
+Package `hyperref' Info: End of reference (link) `figure.6.5', line 237.
+ <./docs/figuras/chapter6/intensity_time_series_panel_FINAL.png>]
+Package hyperref Info: Reference (link) `figure.6.11' on input line 241.
+Package hyperref Info: bookmark on input line 246:
+(hyperref)             thecounter {6.11}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Central pressure and maximum wind speed errors during Hurri
+cane Helene. }}
+(hyperref)             reference {figure.6.11}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.11' on input line 246.
+Package hyperref Info: Anchor `figure.6.11' on input line 246.
+<docs/figuras/chapter6/PANEL_intensity_errors_FINAL.png, id=2044, 1582.713pt x 
+712.1004pt>
+File: docs/figuras/chapter6/PANEL_intensity_errors_FINAL.png Graphic file (type
+ png)
+<use docs/figuras/chapter6/PANEL_intensity_errors_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/PANEL_intensity_errors_FINAL.png
+  used on input line 247.
+(pdftex.def)             Requested size: 395.67728pt x 178.02466pt.
+Package hyperref Info: Reference (link) `figure.6.10' on input line 254.
+Package hyperref Info: Reference (link) `figure.6.8' on input line 256.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.111' on input line 257.
+[111
+Package `hyperref' Info: End of reference (link) `figure.6.11', line 241.
+Package `hyperref' Info: End of reference (link) `figure.6.10', line 254.
+ <./docs/figuras/chapter6/PANEL_intensity_errors_FINAL.png>]
+Package hyperref Info: Anchor `subsection.6.2.3' on input line 260.
+Package hyperref Info: bookmark on input line 260:
 (hyperref)             thecounter {6.2.3}
 (hyperref)             text {\ifnum 2>\c@secnumdepth \else \protect \numberline
  {\csname thesubsection\endcsname }\fi Rainfall}
 (hyperref)             reference {subsection.6.2.3}
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsubsection.6.2.3.1' on input line 113.
-Package hyperref Info: bookmark on input line 113:
+Package hyperref Info: Reference (link) `section.6.1' on input line 264.
+Package hyperref Info: Reference (link) `table.6.1' on input line 266.
+Package hyperref Info: Reference (link) `Hfootnote.24' on input line 266.
+Package hyperref Info: Anchor `Hfootnote.24' on input line 266.
+Package hyperref Info: Anchor `subsubsection.6.2.3.1' on input line 268.
+Package hyperref Info: bookmark on input line 268:
 (hyperref)             thecounter {6.2.3.1}
 (hyperref)             text {\ifnum 3>\c@secnumdepth \else \protect \numberline
  {\csname thesubsubsection\endcsname }\fi Pattern and spatial rainfall distribu
@@ -5557,8 +5932,245 @@ tion}
 (hyperref)             reference {subsubsection.6.2.3.1}
 (hyperref)             toclevel {3}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsubsection.6.2.3.2' on input line 115.
-Package hyperref Info: bookmark on input line 115:
+Package hyperref Info: Reference (link) `figure.6.12' on input line 270.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.112' on input line 271.
+[112
+Package `hyperref' Info: End of reference (link) `figure.6.8', line 256.
+Package `hyperref' Info: End of reference (link) `section.6.1', line 264.
+Package `hyperref' Info: End of reference (link) `table.6.1', line 266.
+Package `hyperref' Info: End of reference (link) `Hfootnote.24', line 266.
+Package `hyperref' Info: End of reference (link) `Hfootnote.24', line 266.
+]
+Package hyperref Info: bookmark on input line 275:
+(hyperref)             thecounter {6.12}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Equitable Threat Score (ETS) for all experiments, computed 
+with the accumulated rainfall from September 25th to 29th (both 00 UTC). }}
+(hyperref)             reference {figure.6.12}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.12' on input line 275.
+Package hyperref Info: Anchor `figure.6.12' on input line 275.
+<docs/figuras/chapter6/ets_helene_panel.png, id=2062, 1156.32pt x 433.62pt>
+File: docs/figuras/chapter6/ets_helene_panel.png Graphic file (type png)
+<use docs/figuras/chapter6/ets_helene_panel.png>
+Package pdftex.def Info: docs/figuras/chapter6/ets_helene_panel.png  used on in
+put line 276.
+(pdftex.def)             Requested size: 427.83171pt x 160.43689pt.
+
+Overfull \hbox (1.04036pt too wide) in paragraph at lines 276--278
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.113' on input line 286.
+[113
+Package `hyperref' Info: End of reference (link) `figure.6.12', line 270.
+ <./docs/figuras/chapter6/ets_helene_panel.png>]
+Package hyperref Info: Reference (link) `figure.6.13' on input line 291.
+Package hyperref Info: bookmark on input line 296:
+(hyperref)             thecounter {6.13}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Spatially averaged Pearson correlation coefficient over the
+ entire domain, computed with the accumulated rainfall from September 25th to 2
+9th (both 00 UTC). }}
+(hyperref)             reference {figure.6.13}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.13' on input line 296.
+Package hyperref Info: Anchor `figure.6.13' on input line 296.
+<docs/figuras/chapter6/pearson_correlation_helene_panel.png, id=2069, 1011.78pt
+ x 578.16pt>
+File: docs/figuras/chapter6/pearson_correlation_helene_panel.png Graphic file (
+type png)
+<use docs/figuras/chapter6/pearson_correlation_helene_panel.png>
+Package pdftex.def Info: docs/figuras/chapter6/pearson_correlation_helene_panel
+.png  used on input line 297.
+(pdftex.def)             Requested size: 404.70483pt x 231.2599pt.
+Package hyperref Info: Reference (link) `figure.6.12' on input line 306.
+Package hyperref Info: Reference (link) `figure.6.14' on input line 308.
+Package hyperref Info: Reference (link) `figure.6.17' on input line 308.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.114' on input line 309.
+[114
+Package `hyperref' Info: End of reference (link) `figure.6.13', line 291.
+Package `hyperref' Info: End of reference (link) `figure.6.12', line 306.
+]
+Package hyperref Info: bookmark on input line 313:
+(hyperref)             thecounter {6.14}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Selected snapshots of the rainfall fields in some of Hurric
+ane Helene’s key moments. }}
+(hyperref)             reference {figure.6.14}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.14' on input line 313.
+Package hyperref Info: Anchor `figure.6.14' on input line 313.
+<docs/figuras/chapter6/helene_panels_FINAL.png, id=2077, 694.2738pt x 878.8032p
+t>
+File: docs/figuras/chapter6/helene_panels_FINAL.png Graphic file (type png)
+<use docs/figuras/chapter6/helene_panels_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/helene_panels_FINAL.png  used on
+ input line 314.
+(pdftex.def)             Requested size: 416.56749pt x 527.286pt.
+Package hyperref Info: bookmark on input line 324:
+(hyperref)             thecounter {6.15}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Same as Figure 6.14, but showing the differences made by th
+e resolution. }}
+(hyperref)             reference {figure.6.15}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.15' on input line 324.
+<docs/figuras/chapter6/helene_panels_native_FINAL.png, id=2078, 694.2738pt x 87
+8.8032pt>
+File: docs/figuras/chapter6/helene_panels_native_FINAL.png Graphic file (type p
+ng)
+<use docs/figuras/chapter6/helene_panels_native_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/helene_panels_native_FINAL.png  
+used on input line 325.
+(pdftex.def)             Requested size: 416.56749pt x 527.286pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.115' on input line 333.
+[115
+Package `hyperref' Info: End of reference (link) `figure.6.14', line 308.
+Package `hyperref' Info: End of reference (link) `figure.6.17', line 308.
+ <./docs/figuras/chapter6/pearson_correlation_helene_panel.png>]
+Package hyperref Info: Reference (link) `figure.6.14' on input line 334.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.116' on input line 335.
+[116 <./docs/figuras/chapter6/helene_panels_FINAL.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.117' on input line 335.
+[117
+Package `hyperref' Info: End of reference (link) `figure.6.14', line 334.
+ <./docs/figuras/chapter6/helene_panels_native_FINAL.png>]
+Package hyperref Info: bookmark on input line 345:
+(hyperref)             thecounter {6.16}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Selected snapshots of the extreme rainfall over the U.S. co
+ntinental region. }}
+(hyperref)             reference {figure.6.16}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.16' on input line 345.
+Package hyperref Info: Anchor `figure.6.16' on input line 345.
+<docs/figuras/chapter6/Panels_NCEP_instataneous_FINAL.png, id=2096, 709.9323pt 
+x 862.1811pt>
+File: docs/figuras/chapter6/Panels_NCEP_instataneous_FINAL.png Graphic file (ty
+pe png)
+<use docs/figuras/chapter6/Panels_NCEP_instataneous_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/Panels_NCEP_instataneous_FINAL.p
+ng  used on input line 346.
+(pdftex.def)             Requested size: 425.96266pt x 517.31265pt.
+Package hyperref Info: bookmark on input line 358:
+(hyperref)             thecounter {6.17}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Hurricane Helene’s spatial distribution of Pearson correl
+ation values of daily accumulated rainfall. }}
+(hyperref)             reference {figure.6.17}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.17' on input line 358.
+Package hyperref Info: Anchor `figure.6.17' on input line 358.
+<docs/figuras/chapter6/Panel_spatial_correlation_USA_horizontal.png, id=2097, 1
+304.4735pt x 394.3533pt>
+File: docs/figuras/chapter6/Panel_spatial_correlation_USA_horizontal.png Graphi
+c file (type png)
+<use docs/figuras/chapter6/Panel_spatial_correlation_USA_horizontal.png>
+Package pdftex.def Info: docs/figuras/chapter6/Panel_spatial_correlation_USA_ho
+rizontal.png  used on input line 359.
+(pdftex.def)             Requested size: 391.34506pt x 118.3069pt.
+Package hyperref Info: Reference (link) `figure.6.18' on input line 368.
+Package hyperref Info: Reference (link) `figure.6.19' on input line 368.
+Package hyperref Info: Reference (link) `figure.6.14' on input line 368.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.118' on input line 369.
+[118]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.119' on input line 369.
+[119
+Package `hyperref' Info: End of reference (link) `figure.6.18', line 368.
+Package `hyperref' Info: End of reference (link) `figure.6.19', line 368.
+ <./docs/figuras/chapter6/Panels_NCEP_instataneous_FINAL.png>]
+Package hyperref Info: bookmark on input line 373:
+(hyperref)             thecounter {6.18}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Same as Figure 6.14, but showing the cloud-top temperature;
+ the reference assumed is the dataset from GPM-MERGIR. }}
+(hyperref)             reference {figure.6.18}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.18' on input line 373.
+Package hyperref Info: Anchor `figure.6.18' on input line 373.
+<docs/figuras/chapter6/painel_ctt_selected_experiments_FINAL.png, id=2110, 565.
+1514pt x 598.8774pt>
+File: docs/figuras/chapter6/painel_ctt_selected_experiments_FINAL.png Graphic f
+ile (type png)
+<use docs/figuras/chapter6/painel_ctt_selected_experiments_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/painel_ctt_selected_experiments_
+FINAL.png  used on input line 374.
+(pdftex.def)             Requested size: 452.12172pt x 479.10257pt.
+
+Overfull \hbox (25.33037pt too wide) in paragraph at lines 374--376
+ [][] 
+ []
+
+Package hyperref Info: bookmark on input line 384:
+(hyperref)             thecounter {6.19}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Same as Figure 6.18, but showing the difference made by the
+ resolution. }}
+(hyperref)             reference {figure.6.19}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.19' on input line 384.
+<docs/figuras/chapter6/Panel_ctt_native_resolution_FINAL.png, id=2111, 586.3506
+pt x 598.8774pt>
+File: docs/figuras/chapter6/Panel_ctt_native_resolution_FINAL.png Graphic file 
+(type png)
+<use docs/figuras/chapter6/Panel_ctt_native_resolution_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/Panel_ctt_native_resolution_FINA
+L.png  used on input line 385.
+(pdftex.def)             Requested size: 469.08112pt x 479.10257pt.
+
+Overfull \hbox (42.28976pt too wide) in paragraph at lines 385--387
+ [][] 
+ []
+
+Package hyperref Info: Anchor `subsubsection.6.2.3.2' on input line 392.
+Package hyperref Info: bookmark on input line 392:
 (hyperref)             thecounter {6.2.3.2}
 (hyperref)             text {\ifnum 3>\c@secnumdepth \else \protect \numberline
  {\csname thesubsubsection\endcsname }\fi Rainfall mean and overall distributio
@@ -5566,8 +6178,50 @@ n}
 (hyperref)             reference {subsubsection.6.2.3.2}
 (hyperref)             toclevel {3}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsubsection.6.2.3.3' on input line 117.
-Package hyperref Info: bookmark on input line 117:
+Package hyperref Info: Reference (link) `figure.6.20' on input line 394.
+Package hyperref Info: bookmark on input line 399:
+(hyperref)             thecounter {6.20}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Probability density (left) and cumulative distribution func
+tions (right) of hourly rainfall from September 25th to 29th (00 UTC for both).
+ }}
+(hyperref)             reference {figure.6.20}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.20' on input line 399.
+Package hyperref Info: Anchor `figure.6.20' on input line 399.
+<docs/figuras/chapter6/painel_pdf_cdf_USA_vs_notUSA_15km_NATIVE.png, id=2113, 8
+67.24pt x 722.7pt>
+File: docs/figuras/chapter6/painel_pdf_cdf_USA_vs_notUSA_15km_NATIVE.png Graphi
+c file (type png)
+<use docs/figuras/chapter6/painel_pdf_cdf_USA_vs_notUSA_15km_NATIVE.png>
+Package pdftex.def Info: docs/figuras/chapter6/painel_pdf_cdf_USA_vs_notUSA_15k
+m_NATIVE.png  used on input line 400.
+(pdftex.def)             Requested size: 346.88986pt x 289.07487pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.120' on input line 410.
+[120
+Package `hyperref' Info: End of reference (link) `figure.6.14', line 368.
+Package `hyperref' Info: End of reference (link) `figure.6.20', line 394.
+ <./docs/figuras/chapter6/Panel_spatial_correlation_USA_horizontal.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.121' on input line 412.
+[121 <./docs/figuras/chapter6/painel_ctt_selected_experiments_FINAL.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.122' on input line 412.
+[122 <./docs/figuras/chapter6/Panel_ctt_native_resolution_FINAL.png>]
+Package hyperref Info: Anchor `subsubsection.6.2.3.3' on input line 415.
+Package hyperref Info: bookmark on input line 415:
 (hyperref)             thecounter {6.2.3.3}
 (hyperref)             text {\ifnum 3>\c@secnumdepth \else \protect \numberline
  {\csname thesubsubsection\endcsname }\fi MONAN performance at forecasting rain
@@ -5575,35 +6229,164 @@ fall}
 (hyperref)             reference {subsubsection.6.2.3.3}
 (hyperref)             toclevel {3}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `section.6.3' on input line 119.
-Package hyperref Info: bookmark on input line 119:
+Package hyperref Info: Reference (link) `figure.6.21' on input line 417.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.123' on input line 418.
+[123 <./docs/figuras/chapter6/painel_pdf_cdf_USA_vs_notUSA_15km_NATIVE.png>]
+Package hyperref Info: bookmark on input line 422:
+(hyperref)             thecounter {6.21}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Same as Figure 6.20, but showing CDFs above the 85th percen
+tile. }}
+(hyperref)             reference {figure.6.21}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.21' on input line 422.
+<docs/figuras/chapter6/85_percentile_CDF_USA_vs_notUSA_15km_NATIVE_FINAL.png, i
+d=2137, 867.24pt x 433.62pt>
+File: docs/figuras/chapter6/85_percentile_CDF_USA_vs_notUSA_15km_NATIVE_FINAL.p
+ng Graphic file (type png)
+<use docs/figuras/chapter6/85_percentile_CDF_USA_vs_notUSA_15km_NATIVE_FINAL.pn
+g>
+Package pdftex.def Info: docs/figuras/chapter6/85_percentile_CDF_USA_vs_notUSA_
+15km_NATIVE_FINAL.png  used on input line 423.
+(pdftex.def)             Requested size: 346.88986pt x 173.44492pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.124' on input line 431.
+[124
+Package `hyperref' Info: End of reference (link) `figure.6.21', line 417.
+ <./docs/figuras/chapter6/85_percentile_CDF_USA_vs_notUSA_15km_NATIVE_FINAL.png
+>]
+Package hyperref Info: Reference (link) `figure.6.22' on input line 432.
+Package hyperref Info: bookmark on input line 437:
+(hyperref)             thecounter {6.22}
+(hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
+ame }{\ignorespaces Same subset of days as in Figure 6.14, but showing the CDFs
+ above the 85th percentile. }}
+(hyperref)             reference {figure.6.22}
+(hyperref)             toclevel {0}
+(hyperref)             type {lof}.
+Package hyperref Info: Anchor `figure.6.22' on input line 437.
+Package hyperref Info: Anchor `figure.6.22' on input line 437.
+<docs/figuras/chapter6/SNAPSHOTS_percentile_CDF_FINAL.png, id=2144, 867.24pt x 
+722.7pt>
+File: docs/figuras/chapter6/SNAPSHOTS_percentile_CDF_FINAL.png Graphic file (ty
+pe png)
+<use docs/figuras/chapter6/SNAPSHOTS_percentile_CDF_FINAL.png>
+Package pdftex.def Info: docs/figuras/chapter6/SNAPSHOTS_percentile_CDF_FINAL.p
+ng  used on input line 438.
+(pdftex.def)             Requested size: 433.61894pt x 361.3491pt.
+
+Overfull \hbox (6.82759pt too wide) in paragraph at lines 438--440
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.125' on input line 446.
+[125
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 432.
+ <./docs/figuras/chapter6/SNAPSHOTS_percentile_CDF_FINAL.png>]
+Package hyperref Info: Reference (cite) `cite.marchok2007validation' on input l
+ine 447.
+Package hyperref Info: Reference (cite) `cite.marchok2007validation' on input l
+ine 447.
+Package backref Info: Back cite `marchok2007validation' on input line 447.
+Package hyperref Info: Reference (cite) `cite.brackins2020evaluation' on input 
+line 447.
+Package hyperref Info: Reference (cite) `cite.brackins2020evaluation' on input 
+line 447.
+Package backref Info: Back cite `brackins2020evaluation' on input line 447.
+Package hyperref Info: Anchor `section.6.3' on input line 450.
+Package hyperref Info: bookmark on input line 450:
 (hyperref)             thecounter {6.3}
 (hyperref)             text {\ifnum 1>\c@secnumdepth \else \protect \numberline
  {\csname thesection\endcsname }\fi Discussion of key outcomes}
 (hyperref)             reference {section.6.3}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-)
+Package hyperref Info: Reference (link) `figure.6.6' on input line 452.
+Package hyperref Info: Reference (cite) `cite.yamaguchi2012tropical' on input l
+ine 456.
+Package hyperref Info: Reference (cite) `cite.yamaguchi2012tropical' on input l
+ine 456.
+Package backref Info: Back cite `yamaguchi2012tropical' on input line 456.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.102' on input line 89.
-[102
-Package `hyperref' Info: End of reference (cite) `cite.nhc_helene20241', line 8
-5.
-Package `hyperref' Info: End of reference (cite) `cite.nhc_helene20241', line 8
-5.
+Package hyperref Info: Anchor `page.126' on input line 457.
+[126
+Package `hyperref' Info: End of reference (cite) `cite.marchok2007validation', 
+line 447.
+Package `hyperref' Info: End of reference (cite) `cite.marchok2007validation', 
+line 447.
+Package `hyperref' Info: End of reference (cite) `cite.brackins2020evaluation',
+ line 447.
+Package `hyperref' Info: End of reference (cite) `cite.brackins2020evaluation',
+ line 447.
+Package `hyperref' Info: End of reference (link) `figure.6.6', line 452.
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package hyperref Info: Anchor `page.103' on input line 89.
-[103 <./docs/figuras/chapter6/HELENE_map_with_cat_path.png>]
+Package hyperref Info: Anchor `page.127' on input line 467.
+[127
+Package `hyperref' Info: End of reference (cite) `cite.yamaguchi2012tropical', 
+line 456.
+Package `hyperref' Info: End of reference (cite) `cite.yamaguchi2012tropical', 
+line 456.
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package hyperref Info: Anchor `page.104' on input line 89.
-[104]
+
+
+Package hyperref Info: Anchor `page.128' on input line 474.
+[128]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Info: Anchor `page.129' on input line 483.
+[129]
+Package hyperref Info: Reference (link) `figure.6.22' on input line 483.
+Package hyperref Info: Reference (cite) `cite.marchok2007validation' on input l
+ine 483.
+Package hyperref Info: Reference (cite) `cite.marchok2007validation' on input l
+ine 483.
+Package backref Info: Back cite `marchok2007validation' on input line 483.
+Package hyperref Info: Reference (cite) `cite.brackins2020evaluation' on input 
+line 483.
+Package hyperref Info: Reference (cite) `cite.brackins2020evaluation' on input 
+line 483.
+Package backref Info: Back cite `brackins2020evaluation' on input line 483.
+)
+
+Package hyperref Info: Anchor `page.130' on input line 89.
+[130
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
+Package `hyperref' Info: End of reference (cite) `cite.marchok2007validation', 
+line 483.
+Package `hyperref' Info: End of reference (cite) `cite.marchok2007validation', 
+line 483.
+Package `hyperref' Info: End of reference (cite) `cite.brackins2020evaluation',
+ line 483.
+Package `hyperref' Info: End of reference (cite) `cite.brackins2020evaluation',
+ line 483.
+]
 \openout2 = `./docs/08_04_capitulo7.aux'.
 
  (./docs/08_04_capitulo7.tex
@@ -5627,8 +6410,8 @@ Package hyperref Info: bookmark on input line 4:
 (hyperref)             type {toc}.
 )
 
-Package hyperref Info: Anchor `page.105' on input line 90.
-[105
+Package hyperref Info: Anchor `page.131' on input line 90.
+[131
 
 
 
@@ -5641,8 +6424,8 @@ Package hyperref Info: Anchor `page.105' on input line 90.
 Package hyperref Info: Anchor `estilo:apendice' on input line 3.
 
 
-Package hyperref Info: Anchor `page.106' on input line 7.
-[106
+Package hyperref Info: Anchor `page.132' on input line 7.
+[132
 
 
 
@@ -5661,11 +6444,11 @@ MASS FLUX DEDUCTION}
 (hyperref)             type {toc}.
 
 
-Package hyperref Info: Anchor `page.107' on input line 14.
-[107]
+Package hyperref Info: Anchor `page.133' on input line 14.
+[133]
 
-Package hyperref Info: Anchor `page.108' on input line 14.
-[108
+Package hyperref Info: Anchor `page.134' on input line 14.
+[134
 
 
 ]
@@ -5681,15 +6464,15 @@ E TRACKING ALGORITHM}
 (hyperref)             type {toc}.
 )
 
-Package hyperref Info: Anchor `page.109' on input line 92.
-[109] (./publicacao.bbl (./publicacao.brf)
+Package hyperref Info: Anchor `page.135' on input line 92.
+[135] (./publicacao.bbl (./publicacao.brf)
 \tf@brf=\write9
 \openout9 = `publicacao.brf'.
 
 
 
-Package hyperref Info: Anchor `page.110' on input line 3.
-[110
+Package hyperref Info: Anchor `page.136' on input line 3.
+[136
 
 
 
@@ -5721,6 +6504,8 @@ Package hyperref Info: Anchor `cite.brackins2020evaluation' on input line 56.
 Package hyperref Info: Reference (link) `page.77' on input line 56.
 Package hyperref Info: Reference (link) `page.89' on input line 56.
 Package hyperref Info: Reference (link) `page.90' on input line 56.
+Package hyperref Info: Reference (link) `page.126' on input line 56.
+Package hyperref Info: Reference (link) `page.130' on input line 56.
 Package hyperref Info: Anchor `cite.cai2019effect' on input line 64.
 Package hyperref Info: Reference (link) `page.2' on input line 64.
 Package hyperref Info: Reference (link) `page.28' on input line 64.
@@ -5737,8 +6522,8 @@ Package hyperref Info: Reference (link) `page.2' on input line 95.
 Package hyperref Info: Reference (link) `page.31' on input line 95.
 
 
-Package hyperref Info: Anchor `page.111' on input line 103.
-[111
+Package hyperref Info: Anchor `page.137' on input line 103.
+[137
 Package `hyperref' Info: End of reference (link) `page.1', line 12.
 Package `hyperref' Info: End of reference (link) `page.1', line 20.
 Package `hyperref' Info: End of reference (link) `page.1', line 27.
@@ -5751,12 +6536,14 @@ Package `hyperref' Info: End of reference (link) `page.89', line 49.
 Package `hyperref' Info: End of reference (link) `page.77', line 56.
 Package `hyperref' Info: End of reference (link) `page.89', line 56.
 Package `hyperref' Info: End of reference (link) `page.90', line 56.
+Package `hyperref' Info: End of reference (link) `page.126', line 56.
+Package `hyperref' Info: End of reference (link) `page.130', line 56.
 Package `hyperref' Info: End of reference (link) `page.2', line 64.
 Package `hyperref' Info: End of reference (link) `page.28', line 64.
 Package `hyperref' Info: End of reference (link) `page.31', line 64.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.100', line 72.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.40', line 81.
 Package `hyperref' Info: End of reference (link) `page.29', line 88.
 ]
@@ -5785,6 +6572,7 @@ Package hyperref Info: Reference (link) `page.8' on input line 147.
 Package hyperref Info: Reference (link) `page.19' on input line 147.
 Package hyperref Info: Anchor `cite.britannica_helene' on input line 155.
 Package hyperref Info: Reference (link) `page.100' on input line 155.
+Package hyperref Info: Reference (link) `page.102' on input line 155.
 Package hyperref Info: Anchor `cite.feng2022modeling' on input line 163.
 Package hyperref Info: Reference (link) `page.23' on input line 163.
 Package hyperref Info: Anchor `cite.feng2015mechanisms' on input line 172.
@@ -5815,8 +6603,8 @@ Package hyperref Info: Reference (link) `page.82' on input line 188.
 Package hyperref Info: Reference (link) `page.89' on input line 188.
 
 
-Package hyperref Info: Anchor `page.112' on input line 188.
-[112
+Package hyperref Info: Anchor `page.138' on input line 188.
+[138
 Package `hyperref' Info: End of reference (link) `page.2', line 95.
 Package `hyperref' Info: End of reference (link) `page.31', line 95.
 Package `hyperref' Info: End of reference (link) `page.47', line 103.
@@ -5834,8 +6622,9 @@ Package `hyperref' Info: End of reference (link) `page.89', line 134.
 Package `hyperref' Info: End of reference (link) `page.27', line 141.
 Package `hyperref' Info: End of reference (link) `page.8', line 147.
 Package `hyperref' Info: End of reference (link) `page.19', line 147.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.100', line 155.
+Package `hyperref' Info: End of reference (link) `page.102', line 155.
 Package `hyperref' Info: End of reference (link) `page.23', line 163.
 Package `hyperref' Info: End of reference (link) `page.1', line 172.
 Package `hyperref' Info: End of reference (link) `page.10', line 172.
@@ -5878,8 +6667,8 @@ Package hyperref Info: Anchor `cite.gunasekera2024global' on input line 277.
 Package hyperref Info: Reference (link) `page.57' on input line 277.
 
 
-Package hyperref Info: Anchor `page.113' on input line 277.
-[113
+Package hyperref Info: Anchor `page.139' on input line 277.
+[139
 Package `hyperref' Info: End of reference (link) `page.1', line 188.
 Package `hyperref' Info: End of reference (link) `page.2', line 188.
 Package `hyperref' Info: End of reference (link) `page.3', line 188.
@@ -5939,13 +6728,13 @@ Package hyperref Info: Reference (link) `page.47' on input line 360.
 Package hyperref Info: Reference (link) `page.48' on input line 360.
 
 
-Package hyperref Info: Anchor `page.114' on input line 368.
-[114
+Package hyperref Info: Anchor `page.140' on input line 368.
+[140
 Package `hyperref' Info: End of reference (link) `page.57', line 277.
 Package `hyperref' Info: End of reference (link) `page.82', line 284.
 Package `hyperref' Info: End of reference (link) `page.48', line 292.
 Package `hyperref' Info: End of reference (link) `page.15', line 300.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.40', line 309.
 Package `hyperref' Info: End of reference (link) `page.40', line 317.
 Package `hyperref' Info: End of reference (link) `page.35', line 324.
@@ -5980,6 +6769,8 @@ Package hyperref Info: Reference (link) `page.49' on input line 413.
 Package hyperref Info: Reference (link) `page.77' on input line 413.
 Package hyperref Info: Reference (link) `page.89' on input line 413.
 Package hyperref Info: Reference (link) `page.90' on input line 413.
+Package hyperref Info: Reference (link) `page.126' on input line 413.
+Package hyperref Info: Reference (link) `page.130' on input line 413.
 Package hyperref Info: Anchor `cite.may2024cnn' on input line 421.
 Package hyperref Info: Reference (link) `page.33' on input line 421.
 Package hyperref Info: Anchor `cite.mazza2023tropical' on input line 430.
@@ -5993,8 +6784,8 @@ Package hyperref Info: Anchor `cite.mitchell2005community' on input line 453.
 Package hyperref Info: Reference (link) `page.40' on input line 453.
 
 
-Package hyperref Info: Anchor `page.115' on input line 460.
-[115
+Package hyperref Info: Anchor `page.141' on input line 460.
+[141
 Package `hyperref' Info: End of reference (link) `page.47', line 360.
 Package `hyperref' Info: End of reference (link) `page.48', line 360.
 Package `hyperref' Info: End of reference (link) `page.10', line 368.
@@ -6012,11 +6803,13 @@ Package `hyperref' Info: End of reference (link) `page.49', line 413.
 Package `hyperref' Info: End of reference (link) `page.77', line 413.
 Package `hyperref' Info: End of reference (link) `page.89', line 413.
 Package `hyperref' Info: End of reference (link) `page.90', line 413.
+Package `hyperref' Info: End of reference (link) `page.126', line 413.
+Package `hyperref' Info: End of reference (link) `page.130', line 413.
 Package `hyperref' Info: End of reference (link) `page.33', line 421.
 Package `hyperref' Info: End of reference (link) `page.33', line 430.
 Package `hyperref' Info: End of reference (link) `page.38', line 430.
 Package `hyperref' Info: End of reference (link) `page.48', line 437.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.71', line 446.
 ]
 Package hyperref Info: Anchor `cite.moon2021five' on input line 460.
@@ -6048,21 +6841,21 @@ Package hyperref Info: Anchor `cite.rooney2022c' on input line 547.
 Package hyperref Info: Reference (link) `page.15' on input line 547.
 
 
-Package hyperref Info: Anchor `page.116' on input line 547.
-[116
+Package hyperref Info: Anchor `page.142' on input line 547.
+[142
 Package `hyperref' Info: End of reference (link) `page.40', line 453.
 Package `hyperref' Info: End of reference (link) `page.45', line 460.
 Package `hyperref' Info: End of reference (link) `page.5', line 469.
 Package `hyperref' Info: End of reference (link) `page.7', line 469.
 Package `hyperref' Info: End of reference (link) `page.40', line 477.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.100', line 486.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.101', line 494.
 Package `hyperref' Info: End of reference (link) `page.102', line 494.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.2', line 504.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
 Package `hyperref' Info: End of reference (link) `page.2', line 515.
 Package `hyperref' Info: End of reference (link) `page.45', line 523.
 Package `hyperref' Info: End of reference (link) `page.23', line 531.
@@ -6078,7 +6871,7 @@ Package hyperref Info: Reference (link) `page.89' on input line 562.
 Package hyperref Info: Anchor `cite.sawada2010impacts2' on input line 568.
 Package hyperref Info: Reference (link) `page.27' on input line 568.
 Package hyperref Info: Anchor `cite.schlemmer2014formation' on input line 576.
-Package hyperref Info: Reference (link) `page.89' on input line 576.
+Package hyperref Info: Reference (link) `page.90' on input line 576.
 Package hyperref Info: Anchor `cite.shepherd2017sensitivity' on input line 585.
 
 Package hyperref Info: Reference (link) `page.48' on input line 585.
@@ -6106,12 +6899,12 @@ Package hyperref Info: Reference (link) `page.11' on input line 623.
 Package hyperref Info: Reference (link) `page.12' on input line 623.
 Package hyperref Info: Reference (link) `page.30' on input line 623.
 Package hyperref Info: Reference (link) `page.88' on input line 623.
-Package hyperref Info: Anchor `cite.vogel2021climatology' on input line 631.
-Package hyperref Info: Reference (link) `page.82' on input line 631.
+Package hyperref Info: Anchor `cite.metoffice_nhem2024' on input line 631.
+Package hyperref Info: Reference (link) `page.107' on input line 631.
 
 
-Package hyperref Info: Anchor `page.117' on input line 631.
-[117
+Package hyperref Info: Anchor `page.143' on input line 639.
+[143
 Package `hyperref' Info: End of reference (link) `page.37', line 539.
 Package `hyperref' Info: End of reference (link) `page.15', line 547.
 Package `hyperref' Info: End of reference (link) `page.82', line 555.
@@ -6120,7 +6913,7 @@ Package `hyperref' Info: End of reference (link) `page.27', line 562.
 Package `hyperref' Info: End of reference (link) `page.31', line 562.
 Package `hyperref' Info: End of reference (link) `page.89', line 562.
 Package `hyperref' Info: End of reference (link) `page.27', line 568.
-Package `hyperref' Info: End of reference (link) `page.89', line 576.
+Package `hyperref' Info: End of reference (link) `page.90', line 576.
 Package `hyperref' Info: End of reference (link) `page.48', line 585.
 Package `hyperref' Info: End of reference (link) `page.69', line 593.
 Package `hyperref' Info: End of reference (link) `page.2', line 601.
@@ -6139,34 +6932,40 @@ Package `hyperref' Info: End of reference (link) `page.12', line 623.
 Package `hyperref' Info: End of reference (link) `page.30', line 623.
 Package `hyperref' Info: End of reference (link) `page.88', line 623.
 ]
-Package hyperref Info: Anchor `cite.weisman2004theory' on input line 638.
-Package hyperref Info: Reference (link) `page.8' on input line 638.
+Package hyperref Info: Anchor `cite.vogel2021climatology' on input line 639.
+Package hyperref Info: Reference (link) `page.82' on input line 639.
+Package hyperref Info: Anchor `cite.weisman2004theory' on input line 646.
+Package hyperref Info: Reference (link) `page.8' on input line 646.
 Package hyperref Info: Anchor `cite.wmo_classification_tropical_cyclones_2023' 
-on input line 648.
-Package hyperref Info: Reference (link) `page.24' on input line 648.
-Package hyperref Info: Anchor `cite.yamaguchi2012tropical' on input line 656.
-Package hyperref Info: Reference (link) `page.87' on input line 656.
-Package hyperref Info: Anchor `cite.yang2024evaluation' on input line 664.
-Package hyperref Info: Reference (link) `page.33' on input line 664.
-Package hyperref Info: Reference (link) `page.37' on input line 664.
-Package hyperref Info: Anchor `cite.zhou2020prospects' on input line 672.
-Package hyperref Info: Reference (link) `page.69' on input line 672.
-Package hyperref Info: Anchor `cite.zhou2021regionalization' on input line 680.
+on input line 656.
+Package hyperref Info: Reference (link) `page.24' on input line 656.
+Package hyperref Info: Anchor `cite.yamaguchi2012tropical' on input line 664.
+Package hyperref Info: Reference (link) `page.88' on input line 664.
+Package hyperref Info: Reference (link) `page.127' on input line 664.
+Package hyperref Info: Anchor `cite.yang2024evaluation' on input line 672.
+Package hyperref Info: Reference (link) `page.33' on input line 672.
+Package hyperref Info: Reference (link) `page.37' on input line 672.
+Package hyperref Info: Anchor `cite.zhou2020prospects' on input line 680.
+Package hyperref Info: Reference (link) `page.69' on input line 680.
+Package hyperref Info: Anchor `cite.zhou2021regionalization' on input line 688.
 
-Package hyperref Info: Reference (link) `page.33' on input line 680.
+Package hyperref Info: Reference (link) `page.33' on input line 688.
 )
 
-Package hyperref Info: Anchor `page.118' on input line 121.
-[118
-Package `hyperref' Info: End of reference (link) `page.82', line 631.
-Package `hyperref' Info: End of reference (link) `page.8', line 638.
-Package `hyperref' Info: End of reference (link) `table.6.1', line 57.
-Package `hyperref' Info: End of reference (link) `page.24', line 648.
-Package `hyperref' Info: End of reference (link) `page.87', line 656.
-Package `hyperref' Info: End of reference (link) `page.33', line 664.
-Package `hyperref' Info: End of reference (link) `page.37', line 664.
-Package `hyperref' Info: End of reference (link) `page.69', line 672.
-Package `hyperref' Info: End of reference (link) `page.33', line 680.
+Package hyperref Info: Anchor `page.144' on input line 121.
+[144
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
+Package `hyperref' Info: End of reference (link) `page.107', line 631.
+Package `hyperref' Info: End of reference (link) `page.82', line 639.
+Package `hyperref' Info: End of reference (link) `page.8', line 646.
+Package `hyperref' Info: End of reference (link) `figure.6.22', line 483.
+Package `hyperref' Info: End of reference (link) `page.24', line 656.
+Package `hyperref' Info: End of reference (link) `page.88', line 664.
+Package `hyperref' Info: End of reference (link) `page.127', line 664.
+Package `hyperref' Info: End of reference (link) `page.33', line 672.
+Package `hyperref' Info: End of reference (link) `page.37', line 672.
+Package `hyperref' Info: End of reference (link) `page.69', line 680.
+Package `hyperref' Info: End of reference (link) `page.33', line 688.
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./publicacao.aux (./docs/03_agradecimentos.aux) (./docs/04_resumo.aux)
@@ -6188,15 +6987,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `publicacao.out' has not changed.
-(rerunfilecheck)             Checksum: E5D8B440C1FBCC836B4220B404C84118;12886.
+(rerunfilecheck)             Checksum: 04C09A85D49EBB462B80B040EF1FA86B;12929.
 Package rerunfilecheck Info: File `publicacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 70999EB989C115BF0E332F6F175968FF;12317.
+(rerunfilecheck)             Checksum: 23635FD8AC338DE084E659B7381E7664;12738.
  ) 
 Here is how much of TeX's memory you used:
- 18925 strings out of 469590
- 327153 string characters out of 5474519
- 729768 words of memory out of 5000000
- 44896 multiletter control sequences out of 15000+600000
+ 19126 strings out of 469590
+ 335847 string characters out of 5474519
+ 739697 words of memory out of 5000000
+ 45047 multiletter control sequences out of 15000+600000
  688478 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,18n,107p,2090b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -6214,10 +7013,10 @@ texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-d
 ist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/pu
 blic/lm/lmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><
 c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on publicacao.pdf (140 pages, 49263292 bytes).
+Output written on publicacao.pdf (168 pages, 60754109 bytes).
 PDF statistics:
- 2296 PDF objects out of 2487 (max. 8388607)
- 1983 compressed objects within 20 object streams
- 401 named destinations out of 1000 (max. 500000)
- 836 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2619 PDF objects out of 2984 (max. 8388607)
+ 2235 compressed objects within 23 object streams
+ 451 named destinations out of 1000 (max. 500000)
+ 932 words of extra memory for PDF output out of 10000 (max. 10000000)
 

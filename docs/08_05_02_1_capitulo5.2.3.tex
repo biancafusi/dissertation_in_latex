@@ -10,7 +10,7 @@ Figure \label{fig:threatscore} illustrates the ETS for various rainfall threshol
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Equitable Threat Score (ETS) for all experiments, ERA5 and GSMaP datasets.} % Título acima da figura
+	\caption{Equitable Threat Score (ETS) for all experiments, ERA5 and GSMaP datasets, computed with the accumulated rainfall during Hurricane Beryl’s period.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/ets_all_experiments_logx_FINAL.png} 
 	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -29,7 +29,7 @@ The Pearson correlation coefficient is shown next, in Figure \ref{fig:pearson}. 
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Spatially averaged Pearson correlation coefficient over the entire domain.} % Título acima da figura
+	\caption{Spatially averaged Pearson correlation coefficient over the entire domain, computed with the accumulated rainfall during Hurricane Beryl’s period.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/pearson_correlation_bar_chart_FINAL.png} 
 	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -46,7 +46,7 @@ To better infer the locations with the best/worst correlations, as well as to ga
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Spatial distribution of daily Pearson correlation values of daily accumultad rainfall.} % Título acima da figura
+	\caption{Hurricane Beryl’s spatial distribution of Pearson correlation values, computed with daily accumulated rainfall.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_correlation_selected_experiments_days_nomeado.png} 
 	\vspace{0.5em}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -67,7 +67,7 @@ Selected snapshots corresponding to these dates were chosen to confirm the previ
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Selected snapshots of the rainfall fields.} % Título acima da figura
+	\caption{Selected snapshots of the rainfall fields in some of Hurricane Beryl’s key moments.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/painel_instantaneous_rainfall_selected_with_stats_FINAL.png} 
 	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -239,7 +239,7 @@ Snapshot analyses also revealed a significant benefit of the cold pool parameter
 
 Regarding rainfall distribution, MONAN forecasts displayed a specific bias: an overestimation at low (< 3 mm/h) and high (> 10 mm/h) thresholds and underestimation at moderate intensities. However, simulations with cold pool effects showed improved agreement at moderate thresholds compared with GPM-IMERG. We hypothesize that better convective organization, promoted by cold pools, contributes to more accurate rainfall distribution. Overall, simulations with cold pool parameterization tended to overestimate mean precipitation, while turning it off improved the match to observed means. Adjustments to resolution, mass flux height, and cold pool lifetime improved agreement with observations.
 
-In the literature, rainfall distributions associated with hurricanes are often evaluated within 300 - 600 km of the best track \cite{lonfat2004precipitation, marchok2007validation, brackins2020evaluation}). Future work could focus exclusively on these radii, following such references, to compare results more directly with regional climatology such as that provided by \citeonline{lonfat2004tropical}.
+In the literature, rainfall distributions associated with hurricanes are often evaluated within 300 - 600 km of the best track \cite{lonfat2004precipitation, marchok2007validation, brackins2020evaluation}). Future work could focus exclusively on these radii, following such references, to compare results more directly with regional climatology such as that provided by \citeonline{lonfat2004precipitation}.
 
 Precipitation extremes (rainfall thresholds typically associated with hurricanes) were also evaluated using cumulative distribution functions (CDFs). Experiments with cold pool effects better reproduced the GPM-IMERG distributions, while other simulations generally overestimated extremes.
 
