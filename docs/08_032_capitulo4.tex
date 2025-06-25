@@ -1,15 +1,9 @@
 \chapter{METHODOLOGY: METRICS AND DIAGNOSTIC FIELDS}
 \label{ch:methods}
 
-
-%The analysis will focus on three main characteristics of cyclones commonly utilized \cite{deshpande2010impact, bopape2021sensitivity,  zarzycki2021metrics, nyongesa2024influence, mishra2024characteristics} in weather forecasting: track, intensity, and rainfall. The table below outlines the questions designed to guide the examination of each characteristic in alignment with the dissertation's objectives. This approach will help refine the metrics and outputs available in the existing literature.
-
 Our methodology is designed based on three main characteristics of tropical cyclones commonly utilized in weather forecasting: track, intensity, and rainfall. The metrics that are currently used in similar studies will be described accordingly to each category. Then, for each hurricane, a table with addressed questions will be shown to guide the reader in the analysis and discussion of the results. This table will be part of the workflow, a diagram that shows the steps and figures/maps that will be created. 
 All code made for this dissertation is available on the
 \href{https://github.com/biancafusi/Dissertation}{GitHub - Dissertation Repository}, mainly written in Python.
-
-%In the following subsections, the approaches and metrics used to evaluate each of these characteristics will be explained in detail. Finally, a workflow diagram will be presented, summarizing the described methods and indicating at which stage each question will be addressed.
-%All code made for this dissertation is available on the git repository: \href{https://github.com/biancafusi/Dissertation}{GitHub - Dissertation Repository} mainly written in Python
 
 \section{Trajectory}
 
@@ -57,7 +51,7 @@ In conclusion, utilizing a straightforward statistical mean of the errors (speci
     \text{MEAN} = \frac{1}{E} \sum_{i=1}^{E} errors_i
 \end{equation}
 
-where E denotes the total number of experiments conducted using the MONAN framework. This approach facilitates a comprehensive understanding of the general behavior exhibited by the MONAN runs and can be compared with ERA5, for instance.
+where $E$ denotes the total number of experiments conducted using the MONAN framework. This approach facilitates a comprehensive understanding of the general behavior exhibited by the MONAN runs and can be compared with ERA5, for instance.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Intensity}
@@ -76,8 +70,7 @@ In addition to a visual comparison, we will create a graph containing the MAE an
 
 The analysis of rainfall for our runs is based on the methodology proposed by \citeonline{marchok2007validation}. According to these authors, evaluating forecasted rainfall requires examining three key aspects: the rainfall pattern, the mean and distribution of rain volume, and the extreme values.
 
-
-To investigate the rainfall pattern, we will utilize the Equitable Threat Score (ETS; \citeonline{mesinger2008bias}) along with pattern correlation analysis (namely the Pearson Correlation Coefficient) and visual comparisons using selected snapshots, considering also the related bias of those fields. The mean and distribution of rain volume can be assessed through the computation of the Cumulative Density Function (CDF) and the Probability Density Function (PDF). Extreme rainfall values will be specifically analyzed by examining the 85th percentile computed at the CDF. Lastly, we will discuss a performance score for MONAN in comparison to ERA5 by averaging the results of all experiments. Table~\ref{tab:rainfall_metrics} summarizes the metrics to be computed, followed by a brief explanation of each metric and its intended purpose.
+To investigate the rainfall pattern, we will utilize the Equitable Threat Score (ETS; \cite{mesinger2008bias}) along with pattern correlation analysis (namely the Pearson Correlation Coefficient) and visual comparisons using selected snapshots, considering also the related bias of those fields. The mean and distribution of rain volume can be assessed through the computation of the Cumulative Density Function (CDF) and the Probability Density Function (PDF). Extreme rainfall values will be specifically analyzed by examining the 85th percentile computed at the CDF. Lastly, we will discuss a performance score for MONAN in comparison to ERA5 by averaging the results of all experiments. Table~\ref{tab:rainfall_metrics} summarizes the metrics to be computed, followed by a brief explanation of each metric and its intended purpose.
 
 \begin{table}[H]
 \centering
@@ -141,7 +134,7 @@ The PDF, similar to a histogram, describes the probability of observing values w
 
 With the hurricane Beryl event, the goal is to investigate the cold pool parameterization alongside sensitivity tests, and with those sensitivity tests, select an optimal parameter configuration for the parameterization. 
 
-The table below outlines the questions designed to guide the examination of each characteristic in alignment with the dissertation's objectives. This approach will help refine the discussion and outputs available in the existing literature.
+Table \ref{tab:research_questions} outlines the questions designed to guide the examination of each characteristic in alignment with the dissertation's objectives. This approach will help refine the discussion and outputs available in the existing literature.
 
 \begin{table}[H]
 	\centering
@@ -184,12 +177,12 @@ The table below outlines the questions designed to guide the examination of each
 	
 \end{table}
 
-The workflow below summarizes and organizes the upcoming steps. After a quick initial analysis, the results will be visually represented as trapezoidal shapes, while discussions will be depicted with rectangular shapes. This distinction helps clarify the types of information being presented at each stage of the process. Following this, the boxes containing question IDs, as outlined in Table\ref{tab:questions}, related to the three aspects under evaluation (trajectory, intensity, and rainfall) will be also displayed in the workflow.
+The workflow below summarizes and organizes the upcoming steps. After a quick initial analysis, the results will be visually represented as trapezoidal shapes, while discussions will be depicted with rectangular shapes. This distinction helps clarify the types of information being presented at each stage of the process. Following this, the boxes containing question IDs, as outlined in Table \ref{tab:questions}, related to the three aspects under evaluation (trajectory, intensity, and rainfall) will also be displayed in the workflow displayed in Figure \ref{fig:workflow1}.
 
 \begin{figure}[p]
     \centering
     \caption{Workflow overview of Hurricane Berryl.}
-    \label{fig:workflow}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter4/BERYL_worflow_01.pdf}
+    \label{fig:workflow1}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter4/BERYL_worflow_01.pdf}
 
     \vspace{0.5em}
     
@@ -202,7 +195,7 @@ The reader should note that an initial selection of the results will be conducte
 \section{Hurricane Helene workflow}
 \label{sec:section45}
 
-Now we aim to test the best configuration alongside the cold pool effect and the highest resolution effect in another hurricane, Helene. Table \ref{tab:questions2} indicates the questions addressed for this investigation and futhermore, a similiar diagram as designed in the previous section were made here.
+Now we aim to test the best configuration alongside the cold pool effect and the highest resolution effect in another hurricane, Helene. Table \ref{tab:questions2} indicates the questions addressed for this investigation, and futhermore, a similiar diagram as designed in the previous section were made here in Figure \ref{fig:workflow}.
 
 \begin{table}[H]
 	\centering

@@ -4,74 +4,28 @@
 \babel@toc {portuguese}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Cloud stages of formation.}}{7}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Stages of cold pool development in a low wind shear environment.}}{9}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Decomposition of the specific humidity perturbation.}}{11}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces How do cold pools organize convection?.}}{13}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces PDFs of the inner core and moist rings that compose the cold pool.}}{17}{figure.2.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces A cold pool gust front and its associated parameters.}}{20}{figure.2.6}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces An illustration about the coupling behaviour between the cold pool parameterization and the convection parameterization described.}}{23}{figure.2.7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Illustration of a hurricane structure.}}{26}{figure.2.8}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces MPAS-A meshes and the ability to configure the meshes at different resolutions.}}{41}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 30km horizontal resolution at native mesh in MONAN.}}{41}{figure.3.2}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of cross-track and along-track errors. The definitions of Cross-Track Error (CTE) and Along-Track Error (ATE) are based on the distance between an observation (obs) and a forecast (fct) at the same valid time (T). This distance is computed as the great-circle distance.}}{47}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Workflow overview of Hurricane Berryl.}}{52}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Workflow overview of Hurricane Helene.}}{55}{figure.4.3}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Best track trajectory of Hurricane Beryl (June/July 2024).}}{58}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Hurricane Beryl view from the GEOCOLOR composite (left) and Band 13 (right) when passing through the first landfall.}}{58}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces 500 mb geopotential height and MSLP on July 8th, 00 UTC.}}{59}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Hurricane Beryl view from NEXRAD (top) and GEOCOLOR composite (bottom) when reaching the Texas Coast.}}{60}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Spatial domain of Hurricane Beryl's development and trajectory.}}{61}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison of storm tracks across all 15 experiments, ERA5, and the best track dataset during Hurricane Beryl period.}}{64}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Errors (distance) between the forecasted Beryl trajectories.}}{65}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Hurricane Beryl track forecasts, ERA5, and best track dataset.}}{67}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces A forecast made for Hurricane Beryl starting on July 3rd (00 UTC), 2024, available at the HAFS website}}{69}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Track errors of the MONAN forecast for Hurricane Beryl and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a).}}{70}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces CTE (a) and ATE (b) computing during the Hurricane Beryl period.}}{71}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Tracking available by the UK Met Office for Hurricane Beryl.}}{72}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Overall performance of MONAN trajectory forecasts for Hurricane Beryl compared with ERA5 reanalysis.}}{73}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Comparison of forecasted and observed central pressure and wind speeds for Hurricane Beryl. Here, a 12-hour model spin-up was also withdrawn, starting the time series on July 3rd, 12 UTC, both CP-15km and CP-60km are at their native resolution.}}{74}{figure.5.14}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Central pressure and maximum wind speed errors during the Hurricane Beryl period.}}{76}{figure.5.15}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Central pressure and maximum wind speed errors by MONAN compared to ERA5 during the Hurricane Beryl period.}}{77}{figure.5.16}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Equitable Threat Score (ETS) for all experiments, ERA5 and GSMaP datasets, computed with the accumulated rainfall during Hurricane Beryl’s period.}}{78}{figure.5.17}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Spatially averaged Pearson correlation coefficient over the entire domain, computed with the accumulated rainfall during Hurricane Beryl’s period.}}{79}{figure.5.18}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Hurricane Beryl’s spatial distribution of Pearson correlation values, computed with daily accumulated rainfall.}}{81}{figure.5.19}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Selected snapshots of the rainfall fields in some of Hurricane Beryl’s key moments.}}{91}{figure.5.20}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the bias relative to GPM-IMERG.}}{92}{figure.5.21}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the difference made by the resolution.}}{93}{figure.5.22}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Same as Figure \ref {fig:snapshot}, but showing the cloud-top temperature; the reference assumed is the dataset from GPM-MERGIR.}}{94}{figure.5.23}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Same as Figure \ref {fig:snapmorph}, but showing the difference made by the resolution.}}{95}{figure.5.24}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Probability density (left) and cumulative distribution functions (right) of hourly rainfall during the Hurricane Beryl period.}}{96}{figure.5.25}%
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Same as Figure \ref {fig:probdensity}, but showing CDFs above the 85th percentile.}}{97}{figure.5.26}%
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Same subset of days as in Figure \ref {fig:probdensity}, but showing the CDFs above the 85th percentile.}}{98}{figure.5.27}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Best track trajectory of Hurricane Helene (September 2024).}}{99}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Synoptic-scale interaction between Hurricane Helene and a stationary frontal boundary over the southeastern U.S.}}{101}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Satellite images of Hurricane Helene (channel 13 of GOES-East) with trailing convection over North Carolina.}}{101}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Spatial domain of Hurricane Helene's development and trajectory according to the best track dataset.}}{104}{figure.6.4}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Trajectories from MONAN experiments and ERA5 compared to the best track dataset. The period shown here is from September 25 at 00 UTC to September 28 at 00 UTC.}}{105}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces A forecast was made for Hurricane Helene starting on September 24th (12 UTC), 2024, using different operational hurricane forecaster models.}}{106}{figure.6.6}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Hurricane Helene’s track errors of the MONAN forecast and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a). }}{107}{figure.6.7}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Tracking available by the UK Met Office of Hurricane Helene. }}{108}{figure.6.8}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces CTE (a) and ATE (b) computing during the Hurricane Helene period. }}{109}{figure.6.9}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Comparison of forecasted and observed central pressure and wind speeds for Hurricane Helene. Here, a 12-hour model spin-up was also withdrawn, starting the time series on September 25, 00 UTC. CP-15km is at its native resolution. }}{110}{figure.6.10}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Central pressure and maximum wind speed errors during Hurricane Helene. }}{111}{figure.6.11}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Equitable Threat Score (ETS) for all experiments, computed with the accumulated rainfall from September 25th to 29th (both 00 UTC). }}{113}{figure.6.12}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Spatially averaged Pearson correlation coefficient over the entire domain, computed with the accumulated rainfall from September 25th to 29th (both 00 UTC). }}{115}{figure.6.13}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Selected snapshots of the rainfall fields in some of Hurricane Helene’s key moments. }}{116}{figure.6.14}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Same as Figure 6.14, but showing the differences made by the resolution. }}{117}{figure.6.15}%
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Selected snapshots of the extreme rainfall over the U.S. continental region. }}{119}{figure.6.16}%
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Hurricane Helene’s spatial distribution of Pearson correlation values of daily accumulated rainfall. }}{120}{figure.6.17}%
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Same as Figure 6.14, but showing the cloud-top temperature; the reference assumed is the dataset from GPM-MERGIR. }}{121}{figure.6.18}%
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Same as Figure 6.18, but showing the difference made by the resolution. }}{122}{figure.6.19}%
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Probability density (left) and cumulative distribution functions (right) of hourly rainfall from September 25th to 29th (00 UTC for both). }}{123}{figure.6.20}%
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Same as Figure 6.20, but showing CDFs above the 85th percentile. }}{124}{figure.6.21}%
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Same subset of days as in Figure 6.14, but showing the CDFs above the 85th percentile. }}{125}{figure.6.22}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Best track trajectory of Hurricane Helene (September 2024).}}{1}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Synoptic-scale interaction between Hurricane Helene and a stationary frontal boundary over the southeastern U.S.}}{3}{figure.1.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Satellite images of Hurricane Helene (channel 13 of GOES-East) with trailing convection over North Carolina.}}{3}{figure.1.3}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Spatial domain of Hurricane Helene's development and trajectory according to the best track dataset.}}{6}{figure.1.4}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Trajectories from MONAN experiments and ERA5 compared to the best track dataset. The period shown here is from September 25 at 00 UTC to September 28 at 00 UTC.}}{7}{figure.1.5}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces A forecast was made for Hurricane Helene starting on September 24th (12 UTC), 2024, using different operational hurricane forecaster models.}}{8}{figure.1.6}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Hurricane Helene’s track errors of the MONAN forecast and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a). }}{9}{figure.1.7}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Tracking available by the UK Met Office of Hurricane Helene. }}{10}{figure.1.8}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces CTE (a) and ATE (b) computing during the Hurricane Helene period. }}{11}{figure.1.9}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Comparison of forecasted and observed central pressure and wind speeds for Hurricane Helene. Here, a 12-hour model spin-up was also withdrawn, starting the time series on September 25, 00 UTC. CP-15km is at its native resolution. }}{12}{figure.1.10}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Central pressure and maximum wind speed errors during Hurricane Helene. }}{13}{figure.1.11}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Equitable Threat Score (ETS) for all experiments, computed with the accumulated rainfall from September 25th to 29th (both 00 UTC). }}{15}{figure.1.12}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Spatially averaged Pearson correlation coefficient over the entire domain, computed with the accumulated rainfall from September 25th to 29th (both 00 UTC). }}{17}{figure.1.13}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Selected snapshots of the rainfall fields in some of Hurricane Helene’s key moments. }}{18}{figure.1.14}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Same as Figure 6.14, but showing the differences made by the resolution. }}{19}{figure.1.15}%
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Selected snapshots of the extreme rainfall over the U.S. continental region. }}{21}{figure.1.16}%
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Hurricane Helene’s spatial distribution of Pearson correlation values of daily accumulated rainfall. }}{22}{figure.1.17}%
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Same as Figure 6.14, but showing the cloud-top temperature; the reference assumed is the dataset from GPM-MERGIR. }}{23}{figure.1.18}%
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Same as Figure 6.18, but showing the difference made by the resolution. }}{24}{figure.1.19}%
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Probability density (left) and cumulative distribution functions (right) of hourly rainfall from September 25th to 29th (00 UTC for both). }}{25}{figure.1.20}%
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Same as Figure 6.20, but showing CDFs above the 85th percentile. }}{26}{figure.1.21}%
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Same subset of days as in Figure 6.14, but showing the CDFs above the 85th percentile. }}{27}{figure.1.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
