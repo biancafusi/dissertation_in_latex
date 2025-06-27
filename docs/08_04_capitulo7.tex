@@ -1,4 +1,47 @@
 \chapter{CONCLUSIONS AND FUTURE WORK}
 \label{ch:conclusion}
 
+In this work, we explored the dynamics of cold pools within two hurricanes from the 2024 season in the North Atlantic Basin. Specifically, we investigated their impacts on forecasted hurricane trajectory, intensity, and rainfall, as simulated by the MONAN system. The analysis was divided into two case studies: Hurricane Beryl and Hurricane Helene.
+
+For Hurricane Beryl, the objective was to perform a series of sensitivity experiments to assess the influence of initial conditions, cold pool duration, displacement of the maximum mass flux height, and spatial resolution inside the cold pool parameterization. The goal was to identify the optimal parameter configuration for the cold pool scheme to be used in the MONAN system.
+
+Trajectory errors were significantly reduced with the inclusion of cold pool parameterization, particularly in later forecast hours. Although intensity forecasts still exhibited pressure-related biases, the wind field benefited from improved convective structure promoted by cold pool dynamics. Rainfall simulations provided further insight into the behavior of the parameterization, aligning with findings reported in the literature. Overall, cold pool effects enhanced spatial accuracy, especially in the formation of spiral rainbands, and led to better representation of both moderate and extreme precipitation rates.
+
+One of the main goals of this study was to identify an optimal configuration for the cold pool parameterization. Among the tested experiments, CP-1H and CP-D050 stood out, particularly in terms of accumulated rainfall fields. These configurations were combined to create the CP-1HD050 experiment, which demonstrated balanced performance across all evaluated categories: moderate trajectory accuracy, improved intensity forecasts, and enhanced rainfall simulation, especially for extremes. Although a more robust evaluation, such as ensemble simulations with statistical validation, would be ideal, the results presented here are sufficient to support the proposed configuration as a viable option for operational use in MONAN.
+
+This optimal configuration was then evaluated in the Hurricane Helene case. A distinguishing feature of this event was the extreme rainfall observed over the continental United States, particularly in North Carolina. Our simulations were able to reproduce this feature successfully, especially in terms of the rainfall distribution and spatial accuracy, where the optimal configuration outperformed the others. For trajectory and intensity, the optimal configuration also yielded improved results. Notably, in contrast to Beryl, the parameterization in Helene captured the event more effectively, with only small biases, mainly a slight overestimation of intensification, observed throughout the forecast period. In terms of trajectory, simulations with cold pool effects tended to shift westward, particularly over land. However, this effect was mitigated when using higher resolution or the optimal configuration.
+
+From these experiments, we conclude that the most influential parameters in cold pool simulations were: (i) the cold pool lifetime (reduced to 1 hour), (ii) the height of maximum mass flux (moved away from the surface), and (iii) the model resolution (which was increased to better represent cloud morphology). Adjusting these parameters led to notable improvements across all three investigated categories, particularly in rainfall prediction.
+
+This evaluation provides valuable insights into the behavior of cold pool parameterization in extreme weather events such as tropical cyclones, building upon the foundation laid by \citeonline{freitas2024parameterization}.
+
+The analyses presented in this work are similar to what is found in the literature, particularly in papers with the foundational development of cold pools parameterization schemes. On the other hand, we acknowledge the limitations of this work, particularly its lack of a statistically robust sensitivity analysis. For that reason, we include a dedicated section below with recommendations for future work that can expand and strengthen these findings through more comprehensive and statistically grounded methodologies.
+
+
 \section{Future Work}
+
+\textbf{Project A: Comparison with Similar Numerical Models.}
+
+ERA5 consistently showed superior trajectory accuracy, largely due to its nature as a reanalysis product that assimilates observational data throughout the forecast integration. However, this creates an inherent advantage over free-running models like MONAN. A fairer comparison would involve testing MONAN against another non-assimilative model of similar structure. Such inter-model comparisons would help isolate the impact of the cold pool scheme from the benefits of data assimilation and should be explored in future work.
+
+\textbf{Project B: Enhanced Rainfall Evaluation Methodologies.}
+
+To minimize the influence of track error in rainfall verification, we used accumulated area-based metrics. While this approach is valid, especially when the storm center is easily identifiable, it can still misrepresent spatial rainfall structure. Future studies could improve upon this by applying dynamic masks centered on the best track, or by restricting rainfall evaluations to within 300-600 km of the storm center, following methodologies proposed by \citeonline{lonfat2004precipitation, marchok2007validation, brackins2020evaluation}. This would allow for a more consistent comparison with regional climatology and reduce the influence of positional bias.
+
+\textbf{Project C: Quantitative Analysis of Convective Cloud Organization.
+}
+
+Although qualitative results (snapshots) suggested improved convective organization with cold pool parameterization, such as enhanced spiral rainbands and more structured cloud morphology, a more rigorous and quantitative assessment of cloud organization is needed. Future work could adopt objective metrics (e.g., cloud-top temperature distributions, symmetry indices, or convective clustering scores) to quantify the relationship between cold pool dynamics and storm structural evolution across resolutions.
+
+\textbf{Project D: Evaluation of Initial Condition Sensitivity.}
+
+Some of the biases observed, particularly in intensity forecasts, appear to be linked to the timing of initialization relative to rapid intensification phases or the model’s spin-up behavior. To test this hypothesis, future studies should implement ensemble-based experiments, allowing for systematic evaluation of initial condition uncertainty. This would also help assess the robustness of the cold pool scheme across varying atmospheric states.
+
+\textbf{Project E: Investigation of Oceanic Rainfall Biases.}
+
+While cold pool parameterization improved rainfall performance over continental areas, a consistent underestimation of rainfall intensity was found in oceanic regions. Future investigations should examine whether this bias is tied to systematic errors in the convective scheme, the representation of sea surface temperatures (SSTs), the interaction between surface fluxes and cold pool dynamics, or even a climatological bias.
+
+\textbf{Project F: Statistical Robustness of the Sensitivity Analysis.}
+
+While the selected optimal configuration was determined based on qualitative and comparative analysis across experiments, future research should incorporate ensemble sensitivity analyses using their statistical methods. This would help determine the significance and reliability of the observed improvements in trajectory, intensity, and rainfall forecasts. Furthermore, an ensemble could be constructed, focusing on hurricanes from both the North Atlantic and North Pacific between the years 2000 and 2024. By including a diverse set of hurricanes, we could better understand the variability and applicability of the optimal configuration, potentially leading to further advancements in operational forecasting techniques.
+

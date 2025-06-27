@@ -13,8 +13,9 @@ PublicacaoDissOuTese, %% (é também o "default") com ficha catal. e folha de ap
 %english,portuguese %% para os documentos em Português com abstract.tex em Inglês
 portuguese,english %% para os documentos em Inglês com abstract.tex em Português
 ,LogoINPE% comentar essa linha para fazer aparecer o logo do Governo (Ex.: LogoINPE usado em ano eleitoral). Caso deseje alterar o logo governo verificar a pasta .template/logo/logoverno.png
-,CCBYNC	% as opções de licença são: CCBY, CCBYSA, CCBYND, CCBYNC, CCBYNCSA, CCBYNCND, GPLv3 e INPECopyright
+,INPECopyright	% as opções de licença são: CCBY, CCBYSA, CCBYND, CCBYNC, CCBYNCSA, CCBYNCND, GPLv3 e INPECopyright
 ]{./template/tdiinpe}
+
 %\documentclass[english,portuguese,LogoINPE,CCBYNC]{http://urlib.net/iconet.com.br/banon/2008/03.25.01.19/tdiinpe}
 
 % PARA EXIBIR EM ARIAL TIRAR O COMENTÁRIO DAS DUAS LINHAS SEGUINTES
@@ -45,7 +46,7 @@ portuguese,english %% para os documentos em Inglês com abstract.tex em Portugu�
 \usepackage{longtable}
 \usepackage{array}  % no preâmbulo
 \usepackage{xcolor}
-
+\usepackage{hyperref}
 
 
 \input{./configuracao} %% faça as modificações pertinentes no arquivo configuracao.tex
@@ -55,9 +56,9 @@ portuguese,english %% para os documentos em Inglês com abstract.tex em Portugu�
 \begin{document} %% início do documento %% não mexer
 
 %\marcaRegistrada{}	% comando opcional usado para informar abaixo da ficha catalográfica sobre marca registrada
-\marcaRegistrada{Informar aqui sobre marca registrada (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
+%\marcaRegistrada{Informar aqui sobre marca registrada (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
 %\financiamento{}	% comando opcional usado para informar abaixo da ficha catalográfica sobre fontes financiadoras
-\financiamento{Informar aqui sobre fontes financiadoras (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
+%\financiamento{Informar aqui sobre fontes financiadoras (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
 %\financiamento{O presente trabalho foi realizado com apoio da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Código de Financiamento 001.}
 %\financiamento{This study was financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001.}
 
@@ -65,7 +66,9 @@ portuguese,english %% para os documentos em Inglês com abstract.tex em Portugu�
 
 %%% Comente as linhas opcionais abaixo caso não as deseje
 %\include{./docs/01_epigrafe} %% Opcional
-%\include{./docs/02_dedicatoria} %% Opcional
+\include{./docs/02_dedicatoria} %% Opcional
+
+
 \include{./docs/03_agradecimentos} %% Opcional
 \include{./docs/04_resumo} %% obrigatório
 \include{./docs/05_abstract} %% obrigatório
@@ -75,21 +78,19 @@ portuguese,english %% para os documentos em Inglês com abstract.tex em Portugu�
 
 \include{./docs/06_abreviaturasesiglas} %% opcional %% altere o arquivo siglaseabreviaturas.tex
 
-\include{./docs/07_simbolos} %% opcional %% altere o arquivo simbolos.tex
+%\include{./docs/07_simbolos} %% opcional %% altere o arquivo simbolos.tex
 
 \includeSumario  %% obrigatório, gerado automaticamente
 
 \inicioIntroducao %% não altere este comando
 
-%\include{./docs/08_01_capitulo1} %% 1o capítulo, começo do texto
-%\include{./docs/08_02_capitulo2} %% 2o capítulo
-%\include{./docs/08_031_capitulo3}
-%\include{./docs/08_032_capitulo4} %% 4o capítulo
-%\include{./docs/08_03_capitulo5} %% DATA
+\include{./docs/08_01_capitulo1} %% 1o capítulo, começo do texto
+\include{./docs/08_02_capitulo2} %% 2o capítulo
+\include{./docs/08_031_capitulo3}
+\include{./docs/08_032_capitulo4} %% 4o capítulo
+\include{./docs/08_03_capitulo5} %% DATA
 \include{./docs/08_04_capitulo6}
-%\include{./docs/08_04_capitulo7}  
-
-\include{./docs/09_01_appendixA}
+\include{./docs/08_04_capitulo7}  
 
 %% insira quantos capítulos desejar com o seguinte comando:
 %\include{_pasta_do_arquivo_/_meu_arquivo_} %%sem a extensão
@@ -97,19 +98,29 @@ portuguese,english %% para os documentos em Inglês com abstract.tex em Portugu�
 
 % PARA PUBLICAÇÕES EM INGLÊS:
 %% Descomentar essa linha para publicações em inglês
-%\bibliographystyle{./template/abnt-alfenglish}
+\bibliographystyle{./template/abnt-alfenglish}
 
 % PARA PUBLICAÇÕES EM PORTUGUÊS:
 %% comentar essa linha para publicações em inglês
-\bibliographystyle{./template/abnt-alfportuguese}
+%\bibliographystyle{./template/abnt-alfportuguese}
 
 %% Bibliografia %% não alterar %% obrigatório %testebib
 \bibliography{./bib/referencia} %% aponte para seu arquivo de bibliografia no formato bibtex (p.ex: referencia.bib)
 
 %\include{./docs/09_glossario} %% insira os termos do glossário no arquivo glossario.tex %% opcional
 
-%\inicioApendice %% opcional, comente esta linha e a seguintes se não houver apendice(s)
-%\include{./docs/10_01_apendice1} %% insira apendices tal qual capítulos acima
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% APENDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\inicioApendice %% opcional, comente esta linha e a seguintes se não houver apendice(s)
+\include{./docs/10_01_apendiceA}
+\include{./docs/10_01_apendiceB}
+\include{./docs/10_01_apendiceC}
+\include{./docs/10_01_apendiceD}
+\include{./docs/10_01_apendiceE}
+\include{./docs/10_01_apendiceF} %% insira apendices tal qual capítulos acima
 
 %\inicioAnexo
 %\include{./docs/11_01_anexo1}
@@ -117,5 +128,5 @@ portuguese,english %% para os documentos em Inglês com abstract.tex em Portugu�
 %\include{./docs/11_03_anexo3}
 
 %\inicioIndice
-%\include{./docs/12_contracapa}
+\include{./docs/12_contracapa}
 \end{document}

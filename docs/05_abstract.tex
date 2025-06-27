@@ -8,22 +8,29 @@
 %% o texto do resumo e as palavras-chave têm que ser em Português para os documentos escritos em Inglês
 %% os nomes dos comandos \begin{abstract}, \end{abstract}, \keywords e \palavrachave não devem ser alterados
 
-\selectlanguage{portuguese}	%% para os documentos escritos em Português
-%\selectlanguage{portuguese}	%% para os documentos escritos em Inglês
+%\selectlanguage{portuguese}	%% para os documentos escritos em Português
+\selectlanguage{portuguese}	%% para os documentos escritos em Inglês
 
 %\hypertarget{estilo:abstract}{} %% uso para este Guia
 
-Traduzir o resumo para português
+Uma nova parametrização de \textit{cold pool}, acoplada a uma parametrização convectiva tradicional de fluxo de massa (Grell-Freitas), foi avaliada na próxima geração do sistema brasileiro de previsão do tempo e clima, denominado \textit{Model for Ocean-laNd-Atmosphere predictioN} (MONAN). O novo sistema é baseado no \textit{Model for Prediction Across Scales} (MPAS). Este trabalho tem como objetivo avaliar o impacto dessa parametrização na trajetória, intensidade e chuva, associadas a dois ciclones tropicais da temporada de furacões de 2024: Beryl e Helene.
+
+Para o furacão Beryl, foi realizado um conjunto de experimentos de sensibilidade para avaliar a influência das condições iniciais, tempo de vida das \textit{cold pools}, deslocamento vertical do pico de fluxo de massa e resolução do modelo (15, 30 e 60 km). Os resultados demonstraram que a inclusão da dinâmica da \textit{cold pool} melhorou significativamente a precisão da trajetória - especialmente nas horas mais avançadas da previsão - e aprimorou a representação da chuva, com destaque para a estrutura espacial das bandas de chuva em espiral e eventos extremos de chuva. As previsões de intensidade dos ventos também se beneficiaram de uma estrutura convectiva mais realista, apesar de persistirem vieses de pressão.
+
+Uma configuração óptima, combinando tempo de vida reduzido do \textit{cold pool} (1 hora), deslocamento da altura do pico de fluxo de massa e maior resolução, apresentou desempenho equilibrado em todas as métricas. Essa configuração foi então aplicada ao furacão Helene, onde conseguiu representar com sucesso a chuva extrema observada no sudeste dos Estados Unidos, com melhor distribuição espacial e maior acurácia nas previsões de intensidade e trajetória.
+
+Esses resultados indicam que parâmetros-chave relacionados à \textit{cold pool} têm impacto substancial nas simulações de ciclones tropicais no MONAN, particularmente na previsão de chuva.
 
 \keywords{%
-	\palavrachave{}%
-	\palavrachave{}%
-	\palavrachave{}%
-	\palavrachave{}%
-	\palavrachave{}%
+	\palavrachave{Cold Pool}%
+	\palavrachave{Parametrização}%
+	\palavrachave{MONAN}%
+	\palavrachave{Furacões}%
+	\palavrachave{Beryl}%
+	\palavrachave{Helene}
 }
 
-\selectlanguage{portuguese}	%% para os documentos escritos em Português
-%\selectlanguage{english}	%% para os documentos escritos em Inglês
+%\selectlanguage{portuguese}	%% para os documentos escritos em Português
+\selectlanguage{english}	%% para os documentos escritos em Inglês
 
 \end{abstract}
