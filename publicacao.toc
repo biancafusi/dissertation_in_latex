@@ -43,4 +43,5 @@
 \contentsline {chapter}{\numberline {}APPENDIX C - DISCUSSION REGARDING THE MAXIMUM DOWNDRAFT HEIGHT}{77}{appendix.C}%
 \contentsline {chapter}{\numberline {}APPENDIX D - SPATIAL PEARSON CORRELATION FOR ALL SIMULATIONS OF BERYL}{79}{appendix.D}%
 \contentsline {chapter}{\numberline {}APPENDIX F - MASK ALGORITHM}{83}{appendix.E}%
+\contentsline {chapter}{\numberline {}APPENDIX G - MASK ALGORITHM}{87}{appendix.F}%
 \contentsfinish 

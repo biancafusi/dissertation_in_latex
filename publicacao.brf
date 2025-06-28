@@ -52,9 +52,9 @@
 \backcite {freitas2017brazilian}{{16}{2.3}{section.2.3}}
 \backcite {freitas2024parameterization}{{17}{2.3}{section.2.3}}
 \backcite {freitas2024parameterization}{{17}{2.5}{figure.2.5}}
-\backcite {freitas2024parameterization}{{18}{2.3}{equation.2.1}}
-\backcite {arakawa1974interaction}{{18}{2.3}{equation.2.2}}
-\backcite {freitas2024parameterization}{{18}{2.3}{equation.2.3}}
+\backcite {freitas2024parameterization}{{18}{2.3}{equation.2.3.1}}
+\backcite {arakawa1974interaction}{{18}{2.3}{equation.2.3.2}}
+\backcite {freitas2024parameterization}{{18}{2.3}{equation.2.3.3}}
 \backcite {arakawa1974interaction}{{18}{3}{Hfootnote.3}}
 \backcite {droegemeier1987numerical}{{20}{2.6}{figure.2.6}}
 \backcite {freitas2024parameterization}{{20}{2.4}{section.2.4}}
@@ -62,11 +62,11 @@
 \backcite {grell2014scale, freitas2018assessing}{{20}{2.4}{section.2.4}}
 \backcite {emanuel1994atmospheric}{{20}{2.4}{section.2.4}}
 \backcite {bechtold2014representing}{{20}{2.4}{section.2.4}}
-\backcite {freitas2020gf}{{21}{2.4}{equation.2.7}}
-\backcite {arakawa1974interaction}{{21}{2.4}{equation.2.8}}
-\backcite {grell2002generalized}{{21}{2.4}{equation.2.8}}
-\backcite {grell2014scale}{{21}{2.4}{equation.2.8}}
-\backcite {freitas2024parameterization}{{22}{2.4}{equation.2.12}}
+\backcite {freitas2020gf}{{21}{2.4}{equation.2.4.7}}
+\backcite {arakawa1974interaction}{{21}{2.4}{equation.2.4.8}}
+\backcite {grell2002generalized}{{21}{2.4}{equation.2.4.8}}
+\backcite {grell2014scale}{{21}{2.4}{equation.2.4.8}}
+\backcite {freitas2024parameterization}{{22}{2.4}{equation.2.4.12}}
 \backcite {houze2010clouds, perez2021performance, lin2022tropical}{{24}{2.5.1}{subsection.2.5.1}}
 \backcite {houze2010clouds, perez2021performance, lin2022tropical}{{24}{2.5.1}{subsection.2.5.1}}
 \backcite {houze2010clouds, perez2021performance, lin2022tropical}{{24}{2.5.1}{subsection.2.5.1}}
