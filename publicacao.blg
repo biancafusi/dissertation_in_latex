@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: publicacao.aux
 A level-1 auxiliary file: ./docs/02_dedicatoria.aux
@@ -10,15 +10,12 @@ A level-1 auxiliary file: ./docs/08_01_capitulo1.aux
 A level-1 auxiliary file: ./docs/08_02_capitulo2.aux
 A level-1 auxiliary file: ./docs/08_031_capitulo3.aux
 A level-1 auxiliary file: ./docs/08_032_capitulo4.aux
-A level-1 auxiliary file: ./docs/08_03_capitulo5.aux
 A level-1 auxiliary file: ./docs/08_04_capitulo6.aux
-A level-1 auxiliary file: ./docs/08_04_capitulo7.aux
 The style file: ./template/abnt-alfenglish.bst
 A level-1 auxiliary file: ./docs/10_01_apendiceA.aux
 A level-1 auxiliary file: ./docs/10_01_apendiceB.aux
 A level-1 auxiliary file: ./docs/10_01_apendiceC.aux
 A level-1 auxiliary file: ./docs/10_01_apendiceD.aux
-A level-1 auxiliary file: ./docs/10_01_apendiceE.aux
 A level-1 auxiliary file: ./docs/10_01_apendiceF.aux
 A level-1 auxiliary file: ./docs/12_contracapa.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -29,106 +26,118 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11831 items from 5000.
+Reallocated field_info (elt_size=4) to 11279 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: ./bib/referencia.bib
-Repeated entry---line 324 of file ./bib/referencia.bib
+Repeated entry---line 763 of file ./bib/referencia.bib
  : @article{sawada2010impacts
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 344 of file ./bib/referencia.bib
+Repeated entry---line 803 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 411 of file ./bib/referencia.bib
+Repeated entry---line 937 of file ./bib/referencia.bib
  : @article{sawada2010impacts
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 444 of file ./bib/referencia.bib
+Repeated entry---line 1003 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 466 of file ./bib/referencia.bib
+Repeated entry---line 1047 of file ./bib/referencia.bib
  : @article{eastin2012surface
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 477 of file ./bib/referencia.bib
+Repeated entry---line 1069 of file ./bib/referencia.bib
  : @article{barnes1983mesoscale
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 690 of file ./bib/referencia.bib
+Repeated entry---line 1495 of file ./bib/referencia.bib
  : @article{arakawa2011toward
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 771 of file ./bib/referencia.bib
+Repeated entry---line 1677 of file ./bib/referencia.bib
  : @article{torri2015mechanisms
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 803 of file ./bib/referencia.bib
+Repeated entry---line 1741 of file ./bib/referencia.bib
  : @article{grell2002generalized
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1187 of file ./bib/referencia.bib
+Repeated entry---line 2509 of file ./bib/referencia.bib
  : @article{skamarock2012multiscale
  :                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1300 of file ./bib/referencia.bib
- : @article{li2025generative
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1326 of file ./bib/referencia.bib
+Warning--entry type for "noaa_hurricane_costs_2024" isn't style-file defined
+--line 2633 of file ./bib/referencia.bib
+Repeated entry---line 2783 of file ./bib/referencia.bib
  : @article{feng2015mechanisms
  :                            ,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+There is no name in "" for entry hagen2024helene
+while executing---line 4243 of file ./template/abnt-alfenglish.bst
+There is no name in "" for entry hagen2024helene
+while executing---line 4243 of file ./template/abnt-alfenglish.bst
+There is no name in "" for entry hagen2024helene
+while executing---line 4243 of file ./template/abnt-alfenglish.bst
+There is no name in "" for entry hagen2024helene
+while executing---line 4243 of file ./template/abnt-alfenglish.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+There is no name in "" for entry hagen2024helene
+while executing---line 4353 of file ./template/abnt-alfenglish.bst
+There is no name in "" for entry hagen2024helene
+while executing---line 4353 of file ./template/abnt-alfenglish.bst
+There is no name in "" for entry hagen2024helene
+while executing---line 4353 of file ./template/abnt-alfenglish.bst
 +---------------------------------------------------------+
 | Estilo bibliogr�fico abnt-alf.bst vers�o 1.45.2.1           |
 | Em caso de d�vidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 99 entries,
+You've used 91 entries,
             6478 wiz_defined-function locations,
-            1734 strings with 28592 characters,
-and the built_in function-call counts, 87616 in all, are:
-= -- 6568
-> -- 3293
-< -- 279
-+ -- 1329
-- -- 959
-* -- 6537
-:= -- 11196
-add.period$ -- 305
-call.type$ -- 100
-change.case$ -- 1138
-chr.to.int$ -- 315
-cite$ -- 92
-duplicate$ -- 4883
-empty$ -- 5924
-format.name$ -- 4851
-if$ -- 20775
+            1692 strings with 26631 characters,
+and the built_in function-call counts, 78975 in all, are:
+= -- 5915
+> -- 2910
+< -- 252
++ -- 1178
+- -- 850
+* -- 5848
+:= -- 10117
+add.period$ -- 284
+call.type$ -- 92
+change.case$ -- 1019
+chr.to.int$ -- 286
+cite$ -- 84
+duplicate$ -- 4410
+empty$ -- 5438
+format.name$ -- 4294
+if$ -- 18738
 int.to.chr$ -- 9
 int.to.str$ -- 3
-missing$ -- 1788
-newline$ -- 567
-num.names$ -- 460
-pop$ -- 2179
+missing$ -- 1636
+newline$ -- 520
+num.names$ -- 420
+pop$ -- 1978
 preamble$ -- 1
-purify$ -- 404
+purify$ -- 364
 quote$ -- 0
-skip$ -- 4697
+skip$ -- 4267
 stack$ -- 1
-substring$ -- 3982
-swap$ -- 2478
-text.length$ -- 205
+substring$ -- 3554
+swap$ -- 2226
+text.length$ -- 185
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 736
+while$ -- 669
 width$ -- 0
-write$ -- 1562
-(There were 12 error messages)
+write$ -- 1427
+(There were 18 error messages)

@@ -7,3 +7,37 @@
 \chapter{APPENDIX A - OVERVIEW OF THE DATASETS IN REPRODUCING EXTREMES}	% trocar A por B na próxima apêndice e etc
 \label{apendiceA}	% trocar A por B na próxima apêndice e etc
 \renewcommand{\thechapter}{A}%		% trocar A por B na próxima apêndice e etc
+
+Figure \ref{fig:appendix1} was taken from the Hurricane Helene report \cite{hagen2024helene}. It shows the accumulation of rainfall from September 24th to September 28th.
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Analysis of storm total rainfall (inches) for Hurricane Helene. 
+	} % Título acima da figura
+	\includegraphics[scale=0.45]{docs/figuras/appendix/rainfall_helene.png} 
+	\vspace{2mm}
+	
+	Source: \citeonline{hagen2024helene}.  % Fonte abaixo da imagem
+	\label{fig:appendix1} % Label para referenciar no texto
+\end{figure}
+
+Keeping this in mind, we tried to reproduce this figure with NCEP, GPM-IMERG, and GSMaP. Figure \ref{fig:appendix2} shows the panels at their native resolution in the first line, and with the model resolution (30 km) in the second line.
+
+\newpage
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Panels of the accumulated rainfall from September 25th (12 UTC) until September 29th (00 UTC). 
+	} % Título acima da figura
+	\includegraphics[scale=0.09]{docs/figuras/appendix/painel_A2.png} 
+	\vspace{2mm}
+	
+	Source: Made by the author (2025).  % Fonte abaixo da imagem
+	\label{fig:appendix2} % Label para referenciar no texto
+\end{figure}
+
+By comparing Figures \ref{fig:appendix1} with \ref{fig:appendix2}, one could notice that the dataset coming from NCEP is the most similar to Figure \ref{fig:appendix1}, followed by GSMaP. It is not mentioned where Figure \ref{fig:appendix1} data was taken from, but we hypothesized that it comes from the same source, since NCEP encompasses the stations and radar datasets. GPM-IMERG, however, fails to represent the extremes shown in both NCEP and GSMaP, and can’t capture some structures of the rain (85-81°W and 32-27°N) that NCEP and GSMaP can. For our analysis, we used NCEP data over the United States and GSMaP outside the United States, which seems to better represent the amount produced and some structures as well. One should keep in mind that the downscaling spreads the data, creating a systematic bias (panels A and C).
+
+
+
+

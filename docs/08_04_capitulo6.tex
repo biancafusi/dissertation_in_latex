@@ -19,7 +19,7 @@ Hurricane Helene was a destructive and rapidly intensifying tropical cyclone tha
 
 By 1200 UTC the same day (25 September), Helene steadily strengthened in conducive environmental conditions of low wind shear, high moisture, and very warm sea surface temperatures, intensifying into a hurricane just east of Cancún by 1800 UTC. It later entered the Gulf of Mexico as a Category 1 system on the Saffir-Simpson Hurricane Wind Scale.
 
-Helene’s intensification was notably rapid, surpassing the threshold for rapid intensification (> 35 mph increase in wind speed in 24 hours; \cite{nhc_helene2024}). Just six hours later, it reached its peak intensity as a category 4 hurricane, with sustained winds of 120 kt (140 mph), approximately 80 nautical miles south-southwest of the Florida Big Bend region.
+Helene’s intensification was notably rapid, surpassing the threshold for rapid intensification (> 35 mph increase in wind speed in 24 hours; \cite{hagen2024helene}). Just six hours later, it reached its peak intensity as a category 4 hurricane, with sustained winds of 120 kt (140 mph), approximately 80 nautical miles south-southwest of the Florida Big Bend region.
 
 
 The first landfall occurred near Perry, Florida, at approximately 0310 UTC on 27 September. At the time, Helene maintained its Category 4 status and was moving rapidly north-northeastward. The storm brought catastrophic storm surge to coastal communities, with inundation levels reaching 12 to 16 feet (3.7 - 4.9 meters) above ground level in the Big Bend region, particularly devastating Keaton Beach and Steinhatchee. Additional surge heights of 6 to 8 feet (1.8 - 2.4 meters) were observed as far south as Tampa \cite{fsu_helene2024}.
@@ -54,10 +54,10 @@ Helene’s moisture-laden circulation delivered extreme precipitation across a b
 	\label{fig:northcarolina}
 	
 	\centering
-	Source: \url{https://www.star.nesdis.noaa.gov/star/index.php}.
+	Source: \citeonline{noaa_star_2025}.
 \end{figure}
 
-The small mountain town of Chimney Rock, NC, was among the hardest hit, with floodwaters destroying much of the local infrastructure \cite{britannica_helene}. Table \ref{tab:highest_rainfall_state} summarizes the total rainfall by state.
+The small mountain town of Chimney Rock, North Carolina, was among the hardest hit, with floodwaters destroying much of the local infrastructure \cite{britannica_helene}. Table \ref{tab:highest_rainfall_state} summarizes the total rainfall by state.
 
 The small mountain town of Chimney Rock, North Carolina, was among the hardest hit, with floodwaters destroying much of the local infrastructure  \cite{britannica_helene}. The following table (\ref{tab:highest_rainfall_state})  summarizes the total rainfall by state.
 
@@ -87,11 +87,10 @@ The small mountain town of Chimney Rock, North Carolina, was among the hardest h
 	}
 	
 	\vspace{2mm}
-	{\centering Source: \cite{nhc_helene20241}.\par}
+	{\centering Source: \citeonline{nhc_helene20241}.\par}
 \end{table}
 
-By 1800 UTC on 27 September, Helene had become post-tropical as it merged with a mid-latitude cutoff\footnote{For a precise definition of this term, please refer to the official glossary provided at: \url{https://forecast.weather.gov/glossary.php?word=cutoff\%20LOW
-}} low over the Tennessee Valley and transitioned into an extratropical cyclone over southern Kentucky. The remnant low persisted until 28 September, performing a slow cyclonic loop before dissipating over north-central Tennessee.
+By 1800 UTC on 27 September, Helene had become post-tropical as it merged with a mid-latitude cutoff\footnote{National Weather Service.\textbf{ Glossary: Cut Off}. NOAA/NWS. Available at: \url{https://forecast.weather.gov/glossary.php?word=cut+off.} Acessed on: June 27, 2025}  low over the Tennessee Valley and transitioned into an extratropical cyclone over southern Kentucky. The remnant low persisted until 28 September, performing a slow cyclonic loop before dissipating over north-central Tennessee.
 
 Hurricane Helene resulted in widespread devastation across Florida, Georgia, the Carolinas, and Tennessee. Approximately 4 million people lost power due to infrastructure damage. With at least 250 reported fatalities, 176 of which were direct, Helene became the deadliest hurricane in the contiguous United States since Hurricane Katrina in 2005.
 
@@ -164,7 +163,7 @@ At the oceanic region, the model generally performs well in forecasting, while i
 	\includegraphics[scale=0.44]{docs/figuras/chapter6/HAFS_helene.png} 
 	\vspace{2mm}
 	
-	Source: \url{ https://www.emc.ncep.noaa.gov/HAFS/HAFSEPS/index.php} (2025).  % Fonte abaixo da imagem
+	Source: \citeonline{noaa_hafseps_2025}.  % Fonte abaixo da imagem
 	\label{fig:forecast2} % Label para referenciar no texto
 \end{figure}
 
@@ -192,7 +191,7 @@ During the oceanic phase, that is, before landfall, the forecast that includes c
 	\includegraphics[scale=0.54, trim=0cm 1cm 0cm 1cm, clip]{docs/figuras/chapter6/helene_MetOffice.pdf} 
 	\vspace{2mm}
 	
-	Source: \url{https://www.metoffice.gov.uk/research/weather/tropical-cyclones/verification/seasons/nhem2024} (2025).  % Fonte abaixo da imagem
+	Source: \citeonline{metoffice_nhem2024}  % Fonte abaixo da imagem
 	\label{fig:trackingmetoffice} % Label para referenciar no texto
 \end{figure}
 
@@ -263,7 +262,7 @@ In this subsection, we present the results of the experiments' performance conce
 
 However, in contrast to Hurricane Beryl, the storm’s lifetime over the oceanic region was shorter. Additionally, the interaction with other synoptic-scale systems over land and the influence of orographic features led to extreme precipitation over the continental region, particularly across the Carolinas, as discussed in Section \ref{section61}. Therefore, we divided the analysis between the portion over the United States, where NCEP data are used as the reference, and the portion outside the United States, where GSMaP data serve as the reference.
 
-This choice was based on the observation that GPM-IMERG data, especially daily accumulations, significantly underestimated the observed values (see Table  \ref{tab:highest_rainfall_state}). This preliminary assessment is available in the appendix. Finally, to support this separation of continental analysis, the author developed a land mask, which is available on GitHub\footnote{\url{https://github.com/biancafusi/Dissertation}}.
+This choice was based on the observation that GPM-IMERG data, especially daily accumulations, significantly underestimated the observed values (see Table  \ref{tab:highest_rainfall_state}). This preliminary assessment is available in the appendix. Finally, to support this separation of continental analysis, the author developed a land mask, which is available on GitHub\footnote{FUSINATO B. \textbf{Dissertation}. NOAA/NWS. Available at: \url{https://github.com/biancafusi/Dissertation.} Acessed on: June 27, 2025}.
 
 \subsubsection{Pattern and spatial rainfall distribution}
 
@@ -329,7 +328,7 @@ In order to conduct a more detailed investigation of the rainfall distribution a
 	\label{fig:selectedsnap2} % Label para referenciar no texto
 \end{figure}
 
-One can observe noticeable differences in the rainfall distribution between the GPM-IMERG and GSMaP datasets, despite the strong correlation previously identified between the two. These differences are particularly evident in the second column, which corresponds to the distribution of documented heavy rainfall. When comparing the CP-ON and CP-OFF experiments with the reference datasets, we find that the cold pool parameterization tends to organize precipitation more effectively into rainbands and clusters heavy rainfall into distinct patches surrounded by moderate rain. In the third column, over the North Carolina border, the cold pool experiments tend to shift the extreme rainfall core further west compared to CP-OFF (using longitude 82.5°W as a reference)—a pattern that aligns with what was observed in the tracking visualization and the CTE computation. This feature, however, improves further in the experiment with the optimal configuration.
+One can observe noticeable differences in the rainfall distribution between the GPM-IMERG and GSMaP datasets, despite the strong correlation previously identified between the two. These differences are particularly evident in the second column, which corresponds to the distribution of documented heavy rainfall. When comparing the CP-ON and CP-OFF experiments with the reference datasets, we find that the cold pool parameterization tends to organize precipitation more effectively into rainbands and clusters heavy rainfall into distinct patches surrounded by moderate rain. In the third column, over the North Carolina border, the cold pool experiments tend to shift the extreme rainfall core further west compared to CP-OFF (using longitude 82.5°W as a reference); a pattern that aligns with what was observed in the tracking visualization and the CTE computation. This feature, however, improves further in the experiment with the optimal configuration.
 
 Still focusing on Figure \ref{fig:selectedsnap}, particularly in the first two columns, notable differences are observed in the GSMaP dataset values for those scenes. In the appendix, we provide a detailed discussion of this aspect, including snapshots before and after the selected time frames, supporting the hypothesis that MONAN forecasts may be anticipating the event slightly. This temporal offset could introduce a systematic bias when comparing the forecasts with observations at a fixed time. Nonetheless, this type of analysis offers valuable insights into how cold pools influence the hurricane’s structure and local convection, especially in terms of rainfall organization. Specific features, such as the placement of extreme rainfall cores, could be improved through parameter calibration.
 
@@ -427,7 +426,7 @@ To better understand the extreme rainfall events within the distributions previo
 	\label{fig:samefigvin} % Label para referenciar no texto
 \end{figure}
 
-In contrast, for areas outside the United States—primarily oceanic regions—greater discrepancies among the datasets are observed. According to GSMaP, 85\% of the sample falls below or at a threshold of 5.3 mm/h. ERA5 continues to overestimate extreme rainfall, with 2.1\% of the sample exceeding this value. GPM-IMERG also shows an overestimation trend, with 6.4\% of its values above the 5.3 mm/h threshold. Again, the forecast curve for CP-OFF is the most consistent with observations up to approximately the 99th percentile, with 5.8\% of the values falling above 5.3 mm/h. Overall, the cold pool parameterization tends to overestimate higher rainfall thresholds. Among the experiments, CP-15km and CP-1HD050 are the closest to expectations, with 8.7\% of values below or at the 5.3 mm/h threshold. The default configuration, which performed the worst under this metric, shows that approximately 9.3\% of the predicted values lie at or above this threshold, indicating that nearly 10\% of forecasted values correspond to extreme rainfall.
+In contrast, for areas outside the United States, primarily oceanic regions, greater discrepancies among the datasets are observed. According to GSMaP, 85\% of the sample falls below or at a threshold of 5.3 mm/h. ERA5 continues to overestimate extreme rainfall, with 2.1\% of the sample exceeding this value. GPM-IMERG also shows an overestimation trend, with 6.4\% of its values above the 5.3 mm/h threshold. Again, the forecast curve for CP-OFF is the most consistent with observations up to approximately the 99th percentile, with 5.8\% of the values falling above 5.3 mm/h. Overall, the cold pool parameterization tends to overestimate higher rainfall thresholds. Among the experiments, CP-15km and CP-1HD050 are the closest to expectations, with 8.7\% of values below or at the 5.3 mm/h threshold. The default configuration, which performed the worst under this metric, shows that approximately 9.3\% of the predicted values lie at or above this threshold, indicating that nearly 10\% of forecasted values correspond to extreme rainfall.
 
 To better understand the daily behavior of these distributions, Figure \ref{fig:samesub} presents the CDFs computed for the same dates shown in Figure 6.14. The first column (A) corresponds to the time when the hurricane was near its peak intensity, the second (B) to the period around landfall, and the third (C) to the phase of intense rainfall. Notably, this figure does not distinguish between regions inside and outside the United States but instead represents the entire latitudinal and longitudinal domain marked in Figure 6.14, with GSMaP serving as the reference for this analysis.
 

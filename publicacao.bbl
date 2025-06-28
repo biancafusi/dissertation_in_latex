@@ -40,12 +40,12 @@
 \textbf{Journal of Atmospheric Sciences}, v.~40, n.~9, p. 2125--2137, 1983.}
 
 
-\bibitem[Beven et al. 2025]{beven2025beryl}
-\abntrefinfo{Beven et al.}{BEVEN et al.}{2025}
-{BEVEN, J.~L.; FRITZ, C.; ALAKA, L. \textbf{Tropical Cyclone Report: Hurricane
-  Beryl (AL022024), 28 June -- 9 July 2024}.
-[S.l.], jan. 2025. Accessed: 2025-06-24. Available from:
-  <\url{https://www.nhc.noaa.gov/data/tcr/AL022024_Beryl.pdf}>.}
+\bibitem[Bechtold et al. 2014]{bechtold2014representing}
+\abntrefinfo{Bechtold et al.}{BECHTOLD et al.}{2014}
+{BECHTOLD, P.; SEMANE, N.; LOPEZ, P.; CHABOUREAU, J.-P.; BELJAARS, A.; BORMANN,
+  N. Representing equilibrium and nonequilibrium convection in large-scale
+  models.
+\textbf{Journal of the Atmospheric Sciences}, v.~71, n.~2, p. 734--753, 2014.}
 
 
 \bibitem[Bopape et al. 2021]{bopape2021sensitivity}
@@ -73,7 +73,7 @@
 
 \bibitem[Center 2024]{fsu_helene2024}
 \abntrefinfo{Center}{CENTER}{2024}
-{CENTER, F. S. U.~C. \textbf{Hurricane Helene Summary Report}. 2024.
+{CENTER, F. S. U.~C. \textbf{Hurricane Helene Post-Storm Summary Report}. 2024.
 Accessed: 2025-05-24.
 Available from:
   <\url{https://climatecenter.fsu.edu/images/docs/Hurricane-Helene-Summary-Report.pdf}>.}
@@ -111,14 +111,6 @@ Available from: <\url{https://doi.org/10.1029/2004JD005645}>.}
 \textbf{Weather and Forecasting}, v.~38, n.~6, p. 817--831, 2023.}
 
 
-\bibitem[Donkin and Abiodun 2023]{donkin2023capability}
-\abntrefinfo{Donkin and Abiodun}{DONKIN; ABIODUN}{2023}
-{DONKIN, P.~T.; ABIODUN, B.~J. Capability and sensitivity of mpas-a in
-  simulating tropical cyclones over the south-west indian ocean.
-\textbf{Modeling Earth Systems and Environment}, Springer, v.~9, n.~1, p.
-  527--542, 2023.}
-
-
 \bibitem[Droegemeier and Wilhelmson 1987]{droegemeier1987numerical}
 \abntrefinfo{Droegemeier and Wilhelmson}{DROEGEMEIER; WILHELMSON}{1987}
 {DROEGEMEIER, K.~K.; WILHELMSON, R.~B. Numerical simulation of thunderstorm
@@ -145,14 +137,6 @@ Available from: <\url{https://doi.org/10.1029/2004JD005645}>.}
 \abntrefinfo{Emanuel}{EMANUEL}{1994}
 {EMANUEL, K.~A. \textbf{Atmospheric convection}. [S.l.]: Oxford university
   press, 1994.}
-
-
-\bibitem[{Encyclopaedia Britannica, Inc.} 2025]{britannica_helene}
-\abntrefinfo{{Encyclopaedia Britannica, Inc.}}{{Encyclopaedia Britannica,
-  Inc.}}{2025}
-{{Encyclopaedia Britannica, Inc.} \textbf{Hurricane Helene}. 2025.
-\url{https://www.britannica.com/event/Hurricane-Helene}.
-Accessed: 2025-05-24.}
 
 
 \bibitem[Feng et al. 2015]{feng2015mechanisms}
@@ -269,21 +253,13 @@ Accessed: 2025-05-24.}
   5233--5250, 2014.}
 
 
-\bibitem[Gunasekera et al. 2024]{gunasekera2024global}
-\abntrefinfo{Gunasekera et al.}{GUNASEKERA et al.}{2024}
-{GUNASEKERA, R.; ESCUDERO, O.~A. I.; DANIELL, J.~E.; POMONIS, A.; STONE, H.;
-  TOYOS, G.~P.; BRAND, J.; HERNANDEZ, R.~A. R.; CUBAS, D.; WEIL, J.~R. Global
-  rapid post-disaster damage estimation (grade) report: Hurricane beryl
-  2024-saint vincent and the grenadines: Report as of july 26, 2024.
-< bound method Organization. get\_name\_with\_acronym of< Organization:
-  World~…, 2024.}
-
-
-\bibitem[Haerter et al. 2018]{haerter2018reconciling}
-\abntrefinfo{Haerter et al.}{HAERTER et al.}{2018}
-{HAERTER, J.~O.; B{\"O}ING, S.~J.; HENNEBERG, O.; NISSEN, S.~B. Reconciling
-  cold pool dynamics with convective self-organization.
-\textbf{arXiv preprint arXiv:1810.05518}, 2018.}
+\bibitem[Hagen et al. 2025]{hagen2024helene}
+\abntrefinfo{Hagen et al.}{HAGEN et al.}{2025}
+{HAGEN, A.~B.; , C. ; CANGIALOSI, J.~P.; CHENARD, M.; ALAKA, L.; DELGADO, S.
+  \textbf{Tropical Cyclone Report: Hurricane Helene (AL092024), 24 -- 27
+  September 2024}.
+[S.l.], april 2025. Accessed: 2025-06-24. Available from:
+  <\url{https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf}>.}
 
 
 \bibitem[Heming 2017]{heming2017tropical}
@@ -379,34 +355,11 @@ Available from: <\url{https://doi.org/10.1002/qj.665}>.}
   7825--7834, 2015.}
 
 
-\bibitem[Li et al. 2025]{li2025generative}
-\abntrefinfo{Li et al.}{LI et al.}{2025}
-{LI, Z.; TAN, Z.-M.; BAI, L. Generative deep learning reconstructs tropical
-  cyclone microwave data from geostationary infrared radiometers.
-\textbf{Authorea Preprints}, Authorea, 2025.}
-
-
 \bibitem[Lin et al. 2022]{lin2022tropical}
 \abntrefinfo{Lin et al.}{LIN et al.}{2022}
 {LIN, J.; QIAN, T.; KLOTZBACH, P. Tropical cyclones.
 \textbf{Atmosphere-Ocean}, Taylor \& Francis, v.~60, n.~3-4, p. 360--398,
   2022.}
-
-
-\bibitem[Lonfat et al. 2004]{lonfat2004precipitation}
-\abntrefinfo{Lonfat et al.}{LONFAT et al.}{2004}
-{LONFAT, M.; JR, F.~D. M.; CHEN, S.~S. Precipitation distribution in tropical
-  cyclones using the tropical rainfall measuring mission (trmm) microwave
-  imager: A global perspective.
-\textbf{Monthly Weather Review}, v.~132, n.~7, p. 1645--1660, 2004.}
-
-
-\bibitem[Luitel et al. 2018]{luitel2018verification}
-\abntrefinfo{Luitel et al.}{LUITEL et al.}{2018}
-{LUITEL, B.; VILLARINI, G.; VECCHI, G.~A. Verification of the skill of
-  numerical weather prediction models in forecasting rainfall from us
-  landfalling tropical cyclones.
-\textbf{Journal of hydrology}, Elsevier, v.~556, p. 1026--1037, 2018.}
 
 
 \bibitem[Mallinson and Lasher-Trapp 2019]{mallinson2019investigation}
@@ -448,15 +401,6 @@ Available from: <\url{https://doi.org/10.1002/qj.665}>.}
   Germany, v.~16, p. 137--142, 2008.}
 
 
-\bibitem[{Met Office} 2024]{metoffice2024}
-\abntrefinfo{{Met Office}}{{Met Office}}{2024}
-{{Met Office}. \textbf{Observed and forecast tracks: northern hemisphere 2024}.
-  2024.
-Accessed: 2025-05-24.
-Available from:
-  <\url{https://www.metoffice.gov.uk/research/weather/tropical-cyclones/verification/seasons/nhem2024}>.}
-
-
 \bibitem[Mitchell 2005]{mitchell2005community}
 \abntrefinfo{Mitchell}{MITCHELL}{2005}
 {MITCHELL, K. The community noah land-surface model (lsm).
@@ -488,60 +432,77 @@ Available from:
   Meteorological Society of Japan, v.~87, n.~5, p. 895--912, 2009.}
 
 
-\bibitem[{National Hurricane Center} 2024]{nhc_helene2024}
-\abntrefinfo{{National Hurricane Center}}{{National Hurricane Center}}{2024a}
-{{National Hurricane Center}. \textbf{Hurricane Helene Advisory Number 9}.
-  2024.
-Accessed: 2025-05-24.
-Available from:
-  <\url{https://www.nhc.noaa.gov/archive/2024/helene/helene_advisory_09.pdf}>.}
-
-
 \bibitem[{National Hurricane Center} 2024]{nhc_helene20241}
-\abntrefinfo{{National Hurricane Center}}{{National Hurricane Center}}{2024b}
-{\underline{\ \ \ \ \ \ \ \ }. \textbf{Tropical Cyclone Report: Hurricane
-  Helene (AL092024)}.
+\abntrefinfo{{National Hurricane Center}}{{National Hurricane Center}}{2024}
+{{National Hurricane Center}. \textbf{Tropical Cyclone Report: Hurricane Helene
+  (AL092024)}.
 [S.l.], 2024. Acesso em: 24 maio 2025. Available from:
   <\url{https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf}>.}
 
 
-\bibitem[{National Hurricane Center (NHC), NOAA} 2025]{nhc_sshws}
-\abntrefinfo{{National Hurricane Center (NHC), NOAA}}{{National Hurricane
-  Center (NHC), NOAA}}{2025}
-{{National Hurricane Center (NHC), NOAA}. \textbf{Saffir–Simpson Hurricane
-  Wind Scale}. 2025.
+\bibitem[{National Hurricane Center (NHC) and Central Pacific Hurricane Center}
+  2025]{nhc_sshws}
+\abntrefinfo{{National Hurricane Center (NHC) and Central Pacific Hurricane
+  Center}}{{National Hurricane Center (NHC) and Central Pacific Hurricane
+  Center}}{2025}
+{{National Hurricane Center (NHC) and Central Pacific Hurricane Center}.
+  \textbf{Saffir–Simpson Hurricane Wind Scale}. 2025.
 \url{https://www.nhc.noaa.gov/aboutsshws.php}.
-Acesso em 24 de junho de 2025.}
-
-
-\bibitem[{National Oceanic and Atmospheric Administration (NOAA)}
-  2024]{noaa_hurricane_costs_2024}
-\abntrefinfo{{National Oceanic and Atmospheric Administration
-  (NOAA)}}{{National Oceanic and Atmospheric Administration (NOAA)}}{2024}
-{{National Oceanic and Atmospheric Administration (NOAA)}. \textbf{Hurricane
-  Costs in the United States — 2024 Update}. 2024.
-\url{https://coast.noaa.gov/states/fast-facts/hurricane-costs.html}.
-Acesso em 19 de junho de 2025.}
+Acessed on: June 27, 2025.}
 
 
 \bibitem[{National Oceanic and Atmospheric Administration (NOAA)}
   2025]{noaa_2025_active_year}
 \abntrefinfo{{National Oceanic and Atmospheric Administration
   (NOAA)}}{{National Oceanic and Atmospheric Administration (NOAA)}}{2025a}
-{\underline{\ \ \ \ \ \ \ \ }. \textbf{2024: An active year of U.S.
-  billion‑dollar weather and climate disasters}. [S.l.]: NOAA Climate.gov,
-  National Centers for Environmental Information, January 2025.
+{{National Oceanic and Atmospheric Administration (NOAA)}. \textbf{2024: An
+  active year of U.S. billion‑dollar weather and climate disasters}. January
+  2025.
 \url{https://www.climate.gov/news-features/blogs/beyond-data/2024-active-year-us-billion-dollar-weather-and-climate-disasters}.
-Acesso em 19 de junho de 2025.}
+Acessed on: July 27, 2025.}
+
+
+\bibitem[{National Oceanic and Atmospheric Administration (NOAA)}
+  2025]{noaa_hurricane_costs_2024}
+\abntrefinfo{{National Oceanic and Atmospheric Administration
+  (NOAA)}}{{National Oceanic and Atmospheric Administration (NOAA)}}{2025b}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Hurricane Costs}. 2025.
+\url{https://coast.noaa.gov/states/fast-facts/hurricane-costs.html}.
+Acessed on: July 27, 2025.}
 
 
 \bibitem[{National Oceanic and Atmospheric Administration (NOAA)}
   2025]{noaa_tropical_cyclone}
 \abntrefinfo{{National Oceanic and Atmospheric Administration
-  (NOAA)}}{{National Oceanic and Atmospheric Administration (NOAA)}}{2025b}
+  (NOAA)}}{{National Oceanic and Atmospheric Administration (NOAA)}}{2025c}
 {\underline{\ \ \ \ \ \ \ \ }. \textbf{Tropical Cyclone Introduction}. 2025.
 \url{https://www.noaa.gov/jetstream/tropical/tropical-cyclone-introduction}.
 Accessed: 2025-06-24.}
+
+
+\bibitem[{NOAA EMC} 2025]{noaa_hafseps_2025}
+\abntrefinfo{{NOAA EMC}}{{NOAA EMC}}{2025}
+{{NOAA EMC}. \textbf{Parallel HAFS Ensemble Forecast Guidance for Current
+  Active Storms}. 2025.
+\url{https://www.emc.ncep.noaa.gov/HAFS/HAFSEPS/index.php}.
+Accessed: 2025-06-27.}
+
+
+\bibitem[{NOAA STAR} 2025]{noaa_star_2025}
+\abntrefinfo{{NOAA STAR}}{{NOAA STAR}}{2025}
+{{NOAA STAR}. \textbf{Center for Satellite Applications and Research (STAR)}.
+  2025.
+\url{https://www.star.nesdis.noaa.gov/star/index.php}.
+Accessed: 2025-06-27.}
+
+
+\bibitem[{NSF NCAR/MMM} 2024]{ncar2024plotting}
+\abntrefinfo{{NSF NCAR/MMM}}{{NSF NCAR/MMM}}{2024}
+{{NSF NCAR/MMM}. \textbf{Plotting MPAS-A Global Simulations}. Boulder, CO:
+  [s.n.], 2024.
+Available at:
+  \url{https://www2.mmm.ucar.edu/projects/mpas/site/visualization.html}.
+  Accessed on: June 27, 2025.}
 
 
 \bibitem[Nyongesa et al. 2024]{nyongesa2024influence}
@@ -558,6 +519,13 @@ Accessed: 2025-06-24.}
   Performance evaluation of numerical tools for hurricane forecast (nthf)
   system during 2020 north atlantic tropical cyclones season.
 \textbf{Environmental Sciences Proceedings}, MDPI, v.~8, n.~1, p.~22, 2021.}
+
+
+\bibitem[Rafferty 2025]{britannica_helene}
+\abntrefinfo{Rafferty}{RAFFERTY}{2025}
+{RAFFERTY, E. J.~P. \textbf{Hurricane Helene}. 2025.
+\url{https://www.britannica.com/event/Hurricane-Helene}.
+Accessed: 2025-05-24.}
 
 
 \bibitem[Reddy et al. 2022]{reddy2022accurately}
@@ -582,14 +550,6 @@ Accessed: 2025-06-24.}
 \textbf{The Military Engineer}, JSTOR, v.~65, n.~423, p.~4--5, 1973.}
 
 
-\bibitem[Sakaeda and Torri 2023]{sakaeda2023observed}
-\abntrefinfo{Sakaeda and Torri}{SAKAEDA; TORRI}{2023}
-{SAKAEDA, N.; TORRI, G. The observed effects of cold pools on convection
-  triggering and organization during dynamo/amie.
-\textbf{Journal of Geophysical Research: Atmospheres}, Wiley Online Library,
-  v.~128, n.~17, p. e2023JD038635, 2023.}
-
-
 \bibitem[Sawada and Iwasaki 2010]{sawada2010impacts}
 \abntrefinfo{Sawada and Iwasaki}{SAWADA; IWASAKI}{2010a}
 {SAWADA, M.; IWASAKI, T. Impacts of evaporation from raindrops on tropical
@@ -601,14 +561,6 @@ Accessed: 2025-06-24.}
 \abntrefinfo{Sawada and Iwasaki}{SAWADA; IWASAKI}{2010b}
 {\underline{\ \ \ \ \ \ \ \ }. \underline{\ \ \ \ \ \ \ \ }.
 \textbf{Journal of the atmospheric sciences}, v.~67, n.~1, p. 84--96, 2010.}
-
-
-\bibitem[Schlemmer and Hohenegger 2014]{schlemmer2014formation}
-\abntrefinfo{Schlemmer and Hohenegger}{SCHLEMMER; HOHENEGGER}{2014}
-{SCHLEMMER, L.; HOHENEGGER, C. The formation of wider and deeper clouds as a
-  result of cold-pool dynamics.
-\textbf{Journal of the Atmospheric Sciences}, v.~71, n.~8, p. 2842--2858,
-  2014.}
 
 
 \bibitem[Shepherd and Walsh 2017]{shepherd2017sensitivity}
@@ -624,14 +576,6 @@ Accessed: 2025-06-24.}
 \abntrefinfo{Simpson}{SIMPSON}{1974}
 {SIMPSON, R.~H. The hurricane disaster—potential scale.
 \textbf{Weatherwise}, Informa UK Limited, v.~27, n.~4, p. 169--186, 1974.}
-
-
-\bibitem[Sippel et al. 2022]{sippel2022impacts}
-\abntrefinfo{Sippel et al.}{SIPPEL et al.}{2022}
-{SIPPEL, J.~A.; WU, X.; DITCHEK, S.~D.; TALLAPRAGADA, V.; KLEIST, D.~T. Impacts
-  of assimilating additional reconnaissance data on operational gfs tropical
-  cyclone forecasts.
-\textbf{Weather and Forecasting}, v.~37, n.~9, p. 1615--1639, 2022.}
 
 
 \bibitem[Skamarock et al. 2012]{skamarock2012multiscale}
@@ -666,18 +610,10 @@ Accessed: 2025-06-24.}
 
 \bibitem[{UK Met Office} 2024]{metoffice_nhem2024}
 \abntrefinfo{{UK Met Office}}{{UK Met Office}}{2024}
-{{UK Met Office}. \textbf{Northern Hemisphere Tropical Cyclone Season Summary
+{{UK Met Office}. \textbf{Observed and forecast tracks: northern hemisphere
   2024}. 2024.
 \url{https://www.metoffice.gov.uk/research/weather/tropical-cyclones/verification/seasons/nhem2024}.
-Accessed: 2025-06-23.}
-
-
-\bibitem[Vogel et al. 2021]{vogel2021climatology}
-\abntrefinfo{Vogel et al.}{VOGEL et al.}{2021}
-{VOGEL, R.; KONOW, H.; SCHULZ, H.; ZUIDEMA, P. A climatology of trade-wind
-  cumulus cold pools and their link to mesoscale cloud organization.
-\textbf{Atmospheric Chemistry and Physics}, Copernicus Publications
-  G{\"o}ttingen, Germany, v.~21, n.~21, p. 16609--16630, 2021.}
+Accessed: 2025-06-27.}
 
 
 \bibitem[Weisman and Rotunno 2004]{weisman2004theory}
@@ -694,7 +630,7 @@ Accessed: 2025-06-23.}
 {{World Meteorological Organization (WMO)}. \textbf{Classification of tropical
   cyclones}. sep. 2023.
 \url{https://wmo.int/content/classification-of-tropical-cyclones}.
-Acesso em 19 de junho de 2025.}
+Acessed on: July 27, 2025.}
 
 
 \bibitem[Yamaguchi et al. 2012]{yamaguchi2012tropical}
@@ -713,12 +649,12 @@ Acesso em 19 de junho de 2025.}
   e2023GL106414, 2024.}
 
 
-\bibitem[Zhou and Toth 2020]{zhou2020prospects}
-\abntrefinfo{Zhou and Toth}{ZHOU; TOTH}{2020}
-{ZHOU, F.; TOTH, Z. On the prospects for improved tropical cyclone track
-  forecasts.
-\textbf{Bulletin of the American Meteorological Society}, v.~101, n.~12, p.
-  E2058--E2077, 2020.}
+\bibitem[Zehnder 2025]{zehnder2025tropical}
+\abntrefinfo{Zehnder}{ZEHNDER}{2025}
+{ZEHNDER, J.~A. \textbf{Tropical Cyclone}. Chicago, IL: [s.n.], 2025.
+{Fact-checked by the editors.}
+  \url{https://www.britannica.com/science/tropical-cyclone}.
+Accessed on: June 27, 2025.}
 
 
 \bibitem[Zhou and Matyas 2021]{zhou2021regionalization}
