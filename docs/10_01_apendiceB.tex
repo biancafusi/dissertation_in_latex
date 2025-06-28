@@ -8,12 +8,9 @@
 \label{apendiceB}	% trocar A por B na próxima apêndice e etc
 \renewcommand{\thechapter}{B}%		% trocar A por B na próxima apêndice e etc
 
-In this appendix, we will discuss how the algorithm for tracking  was conceived. All codes concerning this dissertation are available on the author's Github: \url{https://github.com/biancafusi/Dissertation}. A brief explanation of the steps of how this code works will be provided below.
+In this appendix, we will discuss how the algorithm for tracking was conceived. All codes concerning this dissertation are available on the author's Github: \url{https://github.com/biancafusi/Dissertation}. A brief explanation of the steps of how this code works will be provided below.
 
-
-Inicialmente partimos dos dados do IBTrACS. A Figura B.1, mostra os pontos de minimo Mean Sea Level Pressure (MSLP) plotados durante todo o período do Beryl.
-
-Initially, we gathered the data from IBTrACS. Figure \ref{fig:appendix3} shows the points ploted during the whole period that Hurricane Beryl was active, where the MLSP is minimal.
+Initially, we gathered the data from IBTrACS. Figure \ref{fig:appendix3} shows the points plotted during the whole period that Hurricane Beryl was active, where the MLSP is minimal.
 
 \begin{figure}[!ht]
 	\centering
@@ -26,7 +23,7 @@ Initially, we gathered the data from IBTrACS. Figure \ref{fig:appendix3} shows t
 	\label{fig:appendix3} % Label para referenciar no texto
 \end{figure}
 
-As for the code, the initial step is to store the coordinates (latitude and longitude). For that purpose, the variables \texttt{lat\_points\_NOAA} and \texttt{lon\_points\_NOAA} were created, studying the period from July 3rd to July 9th. Following, there will be slices of the original code, concering each step explained.
+As for the code, the initial step is to store the coordinates (latitude and longitude). For that purpose, the variables \texttt{lat\_points\_NOAA} and \texttt{lon\_points\_NOAA} were created, studying the period from July 3rd to July 9th.
 
 \lstinputlisting{docs/figuras/appendix/B_fist_code.py}
 
@@ -34,7 +31,7 @@ Having these values, we can draw an initial box around these points. Figure \ref
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Tracking of Hurricane Beryl, first step of the code. 
+	\caption{Illustration of the first step of the code: finding the minimum MSLP value and retrieving the associated position. 
 	} % Título acima da figura
 	\includegraphics[scale=0.4]{docs/figuras/appendix/B_2_Checking_MSLP.png} 
 	\vspace{2mm}
@@ -43,13 +40,13 @@ Having these values, we can draw an initial box around these points. Figure \ref
 	\label{fig:appendix4} % Label para referenciar no texto
 \end{figure}
 
-The following slice of code describes the process to draw these boxes:
+The following slice of code describes the process to draw these boxes.
 
 \lstinputlisting{docs/figuras/appendix/B_second_code.py}
 
-One should notice the \texttt{upper\_lat}; \texttt{lower\_lat} and \texttt{left\_lon}; \texttt{right\_lon}, which are the limits of these box, are made using the information from \texttt{dlat} and \texttt{dlon}.
+One should notice that the \texttt{upper\_lat}; \texttt{lower\_lat} and \texttt{left\_lon}; \texttt{right\_lon}, which are the limits of this box, are made using the information from \texttt{dlat} and \texttt{dlon}.
 
-The next slice of code searches inside these boxes, looking for the minimal value of MSLP from the referred dataset, for instance, ERA5 or MONAN outputs:
+The next slice of code searches inside these boxes, looking for the minimal value of MSLP from the referred dataset, for instance, ERA5 or MONAN outputs.
 
 \lstinputlisting{docs/figuras/appendix/B_third_code.py}
 
@@ -57,7 +54,7 @@ Once this minimal value is found, we create a second box around this value in or
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Tracking of Hurricane Beryl, second step of the code. 
+	\caption{Illustration of how the track selects the region to compute the maximum wind speed.
 	} % Título acima da figura
 	\includegraphics[scale=0.4]{docs/figuras/appendix/B_3_Finding_wind.png} 
 	\vspace{2mm}
@@ -78,7 +75,7 @@ Figure \ref{fig:appendix6} shows the next step, which is searching inside the bo
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Tracking of Hurricane Beryl, third step of the code. 
+	\caption{Illustration of how the track selects the wind speed. 
 	} % Título acima da figura
 	\includegraphics[scale=0.4]{docs/figuras/appendix/B_4_Finding_Max_wind.png} 
 	\vspace{2mm}
@@ -91,65 +88,64 @@ The code for this part is the following:
 
 \lstinputlisting{docs/figuras/appendix/B_fifth_code.py}
 
-One could ask oneself, what value for \texttt{dlat} and \texttt{dlon} must be imposed. Some tests were done, and we noticed that we cannot restrict a single value for all types of dataset. For instance, one could look at the trajectory on Figure \ref{fig:appendix7}.
+One could ask oneself, what value for \texttt{dlat} and \texttt{dlon} must be imposed. Some tests were done, and we noticed that we cannot restrict a single value for all types of datasets. For instance, one could look at the trajectory in Figure \ref{fig:appendix7}.
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Placeholder. 
+	\caption{The trajectory perfomed by CP-01 experiment using the described track. 
 	} % Título acima da figura
 	\includegraphics[scale=0.4]{docs/figuras/appendix/failed_track.png} 
 	\vspace{2mm}
 	
-	Source:  Placeholder.  % Fonte abaixo da imagem
+	Source:  Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:appendix7} % Label para referenciar no texto
 \end{figure}
 
-From what we gather on Figure \ref{fig:appendix7}, the algorithm is able to capture the event, but fails after a certain point.
+From what we gather on Figure \ref{fig:appendix7}, the algorithm can capture the event, but fails after a certain point.
 
-In order to solve this issue, we plotted the curves generated by the tracking above the rainfall path accumulated on the whole period. Figure \ref{fig:appendix8} shows this solution:
+In order to solve this issue, we plotted the curves generated by the tracking above the rainfall path accumulated over the whole period. Figure \ref{fig:appendix8} shows this solution.
 
 \newpage
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Placeholder. 
+	\caption{Same experiment as in Figure \ref{fig:appendix7}, but now with better agreement achieved by tuning the \texttt{dlat} and \texttt{dlon} parameters. 
 	} % Título acima da figura
 	\includegraphics[scale=0.5]{docs/figuras/appendix/corrected_track.png} 
 	\vspace{2mm}
 	
-	Source:  Placeholder.  % Fonte abaixo da imagem
+	Source:  Made by the author.  % Fonte abaixo da imagem
 	\label{fig:appendix8} % Label para referenciar no texto
 \end{figure}
 
-Based on this correction, we can define the size for \texttt{dlat} and \texttt{dlon}. We recommend that this process is done, in order to use this tracking.
+Based on this correction, we can define the size for \texttt{dlat} and \texttt{dlon}. We recommend that this process be done in order to use this tracking.
 
-Furthermore, we can verify, for example, if the behavior of the intensity registered by ERA5 was not related with a possible tracking error. We can confirm this by confirming the trajectory, shown on Figure \ref{fig:appendix9}:
-
+Furthermore, we can verify, for example, if the behavior of the intensity registered by ERA5 was not related to a possible tracking error. We can confirm this by confirming the trajectory, shown on Figure \ref{fig:appendix9}.
 \newpage
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Placeholder. 
+	\caption{Trajectory performed by ERA5 using the described track. 
 	} % Título acima da figura
 	\includegraphics[scale=0.5]{docs/figuras/appendix/ERA5_track_NOAA.png} 
 	\vspace{2mm}
 	
-	Source:  Placeholder.  % Fonte abaixo da imagem
+	Source:  Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:appendix9} % Label para referenciar no texto
 \end{figure}
 
-One could register the associated values to the minimum MSLP and maximum wind speed in a table, and compare it directly with the data from the best track. Figure \ref{fig:appendix10} shows this table, where the best track data is labeled ``NOAA''.
+One could register the associated values to the minimum MSLP and maximum wind speed in a table, and compare them directly with the data from the best track. Figure \ref{fig:appendix10} shows this table, where the best track data is labeled ``NOAA''.
 
 \newpage
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Placeholder. 
+	\caption{An image of the table showing MSLP values taken from the tracked ERA5 data and the best track dataset (NOAA).
 	} % Título acima da figura
 	\includegraphics[scale=0.4]{docs/figuras/appendix/era5_verification_table.png} 
 	\vspace{2mm}
 	
-	Source:  Placeholder.  % Fonte abaixo da imagem
+	Source:  Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:appendix10} % Label para referenciar no texto
 \end{figure}
 

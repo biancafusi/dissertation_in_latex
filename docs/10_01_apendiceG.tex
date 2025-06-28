@@ -8,6 +8,54 @@
 \label{apendiceG}	% trocar A por B na próxima apêndice e etc
 \renewcommand{\thechapter}{G}%		% trocar A por B na próxima apêndice e etc
 
+In order to create the mask algorithm, we created the program \texttt{maskin\_dataset.py}, which is applied a mask to all data rainfall data and saves it in new \texttt{datasets.nc}.
 
+The following algorithm was developed to create the land mask:
+
+\begin{enumerate}[label=\arabic*.]
+	\item A shapefile downloaded from \url{https://www.naturalearthdata.com} is provided as input.
+	\item Latitude and longitude vectors are created to store coordinate information derived from the shapefile.
+	\item The shapefile data is filtered to extract only the United States region and stored in the variable \texttt{usa}. A GeoDataFrame is then created from this.
+	\item Using the latitude and longitude values, a grid is generated, and point geometries are created.
+	\item A land mask is generated from these points based on whether they fall inside or outside the USA geometry.
+	\begin{enumerate}[label=\alph*.]
+		\item To mask areas outside the United States, the following expression is used:
+		\texttt{land\_mask\_flat = \~ gdf\_points.within(usa.unary\_union)},
+		which returns the points that do not intersect with the USA polygon.
+	\end{enumerate}
+	\item The function returns each of these masks, and they are later applied to the dataset as needed, as shown in this code:
+\end{enumerate}
+
+\lstinputlisting{docs/figuras/appendix/appendix_G_first.py}
+
+In other words, this function selects only the latitude and longitude points from the datasets that are (or are not) part of the mask.
+
+The fully annotated function named \texttt{creating\_USA\_mask}, with these enumerated steps, is given below:
+
+\lstinputlisting{docs/figuras/appendix/appendix_G_second.py}
+
+Figures \ref{fig:appendix34} and \ref{fig:appendix35} show this maks being applied over and outside of the United States.
+
+\begin{figure}[!ht]
+	\centering
+	\caption{MONAN output (experiment CP-ON) showing the mask outside of the US continental region. 
+	} % Título acima da figura
+	\includegraphics[trim=3.5cm 0 0 0, clip, scale=0.5]{docs/figuras/appendix/cp_on_usa_mask.png} 
+	\vspace{2mm}
+	
+	Source: Made by the author (2025).  % Fonte abaixo da imagem
+	\label{fig:appendix34} % Label para referenciar no texto
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\caption{MONAN output (experiment CP-ON) showing the mask over the US continental region. 
+	} % Título acima da figura
+	\includegraphics[trim=3.5cm 0 0 0, clip, scale=0.5]{docs/figuras/appendix/cp_on_not_usa_mask.png} 
+	\vspace{2mm}
+	
+	Source: Made by the author (2025).  % Fonte abaixo da imagem
+	\label{fig:appendix35} % Label para referenciar no texto
+\end{figure}
 
 

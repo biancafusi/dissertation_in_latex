@@ -48,6 +48,14 @@
 \textbf{Journal of the Atmospheric Sciences}, v.~71, n.~2, p. 734--753, 2014.}
 
 
+\bibitem[{Beven II} et al. 2025]{beven2025beryl}
+\abntrefinfo{{Beven II} et al.}{{Beven II} et al.}{2025}
+{{Beven II}, J.~L.; FRITZ, C.; ALAKA, L. \textbf{Tropical Cyclone Report:
+  Hurricane Beryl (AL022024), 28 June -- 9 July 2024}.
+[S.l.], jan. 2025. Accessed: 2025-06-24. Available from:
+  <\url{https://www.nhc.noaa.gov/data/tcr/AL022024_Beryl.pdf}>.}
+
+
 \bibitem[Bopape et al. 2021]{bopape2021sensitivity}
 \abntrefinfo{Bopape et al.}{BOPAPE et al.}{2021}
 {BOPAPE, M.-J.~M.; CARDOSO, H.; PLANT, R.~S.; PHADULI, E.; CHIKOORE, H.;
@@ -109,6 +117,14 @@ Available from: <\url{https://doi.org/10.1029/2004JD005645}>.}
   track verification of tropical cyclones: A new metric to identify forecast
   consistency.
 \textbf{Weather and Forecasting}, v.~38, n.~6, p. 817--831, 2023.}
+
+
+\bibitem[Donkin and Abiodun 2023]{donkin2023capability}
+\abntrefinfo{Donkin and Abiodun}{DONKIN; ABIODUN}{2023}
+{DONKIN, P.~T.; ABIODUN, B.~J. Capability and sensitivity of mpas-a in
+  simulating tropical cyclones over the south-west indian ocean.
+\textbf{Modeling Earth Systems and Environment}, Springer, v.~9, n.~1, p.
+  527--542, 2023.}
 
 
 \bibitem[Droegemeier and Wilhelmson 1987]{droegemeier1987numerical}
@@ -253,6 +269,23 @@ Available from: <\url{https://doi.org/10.1029/2004JD005645}>.}
   5233--5250, 2014.}
 
 
+\bibitem[Gunasekera et al. 2024]{gunasekera2024global}
+\abntrefinfo{Gunasekera et al.}{GUNASEKERA et al.}{2024}
+{GUNASEKERA, R.; ESCUDERO, O.~A. I.; DANIELL, J.~E.; POMONIS, A.; STONE, H.;
+  TOYOS, G.~P.; BRAND, J.; HERNANDEZ, R.~A. R.; CUBAS, D.; WEIL, J.~R. Global
+  rapid post-disaster damage estimation (grade) report: Hurricane beryl
+  2024-saint vincent and the grenadines: Report as of july 26, 2024.
+< bound method Organization. get\_name\_with\_acronym of< Organization:
+  World~…, 2024.}
+
+
+\bibitem[Haerter et al. 2018]{haerter2018reconciling}
+\abntrefinfo{Haerter et al.}{HAERTER et al.}{2018}
+{HAERTER, J.~O.; B{\"O}ING, S.~J.; HENNEBERG, O.; NISSEN, S.~B. Reconciling
+  cold pool dynamics with convective self-organization.
+\textbf{arXiv preprint arXiv:1810.05518}, 2018.}
+
+
 \bibitem[Hagen et al. 2025]{hagen2024helene}
 \abntrefinfo{Hagen et al.}{HAGEN et al.}{2025}
 {HAGEN, A.~B.; , C. ; CANGIALOSI, J.~P.; CHENARD, M.; ALAKA, L.; DELGADO, S.
@@ -355,11 +388,34 @@ Available from: <\url{https://doi.org/10.1002/qj.665}>.}
   7825--7834, 2015.}
 
 
+\bibitem[Li et al. 2025]{li2025generative}
+\abntrefinfo{Li et al.}{LI et al.}{2025}
+{LI, Z.; TAN, Z.-M.; BAI, L. Generative deep learning reconstructs tropical
+  cyclone microwave data from geostationary infrared radiometers.
+\textbf{Authorea Preprints}, Authorea, 2025.}
+
+
 \bibitem[Lin et al. 2022]{lin2022tropical}
 \abntrefinfo{Lin et al.}{LIN et al.}{2022}
 {LIN, J.; QIAN, T.; KLOTZBACH, P. Tropical cyclones.
 \textbf{Atmosphere-Ocean}, Taylor \& Francis, v.~60, n.~3-4, p. 360--398,
   2022.}
+
+
+\bibitem[Lonfat et al. 2004]{lonfat2004precipitation}
+\abntrefinfo{Lonfat et al.}{LONFAT et al.}{2004}
+{LONFAT, M.; JR, F.~D. M.; CHEN, S.~S. Precipitation distribution in tropical
+  cyclones using the tropical rainfall measuring mission (trmm) microwave
+  imager: A global perspective.
+\textbf{Monthly Weather Review}, v.~132, n.~7, p. 1645--1660, 2004.}
+
+
+\bibitem[Luitel et al. 2018]{luitel2018verification}
+\abntrefinfo{Luitel et al.}{LUITEL et al.}{2018}
+{LUITEL, B.; VILLARINI, G.; VECCHI, G.~A. Verification of the skill of
+  numerical weather prediction models in forecasting rainfall from us
+  landfalling tropical cyclones.
+\textbf{Journal of hydrology}, Elsevier, v.~556, p. 1026--1037, 2018.}
 
 
 \bibitem[Mallinson and Lasher-Trapp 2019]{mallinson2019investigation}
@@ -401,6 +457,15 @@ Available from: <\url{https://doi.org/10.1002/qj.665}>.}
   Germany, v.~16, p. 137--142, 2008.}
 
 
+\bibitem[{Met Office} 2024]{metoffice2024}
+\abntrefinfo{{Met Office}}{{Met Office}}{2024}
+{{Met Office}. \textbf{Observed and forecast tracks: northern hemisphere 2024}.
+  2024.
+Accessed: 2025-05-24.
+Available from:
+  <\url{https://www.metoffice.gov.uk/research/weather/tropical-cyclones/verification/seasons/nhem2024}>.}
+
+
 \bibitem[Mitchell 2005]{mitchell2005community}
 \abntrefinfo{Mitchell}{MITCHELL}{2005}
 {MITCHELL, K. The community noah land-surface model (lsm).
@@ -415,13 +480,10 @@ Available from: <\url{https://doi.org/10.1002/qj.665}>.}
 \textbf{Weather and Forecasting}, v.~36, n.~4, p. 1491--1503, 2021.}
 
 
-\bibitem[Muller and Takayabu 2020]{muller2020response}
-\abntrefinfo{Muller and Takayabu}{MULLER; TAKAYABU}{2020}
-{MULLER, C.; TAKAYABU, Y. Response of precipitation extremes to warming: what
-  have we learned from theory and idealized cloud-resolving simulations, and
-  what remains to be learned?
-\textbf{Environmental Research Letters}, IOP Publishing, v.~15, n.~3, p.
-  035001, 2020.}
+\bibitem[Muller and Abramian 2023]{muller2023cloud}
+\abntrefinfo{Muller and Abramian}{MULLER; ABRAMIAN}{2023}
+{MULLER, C.; ABRAMIAN, S. The cloud dynamics of convective storm systems.
+\textbf{Physics Today}, AIP Publishing, v.~76, n.~5, p. 28--28, 2023.}
 
 
 \bibitem[Nakanishi and Niino 2009]{nakanishi2009development}
@@ -480,6 +542,21 @@ Acessed on: July 27, 2025.}
 Accessed: 2025-06-24.}
 
 
+\bibitem[{National Weather Service} 2024]{nws_lch_beryl2024}
+\abntrefinfo{{National Weather Service}}{{National Weather Service}}{2024}
+{{National Weather Service}. \textbf{Hurricane Beryl 2024}. Lake Charles, LA:
+  [s.n.], 2024.
+\url{https://www.weather.gov/lch/2024Beryl}.
+Accessed: 2025‑06‑27.}
+
+
+\bibitem[{NOAA AOML} 2025]{noaa_basin}
+\abntrefinfo{{NOAA AOML}}{{NOAA AOML}}{2025}
+{{NOAA AOML}. \textbf{AOML Hurricane Model Viewer}. 2025.
+\url{https://storm.aoml.noaa.gov/viewer/?projectName=BASIN}.
+Accessed: 2025-06-27.}
+
+
 \bibitem[{NOAA EMC} 2025]{noaa_hafseps_2025}
 \abntrefinfo{{NOAA EMC}}{{NOAA EMC}}{2025}
 {{NOAA EMC}. \textbf{Parallel HAFS Ensemble Forecast Guidance for Current
@@ -488,10 +565,17 @@ Accessed: 2025-06-24.}
 Accessed: 2025-06-27.}
 
 
-\bibitem[{NOAA STAR} 2025]{noaa_star_2025}
-\abntrefinfo{{NOAA STAR}}{{NOAA STAR}}{2025}
+\bibitem[{NOAA STAR} 2025]{noaa_star}
+\abntrefinfo{{NOAA STAR}}{{NOAA STAR}}{2025a}
 {{NOAA STAR}. \textbf{Center for Satellite Applications and Research (STAR)}.
   2025.
+\url{https://www.star.nesdis.noaa.gov/star/index.php}.
+Accessed: 2025-06-27.}
+
+
+\bibitem[{NOAA STAR} 2025]{noaa_star_2025}
+\abntrefinfo{{NOAA STAR}}{{NOAA STAR}}{2025b}
+{\underline{\ \ \ \ \ \ \ \ }. \underline{\ \ \ \ \ \ \ \ }. 2025.
 \url{https://www.star.nesdis.noaa.gov/star/index.php}.
 Accessed: 2025-06-27.}
 
@@ -550,6 +634,14 @@ Accessed: 2025-05-24.}
 \textbf{The Military Engineer}, JSTOR, v.~65, n.~423, p.~4--5, 1973.}
 
 
+\bibitem[Sakaeda and Torri 2023]{sakaeda2023observed}
+\abntrefinfo{Sakaeda and Torri}{SAKAEDA; TORRI}{2023}
+{SAKAEDA, N.; TORRI, G. The observed effects of cold pools on convection
+  triggering and organization during dynamo/amie.
+\textbf{Journal of Geophysical Research: Atmospheres}, Wiley Online Library,
+  v.~128, n.~17, p. e2023JD038635, 2023.}
+
+
 \bibitem[Sawada and Iwasaki 2010]{sawada2010impacts}
 \abntrefinfo{Sawada and Iwasaki}{SAWADA; IWASAKI}{2010a}
 {SAWADA, M.; IWASAKI, T. Impacts of evaporation from raindrops on tropical
@@ -561,6 +653,14 @@ Accessed: 2025-05-24.}
 \abntrefinfo{Sawada and Iwasaki}{SAWADA; IWASAKI}{2010b}
 {\underline{\ \ \ \ \ \ \ \ }. \underline{\ \ \ \ \ \ \ \ }.
 \textbf{Journal of the atmospheric sciences}, v.~67, n.~1, p. 84--96, 2010.}
+
+
+\bibitem[Schlemmer and Hohenegger 2014]{schlemmer2014formation}
+\abntrefinfo{Schlemmer and Hohenegger}{SCHLEMMER; HOHENEGGER}{2014}
+{SCHLEMMER, L.; HOHENEGGER, C. The formation of wider and deeper clouds as a
+  result of cold-pool dynamics.
+\textbf{Journal of the Atmospheric Sciences}, v.~71, n.~8, p. 2842--2858,
+  2014.}
 
 
 \bibitem[Shepherd and Walsh 2017]{shepherd2017sensitivity}
@@ -576,6 +676,14 @@ Accessed: 2025-05-24.}
 \abntrefinfo{Simpson}{SIMPSON}{1974}
 {SIMPSON, R.~H. The hurricane disaster—potential scale.
 \textbf{Weatherwise}, Informa UK Limited, v.~27, n.~4, p. 169--186, 1974.}
+
+
+\bibitem[Sippel et al. 2022]{sippel2022impacts}
+\abntrefinfo{Sippel et al.}{SIPPEL et al.}{2022}
+{SIPPEL, J.~A.; WU, X.; DITCHEK, S.~D.; TALLAPRAGADA, V.; KLEIST, D.~T. Impacts
+  of assimilating additional reconnaissance data on operational gfs tropical
+  cyclone forecasts.
+\textbf{Weather and Forecasting}, v.~37, n.~9, p. 1615--1639, 2022.}
 
 
 \bibitem[Skamarock et al. 2012]{skamarock2012multiscale}
@@ -614,6 +722,14 @@ Accessed: 2025-05-24.}
   2024}. 2024.
 \url{https://www.metoffice.gov.uk/research/weather/tropical-cyclones/verification/seasons/nhem2024}.
 Accessed: 2025-06-27.}
+
+
+\bibitem[Vogel et al. 2021]{vogel2021climatology}
+\abntrefinfo{Vogel et al.}{VOGEL et al.}{2021}
+{VOGEL, R.; KONOW, H.; SCHULZ, H.; ZUIDEMA, P. A climatology of trade-wind
+  cumulus cold pools and their link to mesoscale cloud organization.
+\textbf{Atmospheric Chemistry and Physics}, Copernicus Publications
+  G{\"o}ttingen, Germany, v.~21, n.~21, p. 16609--16630, 2021.}
 
 
 \bibitem[Weisman and Rotunno 2004]{weisman2004theory}
@@ -655,6 +771,14 @@ Acessed on: July 27, 2025.}
 {Fact-checked by the editors.}
   \url{https://www.britannica.com/science/tropical-cyclone}.
 Accessed on: June 27, 2025.}
+
+
+\bibitem[Zhou and Toth 2020]{zhou2020prospects}
+\abntrefinfo{Zhou and Toth}{ZHOU; TOTH}{2020}
+{ZHOU, F.; TOTH, Z. On the prospects for improved tropical cyclone track
+  forecasts.
+\textbf{Bulletin of the American Meteorological Society}, v.~101, n.~12, p.
+  E2058--E2077, 2020.}
 
 
 \bibitem[Zhou and Matyas 2021]{zhou2021regionalization}
