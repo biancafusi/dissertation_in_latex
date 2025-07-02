@@ -26,6 +26,8 @@ The first landfall occurred near Perry, Florida, at approximately 0310 UTC on 27
 
 As Helene moved inland on the morning of 27 September, it gradually weakened due to land interaction. By 0900 UTC, the system had been downgraded to a tropical storm while located near Macon, Georgia. Despite the weakening, Helene’s impacts intensified as the storm interacted with a stationary front boundary stretching from the central Gulf Coast to the southern Appalachians. Enhanced low-level convergence and orographic lift contributed to excessive rainfall, particularly in these mountainous regions. Figure \ref{fig:synoptic1} pictures this large-scale interaction.
 
+\newpage
+
 \begin{figure}[!ht]
 	\centering
 	\caption{Synoptic-scale interaction between Hurricane Helene and a stationary frontal boundary over the southeastern United States.} % Título acima da figura
@@ -37,12 +39,14 @@ As Helene moved inland on the morning of 27 September, it gradually weakened due
 
 Helene’s moisture-laden circulation delivered extreme precipitation across a broad swath of the southeastern United States. The heaviest observed rainfall total was recorded in Busick, North Carolina, where 30.78 inches (approximately 782 mm) fell between 25 and 28 September. The orographic influence was particularly evident in areas such as Georgia and western North Carolina, where intense rainfall led to flash flooding, river overflow, and landslides. A satellite image in Figure \ref{fig:northcarolina} shows Helene and the large tail of convection when passing through North Carolina.
 
+\newpage
+
 \begin{figure}[h!]
 	\centering
 	\caption{Satellite images of Hurricane Helene (channel 13 of GOES-East) with trailing convection over North Carolina.}
 	\begin{minipage}[t]{0.45\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{docs/figuras/chapter6/20242711220_GOES16-ABI-FL-13-AL092024-2000x2000.jpg}
+		\includegraphics[width=\textwidth, trim = {0cm 0cm 0cm -2cm}, clip=true]{docs/figuras/chapter6/20242711220_GOES16-ABI-FL-13-AL092024-2000x2000.jpg}
 	\end{minipage}\hfill
 	\begin{minipage}[t]{0.45\textwidth}
 		\centering
@@ -57,15 +61,42 @@ Helene’s moisture-laden circulation delivered extreme precipitation across a b
 	Source: \citeonline{noaa_star_2025}.
 \end{figure}
 
-The small mountain town of Chimney Rock, North Carolina, was among the hardest hit, with floodwaters destroying much of the local infrastructure \cite{britannica_helene}. Table \ref{tab:highest_rainfall_state} summarizes the total rainfall by state.
-
 The small mountain town of Chimney Rock, North Carolina, was among the hardest hit, with floodwaters destroying much of the local infrastructure  \cite{britannica_helene}. The following table (\ref{tab:highest_rainfall_state})  summarizes the total rainfall by state.
 
-\begin{table}[]
+%\begin{table}[]
+%	\centering
+%	\caption{Highest Rainfall Totals by State recorded from 1200 UTC 25 September to 1200 UTC 28 September.}
+%	\label{tab:highest_rainfall_state}
+%	\resizebox{\textwidth}{!}{
+%		\begin{tabular}{cccc}
+%			\toprule
+%			\textbf{State} & \textbf{County} & \textbf{Location} & \textbf{Rainfall (inches)} \\
+%			\midrule
+%			North Carolina & Yancey   & Busick                & 30.78 \\
+%			South Carolina & Greenville & Sunfish Mountain     & 21.66 \\
+%			Georgia        & Rabun    & 3.5 mi NE Dillard      & 14.64 \\
+%			Florida        & Liberty  & Sumatra                & 14.39 \\
+%			Tennessee      & Johnson  & Trade                  & 10.98 \\
+%			Virginia       & Grayson  & 5.3 mi SW Galax        & 10.89 \\
+%			Ohio           & Scioto   & Rosemount              & 8.51  \\
+%			Alabama        & Houston  & 1.6 mi NNE Pansey      & 8.50  \\
+%			Kentucky       & Henderson & Henderson             & 7.67  \\
+%			Illinois       & Massac   & Ft. Massac St. Park    & 7.47  \\
+%			West Virginia  & Mercer   & Bluefield              & 6.11  \\
+%			Indiana        & Clark    & 2.6 mi E Henryville    & 5.69  \\
+%			\bottomrule
+%		\end{tabular}
+%	}
+%	
+%	\vspace{2mm}
+%	{\centering Source: \citeonline{nhc_helene20241}.\par}
+%\end{table}
+
+\begin{table}[h!]
 	\centering
 	\caption{Highest Rainfall Totals by State recorded from 1200 UTC 25 September to 1200 UTC 28 September.}
 	\label{tab:highest_rainfall_state}
-	\resizebox{\textwidth}{!}{
+	\resizebox{0.85\textwidth}{!}{
 		\begin{tabular}{cccc}
 			\toprule
 			\textbf{State} & \textbf{County} & \textbf{Location} & \textbf{Rainfall (inches)} \\
@@ -90,6 +121,7 @@ The small mountain town of Chimney Rock, North Carolina, was among the hardest h
 	{\centering Source: \citeonline{nhc_helene20241}.\par}
 \end{table}
 
+
 By 1800 UTC on 27 September, Helene had become post-tropical as it merged with a mid-latitude cutoff\footnote{National Weather Service.\textbf{ Glossary: Cut Off}. NOAA/NWS. Available at: \url{https://forecast.weather.gov/glossary.php?word=cut+off.} Acessed on: June 27, 2025}  low over the Tennessee Valley and transitioned into an extratropical cyclone over southern Kentucky. The remnant low persisted until 28 September, performing a slow cyclonic loop before dissipating over north-central Tennessee.
 
 Hurricane Helene resulted in widespread devastation across Florida, Georgia, the Carolinas, and Tennessee. Approximately 4 million people lost power due to infrastructure damage. With at least 250 reported fatalities, 176 of which were direct, Helene became the deadliest hurricane in the contiguous United States since Hurricane Katrina in 2005.
@@ -98,10 +130,12 @@ For our simulations, the model was initialized on two different dates to perform
 
 For the analysis of the storm's trajectory and intensity, we selected the time window up to September 28 at 00 UTC, which corresponds to a point shortly after the system weakened and was reclassified as a tropical storm. For the precipitation analysis, however, we extended the time window to include the entire day of September 28, as it was relevant to the extreme rainfall observed in the Carolinas region. Following Figure \ref{fig:synoptic}, the study period of our simulations is represented by the circle bullet points in the trajectory computed by the best track dataset.
 
+\newpage
+
 \begin{figure}[!ht]
 	\centering
 	\caption{Spatial domain of Hurricane Helene's development and trajectory according to the best track dataset.} % Título acima da figura
-	\includegraphics[width=\textwidth]{docs/figuras/chapter6/HELENE_map_with_cat_path.png} 
+	\includegraphics[width=0.95\textwidth]{docs/figuras/chapter6/HELENE_map_with_cat_path.png} 
 	\vspace{2mm}
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:synoptic} % Label para referenciar no texto
@@ -143,7 +177,9 @@ For those experiments, one should consider the same default parameters as regist
 
 In this subsection, we will present the results regarding the forecasted trajectories. Here again, the label “NOAA” is attributed to the best track dataset. The ERA5 was downscaled to a 30 km horizontal resolution to compare with the MONAN outputs, and the CP-15km was maintained in its native horizontal resolution.
 
-Similarly to Figure \ref{fig:all_tracks_selected}, Figure \ref{fig:trajectbest} shows the trajectory identified through the application of the tracking algorithm delineated in the Appendix.
+Similarly to Figure \ref{fig:all_tracks_selected}, Figure \ref{fig:trajectbest} shows the trajectory identified through the application of the tracking algorithm delineated in Appendix~\ref{apendiceB}.
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -155,7 +191,9 @@ Similarly to Figure \ref{fig:all_tracks_selected}, Figure \ref{fig:trajectbest} 
 	\label{fig:trajectbest} % Label para referenciar no texto
 \end{figure}
 
-At the oceanic region, the model generally performs well in forecasting, while in the continental area it begins the capture the major differences. The CP-ON forecast begins to diverge northwestward from the best track dataset as it passes through Georgia, and the CP-OFF shows a slight divergence too, but at the end, it has a better performance in comparison with CP-ON. The major feature here is the optimal configuration selected, CP-1HD050 forecast, which shows the best performance in this category so far. Some improvements can be found with the increase of the horizontal resolution, CP-15km forecast, as well as by changing the initial condition to twelve hours later (CP-25 forecast). The general behaviour of MONAN in reproducing the Hurricane Helene trajectory is similar to the forecasts made by the Hurricane Analysis and Forecast System (HAFS) and other listed models, as shown in Figure \ref{fig:forecast2}.
+At the oceanic region, the model generally performs well in forecasting, while in the continental area it begins the capture the major differences. The CP-ON forecast begins to diverge northwestward from the best track dataset as it passes through Georgia, and the CP-OFF shows a slight divergence too, but at the end, it has a better performance in comparison with CP-ON. The major feature here is the optimal configuration selected, CP-1HD050 forecast, which shows the best performance in this category so far. Some improvements can be found with the increase of the horizontal resolution, CP-15km forecast, as well as by changing the initial condition to twelve hours later (CP-25 forecast). The general behavior of MONAN in reproducing the Hurricane Helene trajectory is similar to the forecasts made by the Hurricane Analysis and Forecast System (HAFS) and other listed models, as shown in Figure \ref{fig:forecast2}.
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -168,6 +206,8 @@ At the oceanic region, the model generally performs well in forecasting, while i
 \end{figure}
 
 The features listed in the last paragraph can be confirmed with Figure \ref{fig:trackerror2}, which displays the distance error (the great-circle distance) and the MAE and RMSE computed based on those distance errors.
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -183,6 +223,8 @@ The features listed in the last paragraph can be confirmed with Figure \ref{fig:
 It is initially observed that ERA5 presents the lowest error, as discussed in the section concerning Hurricane Beryl (Section \ref{subsection521}). Nevertheless, it is noteworthy that increasing the resolution can reduce this kind of error, as seen with the CP-15km forecast during the 42 - 54 h lead time.
 
 During the oceanic phase, that is, before landfall, the forecast that includes cold pool parameterization demonstrates better performance compared to the one without it, particularly between 30 h and 54 h of forecast lead time. Once again, the role of initialization time proves to be important: for the forecast initialized 12 hours later (CP-25), the error does not exceed 60 km, highlighting the need for future studies using ensemble forecasting to better define initial conditions. In this context, Figure 6.8 illustrates forecasts for Hurricane Helene produced by the Met Office center, highlighting several forecasts initialized on September 24, 25, 26, and 27. Notably, there is a shift observed in the forecasts, particularly concerning the continental area, starting from September 25. Overall, the Met Office reported that “track forecast errors were low and skill scores very high for forecasts for Hurricane Helene. The landfall location was very well predicted” \cite{metoffice_nhem2024}.
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -262,7 +304,7 @@ In this subsection, we present the results of the experiments' performance conce
 
 However, in contrast to Hurricane Beryl, the storm’s lifetime over the oceanic region was shorter. Additionally, the interaction with other synoptic-scale systems over land and the influence of orographic features led to extreme precipitation over the continental region, particularly across the Carolinas, as discussed in Section \ref{section61}. Therefore, we divided the analysis between the portion over the United States, where NCEP data are used as the reference, and the portion outside the United States, where GSMaP data serve as the reference.
 
-This choice was based on the observation that GPM-IMERG data, especially daily accumulations, significantly underestimated the observed values (see Table  \ref{tab:highest_rainfall_state}). This preliminary assessment is available in the appendix. Finally, to support this separation of continental analysis, the author developed a land mask, which is available on GitHub\footnote{FUSINATO B. \textbf{Dissertation}. NOAA/NWS. Available at: \url{https://github.com/biancafusi/Dissertation.} Acessed on: June 27, 2025}.
+This choice was based on the observation that GPM-IMERG data, especially daily accumulations, significantly underestimated the observed values (see Table  \ref{tab:highest_rainfall_state}). This preliminary assessment is available in Appendix~\ref{apendiceA}. Finally, to support this separation of continental analysis, the author developed a land mask, which is available on GitHub\footnote{FUSINATO B. \textbf{Dissertation}. Available at: \url{https://github.com/biancafusi/Dissertation.} Acessed on: June 27, 2025.} and described in Appendix~\ref{apendiceG}.
 
 \subsubsection{Pattern and spatial rainfall distribution}
 
@@ -289,6 +331,8 @@ We hypothesize that this is due to the scarcity of meteorological observations o
 
 These trends are further confirmed by the computation of the Pearson correlation coefficient, as shown in Figure \ref{fig:spatially}.
 
+\newpage
+
 \begin{figure}[!ht]
 	\centering
 	\caption{Spatially averaged Pearson correlation coefficient over the entire domain, computed with the accumulated rainfall from September 25th to 29th (both 00 UTC). 
@@ -300,28 +344,32 @@ These trends are further confirmed by the computation of the Pearson correlation
 	\label{fig:spatially} % Label para referenciar no texto
 \end{figure}
 
-GPM-IMERG and ERA5 exhibit high correlation values, both over the United States and outside of it. Particularly for GPM-IMERG, this suggests that, even over land, it remains a more reliable dataset for rainfall evaluation than ERA5. This supports the discussion presented in the appendix, which concludes that the discrepancies between GPM-IMERG and NCEP data are primarily due to localized areas of extreme rainfall.
+GPM-IMERG and ERA5 exhibit high correlation values, both over the United States and outside of it. Particularly for GPM-IMERG, this suggests that, even over land, it remains a more reliable dataset for rainfall evaluation than ERA5. This supports the discussion presented in Appendix~\ref{apendiceA}, which concludes that the discrepancies between GPM-IMERG and NCEP data are primarily due to localized areas of extreme rainfall.
 
 Furthermore, an important feature observed both here and in Figure \ref{fig:ets} is that the CP-OFF configuration performs better outside the United States, showing slightly higher correlation values than the experiments that include cold pool parameterization, unlike the performance observed over the United States region. Among the cold pool configurations, CP-25 presents the best spatial rainfall pattern performance, followed in descending order by CP-1HD050, CP-15km, and CP-ON. Despite this ranking, the differences in correlation values among model configurations are relatively small, with variations of only 0.06 and 0.03 between the highest and lowest correlations over and outside the United States, respectively.
 
 In order to conduct a more detailed investigation of the rainfall distribution and associated morphological patterns, selected datasets are presented without the mask separating the regions inside and outside the United States. Figures \ref{fig:selectedsnap} and \ref{fig:selectedsnap2} show snapshots at specific moments during the event, the first one focusing on the cold pool scheme impacts and the second on the resolution effect. The first column corresponds to Hurricane Helene near its peak intensity; the second column represents the moment of landfall; and the third column captures the period of intense rainfall over North Carolina.
 
+
+
 \begin{figure}[!ht]
 	\centering
 	\caption{Selected snapshots of the rainfall fields in some of Hurricane Helene’s key moments. 
 	} % Título acima da figura
-	\includegraphics[scale=0.6]{docs/figuras/chapter6/helene_panels_FINAL.png} 
+	\includegraphics[scale=0.55]{docs/figuras/chapter6/helene_panels_FINAL.png} 
 	\vspace{2mm}
 	
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:selectedsnap} % Label para referenciar no texto
 \end{figure}
 
+\newpage
+
 \begin{figure}[!ht]
 	\centering
 	\caption{Same as Figure 6.14, but showing the differences made by the resolution. 
 	} % Título acima da figura
-	\includegraphics[scale=0.6]{docs/figuras/chapter6/helene_panels_native_FINAL.png} 
+	\includegraphics[scale=0.55]{docs/figuras/chapter6/helene_panels_native_FINAL.png} 
 	\vspace{2mm}
 	
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
@@ -330,7 +378,7 @@ In order to conduct a more detailed investigation of the rainfall distribution a
 
 One can observe noticeable differences in the rainfall distribution between the GPM-IMERG and GSMaP datasets, despite the strong correlation previously identified between the two. These differences are particularly evident in the second column, which corresponds to the distribution of documented heavy rainfall. When comparing the CP-ON and CP-OFF experiments with the reference datasets, we find that the cold pool parameterization tends to organize precipitation more effectively into rainbands and clusters heavy rainfall into distinct patches surrounded by moderate rain. In the third column, over the North Carolina border, the cold pool experiments tend to shift the extreme rainfall core further west compared to CP-OFF (using longitude 82.5°W as a reference); a pattern that aligns with what was observed in the tracking visualization and the CTE computation. This feature, however, improves further in the experiment with the optimal configuration.
 
-Still focusing on Figure \ref{fig:selectedsnap}, particularly in the first two columns, notable differences are observed in the GSMaP dataset values for those scenes. In the appendix, we provide a detailed discussion of this aspect, including snapshots before and after the selected time frames, supporting the hypothesis that MONAN forecasts may be anticipating the event slightly. This temporal offset could introduce a systematic bias when comparing the forecasts with observations at a fixed time. Nonetheless, this type of analysis offers valuable insights into how cold pools influence the hurricane’s structure and local convection, especially in terms of rainfall organization. Specific features, such as the placement of extreme rainfall cores, could be improved through parameter calibration.
+Still focusing on Figure \ref{fig:selectedsnap}, particularly in the first two columns, notable differences are observed in the GSMaP dataset values for those scenes. In Appendix~\ref{apendiceF}, we provide a detailed discussion of this aspect, including snapshots before and after the selected time frames, supporting the hypothesis that MONAN forecasts may be anticipating the event slightly. This temporal offset could introduce a systematic bias when comparing the forecasts with observations at a fixed time. Nonetheless, this type of analysis offers valuable insights into how cold pools influence the hurricane’s structure and local convection, especially in terms of rainfall organization. Specific features, such as the placement of extreme rainfall cores, could be improved through parameter calibration.
 
 When investigating the effect of model resolution, the organization induced by cold pools becomes even more evident, particularly in the first two columns, where the pockets of heavy rainfall (dark red) in the second column stand out. Similar to what was observed in Hurricane Beryl, the spiraling structure of rainbands generated by the cold pool parameterization becomes more pronounced, especially as the resolution increases.
 
@@ -346,7 +394,7 @@ Figure 6.16 examines the rainfall one hour before and after the intense precipit
 	\vspace{2mm}
 	
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
-	\label{fig:selectedsnap2} % Label para referenciar no texto
+	\label{fig:selectedsnap3} % Label para referenciar no texto
 \end{figure}
 
 To better support conclusions regarding spatial distribution and correlation, Figure 6.17 was constructed using daily accumulated precipitation over the continental region (specifically for September 27 and 28), also employing the NCEP data mask.
@@ -359,12 +407,14 @@ To better support conclusions regarding spatial distribution and correlation, Fi
 	\vspace{2mm}
 	
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
-	\label{fig:selectedsnap2} % Label para referenciar no texto
+	\label{fig:selectedsnap4} % Label para referenciar no texto
 \end{figure}
 
 In this analysis, patterns of negative correlation can be observed over the central-western region of the United States in the CP-OFF and CP-ON experiments. However, the CP-1HD050 experiment once again corrects this bias, maintaining a strong correlation along the path followed by the hurricane as it moved inland. ERA5 is included to demonstrate its good agreement with the NCEP data, particularly in the region affected by the hurricane between Florida and Georgia.
 
 Continuing the analysis of cloud morphology associated with this event and the role of cold pool parameterization in improving forecasts, cloud top temperatures are presented in Figures \ref{fig:samecloud} and \ref{fig:samecloud2}, corresponding to the same days and spatial domains as in Figure \ref{fig:selectedsnap}; the first one is at 30 km of horizontal resolution, and the second at their native resolution. However, in this case, the reference dataset is GPM-MERGIR.
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -376,6 +426,8 @@ Continuing the analysis of cloud morphology associated with this event and the r
 	Source: Made by the author (2025).  % Fonte abaixo da imagem
 	\label{fig:samecloud} % Label para referenciar no texto
 \end{figure}
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -390,7 +442,7 @@ Continuing the analysis of cloud morphology associated with this event and the r
 
 \subsubsection{Rainfall mean and overall distribution}
 
-PDFs (A and C) and CDFs (B and D) illustrating the rainfall distribution across the datasets are presented in Figure \ref{fig:probdens}. Once again, the analysis is separated between regions over and outside the United States, using NCEP data and GSMaP data (green curves), respectively, as references. This figure was constructed based on the mask described in the appendix. Briefly, the data from the period spanning September 25 to September 29 (both at 00 UTC) were first separated according to the defined masks and then further categorized based on the rainfall thresholds indicated on the x-axis. Subsequently, with the data already partitioned by region and rainfall intensity, the PDFs and CDFs were computed.
+PDFs (A and C) and CDFs (B and D) illustrating the rainfall distribution across the datasets are presented in Figure \ref{fig:probdens}. Once again, the analysis is separated between regions over and outside the United States, using NCEP data and GSMaP data (green curves), respectively, as references. This figure was constructed based on the mask described in Appendix~\ref{apendiceG}. Briefly, the data from the period spanning September 25 to September 29 (both at 00 UTC) were first separated according to the defined masks and then further categorized based on the rainfall thresholds indicated on the x-axis. Subsequently, with the data already partitioned by region and rainfall intensity, the PDFs and CDFs were computed.
 
 \begin{figure}[!ht]
 	\centering
@@ -407,7 +459,7 @@ The rainfall distribution observed during the Helene period and the associated e
 
 Over the larger continental area (panels A and C), the MONAN forecasts are able to capture the observed tendencies with considerable accuracy across all rainfall thresholds. It is worth highlighting that both the GPM-IMERG and ERA5 datasets tend to overestimate precipitation, particularly beyond the 5 mm/h threshold, and also at thresholds below 1 mm/h. This overestimation in the extremes, especially pronounced in ERA5, is consistent with what was observed during the Beryl period, suggesting a systematic bias in the ERA5 dataset that should be taken into account in analyses of this type of phenomenon. This overestimation is visible in the mean values (indicated by the horizontal dashed line in panel C), where ERA5 substantially overestimates average precipitation, whereas GPM-IMERG and the MONAN forecasts can better capture the observed mean, hovering around 0.8 mm/h.
 
-When assessing the region outside the United States, a distinct shift in rainfall distribution becomes apparent. ERA5 now shows a slight overestimation between 1 and 3 mm/h, while for moderate to heavy rainfall thresholds, a consistent overestimation is evident. GPM-IMERG follows a similar trend and, as discussed previously and further explored in the appendix, fails to capture rainfall extremes, displaying a significant bias beyond 30 mm/h. Regarding the MONAN forecasts, once cold pool effects are introduced, the results become much more similar across experiments. When compared to CP-OFF, we observe that CP-OFF exhibits less bias in the 1–30 mm/h range. Beyond 30 mm/h, the forecasts align more closely with the reference data. These characteristics related to rainfall extremes will be examined in greater detail in the following section.
+When assessing the region outside the United States, a distinct shift in rainfall distribution becomes apparent. ERA5 now shows a slight overestimation between 1 and 3 mm/h, while for moderate to heavy rainfall thresholds, a consistent overestimation is evident. GPM-IMERG follows a similar trend and, as discussed previously and further explored in Appendix~\ref{apendiceA}, fails to capture rainfall extremes, displaying a significant bias beyond 30 mm/h. Regarding the MONAN forecasts, once cold pool effects are introduced, the results become much more similar across experiments. When compared to CP-OFF, we observe that CP-OFF exhibits less bias in the 1–30 mm/h range. Beyond 30 mm/h, the forecasts align more closely with the reference data. These characteristics related to rainfall extremes will be examined in greater detail in the following section.
 
 Overall, the forecasts tend to overestimate rainfall at low and moderate thresholds and underestimate it at higher thresholds. This contrasts with the trend observed during Beryl, where overestimation occurred at both low and high thresholds. Regarding mean rainfall values, both ERA5 and GPM-IMERG align well with GSMaP data, approximating 0.4 mm/h. Among the forecasts, the CP-OFF experiment is the closest to the observed mean, as previously discussed. Furthermore, although the forecasts exhibit a general overestimation bias, adjustments to the cold pool parameterization—such as those made in the CP-1HD050 experiment—can slightly improve alignment with the observed data.
 

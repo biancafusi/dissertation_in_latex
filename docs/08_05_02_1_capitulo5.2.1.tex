@@ -2,7 +2,9 @@
 \label{subsection521}
 
 
-All trajectories are displayed in the Figure~\ref{fig:all_tracks_selected}. The trajectories of each group of the Table~\ref{tab:selected_experiments} can be found at Appendix B.
+All trajectories are displayed in the Figure~\ref{fig:all_tracks_selected}. The trajectories of each group of the Table~\ref{tab:selected_experiments} can be found at Appendix~\ref{apendiceD}.
+
+\newpage
 
 \begin{figure}[!ht]
     \centering
@@ -16,13 +18,15 @@ All trajectories are displayed in the Figure~\ref{fig:all_tracks_selected}. The 
 
 This figure presents a map generated utilizing a tracking algorithm developed by the author. Firstly, the algorithm extracts each point corresponding to the minimum central pressure from the best track data between July 3rd and July 9th, 2024, sweeping a total integration period of 144 hours, with data plotted at 6-hour intervals. Furthermore, the minimum Mean Sea Level Pressure (MSLP) of the MONAN’s forecast and ERA5 reanalysis is extracted within a predefined spatial box surrounding the best track minimum central pressure. For instance, the initial bullet point depicted in dark green (representing NOAA’s best track at approximately 72.5° W) corresponds to the minimum central pressure obtained with the best track on July 3rd (00 UTC), 2024, while the final bullet point in dark green represents the data from July 9th (00 UTC), 2024 (close to 95° W). The CP-15km and CP-60km forecasts are at their respective native horizontal resolution.
 
-At first glance, the reader will notice the observed congruence between the ERA5 reanalysis data and the best track observations. This strong agreement may be attributable to the reanalysis nature \cite{dulac2024assessing}, which integrates observational datasets throughout the integration period, thereby leading to this expected behaviour.
+At first glance, the reader will notice the observed congruence between the ERA5 reanalysis data and the best track observations. This strong agreement may be attributable to the reanalysis nature \cite{dulac2024assessing}, which assimilates observational data throughout the model integration period, thereby leading to this expected better performance.
 
 The CP-ON and CP-OFF configurations exhibit comparable results for the majority of the integration period, with pronounced discrepancies evident near the Texas landfall and around the Yucatán Peninsula. A more detailed examination of these differences is warranted with other metrics. Concerning the cold pool lifetime, a 3-hour interval significantly deteriorates the accuracy of the forecasts. Furthermore, the downdraft maximum height coefficient of 0.50 appears to yield less precise results relative to the default values of 0.35 and 0.25. The trajectory forecasts utilizing a 60 km horizontal resolution demonstrate closer alignment with the reference data, outperforming the 15 km and 30 km horizontal resolutions, with the 60 km configuration exhibiting superior performance from this perspective. Additionally, forecasts initialized with the GFS (CP-GFS) model appear to underperform in comparison to those initialized with ERA5.
 
 It is observed that when initialization occurs before July 3rd (00 UTC), 2024, a visible degradation in trajectory forecast accuracy ensues. Note that there is a tendency for earlier initialization to result in poorer forecasts, a fact that can be confirmed later on with the MAE and RMSE metrics. This underscores the necessity of incorporating a module within the model to assess ensembles of initial conditions, also in agreement with what is found in the literature \cite{donkin2023capability}.
 
 Finally, the configuration incorporating two parameters that have been changed simultaneously does not reveal significant deviations from the default setup. Overall, the forecasts exhibit a westward bias, a phenomenon that is also apparent in forecasts issued by the Hurricane Analysis and Forecast System (HAFS), as shown in Figure \ref{fig:berryl3rd}.
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -34,6 +38,8 @@ Finally, the configuration incorporating two parameters that have been changed s
 \end{figure}
 
 The next figure provides complementary information to the analysis, now in a more quantitative manner. It is important to mention that the time series displays the errors after 12 h of spin-up, and that value is maintained for further analysis. In Figure \ref{fig:trackerrors} (a), it is possible to better distinguish the differences among the experiments over time. In other words, it shows when each experiment presents lower errors throughout the integration period, along with an initial comparison among them. It is important to note that the vertical line E indicates the moment the hurricane makes landfall on the Yucatán Peninsula, while the vertical line F marks its entry into the State of Texas. In Figure \ref{fig:trackerrors} (b), this comparison becomes even clearer, especially because the bars are arranged vertically from the lowest to the highest error (from top to bottom).
+
+\newpage
 
 \begin{figure}[!ht]
 	\centering
@@ -71,6 +77,8 @@ Interestingly, despite exhibiting large overall errors (Figure \ref{fig:trackerr
 
 This westward bias was also noted in the forecasts from both the HAFS (Figure \ref{fig:all_tracks_selected}) and the United Kingdom (UK) Met Office (Figure \ref{fig:metoff}) for Hurricane Beryl, the last displaying the forecast made initiating from different days.
 
+\newpage
+
 \begin{figure}[!ht]
 	\centering
 	\caption{Tracking available by the UK Met Office for Hurricane Beryl.} % Título acima da figura
@@ -99,4 +107,4 @@ The mean error performance of all MONAN forecasts was computed and shown in Figu
 	\label{fig:monancomparedera5} % Label para referenciar no texto
 \end{figure}
 
-In general, the MONAN forecast is approximately 8 times greater than the ERA5 reanalysis. Again, we can infer that it is not a fair comparison between the MONAN forecast and the ERA5 reanalysis, but it is important to notice the error scale to give us insights about improving the MONAN forecast.
+In general, the MONAN forecast errors are approximately 8 times greater than the ones from the ERA5 reanalysis. Again, we can infer that it is not a fair comparison between the MONAN forecast and the ERA5 reanalysis, but it is important to notice the error scale to give us insights about improving the MONAN forecast.

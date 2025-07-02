@@ -9,6 +9,8 @@ This chapter explores the results of implementing cold pool parameterization in 
 
 Hurricane Beryl formed in the deep tropical Atlantic’s Main Development Region on June 28th, forming a tropical depression near 1200 UTC 28 June about 1200 nautical miles east of Barbados, with a center at 1007 mb and wind speed of 30 kts. According to reports from \citeonline{beven2025beryl}, the storm rapidly intensified into a major hurricane, moving eastward and ultimately reaching Category 5 on the Saffir-Simpson Hurricane Wind Scale, making it the earliest Category 5 hurricane on record in the Atlantic Basin. Figure \ref{fig:hurricanepath} displays all the trajectory computed with the best track dataset.
 
+\newpage
+
 \begin{figure}[h!]
 	\centering
 	\caption{Best track trajectory of Hurricane Beryl (June/July 2024).}
@@ -21,6 +23,8 @@ Hurricane Beryl formed in the deep tropical Atlantic’s Main Development Region
 It is important to note that the figure presented indicates, in the upper-right quadrant, critical meteorological parameters, including the peak wind speed recorded at 145 knots, the minimum mean sea level pressure of 934 hPa, and the Accumulated Cyclone Energy (ACE), which is quantified at 34.5. These values are derived directly from the best track dataset.
 
 The first landfall of Hurricane Beryl occurred on the island of Carriacou in Grenada as a high-end Category 4 storm on July 1st, subsequently intensifying to a Category 5 in the Eastern Caribbean Sea. From a disaster perspective, the total damages in the Grenada Region are significant, with estimates of approximately US\$218.0 million, which accounts for about 16.5 percent of the GDP for 2023 \cite{gunasekera2024global}. Satellite images illustrating the hurricane's transition from Category 4 to Category 5, passing through the first landfall, are presented in Figure \ref{fig:HurricaneBerylBand13}.
+
+\newpage 
 
 \begin{figure}[h!]
 	\centering
@@ -55,6 +59,8 @@ The storm began to weaken before making a second landfall on the Yucatán Penins
 \end{figure}
 
 At approximately 4 AM CDT on July 8th (09:00 UTC on July 8th), the hurricane made landfall near Matagorda along the Texas coast. Its maximum sustained winds were about 129 km/h (80 mph), and its minimum central pressure was 979 hPa. Figure \ref{fig:nexradgeocolor} shows satellite and radar imagery capturing Hurricane Beryl's approach to the Texas coast.
+
+\newpage 
 
 \begin{figure}[h!]
 	\centering
@@ -186,9 +192,9 @@ The “ID” column serves as a reference for the names of the experiments. It i
 
 We investigate the impact of cold pools by enabling (CP-ON) and disabling (CP-OFF) the parameterization, with CP-OFF serving as the control experiment in this case. In the subsequent rows, we conducted a sensitivity analysis on the parameters within the parameterization. Now our control experiment is the CP-ON configuration, with the Table \ref{tab:cp_def} parameters. For the “Initial Condition Day” experiment, we varied the initial integration times: June 29 (00 UTC), 2024; July 1 (00 UTC), 2024; and July 2 (12 UTC), 2024 - comparing them with the default time. These periods were selected because they correspond to key moments in the storm’s evolution: shortly after Hurricane Beryl was classified as a tropical storm, one day before it reached Category 5, and the day it reached Category 5, respectively.
 
-The “Cold Pool Lifetime” was adjusted from the default to durations of 1 hour, 3 hours, and 6 hours. The height of the mass flux above the surface is described by a parabolic function, and the coefficient of this function can be manipulated to alter the maximum height, with lower (higher) values indicating proximity (distance) to the surface. The “Type of Initial Condition” was switched from ERA5 to GFS, both initialized on July 3 (00 UTC), 2024.
+The “Cold Pool Lifetime” was adjusted from the default to durations of 1 hour, 3 hours, and 6 hours. The height of the mass flux above the surface is described by a parabolic function, and the coefficient of this function can be manipulated to alter the maximum height, with lower (higher) values indicating proximity (distance) to the surface. A discussion regarding this coefficient and its direct effects in the cold pool parameterization can be found in Appendix~\ref{apendiceC}. The “Type of Initial Condition” was switched from ERA5 to GFS, both initialized on July 3 (00 UTC), 2024.
 
-During the computation of the initial 13 experiments, we observed that setting the cold pool lifetime to 1 hour and adjusting the maximum downdraft height coefficient to 0.5 resulted in lower errors in the initial results. Consequently, we conducted the “Best Configuration Test” with these parameter adjustments and repeated this configuration at 15 km, bringing the total number of experiments to 15. The reference data here is the best track dataset, and hereafter, this dataset will be referenced as “NOAA” in the results. 
+During the computation of the initial 13 experiments, we observed that setting the cold pool lifetime to 1 hour and adjusting the maximum downdraft height coefficient to 0.5 resulted in lower errors in comparison with the control configuration. Consequently, we conducted the “Best Configuration Test” with these parameter adjustments and repeated this configuration at 15 km, bringing the total number of experiments to 15. The reference data here is the best track dataset, and hereafter, this dataset will be referenced as “NOAA” in the results. 
 
 Keeping this in mind, Figure \ref{fig:all_tracks_before} shows all the trajectories for the 15 experiments, plus ERA5 and the reference best-track dataset.
 
@@ -214,7 +220,7 @@ As one can see in Figure \ref{fig:all_tracks_before}, the numerous experiments c
     \label{fig:panel_errors_before} % Label para referenciar no texto
 \end{figure}
 
-It can be confirmed that CP-01 deviates significantly from the expected trajectory. Additionally, CP-6H offers limited discussion, as it is quite similar to the other experiments within its group. In Figure \ref{fig:panel_errors_before} (d), CP-1HD05015km does not show a significant improvement and will consequently be withdrawn. We will retain CP-1HD050 to seek the effects related to this configuration in the context of other aspects of tropical cyclones.
+It can be seen that CP-01 deviates significantly from the expected trajectory. Additionally, CP-6H offers limited discussion, as it is quite similar to the other experiments within its group. In Figure \ref{fig:panel_errors_before} (d), CP-1HD05015km does not show a significant improvement and will consequently be withdrawn. We will retain CP-1HD050 to seek the effects related to this configuration in the context of other aspects of tropical cyclones.
 
 To summarize the experiments we intend to keep, a new table has been created (Table \ref{tab:selected_experiments}), similar to Table~\ref{tab:experiments_long}.
 
