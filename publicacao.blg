@@ -30,56 +30,44 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 12383 items from 5000.
+Reallocated field_info (elt_size=4) to 12245 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: ./bib/referencia.bib
-Repeated entry---line 785 of file ./bib/referencia.bib
- : @article{sawada2010impacts
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 825 of file ./bib/referencia.bib
+Repeated entry---line 765 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 959 of file ./bib/referencia.bib
- : @article{sawada2010impacts
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1025 of file ./bib/referencia.bib
+Repeated entry---line 897 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1069 of file ./bib/referencia.bib
+Repeated entry---line 941 of file ./bib/referencia.bib
  : @article{eastin2012surface
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1091 of file ./bib/referencia.bib
+Repeated entry---line 963 of file ./bib/referencia.bib
  : @article{barnes1983mesoscale
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1517 of file ./bib/referencia.bib
+Repeated entry---line 1403 of file ./bib/referencia.bib
  : @article{arakawa2011toward
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1699 of file ./bib/referencia.bib
- : @article{torri2015mechanisms
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1763 of file ./bib/referencia.bib
+Repeated entry---line 1619 of file ./bib/referencia.bib
  : @article{grell2002generalized
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2531 of file ./bib/referencia.bib
+Repeated entry---line 2343 of file ./bib/referencia.bib
  : @article{skamarock2012multiscale
  :                                 ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "noaa_hurricane_costs_2024" isn't style-file defined
---line 2655 of file ./bib/referencia.bib
-Repeated entry---line 2753 of file ./bib/referencia.bib
+--line 2477 of file ./bib/referencia.bib
+Repeated entry---line 2569 of file ./bib/referencia.bib
  : @article{li2025generative
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2805 of file ./bib/referencia.bib
+Repeated entry---line 2619 of file ./bib/referencia.bib
  : @article{feng2015mechanisms
  :                            ,
 I'm skipping whatever remains of this entry
@@ -107,45 +95,45 @@ while executing---line 4353 of file ./template/abnt-alfenglish.bst
 | Em caso de d�vidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 107 entries,
+You've used 105 entries,
             6478 wiz_defined-function locations,
-            1767 strings with 29592 characters,
-and the built_in function-call counts, 93461 in all, are:
-= -- 6979
-> -- 3498
+            1742 strings with 29554 characters,
+and the built_in function-call counts, 91701 in all, are:
+= -- 6775
+> -- 3468
 < -- 283
-+ -- 1409
-- -- 1021
-* -- 6944
-:= -- 11992
-add.period$ -- 342
-call.type$ -- 108
-change.case$ -- 1221
-chr.to.int$ -- 325
-cite$ -- 100
-duplicate$ -- 5198
-empty$ -- 6402
-format.name$ -- 5167
-if$ -- 22147
-int.to.chr$ -- 10
++ -- 1402
+- -- 1011
+* -- 6799
+:= -- 11734
+add.period$ -- 328
+call.type$ -- 106
+change.case$ -- 1208
+chr.to.int$ -- 321
+cite$ -- 98
+duplicate$ -- 5087
+empty$ -- 6237
+format.name$ -- 5121
+if$ -- 21697
+int.to.chr$ -- 12
 int.to.str$ -- 3
-missing$ -- 1933
-newline$ -- 620
-num.names$ -- 500
-pop$ -- 2363
+missing$ -- 1904
+newline$ -- 606
+num.names$ -- 490
+pop$ -- 2420
 preamble$ -- 1
-purify$ -- 432
+purify$ -- 426
 quote$ -- 0
-skip$ -- 5003
+skip$ -- 4942
 stack$ -- 1
-substring$ -- 4178
-swap$ -- 2599
+substring$ -- 4094
+swap$ -- 2538
 text.length$ -- 208
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 788
+while$ -- 774
 width$ -- 0
-write$ -- 1686
-(There were 19 error messages)
+write$ -- 1607
+(There were 16 error messages)

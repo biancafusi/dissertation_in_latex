@@ -56,7 +56,7 @@
 \contentsline {subsubsection}{\numberline {6.2.3.3}MONAN performance at forecasting rainfall}{131}{subsubsection.6.2.3.3}%
 \contentsline {section}{\numberline {6.3}Discussion of key outcomes}{134}{section.6.3}%
 \contentsline {chapter}{\numberline {7}CONCLUSIONS AND FUTURE WORK}{139}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Future Work}{140}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Future work}{140}{section.7.1}%
 \contentsline {chapter}{REFERENCES}{143}{chapter.8}%
 \ttl@change@i {\@ne }{chapter}{0cm}{\vspace {4mm}}{\normalfont \normalsize \bfseries }{}{\normalfont \normalsize \bfseries \titlerule *[0.82pc]{.}\contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 

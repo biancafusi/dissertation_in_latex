@@ -3,7 +3,7 @@
 \chapter{CASE STUDY: Hurricane Beryl}
 \label{ch:beryl}
 
-This chapter explores the results of implementing cold pool parameterization in the latest Brazilian numerical weather and climate prediction model, MONAN. It emphasizes the model's performance in predicting hurricane trajectory, intensity, and rainfall, using Hurricane Beryl as a case study, which occurred between June and July 2024 in the North Atlantic Basin. Following a brief introduction to the event, the chapter presents the results of the forecast and offers a direct comparison between ERA5 and MONAN. Finally, a discussion section will address the questions outlined previously in Table \ref{tab:questions}.
+This chapter explores the results of implementing cold pool parameterization in the latest Brazilian numerical weather and climate prediction model, MONAN. It emphasizes the model's performance in predicting hurricane trajectory, intensity, and rainfall, using Hurricane Beryl as a case study, which occurred between June and July 2024 in the North Atlantic Basin. Following a brief introduction to the event, the chapter presents the results of the forecast and offers a direct comparison between ERA5 and MONAN. Finally, a discussion section will address the questions outlined previously in Table \ref{tab:questionsberyl}.
 
 \section{Event description - Hurricane Beryl}
 
@@ -17,7 +17,7 @@ Hurricane Beryl formed in the deep tropical Atlantic’s Main Development Region
 	\label{fig:hurricanepath}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter5/beryl_2024.png}
 	\centering
 	\vspace{2mm}
-	Source: Made by the author (2025).
+	Source: Made by the author.
 \end{figure}
 
 It is important to note that the figure presented indicates, in the upper-right quadrant, critical meteorological parameters, including the peak wind speed recorded at 145 knots, the minimum mean sea level pressure of 934 hPa, and the Accumulated Cyclone Energy (ACE), which is quantified at 34.5. These values are derived directly from the best track dataset.
@@ -42,7 +42,7 @@ The first landfall of Hurricane Beryl occurred on the island of Carriacou in Gre
 		\label{fig:HurricaneBerylBand13}
 	\end{minipage}
 	\vspace{2mm}
-Source: \citeonline{noaa_star}
+Source: \citeonline{noaa_star_2025}.
 \end{figure}
 
 At the passage through the Caribbean region, the rainfall was more intense in Jamaica, with widespread totals between 8 to 12 inches, and a peak of 13.62 inches observed at Knockpatrick in Manchester Parish, representing the highest storm-total rainfall reported in the region.
@@ -90,7 +90,7 @@ Based on this overview of the storm, Figure \ref{fig:spatialdomainberyl} has bee
 	\caption{Spatial domain of Hurricane Beryl's development and trajectory.}
 	\label{fig:spatialdomainberyl}\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{docs/figuras/chapter5/map_with_cat_path.png}
 	\centering
-	Source: Made by the author (2025).
+	Source: Made by the author.
 \end{figure}
 
 The observational period for this study encompasses a six-day interval from 00 UTC on July 3 to 00 UTC on July 9, 2024, as illustrated by the gray bullet points in Figure \ref{fig:spatialdomainberyl}. Notably, this analysis will focus on a post-Category 5 storm. Whereas the system was active from June 28 to July 9, our analysis concentrates primarily on this specific timeframe. A sensitivity analysis regarding an earlier forecast of the observation period will be conducted and discussed in subsequent sections. This study encompasses significant geographical features, including the passage through Jamaica, which recorded the highest levels of rainfall in the Caribbean, the Yucatán landfall as denoted by the rectangle E in Figure \ref{fig:spatialdomainberyl}, and the subsequent landfall in the State of Texas, indicated by the rectangle F.
@@ -159,7 +159,7 @@ By the workflow sequence, we will begin by addressing the forecast selection pro
 	}
 	
 	\vspace{2mm}
-	{\centering Source: Made by the author (2025).\par}
+	{\centering Source: Made by the author.\par}
 \end{table}
 
 The “ID” column serves as a reference for the names of the experiments. It is important to note that in the results, CP-ON represents the default configuration. In the sensitivity analyses conducted, the default values are specified in the labels. For instance, in the “Resolution Experiment,” the default configuration is set to a grid of 30 km (CP-30km), which is then changed to 60 km (CP-60km) and 15 km (CP-15km). To clarify, the following table emphasizes the default parameters:
@@ -187,7 +187,7 @@ The “ID” column serves as a reference for the names of the experiments. It i
 	}
 	
 	\vspace{2mm}
-	{\centering Source: Made by the author (2025).\par}
+	{\centering Source: Made by the author.\par}
 \end{table}
 
 We investigate the impact of cold pools by enabling (CP-ON) and disabling (CP-OFF) the parameterization, with CP-OFF serving as the control experiment in this case. In the subsequent rows, we conducted a sensitivity analysis on the parameters within the parameterization. Now our control experiment is the CP-ON configuration, with the Table \ref{tab:cp_def} parameters. For the “Initial Condition Day” experiment, we varied the initial integration times: June 29 (00 UTC), 2024; July 1 (00 UTC), 2024; and July 2 (12 UTC), 2024 - comparing them with the default time. These periods were selected because they correspond to key moments in the storm’s evolution: shortly after Hurricane Beryl was classified as a tropical storm, one day before it reached Category 5, and the day it reached Category 5, respectively.
@@ -204,7 +204,7 @@ Keeping this in mind, Figure \ref{fig:all_tracks_before} shows all the trajector
     \includegraphics[width=\textwidth]{docs/figuras/chapter5/ALL_tracks_before_filter.png} % Substitua pelo caminho e extensão correta
     \vspace{2mm}
     
-    Source: Made by the author (2025). % Fonte abaixo da imagem
+    Source: Made by the author. % Fonte abaixo da imagem
     \label{fig:all_tracks_before} % Label para referenciar no texto
 \end{figure}
 
@@ -216,7 +216,7 @@ As one can see in Figure \ref{fig:all_tracks_before}, the numerous experiments c
     \includegraphics[width=\textwidth]{docs/figuras/chapter5/panel_2x2_error_comparison.png} % Substitua pelo caminho e extensão correta
     \vspace{2mm}
     
-    Source: Made by the author (2025). % Fonte abaixo da imagem
+    Source: Made by the author. % Fonte abaixo da imagem
     \label{fig:panel_errors_before} % Label para referenciar no texto
 \end{figure}
 
@@ -277,7 +277,7 @@ To summarize the experiments we intend to keep, a new table has been created (Ta
 	}
 	
 	\vspace{2mm}
-	{\centering Source: Made by the author (2025).\par}
+	{\centering Source: Made by the author.\par}
 \end{table}
 
 In the following subsection, we will continue the results, now keeping in mind the experiments listed in Table \ref{tab:selected_experiments}.

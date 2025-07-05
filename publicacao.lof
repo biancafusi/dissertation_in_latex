@@ -15,7 +15,7 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Illustration of a hurricane structure.}}{26}{figure.2.8}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces MPAS-A meshes and the ability to configure the meshes at different resolutions.}}{41}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 30km horizontal resolution at native mesh in MONAN.}}{41}{figure.3.2}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 30km horizontal resolution at native mesh in MONAN.}}{42}{figure.3.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of cross-track and along-track errors. The definitions of Cross-Track Error (CTE) and Along-Track Error (ATE) are based on the distance between an observation (obs) and a forecast (fct) at the same valid time (T). This distance is computed as the great-circle distance.}}{47}{figure.4.1}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Workflow overview of Hurricane Berryl.}}{53}{figure.4.2}%
@@ -29,7 +29,7 @@
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison of storm tracks across all 15 experiments, ERA5, and the best track dataset during Hurricane Beryl period.}}{65}{figure.5.6}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Errors (distance) between the forecasted Beryl trajectories.}}{66}{figure.5.7}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Hurricane Beryl track forecasts, ERA5, and best track dataset.}}{68}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces A forecast made for Hurricane Beryl starting on July 3rd (00 UTC), 2024, available at the HAFS website}}{70}{figure.5.9}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces A forecast made for Hurricane Beryl starting on July 3rd (00 UTC), 2024, available at the HAFS website.}}{70}{figure.5.9}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Track errors of the MONAN forecast for Hurricane Beryl and ERA5 reanalysis with the best track as reference. 12 hours of model spin-up are withdrawn from the analysis. (a) is displayed the distance error computed as the great-circle, and (b), the MAE and RMSE calculated from (a).}}{71}{figure.5.10}%
 \contentsline {figure}{\numberline {5.11}{\ignorespaces CTE (a) and ATE (b) computing during the Hurricane Beryl period.}}{72}{figure.5.11}%
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Tracking available by the UK Met Office for Hurricane Beryl.}}{74}{figure.5.12}%
