@@ -17,14 +17,14 @@
 \backcite {sawada2010impactsPT1, chen2014fengshen, grant2018cold, cai2019effect}{{2}{1}{chapter.1}}
 \backcite {sawada2010impactsPT1, chen2014fengshen, grant2018cold, cai2019effect}{{2}{1}{chapter.1}}
 \backcite {sawada2010impactsPT1, chen2014fengshen, grant2018cold, cai2019effect}{{2}{1}{chapter.1}}
-\backcite {skamarock2012multiscale}{{2}{1}{chapter.1}}
-\backcite {freitas2024parameterization}{{3}{1.3}{section.1.3}}
+\backcite {skamarock2012multiscale}{{3}{1}{chapter.1}}
+\backcite {freitas2024parameterization}{{4}{1.3}{section.1.3}}
 \backcite {muller2023cloud}{{5}{2.1}{section.2.1}}
 \backcite {muller2023cloud}{{7}{2.1}{figure.2.1}}
 \backcite {mallinson2019investigation}{{7}{2.1}{figure.2.1}}
-\backcite {kessler1982thunderstorm}{{8}{2.1}{figure.2.1}}
-\backcite {weisman2004theory, emanuel1994atmospheric}{{8}{2.2}{section.2.2}}
-\backcite {weisman2004theory, emanuel1994atmospheric}{{8}{2.2}{section.2.2}}
+\backcite {kessler1982thunderstorm}{{7}{2.1}{figure.2.1}}
+\backcite {emanuel1994atmospheric, weisman2004theory}{{8}{2.2}{section.2.2}}
+\backcite {emanuel1994atmospheric, weisman2004theory}{{8}{2.2}{section.2.2}}
 \backcite {tompkins2001organization}{{8}{2.2}{section.2.2}}
 \backcite {tompkins2001organization}{{8}{2.2}{section.2.2}}
 \backcite {tompkins2001organization}{{9}{2.2}{figure.2.2}}
@@ -53,21 +53,21 @@
 \backcite {freitas2017brazilian}{{17}{2.3}{section.2.3}}
 \backcite {freitas2024parameterization}{{17}{2.3}{section.2.3}}
 \backcite {freitas2024parameterization}{{18}{2.5}{figure.2.5}}
-\backcite {freitas2024parameterization}{{18}{2.3}{equation.2.3.1}}
-\backcite {arakawa1974interaction}{{19}{2.3}{equation.2.3.2}}
-\backcite {freitas2024parameterization}{{19}{2.3}{equation.2.3.3}}
+\backcite {freitas2024parameterization}{{18}{2.3}{equation.2.1}}
+\backcite {arakawa1974interaction}{{19}{2.3}{equation.2.2}}
+\backcite {freitas2024parameterization}{{19}{2.3}{equation.2.3}}
 \backcite {arakawa1974interaction}{{19}{3}{Hfootnote.3}}
 \backcite {droegemeier1987numerical}{{20}{2.6}{figure.2.6}}
 \backcite {freitas2024parameterization}{{20}{2.4}{section.2.4}}
 \backcite {grell2014scale, freitas2018assessing}{{20}{2.4}{section.2.4}}
 \backcite {grell2014scale, freitas2018assessing}{{20}{2.4}{section.2.4}}
-\backcite {emanuel1994atmospheric}{{21}{2.4}{section.2.4}}
+\backcite {emanuel1994atmospheric}{{20}{2.4}{section.2.4}}
 \backcite {bechtold2014representing}{{21}{2.4}{section.2.4}}
-\backcite {freitas2020gf}{{21}{2.4}{equation.2.4.7}}
-\backcite {arakawa1974interaction}{{21}{2.4}{equation.2.4.8}}
-\backcite {grell2002generalized}{{21}{2.4}{equation.2.4.8}}
-\backcite {grell2014scale}{{21}{2.4}{equation.2.4.8}}
-\backcite {freitas2024parameterization}{{22}{2.4}{equation.2.4.12}}
+\backcite {freitas2020gf}{{21}{2.4}{equation.2.7}}
+\backcite {arakawa1974interaction}{{21}{2.4}{equation.2.8}}
+\backcite {grell2002generalized}{{21}{2.4}{equation.2.8}}
+\backcite {grell2014scale}{{21}{2.4}{equation.2.8}}
+\backcite {freitas2024parameterization}{{22}{2.4}{equation.2.12}}
 \backcite {houze2010clouds, perez2021performance, lin2022tropical}{{24}{2.5.1}{subsection.2.5.1}}
 \backcite {houze2010clouds, perez2021performance, lin2022tropical}{{24}{2.5.1}{subsection.2.5.1}}
 \backcite {houze2010clouds, perez2021performance, lin2022tropical}{{24}{2.5.1}{subsection.2.5.1}}
@@ -130,7 +130,7 @@
 \backcite {chaboureau2005statistical}{{40}{3.2}{table.3.2}}
 \backcite {mitchell2005community}{{40}{3.2}{table.3.2}}
 \backcite {ncar2024plotting}{{41}{3.1}{figure.3.1}}
-\backcite {skamarock2012multiscale}{{41}{3.2}{figure.3.2}}
+\backcite {skamarock2012multiscale}{{42}{3.2}{figure.3.2}}
 \backcite {moon2021five}{{45}{4.1}{section.4.1}}
 \backcite {ditchek2023improving, nyongesa2024influence}{{45}{4.1}{section.4.1}}
 \backcite {ditchek2023improving, nyongesa2024influence}{{45}{4.1}{section.4.1}}
@@ -142,68 +142,3 @@
 \backcite {marchok2007validation}{{48}{4.3}{section.4.3}}
 \backcite {mesinger2008bias}{{49}{4.3}{section.4.3}}
 \backcite {marchok2007validation}{{50}{4.3}{table.4.1}}
-\backcite {beven2025beryl}{{57}{5.1}{section.5.1}}
-\backcite {gunasekera2024global}{{58}{5.1}{figure.5.1}}
-\backcite {noaa_star_2025}{{59}{5.2}{figure.5.2}}
-\backcite {beven2025beryl}{{59}{5.1}{figure.5.2}}
-\backcite {noaa_basin}{{60}{5.3}{figure.5.3}}
-\backcite {nws_lch_beryl2024, noaa_star_2025}{{61}{5.4}{figure.5.4}}
-\backcite {nws_lch_beryl2024, noaa_star_2025}{{61}{5.4}{figure.5.4}}
-\backcite {beven2025beryl}{{62}{5.1}{figure.5.4}}
-\backcite {dulac2024assessing}{{69}{5.2.1}{figure.5.8}}
-\backcite {donkin2023capability}{{69}{5.2.1}{figure.5.8}}
-\backcite {noaa_hafseps_2025}{{70}{5.9}{figure.5.9}}
-\backcite {zhou2020prospects, sippel2022impacts}{{71}{5.2.1}{figure.5.10}}
-\backcite {zhou2020prospects, sippel2022impacts}{{71}{5.2.1}{figure.5.10}}
-\backcite {metoffice_nhem2024}{{74}{5.12}{figure.5.12}}
-\backcite {metoffice2024}{{74}{5.2.1}{figure.5.12}}
-\backcite {dulac2024assessing}{{76}{5.2.2}{figure.5.14}}
-\backcite {marchok2007validation, brackins2020evaluation, luitel2018verification}{{79}{5.2.3.1}{subsubsection.5.2.3.1}}
-\backcite {marchok2007validation, brackins2020evaluation, luitel2018verification}{{79}{5.2.3.1}{subsubsection.5.2.3.1}}
-\backcite {marchok2007validation, brackins2020evaluation, luitel2018verification}{{79}{5.2.3.1}{subsubsection.5.2.3.1}}
-\backcite {marchok2007validation}{{79}{5.2.3.1}{subsubsection.5.2.3.1}}
-\backcite {li2025generative}{{80}{5.2.3.1}{subsubsection.5.2.3.1}}
-\backcite {marchok2007validation}{{80}{5.2.3.1}{subsubsection.5.2.3.1}}
-\backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{90}{5.2.3.1}{figure.5.22}}
-\backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{90}{5.2.3.1}{figure.5.22}}
-\backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{90}{5.2.3.1}{figure.5.22}}
-\backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{90}{5.2.3.1}{figure.5.22}}
-\backcite {sakaeda2023observed, freitas2024parameterization, haerter2018reconciling,feng2015mechanisms, vogel2021climatology}{{90}{5.2.3.1}{figure.5.22}}
-\backcite {yamaguchi2012tropical}{{101}{5.2.4}{subsection.5.2.4}}
-\backcite {grandpeix2010density, feng2015mechanisms, torri2015mechanisms}{{101}{5.2.4}{subsection.5.2.4}}
-\backcite {grandpeix2010density, feng2015mechanisms, torri2015mechanisms}{{101}{5.2.4}{subsection.5.2.4}}
-\backcite {grandpeix2010density, feng2015mechanisms, torri2015mechanisms}{{101}{5.2.4}{subsection.5.2.4}}
-\backcite {donkin2023capability}{{102}{5.2.4}{subsection.5.2.4}}
-\backcite {dulac2024assessing}{{102}{5.2.4}{subsection.5.2.4}}
-\backcite {demaria2007evaluation}{{102}{5.2.4}{subsection.5.2.4}}
-\backcite {bopape2021sensitivity}{{102}{5.2.4}{subsection.5.2.4}}
-\backcite {marchok2007validation, brackins2020evaluation}{{102}{5.2.4}{subsection.5.2.4}}
-\backcite {marchok2007validation, brackins2020evaluation}{{102}{5.2.4}{subsection.5.2.4}}
-\backcite {marchok2007validation}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {sawada2010impactsPT2, freitas2024parameterization}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {sawada2010impactsPT2, freitas2024parameterization}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {schlemmer2014formation}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {lonfat2004precipitation}{{103}{5.2.4}{subsection.5.2.4}}
-\backcite {hagen2024helene}{{106}{6.1}{figure.6.1}}
-\backcite {fsu_helene2024}{{106}{6.1}{figure.6.1}}
-\backcite {hagen2024helene}{{107}{6.2}{figure.6.2}}
-\backcite {noaa_star_2025}{{108}{6.3}{figure.6.3}}
-\backcite {britannica_helene}{{108}{6.1}{figure.6.3}}
-\backcite {hagen2024helene}{{108}{6.1}{table.6.1}}
-\backcite {noaa_hafseps_2025}{{113}{6.6}{figure.6.6}}
-\backcite {metoffice_nhem2024}{{114}{6.2.1}{figure.6.7}}
-\backcite {metoffice_nhem2024}{{115}{6.8}{figure.6.8}}
-\backcite {marchok2007validation}{{133}{6.2.3.3}{figure.6.22}}
-\backcite {brackins2020evaluation}{{133}{6.2.3.3}{figure.6.22}}
-\backcite {yamaguchi2012tropical}{{134}{6.3}{section.6.3}}
-\backcite {marchok2007validation}{{137}{6.3}{section.6.3}}
-\backcite {brackins2020evaluation}{{138}{6.3}{section.6.3}}
-\backcite {freitas2024parameterization}{{140}{7}{chapter.7}}
-\backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{141}{7.1}{section.7.1}}
-\backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{141}{7.1}{section.7.1}}
-\backcite {lonfat2004precipitation, marchok2007validation, brackins2020evaluation}{{141}{7.1}{section.7.1}}
-\backcite {hagen2024helene}{{153}{A}{appendix.A}}
-\backcite {hagen2024helene}{{153}{A.1}{figure.A.1}}

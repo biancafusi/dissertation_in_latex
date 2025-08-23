@@ -6,7 +6,7 @@
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}General objective}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Specific objectives}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Scientific questions}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Scientific questions}{4}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Thesis organization}{4}{section.1.4}%
 \contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Overview of convective cloud dynamics}{5}{section.2.1}%
@@ -34,38 +34,8 @@
 \contentsline {section}{\numberline {4.3}Rainfall}{48}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Hurricane Beryl workflow}{51}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Hurricane Helene workflow}{54}{section.4.5}%
-\contentsline {chapter}{\numberline {5}CASE STUDY: Hurricane Beryl}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Event description - Hurricane Beryl}{57}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Results and analysis of hurricane Beryl}{63}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Trajectory}{67}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Intensity}{75}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Rainfall}{79}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Pattern and spatial rainfall distribution}{79}{subsubsection.5.2.3.1}%
-\contentsline {subsubsection}{\numberline {5.2.3.2}Rainfall mean and overall distribution}{93}{subsubsection.5.2.3.2}%
-\contentsline {subsubsection}{\numberline {5.2.3.3}Rainfall extremes}{96}{subsubsection.5.2.3.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.4}MONAN performance at forecasting rainfall}{100}{subsubsection.5.2.3.4}%
-\contentsline {subsection}{\numberline {5.2.4}Discussion of key outcomes}{100}{subsection.5.2.4}%
-\contentsline {chapter}{\numberline {6}PART TWO: HURRICANE HELENE – TESTING THE IMPROVED PARAMETRIZATION}{105}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Event description - Hurricane Helene}{105}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Results and analysis of Hurricane Helene}{110}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Trajectory}{111}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Intensity}{117}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Rainfall}{119}{subsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.3.1}Pattern and spatial rainfall distribution}{120}{subsubsection.6.2.3.1}%
-\contentsline {subsubsection}{\numberline {6.2.3.2}Rainfall mean and overall distribution}{129}{subsubsection.6.2.3.2}%
-\contentsline {subsubsection}{\numberline {6.2.3.3}MONAN performance at forecasting rainfall}{131}{subsubsection.6.2.3.3}%
-\contentsline {section}{\numberline {6.3}Discussion of key outcomes}{134}{section.6.3}%
-\contentsline {chapter}{\numberline {7}CONCLUSIONS AND FUTURE WORK}{139}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Future work}{140}{section.7.1}%
-\contentsline {chapter}{REFERENCES}{143}{chapter.8}%
+\contentsline {chapter}{REFERENCES}{57}{chapter.5}%
 \ttl@change@i {\@ne }{chapter}{0cm}{\vspace {4mm}}{\normalfont \normalsize \bfseries }{}{\normalfont \normalsize \bfseries \titlerule *[0.82pc]{.}\contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \renewcommand {\chaptername }{\appendixname }
-\contentsline {chapter}{\numberline {A}APPENDIX A - OVERVIEW OF THE DATASETS IN REPRODUCING EXTREMES}{153}{appendix.A}%
-\contentsline {chapter}{\numberline {B}APPENDIX B - TRACKING ALGORITHM}{155}{appendix.B}%
-\contentsline {chapter}{\numberline {C}APPENDIX C - DISCUSSION REGARDING THE MAXIMUM DOWNDRAFT HEIGHT}{165}{appendix.C}%
-\contentsline {chapter}{\numberline {D}APPENDIX D - SPATIAL PEARSON CORRELATION FOR ALL SIMULATIONS OF BERYL}{167}{appendix.D}%
-\contentsline {chapter}{\numberline {E}APPENDIX E - DISCUSSION ON TRACKING INFLUENCE IN SNAPSHOTS}{171}{appendix.E}%
-\contentsline {chapter}{\numberline {F}APPENDIX F - DISCUSSION ON TRACKING INFLUENCE IN SNAPSHOTS}{179}{appendix.F}%
-\contentsline {chapter}{\numberline {G}APPENDIX G - MASK ALGORITHM}{183}{appendix.G}%
 \contentsfinish 
