@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2025)
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: publicacao.aux
 A level-1 auxiliary file: ./docs/02_dedicatoria.aux
@@ -21,7 +21,6 @@ A level-1 auxiliary file: ./docs/10_01_apendiceD.aux
 A level-1 auxiliary file: ./docs/10_01_apendiceE.aux
 A level-1 auxiliary file: ./docs/10_01_apendiceF.aux
 A level-1 auxiliary file: ./docs/10_01_apendiceG.aux
-A level-1 auxiliary file: ./docs/12_contracapa.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -33,63 +32,63 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated field_info (elt_size=4) to 12245 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: ./bib/referencia.bib
-Repeated entry---line 765 of file ./bib/referencia.bib
+Repeated entry---line 383 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 897 of file ./bib/referencia.bib
+Repeated entry---line 449 of file ./bib/referencia.bib
  : @article{cai2019effect
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 941 of file ./bib/referencia.bib
+Repeated entry---line 471 of file ./bib/referencia.bib
  : @article{eastin2012surface
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 963 of file ./bib/referencia.bib
+Repeated entry---line 482 of file ./bib/referencia.bib
  : @article{barnes1983mesoscale
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1403 of file ./bib/referencia.bib
+Repeated entry---line 702 of file ./bib/referencia.bib
  : @article{arakawa2011toward
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1619 of file ./bib/referencia.bib
+Repeated entry---line 810 of file ./bib/referencia.bib
  : @article{grell2002generalized
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2343 of file ./bib/referencia.bib
+Repeated entry---line 1172 of file ./bib/referencia.bib
  : @article{skamarock2012multiscale
  :                                 ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "noaa_hurricane_costs_2024" isn't style-file defined
---line 2477 of file ./bib/referencia.bib
-Repeated entry---line 2569 of file ./bib/referencia.bib
+--line 1239 of file ./bib/referencia.bib
+Repeated entry---line 1285 of file ./bib/referencia.bib
  : @article{li2025generative
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2619 of file ./bib/referencia.bib
+Repeated entry---line 1310 of file ./bib/referencia.bib
  : @article{feng2015mechanisms
  :                            ,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 There is no name in "" for entry hagen2024helene
-while executing---line 4243 of file ./template/abnt-alfenglish.bst
+while executing---line 2122 of file ./template/abnt-alfenglish.bst
 There is no name in "" for entry hagen2024helene
-while executing---line 4243 of file ./template/abnt-alfenglish.bst
+while executing---line 2122 of file ./template/abnt-alfenglish.bst
 There is no name in "" for entry hagen2024helene
-while executing---line 4243 of file ./template/abnt-alfenglish.bst
+while executing---line 2122 of file ./template/abnt-alfenglish.bst
 There is no name in "" for entry hagen2024helene
-while executing---line 4243 of file ./template/abnt-alfenglish.bst
+while executing---line 2122 of file ./template/abnt-alfenglish.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 There is no name in "" for entry hagen2024helene
-while executing---line 4353 of file ./template/abnt-alfenglish.bst
+while executing---line 2177 of file ./template/abnt-alfenglish.bst
 There is no name in "" for entry hagen2024helene
-while executing---line 4353 of file ./template/abnt-alfenglish.bst
+while executing---line 2177 of file ./template/abnt-alfenglish.bst
 There is no name in "" for entry hagen2024helene
-while executing---line 4353 of file ./template/abnt-alfenglish.bst
+while executing---line 2177 of file ./template/abnt-alfenglish.bst
 +---------------------------------------------------------+
 | Estilo bibliogr�fico abnt-alf.bst vers�o 1.45.2.1           |
 | Em caso de d�vidas ou problemas com este estilo procure |
@@ -97,7 +96,7 @@ while executing---line 4353 of file ./template/abnt-alfenglish.bst
 +---------------------------------------------------------+
 You've used 105 entries,
             6478 wiz_defined-function locations,
-            1742 strings with 29554 characters,
+            1741 strings with 29531 characters,
 and the built_in function-call counts, 91701 in all, are:
 = -- 6775
 > -- 3468

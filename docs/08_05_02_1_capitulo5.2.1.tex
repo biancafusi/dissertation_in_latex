@@ -33,7 +33,12 @@ Finally, the configuration incorporating two parameters that have been changed s
 	\caption{A forecast made for Hurricane Beryl starting on July 3rd (00 UTC), 2024, available at the HAFS website.} % Título acima da figura
 	\includegraphics[width=\textwidth]{docs/figuras/chapter5/HAFS_trajectory.png} 
 	\vspace{2mm}
-	Source: \citeonline{noaa_hafseps_2025}. % Fonte abaixo da imagem
+	
+	\noindent{Source:}~%
+	\begin{minipage}[t]{\dimexpr\textwidth - 1.8cm}
+		\justifying \citeonline{noaa_hafseps_2025}.
+	\end{minipage}
+	
 	\label{fig:berryl3rd} % Label para referenciar no texto
 \end{figure}
 
@@ -51,6 +56,8 @@ The next figure provides complementary information to the analysis, now in a mor
 \end{figure}
 
 As shown in the previous figure, ERA5 delivers the best track prediction performance. This could be attributed to the fact that ERA5 is a reanalysis product, meaning that observational data assimilation is injected into the model at each integration step. A fairer comparison would require conducting this analysis with another model similar to MONAN, which will be left for future work.
+
+Another feature that can be directly observed is that CP-15km is outperformed by CP-60km in this metric. This occurs because, with a coarser resolution, the probability of correctly identifying the location increases, as the number of grid cells is smaller compared to the high-resolution configuration. Consequently, the evaluation becomes less strict. Readers should keep this in mind, particularly for metrics in which the number of grid cells plays a decisive role.
 
 Overall, forecasts tend to show errors below 100 km up to 42 hours of lead time, except for those initialized earlier (CP-29 and CP-02T12). Note that cold pools begin to influence after 48h of forecast. After 60 hours of forecast (two and a half days), some experiments begin to exceed 200 km of error. However, the cold pool only reaches this threshold after 84 hours (three and a half days), and the CP-D025 experiment only reaches it after about 111 hours (four and a half days). Therefore, we observe that with cold pool parameterization, forecast skill is extended by up to two days compared to the configuration without this scheme, for this specific case study.
 

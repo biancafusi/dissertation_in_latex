@@ -1,15 +1,14 @@
 \chapter{METHODOLOGY: METRICS AND DIAGNOSTIC FIELDS}
 \label{ch:methods}
 
-Our methodology is designed based on three main characteristics of tropical cyclones commonly utilized in weather forecasting: track, intensity, and rainfall. The metrics that are currently used in similar studies will be described accordingly to each category. Then, for each hurricane, a table with addressed questions will be shown to guide the reader in the analysis and discussion of the results. This table will be part of the workflow, a diagram that shows the steps and figures/maps that will be created. 
-All code made for this dissertation is available on the
+Our methodology is designed based on three main characteristics of tropical cyclones commonly utilized in weather forecasting: track, intensity, and rainfall. The metrics that are currently used in similar studies will be described accordingly to each category. Then, for each hurricane, a table with addressed questions will be shown to guide the reader in the analysis and discussion of the results. This table will be part of the workflow, a diagram that shows the steps and figures/maps that will be created. Finally, a summary of the limitations of this study is presented. All code made for this dissertation is available on the
 \href{https://github.com/biancafusi/Dissertation}{GitHub - Dissertation Repository}, mainly written in Python.
 
 \section{Trajectory}
 
-A map illustrating the forecasted trajectories \textcolor{red}{was} generated using a tracking algorithm developed by the author. A discussion regarding the performance of this tracking and guidance can be found in Appendix~\ref{apendiceB}. Additionally, a time series analysis will be conducted to evaluate the errors associated with each trajectory. These errors are defined as the distance between the central pressure reference points and the forecasted central pressure points, calculated using the GeoPy library \footnote{GEOPY. \textbf{GeoPy's documentation.} 2025. (Online resource) Available at: \url{https://geopy.readthedocs.io/en/stable/} Accessed on: June 27, 2025.}. As noted in the literature, the calculations could be performed following the methodology proposed by \citeonline{moon2021five} but here we simply calculate the great-circle distance between two points. 
+A map illustrating the forecasted trajectories was generated using a tracking algorithm developed by the author. A discussion regarding the performance of this tracking and guidance can be found in Appendix~\ref{apendiceB}. Additionally, a time series analysis will be conducted to evaluate the errors associated with each trajectory. These errors are defined as the distance between the central pressure reference points and the forecasted central pressure points, calculated using the GeoPy library \footnote{GEOPY. \textbf{GeoPy's documentation.} 2025. (Online resource) Available at: \url{https://geopy.readthedocs.io/en/stable/} Accessed on: June 27, 2025.}. As noted in the literature, the calculations could be performed following the methodology proposed by \citeonline{moon2021five} but here we simply calculate the great-circle distance between two points. 
 
-To quantitatively validate the results, \textcolor{red}{a evaluation was made of} the Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) for each of the trajectories, regarding the reference dataset.
+To quantitatively validate the results, a evaluation was made of the Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) for each of the trajectories, regarding the reference dataset.
 
 The MAE is widely employed \cite{ditchek2023improving, nyongesa2024influence} in the literature and can be defined as:
 
@@ -68,7 +67,8 @@ In addition to a visual comparison, we will create a graph containing the MAE an
 
 The analysis of rainfall for our runs is based on the methodology proposed by \citeonline{marchok2007validation}. According to these authors, evaluating forecasted rainfall requires examining three key aspects: the rainfall pattern, the mean and distribution of rain volume, and the extreme values.
 
-To investigate the rainfall pattern, we will utilize the Equitable Threat Score (ETS; \cite{mesinger2008bias}) along with pattern correlation analysis (namely the Pearson Correlation Coefficient) and visual comparisons using selected snapshots, considering also the related bias of those fields. The mean and distribution of rain volume can be assessed through the computation of the Cumulative Density Function (CDF) and the Probability Density Function (PDF). Extreme rainfall values will be specifically analyzed by examining the 85th percentile computed at the CDF. Lastly, \textcolor{red}{a discussion of the} performance score for MONAN in comparison to ERA5 by averaging the results of all experiments. Table~\ref{tab:rainfall_metrics} summarizes the metrics to be computed, followed by a brief explanation of each metric and its intended purpose.
+To investigate the rainfall pattern, we will utilize the Equitable Threat Score (ETS; \cite{mesinger2008bias}) along with pattern correlation analysis (namely the Pearson Correlation Coefficient) and visual comparisons using selected snapshots, considering also the related bias of those fields. The mean and distribution of rain volume can be assessed through the computation of the Cumulative Density Function (CDF) and the Probability Density Function (PDF). Extreme rainfall values will be specifically analyzed by examining the 85th percentile computed at the CDF. Lastly, a discussion of the performance score for MONAN in comparison to ERA5 by averaging the results of all experiments. Table~\ref{tab:rainfall_metrics} summarizes the metrics to be computed, followed by a brief explanation of each metric and its intended purpose.\footnote{Source of each metric: ETS, Bias definitions – \url{https://www.cawcr.gov.au/projects/verification/}; Pearson Correlation Coefficient – \url{https://www.sciencedirect.com/topics/computer-science/pearson-correlation}; CDF and PDF – \url{https://www.probabilitycourse.com/chapter4/4_1_1_pdf.php}}
+
 
 \begin{table}[H]
 \centering
@@ -200,7 +200,7 @@ The workflow below summarizes and organizes the upcoming steps. After a quick in
     \vspace{0.5em}
     
     \centering
-    Source: Made by the author (2025).
+    Source: Made by the author.
 \end{figure}
 
 
@@ -260,6 +260,10 @@ Now we aim to test the best configuration alongside the cold pool effect and the
 	\centering
 	Source: Made by the author.
 \end{figure}
+
+\section{Study Limitations}
+
+In this study, we assumed a static sea surface temperature. The initial conditions were derived from ERA5 without undergoing a data assimilation process, which is still under development for MONAN. The model spin-up time was fixed at 12 hours, and further research is required to determine the optimal spin-up period for MONAN in this type of application. Additionally, in the rainfall analysis, precipitation was evaluated across the entire domain rather than being restricted solely to the hurricane track.
 
 
 

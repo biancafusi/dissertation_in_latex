@@ -57,8 +57,10 @@ Helene’s moisture-laden circulation delivered extreme precipitation across a b
 	
 	\label{fig:northcarolina}
 	
-	\centering
-	Source: \citeonline{noaa_star_2025}.
+	\noindent{Source:}~%
+	\begin{minipage}[t]{\dimexpr\textwidth - 1.8cm}
+		\justifying \citeonline{noaa_star_2025}.
+	\end{minipage}
 \end{figure}
 
 The small mountain town of Chimney Rock, North Carolina, was among the hardest hit, with floodwaters destroying much of the local infrastructure  \cite{britannica_helene}. The following Table (\ref{tab:highest_rainfall_state})  summarizes the total rainfall by state.
@@ -173,7 +175,11 @@ At the oceanic region, the model generally performs well in forecasting, while i
 	\includegraphics[scale=0.44]{docs/figuras/chapter6/HAFS_helene.png} 
 	\vspace{2mm}
 	
-	Source: \citeonline{noaa_hafseps_2025}.  % Fonte abaixo da imagem
+	\noindent{Source:}~%
+	\begin{minipage}[t]{\dimexpr\textwidth - 1.8cm}
+		\justifying \citeonline{noaa_hafseps_2025}.
+	\end{minipage}
+	
 	\label{fig:forecast2} % Label para referenciar no texto
 \end{figure}
 
@@ -433,7 +439,7 @@ Over the larger continental area (panels A and C), the MONAN forecasts are able 
 
 When assessing the region outside the United States, a distinct shift in rainfall distribution becomes apparent. ERA5 now shows a slight overestimation between 1 and 3 mm/h, while for moderate to heavy rainfall thresholds, a consistent overestimation is evident. GPM-IMERG follows a similar trend and, as discussed previously and further explored in Appendix~\ref{apendiceA}, fails to capture rainfall extremes, displaying a significant bias beyond 30 mm/h. Regarding the MONAN forecasts, once cold pool effects are introduced, the results become much more similar across experiments. When compared to CP-OFF, we observe that CP-OFF exhibits less bias in the 1–30 mm/h range. Beyond 30 mm/h, the forecasts align more closely with the reference data. These characteristics related to rainfall extremes will be examined in greater detail in the following section.
 
-Overall, the forecasts tend to overestimate rainfall at low and moderate thresholds and underestimate it at higher thresholds. This contrasts with the trend observed during Beryl, where overestimation occurred at both low and high thresholds. Regarding mean rainfall values, both ERA5 and GPM-IMERG align well with GSMaP data, approximating 0.4 mm/h. Among the forecasts, the CP-OFF experiment is the closest to the observed mean, as previously discussed. Furthermore, although the forecasts exhibit a general overestimation bias, adjustments to the cold pool parameterization—such as those made in the CP-1HD050 experiment—can slightly improve alignment with the observed data.
+Overall, the forecasts tend to overestimate rainfall at low and moderate thresholds and underestimate it at higher thresholds. This contrasts with the trend observed during Beryl, where overestimation occurred at both low and high thresholds. Regarding mean rainfall values, both ERA5 and GPM-IMERG align well with GSMaP data, approximating 0.4 mm/h. Among the forecasts, the CP-OFF experiment is the closest to the observed mean, as previously discussed. Furthermore, although the forecasts exhibit a general overestimation bias, adjustments to the cold pool parameterization (such as those made in the CP-1HD050 experiment) can slightly improve alignment with the observed data.
 
 \subsubsection{MONAN performance at forecasting rainfall}
 
